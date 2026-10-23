@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Morning Newspaper — 2026-10-23</title>
+<style>
+:root {
+  --ink: #1a1a1a; --paper: #fdfdfb; --accent: #1a3a5c; --accent2: #b03a2e;
+  --muted: #6b7280; --line: #e5e7eb; --code-bg: #f3f4f6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--paper); color: var(--ink);
+  max-width: 900px; margin: 0 auto; padding: 24px 20px 80px;
+  line-height: 1.7; font-size: 17px;
+}
+header.masthead {
+  text-align: center; border-bottom: 3px double var(--ink);
+  padding: 28px 0 20px; margin-bottom: 28px;
+}
+header.masthead h1 {
+  font-size: 2.6rem; margin: 0 0 6px; letter-spacing: -0.5px; font-weight: 800;
+}
+header.masthead .tagline { color: var(--muted); font-style: italic; font-size: 1.05rem; }
+header.masthead .dateline { margin-top: 10px; font-size: 0.95rem; color: var(--accent); font-weight: 600; letter-spacing: 0.5px; }
+header.masthead .stats { margin-top: 8px; font-size: 0.85rem; color: var(--muted); }
+.overview {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 30px;
+}
+.overview h2 { font-size: 1.3rem; margin: 0 0 12px; border-bottom: 2px solid var(--accent2); padding-bottom: 8px; color: var(--accent2); }
+.overview p { margin: 0 0 10px; font-size: 0.98rem; line-height: 1.65; }
+.toc {
+  background: #f8fafc; border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 40px;
+}
+.toc h2 { font-size: 1.3rem; margin: 0 0 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; color: var(--accent); }
+.toc-source { margin-bottom: 16px; }
+.toc-src-name { font-weight: 700; font-size: 1.02rem; color: var(--accent); }
+.toc-count { color: var(--muted); font-size: 0.85rem; margin-left: 8px; }
+.toc-list { margin: 8px 0 0 0; padding-left: 22px; }
+.toc-list li { margin: 3px 0; font-size: 0.92rem; }
+.toc-list a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
+.toc-list a:hover { color: var(--accent2); border-bottom-color: var(--accent2); }
+section.source { margin-bottom: 56px; }
+.source-title {
+  font-size: 1.6rem; margin: 0 0 4px; padding: 14px 18px;
+  background: var(--accent); color: #fff; border-radius: 8px; letter-spacing: -0.3px;
+}
+.source-count { font-size: 0.9rem; opacity: 0.85; font-weight: 400; margin-left: 10px; }
+.source-summary {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line);
+  border-radius: 8px; padding: 14px 18px; margin: 12px 0 20px;
+}
+.source-summary-title {
+  font-size: 0.9rem; font-weight: 700; color: var(--accent2);
+  margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.source-summary p { margin: 0 0 8px; font-size: 0.95rem; line-height: 1.6; }
+article.article {
+  border-left: 3px solid var(--line); padding: 6px 0 6px 20px; margin: 28px 0;
+  scroll-margin-top: 20px;
+}
+article.article:hover { border-left-color: var(--accent); }
+.article-title { font-size: 1.3rem; margin: 0 0 8px; line-height: 1.35; }
+.article-title a { color: var(--ink); text-decoration: none; }
+.article-title a:hover { color: var(--accent); }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; font-size: 0.82rem; color: var(--muted); }
+.article-meta .meta-url a { color: var(--accent); word-break: break-all; }
+.article-meta .meta-warn { color: var(--accent2); font-weight: 600; }
+.article-body { font-size: 1rem; }
+.article-body p { margin: 0 0 14px; }
+.article-body a.read-more { color: var(--accent2); font-weight: 600; }
+.article-body a { color: var(--accent); }
+.article-words { font-size: 0.75rem; color: var(--muted); margin-top: 8px; text-align: right; }
+footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-top: 20px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+  body { font-size: 16px; padding: 16px 14px 60px; }
+  header.masthead h1 { font-size: 2rem; }
+  .toc { padding: 14px 16px; }
+}
+</style>
+</head>
+<body id="top">
+<header class="masthead">
+  <h1>The AI Morning Newspaper</h1>
+  <div class="tagline">Your daily briefing on artificial intelligence, from the world's leading tech sources</div>
+  <div class="dateline">2026-10-23</div>
+  <div class="stats">21 sources · 107 articles · 1,417,782 characters</div>
+</header>
+<div class="overview">
+<h2>In the Last 24 Hours</h2>
+<p>Apple&#x27;s foldable iPhone Duo launched worldwide on October 23, drawing overnight queues at Apple Stores and propelling the company past Nvidia to become the world&#x27;s most valuable company at roughly $5.12 trillion. The launch was accompanied by a wave of ecosystem news: iOS 27.1 shipped exclusively to the Duo while iOS 27.2 arrives next week with Dual Capture in Group FaceTime, a redesigned Apple Podcasts queue, and user profiles in the Apple TV app; support documents covering hinge troubleshooting and Touch ID were published; and a wide array of cases, fast-charging adapters, and accessories from Apple, Pitaka, Spigen, and others hit shelves. Beyond the hardware, Apple marked the iPod&#x27;s 25th anniversary with a fully interactive iPod easter egg on its 404 page, won a Ninth Circuit copyright ruling over the Apple TV+ series Servant, unveiled a November streaming slate including &quot;Stick&quot; and &quot;12 12 12,&quot; and saw the MacBook Neo help the company outperform a 21% global PC shipment decline.</p>
+<p>On the AI front, Andrew Ng outlined a four-part framework of People, Projects, Platforms, and Processes for engineering leaders building AI-native organizations, while Meta released three new multimodal models including Muse Wonder Full. A Latent Space analysis explained how OpenAI and Anthropic models cracked long-standing open mathematics problems like the Erdős unit distance conjecture and Navier-Stokes equations by pursuing depth-first search strategies that humans cannot replicate. The AI-assisted creative space also drew attention as Dutch band De Staat&#x27;s music video for &quot;FREEDOM&quot; featured AI-generated visuals from a studio cheekily named &quot;Fake it or Leave it,&quot; and the AINews community flagged a &quot;Black October&quot; moment in the broader AI landscape.</p>
+<p>Infrastructure and developer tooling saw meaningful updates too: Cloudflare launched Origin Range Requests to eliminate manual range-size tuning for large-file caching and introduced a post-quantum geographically restricted key manager using hybrid ML-KEM-768 and X25519 encryption to guard against harvest-now-decrypt-later threats. On the consumer app side, WhatsApp began testing scheduled messages for iPhone beta users, Strava overhauled route discovery with smarter search and offline improvements, and the Delta retro emulator released version 2.0 with a Liquid Glass interface and clever iPhone Duo crease-spanning DS layouts. Rounding out the hardware-adjacent news, SwitchBot&#x27;s new RGBICWW Light Bars brought 12-zone color to Apple Home over Matter, and a hands-on assessment argued Apple Glasses will likely only appeal to existing eyeglasses wearers given the limited utility of first-gen audio and AI features.</p>
+<p>Apple 嘅摺機 iPhone Duo 喺 10 月 23 號全球開賣，蘋果店門外有人通宵排隊，當日 Apple 市值超越 Nvidia 升至約 5.12 萬億美元，重新成為全球最有價值公司。配合發售，iOS 27.1 獨佔推送俾 Duo，iOS 27.2 下週先至推出，帶來 Group FaceTime 雙鏡頭拍攝、Apple Podcasts 重新設計嘅播放佇列同 Apple TV app 用戶檔案功能；Apple 仲發佈咗鉸鏈故障排除同 Touch ID 支援文件，Pitaka、Spigen、Nomad 等品牌嘅保護殼同快速充電配件亦同步上架。硬件以外，Apple 喺 404 頁面藏咗一個可互動嘅 iPod 彩蛋慶祝 iPod 25 週年，喺第九巡迴上訴法院贏咗 Apple TV+ 劇集 Servant 嘅版權官司，公佈咗 11 月串流片單包括 &quot;Stick&quot; 同 &quot;12 12 12&quot;，而 MacBook Neo 亦幫助 Apple 喺全球 PC 出貨量下跌 21% 嘅環境下只跌 11%。</p>
+<p>AI 方面，Andrew Ng 提出咗 People、Projects、Platforms、Processes 四部分框架，教工程領導者點樣將現有團隊轉型做 AI-native 組織；Meta 發佈咗三個新多模態模型，包括 Muse Wonder Full。Latent Space 分析指出 OpenAI 同 Anthropic 嘅模型之所以能破解 Erdős 單位距離猜想同 Navier-Stokes 方程呢啲長期數學難題，關鍵在於佢哋用深度優先搜尋策略，人類因為每次嘗試要花幾個月所以只能做廣度優先。AI 輔助創作亦引起討論，荷蘭樂隊 De Staat 嘅 &quot;FREEDOM&quot; MV 用咗名叫 &quot;Fake it or Leave it&quot; 工作室嘅 AI 生成視覺效果，AINews 社群亦提到一個叫 &quot;Black October&quot; 嘅業界事件。</p>
+<p>基礎設施同開發工具方面都有重要更新：Cloudflare 推出咗 Origin Range Requests，令大檔案快取唔再需要手動調校 range 大小；同時推出咗後量子加密嘅地理限制金鑰管理器，用 ML-KEM-768 同 X25519 混合加密防範「先擷取後解密」攻擊。消費級 app 方面，WhatsApp 開始喺 iPhone beta 用戶中測試定時發送訊息功能，Strava 重新設計咗路線搜尋同離線地圖支援，Delta 模擬器 2.0 版本加入 Liquid Glass 介面同 iPhone Duo 鉸鏈兩邊跨屏嘅 DS 模擬畫面。硬件周邊方面，SwitchBot 新 RGBICWW 燈條透過 Matter 原生接入 Apple Home 提供 12 區色彩控制，而一篇實測文章認為 Apple Glasses 第一代只有音頻同 AI 功能，大概只會吸引到本身已經戴眼鏡嘅人。</p>
+</div>
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <div class="toc-source"><span class="toc-src-name">Netflix Tech Blog</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-netflix-0">Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes</a></li>
+<li><a href="#a-netflix-1">Single-tenant Titus: VM-level isolation on a multi-tenant container platform</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Cloudflare Blog</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-cloudflare-0">Origin Range Requests: Serving large files without range-request tuning</a></li>
+<li><a href="#a-cloudflare-1">Bringing post-quantum cryptography to geographically fenced key management</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">9to5Mac</span> <span class="toc-count">20 articles</span><ol class="toc-list">
+<li><a href="#a-9to5mac-0">HomeKit Weekly: SwitchBot’s new light bars bring 12-zone color to Apple Home</a></li>
+<li><a href="#a-9to5mac-1">Apple publishes iPhone Duo support documents covering hinge, Touch ID, cases, more</a></li>
+<li><a href="#a-9to5mac-2">iPhone Duo accessories: Here are five top picks for Apple’s foldable</a></li>
+<li><a href="#a-9to5mac-3">Here’s everything new Apple TV has coming in November</a></li>
+<li><a href="#a-9to5mac-4">My experience suggests Apple Glasses will only sell to existing eyeglasses wearers</a></li>
+<li><a href="#a-9to5mac-5">Deals: iPhone Duo cases, Apple Pencil, AirPods Pro 3, Apple TV 4K, power banks, more</a></li>
+<li><a href="#a-9to5mac-6">Apple’s website has fun new easter egg: a fully interactive iPod</a></li>
+<li><a href="#a-9to5mac-7">iOS 27.1 is exclusive to iPhone Duo, here’s why</a></li>
+<li><a href="#a-9to5mac-8">Here’s how to get fastest iPhone Duo charging</a></li>
+<li><a href="#a-9to5mac-9">Apple overtakes Nvidia as most valuable company in the world on iPhone Duo launch day</a></li>
+<li><a href="#a-9to5mac-10">iPhone Duo launch day: Lines form at Apple Stores, walk-in availability limited</a></li>
+<li><a href="#a-9to5mac-11">iOS 27.2: Three new features coming to your iPhone next week</a></li>
+<li><a href="#a-9to5mac-12">New iPhone Duo cases available for purchase: Fabric, leather, aramid fiber, metal, more [U</a></li>
+<li><a href="#a-9to5mac-13">Greg Joswiak talks iPhone Duo in-store availability and demand ahead of launch</a></li>
+<li><a href="#a-9to5mac-14">Apple is finally catching up with Siri, but the goalposts are moving again</a></li>
+<li><a href="#a-9to5mac-15">WhatsApp starts testing long-awaited scheduled messages on iPhone</a></li>
+<li><a href="#a-9to5mac-16">Apple wins again in copyright infringement battle over Apple TV thriller series</a></li>
+<li><a href="#a-9to5mac-17">Strava revamps route discovery with smarter search, offline improvements, more</a></li>
+<li><a href="#a-9to5mac-18">Retro game emulator Delta looks great on the iPhone Duo</a></li>
+<li><a href="#a-9to5mac-19">MacBook Neo helps Apple soften the blow of global PC market downturn, per report</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hacker News</span> <span class="toc-count">19 articles</span><ol class="toc-list">
+<li><a href="#a-hackernews-0">I turned my TV into a Game Boy Color with a Pokemon town as my home screen</a></li>
+<li><a href="#a-hackernews-1">Can we replace a $150k Looker with a bucket of HTML files?</a></li>
+<li><a href="#a-hackernews-2">Show HN: Searching for optimal strategies in a puzzle game with chance (Drop7)</a></li>
+<li><a href="#a-hackernews-3">Time Nuts (2005)</a></li>
+<li><a href="#a-hackernews-4">Animations for System Builders</a></li>
+<li><a href="#a-hackernews-5">Kimi K3.1 Pro and K3.1 Pro Highspeed</a></li>
+<li><a href="#a-hackernews-6">UUIDv7 doesn&#x27;t have the properties you think it does</a></li>
+<li><a href="#a-hackernews-7">The Missed Opportunities of Sonic 06</a></li>
+<li><a href="#a-hackernews-8">How Is Music Possible</a></li>
+<li><a href="#a-hackernews-9">Total Historian</a></li>
+<li><a href="#a-hackernews-10">Today, we hacked what we&#x27;d set out to hack: the iPhone</a></li>
+<li><a href="#a-hackernews-11">Gemma-4-26B-A4B with 39-69% less thinking at same accuracy</a></li>
+<li><a href="#a-hackernews-12">Apple Music 404 Not Found</a></li>
+<li><a href="#a-hackernews-13">Show HN: Swurf – Swipe through the real web</a></li>
+<li><a href="#a-hackernews-14">Show HN: Impossible Machines: declaratively program the physical world</a></li>
+<li><a href="#a-hackernews-15">Docker is weird</a></li>
+<li><a href="#a-hackernews-16">Local Wikipedia: Wikipedia, but only for things a half hour walk from you</a></li>
+<li><a href="#a-hackernews-17">Canadians are running out of time to oppose Bill C-22</a></li>
+<li><a href="#a-hackernews-18">LISP Comes of Age (1980)</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">OpenAI News</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-openai-0">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a></li>
+<li><a href="#a-openai-1">OpenAI and Poland’s NASK partner to advance AI safety and security</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">The Verge AI</span> <span class="toc-count">9 articles</span><ol class="toc-list">
+<li><a href="#a-verge-0">The iPhone Duo should have been an iPad</a></li>
+<li><a href="#a-verge-1">Now Google says it might use your Gmail and Google Photos data to target ads</a></li>
+<li><a href="#a-verge-2">Meta delays new business terms after publisher pushback on AI scraping</a></li>
+<li><a href="#a-verge-3">Retro gaming is being overrun with AI</a></li>
+<li><a href="#a-verge-4">Sure, let’s smoosh SpaceX and Tesla together, who cares</a></li>
+<li><a href="#a-verge-5">Canva’s first AI image model plans designs before generating them</a></li>
+<li><a href="#a-verge-6">Meta turns Muse sharing back on</a></li>
+<li><a href="#a-verge-7">Meta’s AI could still scrape news sites, legal experts say</a></li>
+<li><a href="#a-verge-8">In Meta’s version of the future, I’ll have my Muse call your Muse</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hugging Face Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-huggingface-0">LitPivot: Developing research ideas through dynamic contextualization within the literatur</a></li>
+<li><a href="#a-huggingface-1">Does Your Model Run on AWS Trainium? Look It Up</a></li>
+<li><a href="#a-huggingface-2">Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google Blog</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-googleblog-0">See what 5 builders are making with Gemini 4 Argon</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">HackerNoon</span> <span class="toc-count">20 articles</span><ol class="toc-list">
+<li><a href="#a-hackernoon-0">Don’t Let AI Steal Your Personality</a></li>
+<li><a href="#a-hackernoon-1">500 Blog Posts To Learn About Hackernoon Vi</a></li>
+<li><a href="#a-hackernoon-2">The TechBeat: Gemini 4 Argon: How Does It Do Against GPT-6 Astra and Claude? (10/23/2026)</a></li>
+<li><a href="#a-hackernoon-3">Agent Guardrails Belong in Config, and Config Needs Tests</a></li>
+<li><a href="#a-hackernoon-4">How an iOS Update Broke Chinese Text in War Robots (And How We Fixed It)</a></li>
+<li><a href="#a-hackernoon-5">Using Cypress Cloud CLI and Test Replay for AI-Assisted CI Debugging</a></li>
+<li><a href="#a-hackernoon-6">Agent Security &amp; Identity (Part 2): Who Are
+You, Who&#x27;s Your Agent, And What
+Should They Be</a></li>
+<li><a href="#a-hackernoon-7">1Claw Builds the Security Layer for the Day AI Agents Run Wallets and Sign Trades Autonomo</a></li>
+<li><a href="#a-hackernoon-8">We Were Never Asked to Write Code. We Were Asked to Solve Problems.</a></li>
+<li><a href="#a-hackernoon-9">StealC Is Back, and This Time It&#x27;s a RAT</a></li>
+<li><a href="#a-hackernoon-10">MEXC Account Types Explained: A Guide to Spot, Futures, RealStocks, Fiat, and Copy Trade A</a></li>
+<li><a href="#a-hackernoon-11">Your Agent Workflow Is Mostly Code and People</a></li>
+<li><a href="#a-hackernoon-12">How I Migrated a Live Database to a Many-to-Many Relationship</a></li>
+<li><a href="#a-hackernoon-13">A Successful ETL Job Can Hide Thousands of Data Discrepancies</a></li>
+<li><a href="#a-hackernoon-14">Investigating Feature Leakage and Proxy Variables in a Clash of Clans ML Model</a></li>
+<li><a href="#a-hackernoon-15">Replacing Transactional MSMQ with RabbitMQ Without Losing Consistency</a></li>
+<li><a href="#a-hackernoon-16">The Missing Layer in Enterprise AI: A Governance Architecture for LLMs and Machine Learnin</a></li>
+<li><a href="#a-hackernoon-17">When AI Designs a Presentation, Who Authorizes Its Decisions?</a></li>
+<li><a href="#a-hackernoon-18">Open Inference Networks: Democratic Access to Intelligence</a></li>
+<li><a href="#a-hackernoon-19">Tailoring a Multi-agent LLM System for a Mid-sized Business</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Latent Space</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-latentspace-0">AI Is Getting Good at Math. Here’s Why.</a></li>
+<li><a href="#a-latentspace-1">[AINews] Black October</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Deep Learning AI — The Batch</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-thebatch-0">Issue 376</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">TechCrunch AI</span> <span class="toc-count">4 articles</span><ol class="toc-list">
+<li><a href="#a-techcrunchai-0">Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia</a></li>
+<li><a href="#a-techcrunchai-1">Left alone with nothing to do, AI agents started playing</a></li>
+<li><a href="#a-techcrunchai-2">OpenAI working on new $30B raise at $1.25T valuation ahead of IPO</a></li>
+<li><a href="#a-techcrunchai-3">1Password launches a way for AI agents to log in on your behalf without seeing your passwo</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Simon Willison</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-simonwillison-0">DE STAAT - FREEDOM (Official Music Video)</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google DeepMind</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-deepmind-0">Beyond tree cover: mapping the world’s forest types</a></li>
+<li><a href="#a-deepmind-1">Accelerating the search for antimicrobial peptides with Google Antigravity</a></li>
+<li><a href="#a-deepmind-2">Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AWS Architecture Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aws-0">Automate medical coding with Step Functions and Amazon Bedrock AgentCore</a></li>
+<li><a href="#a-aws-1">How Dynata scaled AI across the development lifecycle with AI-DLC and Kiro IDE</a></li>
+<li><a href="#a-aws-2">Multi-region disaster recovery for Amazon API Gateway WebSocket APIs</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">GitHub Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-github-0">The bridge to agent-scale Git infrastructure</a></li>
+<li><a href="#a-github-1">Staying Evergreen: How we automated secure access and repo hygiene in a shared org</a></li>
+<li><a href="#a-github-2">From 2,500 requests to 24: Rebuilding star history without the stargazers</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Stripe Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-stripe-0">Your AI agent can move money in Stripe - here&#x27;s how to stay in control</a></li>
+<li><a href="#a-stripe-1">Scaling Radar: Fighting fraud with agent-assisted machine learning</a></li>
+<li><a href="#a-stripe-2">Go from idea to company without leaving your development workflow</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AI by Aakash</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aakashai-0">Reverse Engineer Anything.</a></li>
+<li><a href="#a-aakashai-1">Muse.</a></li>
+<li><a href="#a-aakashai-2">Dots.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Sebastian Raschka Magazine</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-raschka-0">Language Models for Text Classification: From Bag-of-Words to Jev</a></li>
+<li><a href="#a-raschka-1">GPT-6 Astra, Looped Transformers, and Hidden Reasoning</a></li>
+<li><a href="#a-raschka-2">How Claude Watermarks AI-Generated Text</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">xAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-xai-0">How SpaceXSI is using Grok Bot to scale customer support</a></li>
+<li><a href="#a-xai-1">Introducing Grok 4.7</a></li>
+<li><a href="#a-xai-2">Introducing Grok Voice Transcribe 2.0</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Anthropic News</span> <span class="toc-count">0 articles</span><ol class="toc-list">
+</ol></div>
+</nav>
+<main>
+<section class="source" id="src-netflix">
+<h2 class="source-title">Netflix Tech Blog <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Netflix&#x27;s engineering blog recently detailed Quasar, a tool that indexes symbol definitions and references across its large Java repository ecosystem to help library producers measure the exact blast radius of API changes before merging or releasing. The blog also covered how Netflix&#x27;s container platform Titus addresses hardware-level interference from noisy neighbors, such as cache contention and memory bandwidth saturation, that kernel-level isolation mechanisms like cgroups cannot fully contain for demanding real-time streaming workloads.</p>
+<p>Netflix 工程部落格最近介紹咗一個叫 Quasar 嘅工具，可以喺佢哋龐大嘅 Java 程式碼庫生態系統入面索引符號定義同引用，等庫嘅開發者喺合併或者發佈之前可以量度到 API 改動嘅影響範圍。另外仲講到佢哋嘅容器平台 Titus 點樣處理多租戶環境下硬件層面嘅干擾問題，例如快取爭用同記憶體頻寬飽和呢啲 cgroups 搞唔掂嘅情況，確保實時串流工作負載唔會受影響。</p>
+</div>
+<article class="article" id="a-netflix-0">
+<h3 class="article-title"><a href="#a-netflix-0">Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90" rel="noopener" target="_blank">https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90</a></span><span class="meta-date">📅 2026-10-24 02:32 UTC+8</span></div>
+<div class="article-body"><p>Netflix built a tool called Quasar that indexes symbol definitions and references across its large Java repository ecosystem, allowing library producers to measure the exact blast radius of API changes before merging or releasing. It uses the SCIP interchange format to connect a change in one repository to precise usages in others, answering questions like which repositories still call a removed method and which library versions they depend on. This matters because without such cross-repository visibility, producers either risk breaking downstream consumers or preserve outdated APIs indefinitely, a problem that grows more urgent as AI coding agents take on more of the development lifecycle.</p>
+<p>Netflix 開發咗一個叫 Quasar 嘅工具，用 SCIP 索引將 Java 庫嘅 API 改動同大量獨立倉庫入面嘅實際引用連起嚟，等開發者喺合併或者發布之前可以睇到邊啲倉庫仲用緊邊啲符號、用緊邊個版本。呢個好重要，因為冇呢啲跨倉庫嘅證據，開發者要麼就冒住搞壞下游應用嘅風險，要麼就永遠唔敢移除舊 API，而隨住 AI 編程代理承擔越多開發工作，呢個問題就越迫切。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">121 words</div>
+</article>
+<article class="article" id="a-netflix-1">
+<h3 class="article-title"><a href="#a-netflix-1">Single-tenant Titus: VM-level isolation on a multi-tenant container platform</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163" rel="noopener" target="_blank">https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163</a></span><span class="meta-date">📅 2026-10-23 06:19 UTC+8</span></div>
+<div class="article-body"><p>Netflix&#x27;s internal container platform Titus runs millions of containers on shared hosts, but hardware-level interference from noisy neighbors—such as last-level cache contention, memory bandwidth saturation, and network softirq starvation—cannot be fully contained by kernel-level isolation mechanisms like cgroups. For demanding real-time streaming workloads, this interference causes stop-the-world events that page on-call engineers, so Netflix built single-tenant Titus, which gives a task its own dedicated virtual machine while preserving the platform&#x27;s API, deployment path, and managed experience. The team evaluated microVMs, gVisor, and further shared-kernel tuning before concluding that a dedicated VM inside Titus best balances isolation guarantees with fleet efficiency and operational simplicity.</p>
+<p>Netflix 內部嘅容器平台 Titus 將數百萬個容器放喺共享主機上運行，但係硬件層面嘅干擾——例如 last-level cache 爭用、記憶體頻寬飽和同網絡 softirq 飢餓——係 cgroups 等核心隔離機制無法完全解決嘅。對於要求極高嘅即時串流工作負載，呢種干擾會造成 stop-the-world 事件，逼到 on-call 工程師即刻起身處理，所以 Netflix 推出咗 single-tenant Titus，畀每個任務一個專屬虛擬機，同時保留平台原有嘅 API、部署流程同托管體驗。團隊評估過 microVM、gVisor 同進一步調校共享核心隔離，最終認為喺 Titus 入面用專屬 VM 係隔離保證、機群效率同運維成本之間嘅最佳平衡。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">133 words</div>
+</article>
+</section>
+<section class="source" id="src-cloudflare">
+<h2 class="source-title">Cloudflare Blog <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Cloudflare has rolled out two significant infrastructure updates this week, headlined by Origin Range Requests, a new self-service feature that removes the need for customers to manually tune range sizes when caching large files such as videos. The company also entered closed beta with a post-quantum geographically restricted key manager that uses hybrid ML-KEM-768 and X25519 encryption to protect decryption keys from future quantum computing threats while enforcing regional boundaries.</p>
+<p>Cloudflare 呢個星期推出咗兩項重要嘅基礎設施更新，其中 Origin Range Requests 係一個自助式功能，客戶唔使再手動調校大檔案嘅 range 大小就可以做緩存。另外佢哋仲開始咗一個後量子加密嘅地域限制金鑰管理器嘅封閉測試，用 ML-KEM-768 同 X25519 混合加密嚟防止量子電腦破解解密金鑰，同時確保金鑰只可以喺指定地區嘅伺服器上面解鎖。</p>
+</div>
+<article class="article" id="a-cloudflare-0">
+<h3 class="article-title"><a href="#a-cloudflare-0">Origin Range Requests: Serving large files without range-request tuning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/origin-range-requests/" rel="noopener" target="_blank">https://blog.cloudflare.com/origin-range-requests/</a></span><span class="meta-date">📅 2026-10-24 02:22 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has launched Origin Range Requests, a self-service feature that eliminates the need for customers to configure range sizes when caching large files like videos. The new system leverages fixed-size cache chunks from its Pingora-based server to serve range requests without the bandwidth waste and cache-blocking issues that plagued the old nginx-based implementation. Early production results show p99 time to first byte dropped by roughly half for R2 workloads and tiered cache traffic decreased by about 6%.</p>
+<p>Cloudflare 推出咗 Origin Range Requests 呢個自助功能，客戶唔使再自己調校 range size 就可以高效緩存大檔案。新系統用 Pingora 嘅固定大小 cache chunk 嚟處理 range request，解決咗舊有 nginx 系統带宽浪費同 cache 阻塞嘅問題。實際數據顯示 R2 嘅 p99 首字節時間減咗大約一半，分層 cache 流量亦減少咗約 6%。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/origin-range-requests/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-cloudflare-1">
+<h3 class="article-title"><a href="#a-cloudflare-1">Bringing post-quantum cryptography to geographically fenced key management</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/post-quantum-geo-key-manager/" rel="noopener" target="_blank">https://blog.cloudflare.com/post-quantum-geo-key-manager/</a></span><span class="meta-date">📅 2026-10-24 02:06 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has launched a post-quantum geographically restricted key manager in closed beta, ensuring that customers&#x27; decryption keys can only be unwrapped on servers within their chosen region. The system uses hybrid ML-KEM-768 and X25519 encryption to defend against &quot;harvest now, decrypt later&quot; attacks, where adversaries store encrypted data today hoping to crack it once quantum computers become available. General availability is planned for Q1 2027 as part of Cloudflare&#x27;s broader data sovereignty and post-quantum migration efforts.</p>
+<p>Cloudflare 推出咗一個後量子加密嘅地理限制密鑰管理器，確保客戶嘅解密密鑰只可以喺佢揀咗嘅地區先至解得開。呢個系統用 ML-KEM-768 同 X25519 混合加密嚟防住「而家收割、將來解密」嘅攻擊，即係話對手而家儲低加密資料，等量子電腦出嚟之後先破解。預計 2027 年第一季全面推出，係 Cloudflare 數據主權同後量子遷移計劃嘅重要一步。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/post-quantum-geo-key-manager/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">90 words</div>
+</article>
+</section>
+<section class="source" id="src-9to5mac">
+<h2 class="source-title">9to5Mac <span class="source-count">20 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>The iPhone Duo launch dominated 9to5Mac&#x27;s coverage, with articles spanning everything from store lines and limited walk-in availability to accessory roundups, charging guides, support documents, and Greg Joswiak&#x27;s pre-launch interview, all culminating in Apple overtaking Nvidia as the world&#x27;s most valuable company on launch day. Beyond the foldable, the site covered iOS 27.2&#x27;s upcoming features, Apple TV&#x27;s November lineup, WhatsApp&#x27;s scheduled messaging beta, Strava&#x27;s route discovery overhaul, and a legal victory for Apple TV+ over the Servant copyright case.</p>
+<p>iPhone Duo 正式開賣係過去24小時最大嘅新聞，由蘋果店門口排長龍、配件推薦、充電指南到 iOS 27.1 同 27.2 嘅更新全部都有覆蓋，仲有 Apple 喺發布當日市值超越 Nvidia 成為全球最有價值公司。除此之外，網站仲報導咗 Apple TV 十一月新劇、WhatsApp 定時訊息測試、Strava 路線搜尋更新，以及 Apple 喺 Servant 版權案入面勝訴等消息。</p>
+</div>
+<article class="article" id="a-9to5mac-0">
+<h3 class="article-title"><a href="#a-9to5mac-0">HomeKit Weekly: SwitchBot’s new light bars bring 12-zone color to Apple Home</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/switchbots-new-light-bars-bring-12-zone-color-to-apple-home/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/switchbots-new-light-bars-bring-12-zone-color-to-apple-home/</a></span><span class="meta-date">📅 2026-10-24 02:07 UTC+8</span></div>
+<div class="article-body"><p>SwitchBot&#x27;s new RGBICWW Light Bars combine dedicated cool-white and warm-white LEDs with 12 independently controllable RGBIC color zones, delivering both high-quality reading light and dynamic multi-color effects for entertainment setups. The bars connect natively to Apple Home over Matter via Wi-Fi without requiring a hub, and include a physical controller, built-in microphone for music-reactive modes, and magnetic mounting options.</p>
+<p>SwitchBot 推出咗 RGBICWW 燈條，用獨立嘅冷白同暖白 LED 配合 12 區 RGBIC 彩色燈區，閱讀工作同睇戲打機都搞掂。佢哋透過 Matter 過 Wi-Fi 直接連 Apple Home，唔使買 hub，仲附埋實體控制器同內置麥克風做音樂同步效果。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/switchbots-new-light-bars-bring-12-zone-color-to-apple-home/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">80 words</div>
+</article>
+<article class="article" id="a-9to5mac-1">
+<h3 class="article-title"><a href="#a-9to5mac-1">Apple publishes iPhone Duo support documents covering hinge, Touch ID, cases, more</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/apple-publishes-iphone-duo-support-documents-covering-hinge-touch-id-cases-more/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/apple-publishes-iphone-duo-support-documents-covering-hinge-touch-id-cases-more/</a></span><span class="meta-date">📅 2026-10-24 01:34 UTC+8</span></div>
+<div class="article-body"><p>Apple has released a batch of support documents ahead of the iPhone Duo launch, covering topics such as hinge troubleshooting, Touch ID, and how to adjust the outer display when using a case. The documents address common issues like a loose or broken hinge, unexpected noises, and screen size adjustments for cases that partially cover the left edge. More support materials are expected to be published in the coming days as the device rolls out.</p>
+<p>蘋果喺 iPhone Duo 推出前發布咗一系列支援文件，內容包括鉸鏈故障排除、Touch ID 同埋用保護殼時點樣調整外螢幕。文件講到鉸鏈鬆脫、有異聲、螢幕被保護殼遮擋等問題點樣處理。預計未來幾日仲會繼續更新更多相關文件。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/apple-publishes-iphone-duo-support-documents-covering-hinge-touch-id-cases-more/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">85 words</div>
+</article>
+<article class="article" id="a-9to5mac-2">
+<h3 class="article-title"><a href="#a-9to5mac-2">iPhone Duo accessories: Here are five top picks for Apple’s foldable</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/iphone-duo-accessories-here-are-five-top-picks-for-apples-foldable/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/iphone-duo-accessories-here-are-five-top-picks-for-apples-foldable/</a></span><span class="meta-date">📅 2026-10-24 01:16 UTC+8</span></div>
+<div class="article-body"><p>Apple&#x27;s new foldable iPhone Duo has launched, and this piece rounds up the best accessories to get the most out of it, including Apple Pencil USB-C support arriving via iOS 27.2, fast charging adapters that hit 50 percent in 20 minutes, MagSafe car mounts, protective cases, HomeKit cameras for the upgraded StandBy mode, and AirPods Pro 3. The recommendations matter because several of the Duo&#x27;s standout features, like Pencil input on both displays and the expanded StandBy views, require specific add-ons to function properly.</p>
+<p>Apple 部新嘅 iPhone Duo 終於出咗，呢篇文就係介紹幾款最值得買嘅配件，包括 Apple Pencil USB-C 版要等 iOS 27.2 先用到、要 40W 以上嘅充電先至可以 20 分鐘充到五成、MagSafe 車架、保護殼、HomeKit 鏡頭配 StandBy 模式，仲有 AirPods Pro 3。呢啲推薦之所以重要，係因為 iPhone Duo 好多賣點好似雙屏用 Pencil 同埋新版 StandBy 睇鏡頭，唔配啱嘅配件根本用唔到。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/iphone-duo-accessories-here-are-five-top-picks-for-apples-foldable/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">118 words</div>
+</article>
+<article class="article" id="a-9to5mac-3">
+<h3 class="article-title"><a href="#a-9to5mac-3">Here’s everything new Apple TV has coming in November</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/heres-everything-new-apple-tv-has-coming-in-november-2/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/heres-everything-new-apple-tv-has-coming-in-november-2/</a></span><span class="meta-date">📅 2026-10-24 00:11 UTC+8</span></div>
+<div class="article-body"><p>Apple TV&#x27;s November lineup features a diverse slate including the return of Owen Wilson&#x27;s golf comedy &quot;Stick,&quot; the star-studded heist thriller &quot;12 12 12&quot; with Anthony Mackie and Jamie Dornan, and &quot;Being Heumann,&quot; a disability rights drama directed by CODA&#x27;s Siân Heder. The month also brings Chris Pratt in &quot;Way of the Warrior Kid,&quot; a Snoopy holiday special, and new episodes of ongoing series like &quot;Nocturne&quot; and &quot;Small Prophets.&quot; This packed schedule reinforces Apple TV&#x27;s push to compete with rival streaming platforms by offering broad genre coverage across its $14.99 monthly subscription.</p>
+<p>Apple TV 十一月嘅片單好豐富，有 Owen Wilson 主演嘅高爾夫喜劇《Stick》第二季回歸，仲有 Anthony Mackie 同 Jamie Dornan 主演嘅盜竊驚悚劇《12 12 12》，同埋由《CODA》導演執導嘅殘疾人權利題材電影《Being Heumann》。另外仲有 Chris Pratt 主演嘅動作劇情片、史努比聖誕特輯，同埋《Nocturne》等劇集嘅新集數。呢個陣容顯示 Apple TV 正努力用多元化內容喺串流平台競爭中搶佔市場。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/heres-everything-new-apple-tv-has-coming-in-november-2/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">117 words</div>
+</article>
+<article class="article" id="a-9to5mac-4">
+<h3 class="article-title"><a href="#a-9to5mac-4">My experience suggests Apple Glasses will only sell to existing eyeglasses wearers</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/my-experience-suggests-apple-glasses-will-only-be-for-existing-eyeglass-wearers/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/my-experience-suggests-apple-glasses-will-only-be-for-existing-eyeglass-wearers/</a></span><span class="meta-date">📅 2026-10-24 00:00 UTC+8</span></div>
+<div class="article-body"><p>Based on hands-on experience with Ray-Ban Meta and Even Realities G2 glasses, the author argues that Apple Glasses will struggle to attract anyone who does not already wear eyeglasses. The first-generation model offers only audio and AI features that quickly lose their novelty, while the second-generation display model provides genuinely useful navigation and translation tools that are too infrequent to justify wearing glasses daily. Unless Apple introduces a killer application, the device will likely remain a niche product for existing eyeglass wearers who can justify the cost.</p>
+<p>作者親身試過 Ray-Ban Meta 同 Even Realities G2 之後，認為 Apple Glasses 好大機會只係賣畀本身已經戴眼鏡嘅人。第一代得音頻同 AI 功能，新鮮感好快過；第二代有顯示屏，導航同翻譯功能確係好用，但日常用嘅機會太少，唔戴眼鏡嘅人根本冇理由特登戴住佢。除非 Apple 真係搵到一個殺手級應用，否則呢個產品大概只係得返現有眼鏡用家會買。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/my-experience-suggests-apple-glasses-will-only-be-for-existing-eyeglass-wearers/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">106 words</div>
+</article>
+<article class="article" id="a-9to5mac-5">
+<h3 class="article-title"><a href="#a-9to5mac-5">Deals: iPhone Duo cases, Apple Pencil, AirPods Pro 3, Apple TV 4K, power banks, more</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/deals-duo-cases-apple-pencil-airpods-apple-tv-4k/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/deals-duo-cases-apple-pencil-airpods-apple-tv-4k/</a></span><span class="meta-date">📅 2026-10-23 23:33 UTC+8</span></div>
+<div class="article-body"><p>On iPhone Duo launch day, a roundup of deals highlights discounts across Apple&#x27;s accessory and product lineup, including AirPods Pro 3 at $50 off, Apple Pencil USB-C as low as $61, and up to $200 off the new Mac Studio and M6 Mac mini. The article also features exclusive discounts on leather iPhone Duo cases, a new Qi2 MagSafe power bank designed specifically for the foldable&#x27;s form factor, and a pre-order discount on the new Apple TV 4K. These deals matter for anyone looking to build out a complete iPhone Duo setup at reduced prices.</p>
+<p>iPhone Duo 出機嗰日，有篇文整理咗一堆 Apple 產品嘅折扣，包括 AirPods Pro 3 減 $50、Apple Pencil USB-C 最平 $61、Mac Studio 同 M6 Mac mini 最多減 $200。另外仲有 iPhone Duo 專用嘅皮革手機殼、專為摺機設計嘅 Qi2 MagSafe 行動電源，同埋 Apple TV 4K 嘅預購優惠。想一次過配齊 iPhone Duo 配件嘅話，呢啲 deal 真係值得睇下。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/deals-duo-cases-apple-pencil-airpods-apple-tv-4k/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">135 words</div>
+</article>
+<article class="article" id="a-9to5mac-6">
+<h3 class="article-title"><a href="#a-9to5mac-6">Apple’s website has fun new easter egg: a fully interactive iPod</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/apples-website-has-fun-new-easter-egg-a-fully-interactive-ipod/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/apples-website-has-fun-new-easter-egg-a-fully-interactive-ipod/</a></span><span class="meta-date">📅 2026-10-23 22:50 UTC+8</span></div>
+<div class="article-body"><p>Apple has hidden a fully interactive iPod on its website to mark the 25th anniversary of the device&#x27;s original unveiling in October 2001. The easter egg appears on the &quot;Page Not Found&quot; screen at music.apple.com, complete with a working scroll wheel and 90-second song previews from artists popular at the time. It is a playful nod to a product that reshaped how people listen to music, even though Apple discontinued the iPod years ago.</p>
+<p>Apple 為咗慶祝 iPod 推出 25 週年，喺官網藏咗一個完全互動嘅 iPod 彩蛋，只要去 music.apple.com 撳錯頁面就會見到。個 iPod 連轉盤都真係可以用，仲可以聽返 2001 年嗰陣紅嘅歌手嘅 90 秒歌曲預覽。雖然 iPod 已經停產好耐，但呢個彩蛋真係幾有心思，提醒大家呢部機曾經點樣改變咗我哋聽歌嘅方式。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/apples-website-has-fun-new-easter-egg-a-fully-interactive-ipod/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-9to5mac-7">
+<h3 class="article-title"><a href="#a-9to5mac-7">iOS 27.1 is exclusive to iPhone Duo, here’s why</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/ios-27-1-is-exclusive-to-iphone-duo-heres-why/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/ios-27-1-is-exclusive-to-iphone-duo-heres-why/</a></span><span class="meta-date">📅 2026-10-23 22:28 UTC+8</span></div>
+<div class="article-body"><p>Apple has released iOS 27.1 exclusively for the new iPhone Duo, while all other iPhone models will skip directly to iOS 27.2 next week. The unusual move allowed Apple to keep details about the iPhone Duo hidden until its official launch by bypassing the normal beta cycle for that version. iOS 27.2 brings new features including Suggested Actions in Messages, a redesigned Apple Music icon, user profiles in Apple TV, and Dual Capture for FaceTime group calls.</p>
+<p>Apple 出咗 iOS 27.1，但係淨係俾 iPhone Duo 用，其他 iPhone 直接跳去 iOS 27.2。呢個安排係為咗喺 iPhone Duo 正式推出之前，將佢啲功能細節保密。iOS 27.2 下個禮拜就出，帶嚟 Messages 建議操作、Apple Music 新 icon、Apple TV 用戶檔案同 FaceTime 雙鏡頭拍攝等新功能。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/ios-27-1-is-exclusive-to-iphone-duo-heres-why/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">106 words</div>
+</article>
+<article class="article" id="a-9to5mac-8">
+<h3 class="article-title"><a href="#a-9to5mac-8">Here’s how to get fastest iPhone Duo charging</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/heres-how-to-get-fastest-iphone-duo-charging/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/heres-how-to-get-fastest-iphone-duo-charging/</a></span><span class="meta-date">📅 2026-10-23 21:56 UTC+8</span></div>
+<div class="article-body"><p>The iPhone Duo can reach 50 percent battery in just 20 minutes with wired fast charging or 30 minutes wirelessly, but only when paired with the correct accessories. Apple recommends using its 40W Dynamic Power Adapter or a third-party 60W adapter supporting USB-PD 3.2 with AVS for wired charging, while wireless fast charging requires a MagSafe Charger and a 35W or higher adapter. Third-party options like Anker&#x27;s 100W brick offer strong value for users who also charge Macs and iPads.</p>
+<p>iPhone Duo 用有線快充 20 分鐘就可以充到五成電，無線快充都要 30 分鐘，不過一定要用啱嘅充電器先得。Apple 話有線要配佢個 40W 適配器或者支援 USB-PD 3.2 同 AVS 嘅第三方 60W 適配器，無線就要 MagSafe 充電器加 35W 以上嘅適配器。如果同時要幫 Mac 同 iPad 充電，Anker 嗰個 100W 充電頭性價比幾高。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/heres-how-to-get-fastest-iphone-duo-charging/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">112 words</div>
+</article>
+<article class="article" id="a-9to5mac-9">
+<h3 class="article-title"><a href="#a-9to5mac-9">Apple overtakes Nvidia as most valuable company in the world on iPhone Duo launch day</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/apple-overtakes-nvidia-as-most-valuable-company-in-the-world-on-iphone-duo-launch-day/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/apple-overtakes-nvidia-as-most-valuable-company-in-the-world-on-iphone-duo-launch-day/</a></span><span class="meta-date">📅 2026-10-23 21:41 UTC+8</span></div>
+<div class="article-body"><p>Apple reclaimed the title of the world&#x27;s most valuable company on Friday, surpassing Nvidia with a market capitalization of approximately $5.12 trillion after its stock hit a new intraday record above $351 per share. The milestone coincided with the global launch of the iPhone Duo, Apple&#x27;s $2,000 foldable smartphone, which appears to have fueled investor confidence. Nvidia and Google now follow Apple in market cap rankings.</p>
+<p>Apple 喺星期五重新搶返全球市值最高公司嘅位置，市值大約 5.12 萬億美元，股價一度突破 351 美元創歷史新高，超越咗 Nvidia。呢個里程碑啱啱好同 iPhone Duo 全球發布日撞埋一齊，呢部 2000 美元嘅摺疊手機似乎令投資者信心大增。而家 Nvidia 同 Google 排喺 Apple 後面。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/apple-overtakes-nvidia-as-most-valuable-company-in-the-world-on-iphone-duo-launch-day/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+<article class="article" id="a-9to5mac-10">
+<h3 class="article-title"><a href="#a-9to5mac-10">iPhone Duo launch day: Lines form at Apple Stores, walk-in availability limited</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/iphone-duo-launch-day-lines-form-at-apple-stores-walk-in-availability-limited/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/iphone-duo-launch-day-lines-form-at-apple-stores-walk-in-availability-limited/</a></span><span class="meta-date">📅 2026-10-23 21:39 UTC+8</span></div>
+<div class="article-body"><p>The iPhone Duo, Apple&#x27;s first foldable iPhone, launched worldwide on October 23 with customers lining up overnight at Apple Stores hoping for walk-in purchases. Apple warned that retail inventory would be limited, and disappointed shoppers were directed to check the Apple Store app for restocking updates. Senior executives including Greg Joswiak and CEO John Ternus marked the occasion at flagship stores in New York and Austin.</p>
+<p>蘋果首款摺疊手機 iPhone Duo 喺10月23號全球開賣，好多fans通宵喺Apple Store門口排隊想即買即攞。蘋果一早話門市存貨有限，排唔到隊嘅客唯有聽店員話，聽日朝早十點再上App睇有冇貨。行政總裁 John Ternus 同高級副總裁 Greg Joswiak 分別喺奧斯汀同紐約旗艦店同fans一齊慶祝。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/iphone-duo-launch-day-lines-form-at-apple-stores-walk-in-availability-limited/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">81 words</div>
+</article>
+<article class="article" id="a-9to5mac-11">
+<h3 class="article-title"><a href="#a-9to5mac-11">iOS 27.2: Three new features coming to your iPhone next week</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/ios-27-2-three-new-features-coming-soon-to-your-iphone/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/ios-27-2-three-new-features-coming-soon-to-your-iphone/</a></span><span class="meta-date">📅 2026-10-23 21:30 UTC+8</span></div>
+<div class="article-body"><p>iOS 27.2 is launching next week with three notable additions to the iPhone experience: Dual Capture now works in Group FaceTime calls, Apple Podcasts replaces its cluttered &quot;Up Next&quot; queue with separate &quot;New Episodes&quot; and &quot;Continue Playing&quot; sections, and the Apple TV app gains user profiles for the first time on iOS. The profile feature is particularly significant for families, as it lets parents restrict content to age-appropriate material for children. These updates collectively refine everyday apps that millions of iPhone users rely on daily.</p>
+<p>iOS 27.2 下個禮拜就出，帶嚟三個新功能：FaceTime 群組通話終於可以用 Dual Capture 同時顯示前後鏡頭，Apple Podcasts 將「Up Next」拆做「New Episodes」同「Continue Playing」兩個區塊，Apple TV app 亦首次喺 iPhone 上支援用戶個人資料。最實用嘅係 TV app 嘅 profile 功能，因為小朋友用你部機睇片嗰陣，系統會自動篩選適合佢年齡嘅內容，唔使擔心佢睇到唔啱嘅嘢。呢啲更新雖然唔算大改動，但對日常用開呢幾個 app 嘅人嚟講真係好方便。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/ios-27-2-three-new-features-coming-soon-to-your-iphone/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">113 words</div>
+</article>
+<article class="article" id="a-9to5mac-12">
+<h3 class="article-title"><a href="#a-9to5mac-12">New iPhone Duo cases available for purchase: Fabric, leather, aramid fiber, metal, more [Updated]</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/23/best-iphone-duo-cases-now-available-purchase/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/23/best-iphone-duo-cases-now-available-purchase/</a></span><span class="meta-date">📅 2026-10-23 20:17 UTC+8</span></div>
+<div class="article-body"><p>Apple&#x27;s new foldable iPhone Duo has launched and a wide range of protective cases are now available from brands including Apple, Pitaka, Spigen, Nomad, and OtterBox, with prices ranging from just $7 to $129. Materials span Apple&#x27;s new TechWoven fabric, aramid fiber, full-grain leather, silicone, and clear polycarbonate, with many offering MagSafe compatibility and built-in kickstands. The roundup gives buyers a clear picture of the protection landscape for Apple&#x27;s first foldable device.</p>
+<p>Apple 部新 iPhone Duo 終於出咗，市面上已經有一大堆保護殼可以揀，由七蚊到一百二十九蚊都有，材質包括 Apple 自家嘅 TechWoven 布料、芳綸纖維、真皮同矽膠等等。好多款都支援 MagSafe，仲有啲附帶支架或者鉸鏈保護設計，想幫呢部摺機著衫嘅話，選擇真係好多。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/23/best-iphone-duo-cases-now-available-purchase/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">86 words</div>
+</article>
+<article class="article" id="a-9to5mac-13">
+<h3 class="article-title"><a href="#a-9to5mac-13">Greg Joswiak talks iPhone Duo in-store availability and demand ahead of launch</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/greg-joswiak-talks-iphone-duo-in-store-availability-and-demand-ahead-of-launch/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/greg-joswiak-talks-iphone-duo-in-store-availability-and-demand-ahead-of-launch/</a></span><span class="meta-date">📅 2026-10-23 11:15 UTC+8</span></div>
+<div class="article-body"><p>Apple marketing SVP Greg Joswiak confirmed that the first foldable iPhone Duo will be available in limited quantities at Apple Stores for walk-in customers on Friday&#x27;s launch day, despite a messy pre-order period that nonetheless generated extraordinary demand. The availability covers select countries including the United States, UK, Australia, and several European and Asian markets, with Joswiak himself set to appear at the Fifth Avenue flagship store in New York for the event.</p>
+<p>蘋果市場高級副總裁 Greg Joswiak 確認首款摺疊 iPhone Duo 喺星期五開賣當日，部分門市會有少量現貨供顧客即場購買，雖然預購期間出現混亂，但需求依然非常誇張。現貨覆蓋美國、英國、澳洲同多個歐洲亞洲市場，Joswiak 本人亦會親身到紐約第五大道旗艦店出席開賣活動。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/greg-joswiak-talks-iphone-duo-in-store-availability-and-demand-ahead-of-launch/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">85 words</div>
+</article>
+<article class="article" id="a-9to5mac-14">
+<h3 class="article-title"><a href="#a-9to5mac-14">Apple is finally catching up with Siri, but the goalposts are moving again</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/apple-is-finally-catching-up-with-siri-but-the-goalposts-are-moving-again/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/apple-is-finally-catching-up-with-siri-but-the-goalposts-are-moving-again/</a></span><span class="meta-date">📅 2026-10-23 09:42 UTC+8</span></div>
+<div class="article-body"><p>Apple&#x27;s newly released Siri AI has finally become genuinely useful for retrieving personal information, but it essentially delivers what competitors offered in 2024 while the AI assistant race has already moved on to agentic tools that can perform tasks on users&#x27; behalf. The article argues that Apple&#x27;s real opportunity lies not in matching those capabilities directly but in leveraging its privacy reputation and hardware ecosystem, particularly the Apple Watch, to build assistants with deeper contextual understanding of users&#x27; lives. This next phase of AI will depend less on what models can do and more on how much personal context users are willing to share.</p>
+<p>Apple 嘅 Siri AI 終於變得實用，可以幫你搵返自己嘅訊息同資料，但其實只係追返 2024 年其他 AI 助手已經做到嘅嘢，而而家個戰場已經轉咗去可以幫你做嘢嘅 agentic assistant。佢認為 Apple 真正嘅優勢唔係直接追趕呢啲功能，而係利用佢多年建立嘅私隱信任同硬件生態，特別係 Apple Watch，去建立一個更加了解你生活嘅助手。下一階段 AI 嘅關鍵唔再係模型本身有幾強，而係你願唔願意俾佢知道咁多關於你嘅嘢。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/apple-is-finally-catching-up-with-siri-but-the-goalposts-are-moving-again/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">125 words</div>
+</article>
+<article class="article" id="a-9to5mac-15">
+<h3 class="article-title"><a href="#a-9to5mac-15">WhatsApp starts testing long-awaited scheduled messages on iPhone</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/whatsapp-starts-testing-long-awaited-scheduled-messages-on-iphone/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/whatsapp-starts-testing-long-awaited-scheduled-messages-on-iphone/</a></span><span class="meta-date">📅 2026-10-23 09:22 UTC+8</span></div>
+<div class="article-body"><p>WhatsApp has begun testing its long-awaited scheduled messaging feature with select iPhone beta testers, allowing users to tap and hold the send button to schedule messages between 10 minutes and two weeks in advance. The feature supports text, photos, videos, and links, though each media item must be scheduled separately and group messages will only reach members who were already in the chat when the message was set. With testing now underway on both iOS and Android, a public rollout appears to be on the horizon for the app&#x27;s 3 billion monthly users.</p>
+<p>WhatsApp 終於喺 iPhone beta 版開始測試預約訊息功能，用戶長按發送按鈕就可以設定 10 分鐘到兩星期後先送出訊息，支援文字、相、片同連結。不過每張相或者片要分開預約，而且群組入面只有設定時已經喺度嘅成員先收到。而家 iOS 同 Android 兩邊都開始測試，估計全面推出應該唔遠喇。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/whatsapp-starts-testing-long-awaited-scheduled-messages-on-iphone/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-9to5mac-16">
+<h3 class="article-title"><a href="#a-9to5mac-16">Apple wins again in copyright infringement battle over Apple TV thriller series</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/apple-wins-again-in-copyright-infringement-battle-over-apple-tv-thriller-series/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/apple-wins-again-in-copyright-infringement-battle-over-apple-tv-thriller-series/</a></span><span class="meta-date">📅 2026-10-23 08:30 UTC+8</span></div>
+<div class="article-body"><p>The US Court of Appeals for the Ninth Circuit has upheld a jury verdict clearing Apple and director M. Night Shyamalan of copyright infringement over their Apple TV+ thriller series Servant. Italian director Francesca Gregorini had sued for up to $81 million, claiming the show copied her 2013 film The Truth About Emanuel, but jurors unanimously found the creators had no access to her work. The appeals court rejected Gregorini&#x27;s challenges regarding jury instructions on &quot;widespread dissemination&quot; and the trial judge&#x27;s handling of a juror question, confirming the original ruling in Apple&#x27;s favour.</p>
+<p>美國第九巡回上訴法院維持咗原判決，裁定 Apple 同導演 M. Night Shyamalan 喺 Apple TV+ 劇集《Servant》嘅版權侵權案入面勝訴。意大利導演 Francesca Gregorini 之前入稟索償高達 8100 萬美元，話套劇抄咗佢 2013 年嘅電影《The Truth About Emanuel》，但陪審團一致裁定創作團隊根本冇接觸過佢部戲。上訴法院亦唔接納佢對陪審團指引同法官處理陪審團提問方式嘅上訴理據，等如幫 Apple 徹底洗脫晒嫌疑。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/apple-wins-again-in-copyright-infringement-battle-over-apple-tv-thriller-series/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">119 words</div>
+</article>
+<article class="article" id="a-9to5mac-17">
+<h3 class="article-title"><a href="#a-9to5mac-17">Strava revamps route discovery with smarter search, offline improvements, more</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/strava-revamps-route-discovery-with-smarter-search-offline-improvements-more/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/strava-revamps-route-discovery-with-smarter-search-offline-improvements-more/</a></span><span class="meta-date">📅 2026-10-23 07:29 UTC+8</span></div>
+<div class="article-body"><p>Strava has rolled out a suite of new features to enhance route discovery and planning for runners, hikers, and cyclists, including more intuitive search, an expanded route library, redesigned route cards with user photos and activity data, and improved offline map support. Subscribers will also soon receive turn-by-turn audio directions to help them navigate unfamiliar areas. These updates aim to make it easier for users to find and follow routes even without a cellular signal.</p>
+<p>Strava 最近推出咗一系列新功能，包括更聰明嘅路線搜尋、更多精選路線、帶相同活動數據嘅路線卡片，同埋離線地圖改善，等用家行山、跑步、踩車嗰陣更容易搵到啱用嘅路線。訂閱用戶仲會很快收到語音逐段導航，就算去到陌生地方都唔使驚。呢啲更新最實用嘅地方係就算冇訊號都照樣可以用地圖同記錄活動。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/strava-revamps-route-discovery-with-smarter-search-offline-improvements-more/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">81 words</div>
+</article>
+<article class="article" id="a-9to5mac-18">
+<h3 class="article-title"><a href="#a-9to5mac-18">Retro game emulator Delta looks great on the iPhone Duo</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/retro-game-emulator-delta-looks-great-on-the-iphone-duo/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/retro-game-emulator-delta-looks-great-on-the-iphone-duo/</a></span><span class="meta-date">📅 2026-10-23 07:23 UTC+8</span></div>
+<div class="article-body"><p>Delta, the popular retro game emulator, has released version 2.0 with a refreshed Liquid Glass interface and full support for the iPhone Duo, including Nintendo DS layouts that span the device&#x27;s crease and a clever easter egg that puts the virtual DS to sleep when you fold the phone closed. The update also adds Sega Genesis compatibility, improved library navigation, and audio mixing with background music, making it a significant upgrade for retro gamers on Apple&#x27;s newest hardware.</p>
+<p>Delta 呢個懷舊遊戲模擬器出咗 2.0 版本，最正嘅係支援 iPhone Duo，DS 畫面可以跨過折痕顯示，仲有彩蛋話你將機折埋就會自動令 DS 瞓覺，同真機一樣。今次更新仲加入咗 Sega Genesis 支援同音頻混音功能，對玩開懷舊 game 嘅人嚟講真係好值得試。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/retro-game-emulator-delta-looks-great-on-the-iphone-duo/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-9to5mac-19">
+<h3 class="article-title"><a href="#a-9to5mac-19">MacBook Neo helps Apple soften the blow of global PC market downturn, per report</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/22/macbook-neo-helps-apple-soften-the-blow-of-global-pc-market-downturn-per-report/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/22/macbook-neo-helps-apple-soften-the-blow-of-global-pc-market-downturn-per-report/</a></span><span class="meta-date">📅 2026-10-23 06:35 UTC+8</span></div>
+<div class="article-body"><p>Global PC shipments plunged 21% in Q3 2026 as rising memory and component costs discouraged consumers from upgrading, but Apple&#x27;s MacBook Neo helped the company outperform the broader market with only an 11% decline and a market share increase to 9.8%. Counterpoint Research attributes Apple&#x27;s relative resilience to its differentiated product portfolio, while RAM and SSD prices are expected to climb further through early 2027.</p>
+<p>全球PC出貨量喺2026年第三季暴跌21%，主要因為記憶體同零件成本上升令消費者唔想換機，但Apple靠MacBook Neo撐住，跌幅只有11%，市佔率仲由8.7%升到9.8%，跑贏成個市場。Counterpoint Research話Apple同ASUS靠差異化產品組合同競爭定位先至可以逆市企穩，而RAM同SSD價格預計仲會繼續升到2027年初先至穩定。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/22/macbook-neo-helps-apple-soften-the-blow-of-global-pc-market-downturn-per-report/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">72 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernews">
+<h2 class="source-title">Hacker News <span class="source-count">19 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNews spent the day split between AI breakthroughs and security alarm bells. Moonshot AI dropped Kimi K3.1 Pro, a 3T-class open-weight model with a million-token context window, while a hacking group at Hexacon demonstrated a one-click iPhone exploit targeting Signal, and Canada&#x27;s Bill C-22 loomed as a threat to encryption privacy. Meanwhile, the community dug into technical rabbit holes ranging from UUIDv7 misconceptions to Docker&#x27;s hidden internals and the missed visual opportunities in Sonic 06.</p>
+<p>過去24個鐘，HackerNews上面最矚目嘅係AI同安全兩條線：Moonshot AI推出咗Kimi K3.1 Pro呢個3T級開源模型，同時Hexacon上面有黑客示範點樣一click就攻破iPhone同Signal，加拿大Bill C-22立法威脅加密私隱都引起好大討論。另外仲有唔少技術深度文，例如UUIDv7其實冇大家諗嗰啲特性、Docker底層其實好奇怪、同埋Sonic 06點解視覺效果被砍到體無完膚。</p>
+</div>
+<article class="article" id="a-hackernews-0">
+<h3 class="article-title"><a href="#a-hackernews-0">I turned my TV into a Game Boy Color with a Pokemon town as my home screen</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://twitter.com/robbietilton/status/2111936458923851923" rel="noopener" target="_blank">https://twitter.com/robbietilton/status/2111936458923851923</a></span><span class="meta-date">📅 2026-10-24 01:40 UTC+8</span><span class="meta-pts">▲ 19 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50212668">HN discussion</a></span></div>
+<div class="article-body"><p>A user named Robbie Tilton shared a viral post showing how he transformed his TV into a Game Boy Color-style interface, complete with a Pokemon town as the home screen where walking into buildings opens apps and changing settings requires defeating a gym leader. He credited the AI model Opus 5.5 for helping him build the project, which drew over 159,000 views and sparked widespread interest in creative uses of AI for personal tech projects.</p>
+<p>Robbie Tilton 喺 X 上面分享咗佢點樣將部電視變成 Game Boy Color 嘅介面，用寶可夢小鎮做主畫面，行入建築物就開 app，改設定就要先打贏道館館主。佢話係靠 Opus 5.5 呢個 AI 模型幫佢整出嚟，條 post 有超過十五萬次瀏覽，好多人都覺得好有創意。</p>
+<p><a class="read-more" href="https://twitter.com/robbietilton/status/2111936458923851923" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-hackernews-1">
+<h3 class="article-title"><a href="#a-hackernews-1">Can we replace a $150k Looker with a bucket of HTML files?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://david.lequin.dev/blog/bi-software-is-dead/" rel="noopener" target="_blank">https://david.lequin.dev/blog/bi-software-is-dead/</a></span><span class="meta-date">📅 2026-10-24 01:15 UTC+8</span><span class="meta-pts">▲ 43 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50212320">HN discussion</a></span></div>
+<div class="article-body"><p>A three-person data team at a 500-employee company replaced their $150,000 annual Looker licence with a self-built service that hosts AI-generated HTML dashboards on S3, using Snowflake OAuth for permissions and sandboxed iframes for security. Weekly viewers grew from 23 to 136 within months, matching Looker&#x27;s usage, because users could prompt Claude to produce free-form dashboards that looked better than rigid BI tiles. The case suggests that AI-generated dashboards may undercut enterprise BI tools on both cost and flexibility, provided teams can solve the inherent security challenges of executing arbitrary HTML.</p>
+<p>一個500人公司嘅三人數據團隊，用自製嘅HTML dashboard託管服務取代咗每年十五萬美元嘅Looker，靠Snowflake OAuth做權限管理，用沙盒iframe解決安全問題。幾個月內每週用戶由23人升到136人，追平咗Looker嘅使用量，因為員工可以直接用Claude prompt出靚過BI工具嘅自由格式dashboard。呢個案例話畀我哋知，AI生成嘅dashboard有可能喺成本同彈性方面打殘傳統BI工具，前提是你要搞掂任意HTML執行帶嚟嘅安全風險。</p>
+<p><a class="read-more" href="https://david.lequin.dev/blog/bi-software-is-dead/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-hackernews-2">
+<h3 class="article-title"><a href="#a-hackernews-2">Show HN: Searching for optimal strategies in a puzzle game with chance (Drop7)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://drop7.dev" rel="noopener" target="_blank">https://drop7.dev</a></span><span class="meta-date">📅 2026-10-24 01:13 UTC+8</span><span class="meta-pts">▲ 6 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50212292">HN discussion</a></span></div>
+<div class="article-body"><p>A team of researchers trained lookup-table evaluators on four billion moves of the puzzle game Drop7 and, for the first time, beat the hand-written fair leaf inside a depth-3 search, scoring roughly 485,000 points versus 314,000 over hundreds of never-read games. The result replicated on a second independent block, and the learned tables at depth 3 even outperformed the fair leaf at depth 4, though the mean score remains well under half the one-million-point target. The frozen tables at depth 4 are now the leading candidate, while follow-up experiments on wider tables and fill-conditioned buckets produced inconclusive results.</p>
+<p>研究員用四億步棋訓練咗一套查表評估器，喺Drop7呢個益智遊戲入面首次打贏咗手寫嘅fair leaf，喺幾百局未讀過嘅遊戲入面平均得分約48萬對31萬。呢個結果喺第二組獨立數據上重複咗，而且呢套表喺深度3已經贏咗fair leaf喺深度4嘅成績，不過平均分仍然遠低於一百萬分嘅目標。而家深度4嘅凍結表係最有力嘅候選，但後續關於更闊表同填充條件分桶嘅實驗結果都係未定論。</p>
+<p><a class="read-more" href="https://drop7.dev" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-hackernews-3">
+<h3 class="article-title"><a href="#a-hackernews-3">Time Nuts (2005)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="http://leapsecond.com/time-nuts.htm" rel="noopener" target="_blank">http://leapsecond.com/time-nuts.htm</a></span><span class="meta-date">📅 2026-10-24 01:12 UTC+8</span><span class="meta-pts">▲ 18 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50212281">HN discussion</a></span></div>
+<div class="article-body"><p>Time-Nuts is an 1,800-member mailing list founded in 2001 that brings together amateur radio operators and electronics hobbyists passionate about precise time and frequency measurement. Members share knowledge on topics ranging from quartz oscillator stability and atomic clock maintenance to GPS timing and surplus test equipment, drawing on a rich archive of discussions hosted at febo.com. The community traces its roots to a 1990s NASA GPS timing list and has grown into a vital resource for hobbyists seeking to explore nanosecond-level precision outside professional laboratories.</p>
+<p>Time-Nuts 係一個 2001 年成立嘅郵件列表，有 1,800 個會員，主要係業餘無線電同電子發燒友，大家一齊研究精確時間同頻率嘅問題，包括石英振盪器、銣同銫原子鐘、GPS 授時同埋二手測試儀器。呢個社群嘅起源可以追溯返 1990 年代 NASA 一個 GPS 授時嘅郵件列表，而家已經變成業餘玩家喺專業實驗室以外探索納秒級精度嘅重要資源。</p>
+<p><a class="read-more" href="http://leapsecond.com/time-nuts.htm" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-hackernews-4">
+<h3 class="article-title"><a href="#a-hackernews-4">Animations for System Builders</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://brooker.co.za/blog/2026/10/23/animations.html" rel="noopener" target="_blank">https://brooker.co.za/blog/2026/10/23/animations.html</a></span><span class="meta-date">📅 2026-10-24 01:02 UTC+8</span><span class="meta-pts">▲ 7 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50212124">HN discussion</a></span></div>
+<div class="article-body"><p>AWS engineer Marc Brooker demonstrates how LLM-generated animations can build intuition for metastable failures in real production systems, using captured traces from Postgres, etcd, and Raft clusters to show how load spikes trigger self-reinforcing loops that never recover without intervention. The examples challenge the common assumption that widely-used, production-proven software has already shaken out these behaviors, proving that even simple systems like Postgres can fall into metastable states when memory pressure shifts workloads from page cache to disk.</p>
+<p>AWS 工程師 Marc Brooker 用 LLM 生成嘅動畫，展示咗 Postgres、etcd 同 Raft 呢啲真實系統點樣因為 load spike 而跌入 metastable failure，即係一個自我強化嘅惡性循環，唔靠人手介入就永遠返唔到轉來。佢想講嘅重點係，好多人都以為生產環境用咗好耐嘅軟件已經冇呢啲問題，但其實連 Postgres 咁簡單嘅系統都會中招，用動畫去理解呢啲行為真係幾有用。</p>
+<p><a class="read-more" href="https://brooker.co.za/blog/2026/10/23/animations.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+<article class="article" id="a-hackernews-5">
+<h3 class="article-title"><a href="#a-hackernews-5">Kimi K3.1 Pro and K3.1 Pro Highspeed</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.kimi.ai/blog/kimi-k3-1-pro" rel="noopener" target="_blank">https://www.kimi.ai/blog/kimi-k3-1-pro</a></span><span class="meta-date">📅 2026-10-24 00:59 UTC+8</span><span class="meta-pts">▲ 342 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50212065">HN discussion</a></span></div>
+<div class="article-body"><p>Moonshot AI has released Kimi K3.1 Pro, its most capable 3T-class open-weight model featuring a 1-million-token context window, alongside a Highspeed variant that runs two to three times faster. The model matches or approaches top proprietary systems on coding, 3D creation, and financial research benchmarks, with particularly notable gains in factual accuracy where its hallucination rate dropped from 23.4% to 8.3%. Full model weights are set to be released by November 4, making this one of the most significant open-weight AI releases to date.</p>
+<p>Moonshot AI 推出咗 Kimi K3.1 Pro，呢個係佢哋最強嘅 3T 級開放權重模型，有 100 萬 token 嘅 context window，仲有一個快兩三倍嘅 Highspeed 版本。佢喺編程、3D 建模同金融研究嘅 benchmark 上面已經追到甚至超過一啲頂級嘅閉源模型，尤其係事實準確度大幅提升，幻覺率由 23.4% 跌到 8.3%。完整模型權重會喺 11 月 4 號之前放出來，係近期最重磅嘅開源 AI 發布之一。</p>
+<p><a class="read-more" href="https://www.kimi.ai/blog/kimi-k3-1-pro" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">116 words</div>
+</article>
+<article class="article" id="a-hackernews-6">
+<h3 class="article-title"><a href="#a-hackernews-6">UUIDv7 doesn&#x27;t have the properties you think it does</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://alexsci.com/blog/uuidv7-is-weird/" rel="noopener" target="_blank">https://alexsci.com/blog/uuidv7-is-weird/</a></span><span class="meta-date">📅 2026-10-24 00:39 UTC+8</span><span class="meta-pts">▲ 50 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50211746">HN discussion</a></span></div>
+<div class="article-body"><p>UUIDv7 is widely praised for providing monotonically increasing IDs, embedded creation timestamps, and unguessable identifiers, but a new analysis shows that none of these properties are strictly guaranteed by the RFC or by common implementations. The only property UUIDv7 reliably delivers is uniqueness and collision resistance, while timestamps can drift arbitrarily far from actual creation time and IDs can appear out of order even on a single node. Developers relying on UUIDv7 for ordering or time-based queries should be aware that the specification explicitly permits these violations.</p>
+<p>UUIDv7 一向被人吹捧話佢嘅 ID 係遞增排列、內嵌時間戳、而且唔容易被人猜中，但係有篇文章指出呢啲特性其實 RFC 同埋主流實作都冇嚴格保證。UUIDv7 唯一真正靠得住嘅特性就只有唯一性同碰撞抵抗，時間戳可以同實際建立時間差好遠，就算同一部機都可能出现 ID 順序唔啱嘅情況。如果你嘅系統靠 UUIDv7 做排序或者時間查詢，就要小心佢嘅規格其實容許呢啲偏差存在。</p>
+<p><a class="read-more" href="https://alexsci.com/blog/uuidv7-is-weird/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-hackernews-7">
+<h3 class="article-title"><a href="#a-hackernews-7">The Missed Opportunities of Sonic 06</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://isaacmarovitz.com/posts/sonic-06/" rel="noopener" target="_blank">https://isaacmarovitz.com/posts/sonic-06/</a></span><span class="meta-date">📅 2026-10-24 00:38 UTC+8</span><span class="meta-pts">▲ 40 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50211729">HN discussion</a></span></div>
+<div class="article-body"><p>Sonic 06&#x27;s visual quality was gutted by last-minute performance cuts, with the most-used shader in the game offering only basic per-vertex lighting and no shadow support, while point lights, cascaded shadow maps, and planar reflections were all either disabled or broken. Much of the cut content still exists in the game files but was switched off because the hardware could not handle it, a direct consequence of the intense crunch Sonic Team faced before release. The findings, uncovered during the development of a fan-made recompilation project, reveal a game that was visually ambitious on paper but compromised beyond recognition in practice.</p>
+<p>Sonic 06 嘅畫面質素其實係喺開發尾段為咗效能俾人砍到體無完膚，遊戲入面最常用嘅 shader 得返最basic嘅逐頂點光照，連陰影都冇，而點光源、級聯陰影圖同平面反射呢啲效果全部都俾人閂咗或者搞到壞晒。好多被砍嘅內容其實仲喺遊戲檔入面，只係因為硬件跑唔到先至俾人閂咗，完全係 Sonic Team 趕工嘅犧牲品。呢啲發現係一個粉絲重製項目開發過程中挖出嚟嘅，證明隻遊戲原本嘅視覺野心其實好大，只係最終俾人 compromise 到面目全非。</p>
+<p><a class="read-more" href="https://isaacmarovitz.com/posts/sonic-06/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+<article class="article" id="a-hackernews-8">
+<h3 class="article-title"><a href="#a-hackernews-8">How Is Music Possible</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.henrikkarlsson.xyz/p/music" rel="noopener" target="_blank">https://www.henrikkarlsson.xyz/p/music</a></span><span class="meta-date">📅 2026-10-24 00:38 UTC+8</span><span class="meta-pts">▲ 32 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50211719">HN discussion</a></span></div>
+<div class="article-body"><p>Henrik Karlsson explores the puzzling question of why music, which is essentially abstract patterns of sound, can so profoundly alter our perception of the world and connect us to strangers in ways that feel almost sacred. He surveys both psychological theories—music as a hack on our auditory processing systems, and music as culturally shaped associations—and metaphysical ones like Schopenhauer&#x27;s idea that music directly represents the deepest reality beneath all experience, ultimately finding all of them too thin for the vastness of what music actually feels like.</p>
+<p>Henrik Karlsson 寫咗一篇關於音樂點解可以咁樣改變我哋對世界嘅感受嘅文章，佢由音樂心理學講到叔本華嘅形而上學，試住解釋點解一啲抽象嘅聲音組合可以令我哋覺得同陌生人之間有咁深嘅連結。佢最後覺得呢啲理論都太單薄，解釋唔到音樂帶畀我哋嗰種近乎神聖嘅體驗。</p>
+<p><a class="read-more" href="https://www.henrikkarlsson.xyz/p/music" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-hackernews-9">
+<h3 class="article-title"><a href="#a-hackernews-9">Total Historian</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theideasletter.org/essay/total-historian/" rel="noopener" target="_blank">https://www.theideasletter.org/essay/total-historian/</a></span><span class="meta-date">📅 2026-10-24 00:23 UTC+8</span><span class="meta-pts">▲ 16 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50211504">HN discussion</a></span></div>
+<div class="article-body"><p>French historian Marc Bloch, a medievalist who revolutionized the discipline by shifting focus from great leaders to collective mentalities and social structures, was inducted into the Panthéon in June 2026 as the first historian to receive the honor. Bloch, who co-founded the Annales school and was executed by the Gestapo in 1944 for his Resistance work, is now claimed across the political spectrum, making Peter Schöttler&#x27;s new intellectual biography a timely attempt to recover what he actually believed and stood for.</p>
+<p>法國歷史學家馬克·布洛赫喺2026年6月入咗先賢祠，成為第一個獲呢個殊榮嘅歷史學家。佢係中世紀史權威，開創咗年鑑學派，將歷史研究由聚焦偉人轉向社會結構同集體心態，後來因為參加抵抗運動被蓋世太保殺害。而家佢被左右政治陣營爭相引用，Peter Schöttler本新嘅思想傳記正好幫大家搞清楚佢到底係點樣諗嘢。</p>
+<p><a class="read-more" href="https://www.theideasletter.org/essay/total-historian/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">87 words</div>
+</article>
+<article class="article" id="a-hackernews-10">
+<h3 class="article-title"><a href="#a-hackernews-10">Today, we hacked what we&#x27;d set out to hack: the iPhone</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.calif.io/p/iphone" rel="noopener" target="_blank">https://blog.calif.io/p/iphone</a></span><span class="meta-date">📅 2026-10-24 00:21 UTC+8</span><span class="meta-pts">▲ 460 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50211474">HN discussion</a></span></div>
+<div class="article-body"><p>A hacking group demonstrated at Hexacon in Paris that they successfully compromised an iPhone, revealing exploits targeting Signal with a one-click attack, iMessage, and other Apple services. The team playfully rebranded the term APT as &quot;Apple Persistent Threat,&quot; signaling a shift in how Apple&#x27;s ecosystem is being targeted by sophisticated attackers. The group said all tools will be released publicly in due time.</p>
+<p>一班黑客喺巴黎 Hexacon 安全會議上示範咗點樣成功入侵 iPhone，包括用一鍵攻擊打 Signal、利用 iMessage 漏洞，仲有其他針對蘋果系統嘅手法。佢哋仲將 APT 改叫做「Apple Persistent Threat」，暗示蘋果生態系統已經成為高級攻擊者嘅目標。佢哋話所有工具都會喺適當時候公開。</p>
+<p><a class="read-more" href="https://blog.calif.io/p/iphone" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">78 words</div>
+</article>
+<article class="article" id="a-hackernews-11">
+<h3 class="article-title"><a href="#a-hackernews-11">Gemma-4-26B-A4B with 39-69% less thinking at same accuracy</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://bottlecapai.com/post/thinkingcap-gemma-4-26b/" rel="noopener" target="_blank">https://bottlecapai.com/post/thinkingcap-gemma-4-26b/</a></span><span class="meta-date">📅 2026-10-23 22:43 UTC+8</span><span class="meta-pts">▲ 58 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50209907">HN discussion</a></span></div>
+<div class="article-body"><p>BottleCap AI has released ThinkingCap for Google&#x27;s Gemma-4-26B-A4B, a drop-in replacement that cuts thinking tokens by 38.9% on average and up to 69.1% while losing only 0.15 percentage points of accuracy across twelve benchmarks. The model also reduces looping errors from 3.6% to 0.8% of responses, and a PRO version promises up to 87.6% fewer thinking tokens for enterprise deployments. This is the first ThinkingCap applied to a Google model and represents the smallest accuracy cost in the series so far.</p>
+<p>BottleCap AI 推出咗針對 Google Gemma-4-26B-A4B 嘅 ThinkingCap 模型，平均減少 38.9% 嘅思考 token，最多可以減 69.1%，但準確率只係跌咗 0.15 個百分點，十二個 benchmark 入面有五個仲高過原版。呢個係佢哋第一次將 ThinkingCap 用喺 Google 嘅模型上面，同時都係歷代入面準確率損失最細嘅一個，對於要大量部署推理模型嘅公司嚟講，可以大幅降低推理成本。</p>
+<p><a class="read-more" href="https://bottlecapai.com/post/thinkingcap-gemma-4-26b/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-hackernews-12">
+<h3 class="article-title"><a href="#a-hackernews-12">Apple Music 404 Not Found</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://music.apple.com/this-url-doesnt-exist" rel="noopener" target="_blank">https://music.apple.com/this-url-doesnt-exist</a></span><span class="meta-date">📅 2026-10-23 20:28 UTC+8</span><span class="meta-pts">▲ 107 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50207910">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-hackernews-13">
+<h3 class="article-title"><a href="#a-hackernews-13">Show HN: Swurf – Swipe through the real web</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://swurf.org/" rel="noopener" target="_blank">https://swurf.org/</a></span><span class="meta-date">📅 2026-10-23 14:54 UTC+8</span><span class="meta-pts">▲ 18 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50205320">HN discussion</a></span></div>
+<div class="article-body"><p>&lt;main aria-label=&quot;Swurf feed&quot; id=&quot;feed&quot;&gt;&lt;/main&gt;</p>
+<p><a class="read-more" href="https://swurf.org/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">8 words</div>
+</article>
+<article class="article" id="a-hackernews-14">
+<h3 class="article-title"><a href="#a-hackernews-14">Show HN: Impossible Machines: declaratively program the physical world</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.impossiblemachines.xyz" rel="noopener" target="_blank">https://www.impossiblemachines.xyz</a></span><span class="meta-date">📅 2026-10-23 07:54 UTC+8</span><span class="meta-pts">▲ 28 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50202746">HN discussion</a></span></div>
+<div class="article-body"><p>&lt;main aria-label=&quot;Interactive 3D machine. Demonstrate an outcome on the bell or door and watch a mechanism connect the chosen source to it. Move the sink or place obstacles to change the design.&quot; id=&quot;scene&quot;&gt;&lt;/main&gt;</p>
+<p><a class="read-more" href="https://www.impossiblemachines.xyz" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">37 words</div>
+</article>
+<article class="article" id="a-hackernews-15">
+<h3 class="article-title"><a href="#a-hackernews-15">Docker is weird</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://codeandcake.dev/posts/2026-10-22-docker-is-weird" rel="noopener" target="_blank">https://codeandcake.dev/posts/2026-10-22-docker-is-weird</a></span><span class="meta-date">📅 2026-10-23 07:45 UTC+8</span><span class="meta-pts">▲ 789 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50202681">HN discussion</a></span></div>
+<div class="article-body"><p>A developer building their own container runtime discovered that Docker&#x27;s abstractions hide some surprising realities: containers are not real isolated environments but merely processes wrapped in Linux kernel features like namespaces and cgroups, images are just folders with chroot applied, and the runtime runc written in Go requires hacky workarounds because Go lacks fork and is natively multi-threaded. The article also notes that Docker typically requires root privileges, making container security a genuinely difficult problem. The author&#x27;s takeaway is that building your own version of a tool you use daily is one of the best ways to truly understand how it works.</p>
+<p>一個開發者自己寫 container runtime 先發現 Docker 原來好多嘢都係「扮」出嚟：container 其實只係一個加咗限制嘅 process，image 只係一個 folder 做 chroot，而 runc 用 Go 寫仲要搞啲好離譜嘅 workaround 先至做到 fork。另外 Docker 通常要 root 權限先至行到，所以 container 安全真係好難搞。作者話，自己由零開始寫一個你日日都用嘅工具，係了解佢最好嘅方法。</p>
+<p><a class="read-more" href="https://codeandcake.dev/posts/2026-10-22-docker-is-weird" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">131 words</div>
+</article>
+<article class="article" id="a-hackernews-16">
+<h3 class="article-title"><a href="#a-hackernews-16">Local Wikipedia: Wikipedia, but only for things a half hour walk from you</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://edjefferson.com/localwiki/" rel="noopener" target="_blank">https://edjefferson.com/localwiki/</a></span><span class="meta-date">📅 2026-10-23 07:01 UTC+8</span><span class="meta-pts">▲ 1025 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50202285">HN discussion</a></span></div>
+<div class="article-body"><p>&lt;main class=&quot;mw-body&quot; hidden=&quot;&quot; id=&quot;content&quot;&gt;
+&lt;h2 class=&quot;firstHeading&quot; id=&quot;firstHeading&quot;&gt;&lt;/h2&gt;
+&lt;div class=&quot;mw-body-content&quot; id=&quot;bodyContent&quot;&gt;
+&lt;div id=&quot;mw-content-text&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Wikipedia&#x27;s text is CC BY-SA: credit and a link back on every article --&gt;
+&lt;div hidden=&quot;&quot; id=&quot;attribution&quot;&gt;&lt;/div&gt;
+&lt;/main&gt;</p>
+<p><a class="read-more" href="https://edjefferson.com/localwiki/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">36 words</div>
+</article>
+<article class="article" id="a-hackernews-17">
+<h3 class="article-title"><a href="#a-hackernews-17">Canadians are running out of time to oppose Bill C-22</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill" rel="noopener" target="_blank">https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill</a></span><span class="meta-date">📅 2026-10-23 06:43 UTC+8</span><span class="meta-pts">▲ 134 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50202114">HN discussion</a></span></div>
+<div class="article-body"><p>Canada&#x27;s Bill C-22, now before the Senate after passing the House of Commons, would grant the government sweeping powers to compel digital services to build encryption backdoors and retain user metadata for up to a year, even for people not suspected of any crime. The legislation also risks enabling cross-border data sharing with the United States without Canadian court oversight, raising serious constitutional concerns. The Canadian Civil Liberties Association is urging citizens to sign a petition calling on the Senate to reject the bill before it becomes law.</p>
+<p>加拿大嘅C-22法案已經通過咗下議院，而家去到參議院審議，呢條法例會容許政府強制數碼服務公司開後門、保留用戶資料長達一年，仲可以將加拿大人嘅個人資料分享俾美國執法部門而唔使經過加拿大法院批准。加拿大公民自由協會話呢條法例嚴重威脅私隱同加密安全，呼籲市民即刻簽名請願，叫參議院唔好通過佢。</p>
+<p><a class="read-more" href="https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-hackernews-18">
+<h3 class="article-title"><a href="#a-hackernews-18">LISP Comes of Age (1980)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://microship.com/lisp-comes-of-age/" rel="noopener" target="_blank">https://microship.com/lisp-comes-of-age/</a></span><span class="meta-date">📅 2026-10-23 03:08 UTC+8</span><span class="meta-pts">▲ 34 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50199684">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+</section>
+<section class="source" id="src-openai">
+<h2 class="source-title">OpenAI News <span class="source-count">2 articles</span></h2>
+<article class="article" id="a-openai-0">
+<h3 class="article-title"><a href="#a-openai-0">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two" rel="noopener" target="_blank">https://openai.com/index/scaling-storage-one-billion-users-part-two</a></span><span class="meta-date">📅 2026-10-24 01:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-openai-1">
+<h3 class="article-title"><a href="#a-openai-1">OpenAI and Poland’s NASK partner to advance AI safety and security</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/openai-nask-ai-safety-security-partnership" rel="noopener" target="_blank">https://openai.com/index/openai-nask-ai-safety-security-partnership</a></span><span class="meta-date">📅 2026-10-23 08:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+</section>
+<section class="source" id="src-verge">
+<h2 class="source-title">The Verge AI <span class="source-count">9 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Verge&#x27;s coverage over the past day centered heavily on AI&#x27;s expanding reach and the pushback it&#x27;s generating, from Meta&#x27;s controversial business terms that could still permit scraping news sites for AI training, to Google quietly opening the door to using Gmail and Photos data for targeted ads, to AI tools fracturing the retro gaming preservation community. The site also weighed in on Apple&#x27;s iPhone Duo, Canva&#x27;s new AI image model, Meta&#x27;s Muse agent vision and security flaws, and the questionable logic behind a potential SpaceX-Tesla merger.</p>
+<p>Verge 過去一日嘅報導主要集中喺 AI 嘅擴張同引發嘅反彈，包括 Meta 嘅新條款雖然刪咗明確寫 AI 訓練嘅字句，但法律專家話其實仲係可以攞新聞網站資料去餵 AI；Google 亦悄悄改咗私隱政策，容許用 Gmail 同相簿資料去做廣告投放；AI 仲搞到復古遊戲社群四分五裂。另外仲有 Apple iPhone Duo 嘅討論、Canva 出咗自己嘅 AI 繪圖模型、Meta 嘅 Muse 智能體安全漏洞同埋 SpaceX 同 Tesla 合併嘅荒謬構想。</p>
+</div>
+<article class="article" id="a-verge-0">
+<h3 class="article-title"><a href="#a-verge-0">The iPhone Duo should have been an iPad</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast" rel="noopener" target="_blank">https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast</a></span><span class="meta-date">📅 2026-10-24 01:00 UTC+8</span></div>
+<div class="article-body"><p>The Vergecast team debated whether Apple&#x27;s iPhone Duo, which received a 7 out of 10 score, would have been better received if it had been marketed as an iPad instead of an iPhone, with host David Pierce questioning whether the device&#x27;s outer screen makes it the worst iPhone ever. The episode also covered a major PHP cybersecurity vulnerability that shook the web, the growing impact of AI shopping agents on retailers, and various other tech stories from the week. The discussion raises an important question about how product naming and category expectations shape consumer perception of genuinely new form factors.</p>
+<p>The Vergecast 節目入面，David Pierce 同 Nilay 傾咗 Apple iPhone Duo 嘅評分問題，佢哋覺得呢部機攞咗 7 分，但佢哋仲討論咗如果 Apple 當初將佢叫做 iPad Duo 而唔係 iPhone Duo，消費者嘅觀感會唔會好啲。節目仲講咗呢個星期 PHP 出現咗一個好嚴重嘅保安漏洞，搞到成個網絡都受影響，同埋 AI 購物代理點樣逼到零售商要重新諗點樣同客打交道。呢個討論其實反映咗一個好重要嘅問題，就係產品命名同分類期望會點樣影響人對一個全新形態產品嘅睇法。</p>
+<p><a class="read-more" href="https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">128 words</div>
+</article>
+<article class="article" id="a-verge-1">
+<h3 class="article-title"><a href="#a-verge-1">Now Google says it might use your Gmail and Google Photos data to target ads</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update" rel="noopener" target="_blank">https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update</a></span><span class="meta-date">📅 2026-10-24 00:52 UTC+8</span></div>
+<div class="article-body"><p>Google has quietly updated its privacy policy to allow personal data from Gmail, Drive, and Google Photos to be used for targeted advertising if users connect those services to AI-powered features like Personal Intelligence. The change, effective October 16th, adds an exception to Google&#x27;s previous blanket promise not to use that data for ads, meaning anyone opting into AI personalization may now see ads based on their private content. Users can opt out by disconnecting apps or disabling Personalized Recommendations in their Search Services settings.</p>
+<p>Google 最近悄悄改咗私隱政策，如果你將 Gmail、Drive 同 Google Photos 接駁去佢嘅 AI 功能，佢而家可以用你嘅私人資料嚟投放針對性廣告。呢個改動由10月16號生效，等於打破咗之前話唔會用你資料做廣告嘅承諾，用開 AI 個人化功能嘅人真係要小心。如果想避免，可以去搜尋服務個人化設定入面取消接駁或者關閉個人化推薦。</p>
+<p><a class="read-more" href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+<article class="article" id="a-verge-2">
+<h3 class="article-title"><a href="#a-verge-2">Meta delays new business terms after publisher pushback on AI scraping</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping" rel="noopener" target="_blank">https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping</a></span><span class="meta-date">📅 2026-10-23 22:47 UTC+8</span></div>
+<div class="article-body"><p>Meta has delayed the enforcement of its new business terms from October 30th to November 20th after publishers worldwide raised concerns that the terms could allow the company to scrape news sites for AI training. The News/Media Alliance and regulators in the EU and UK had urged Meta to halt or revise the terms, which legal experts argued still left room for AI training despite Meta removing explicit &quot;training&quot; language. The delay gives Meta time to clarify how it uses web crawlers and how content owners can still use robots.txt to opt out.</p>
+<p>Meta原本打算10月30號生效嘅新商業條款，因為全球出版商擔心佢會用新聞網站嘅內容去訓練AI，所以被迫推遲到11月20號先至執行。News/Media Alliance同歐盟、英國嘅監管機構都要求Meta修改或者暫停呢啲條款，法律專家亦話就算Meta刪咗「訓練」呢個字，條文仲係有空間俾佢攞內容去餵AI。Meta話延遲係想多啲時間同夥伴解釋清楚佢點用網絡爬蟲，同埋內容擁有者仲可以用robots.txt去表明唔想俾人爬。</p>
+<p><a class="read-more" href="https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-verge-3">
+<h3 class="article-title"><a href="#a-verge-3">Retro gaming is being overrun with AI</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port" rel="noopener" target="_blank">https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port</a></span><span class="meta-date">📅 2026-10-23 21:52 UTC+8</span></div>
+<div class="article-body"><p>AI tools have dramatically accelerated the decompilation and recompilation of retro games, flooding platforms with ports but fracturing the tight-knit preservation community that spent years building these projects by hand. The speed of AI-driven ports has led to hostile forks, lack of credit, and a loss of the deep understanding that manual decompilation provides, prompting at least one major community site to shut down entirely. This tension between accessibility and preservation raises serious questions about whether AI is helping or hurting the long-term survival of classic games.</p>
+<p>AI工具而家徹底改變咗逆向工程老遊戲嘅生態，原本要花幾年先搞得掂嘅decomp項目，而家用AI幾星期就搞掂，搞到成個社群亂成一團。有啲人用AI抄晒人哋嘅嘢就話係自己完成，仲有啲人根本冇貢獻過就急住fork人哋個project，搞到一個追蹤decomp項目嘅網站都因為呢啲問題而收咗。呢個情況反映咗一個兩難：AI令更多人可以玩老遊戲，但同時亦破壞咗原本靠知識傳承同社區協作撐起嘅保存文化。</p>
+<p><a class="read-more" href="https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">92 words</div>
+</article>
+<article class="article" id="a-verge-4">
+<h3 class="article-title"><a href="#a-verge-4">Sure, let’s smoosh SpaceX and Tesla together, who cares</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari" rel="noopener" target="_blank">https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari</a></span><span class="meta-date">📅 2026-10-23 19:28 UTC+8</span></div>
+<div class="article-body"><p>SpaceX and Tesla have formed special committees to explore a merger, with Musk citing the development of &quot;superintelligence software&quot; and Mars colonization as the rationale. However, the article casts serious doubt on the logic, noting that SpaceX&#x27;s AI revenue resembles a compute-rental business more than a frontier AI company, Tesla&#x27;s profits are declining, and the two companies&#x27; joint projects remain vague and unconfirmed. The piece suggests the merger may be driven more by Musk&#x27;s desire for control and pay incentives than by any coherent strategic vision.</p>
+<p>SpaceX同Tesla已經成立特別委員會商討合併，馬斯克話為咗開發「超級智能軟件」同去火星所以值得合併。但文章好懷疑呢個邏輯，因為SpaceX嘅AI收入其實好似租算力多過做前沿AI公司，Tesla利潤又連跌兩季，兩間公司嘅合作項目都講到好模糊。文章認為呢個合併其實係馬斯克想攞多啲控制權同薪酬獎勵，唔係真係有咩清晰嘅戰略方向。</p>
+<p><a class="read-more" href="https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">91 words</div>
+</article>
+<article class="article" id="a-verge-5">
+<h3 class="article-title"><a href="#a-verge-5">Canva’s first AI image model plans designs before generating them</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model" rel="noopener" target="_blank">https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model</a></span><span class="meta-date">📅 2026-10-23 05:53 UTC+8</span></div>
+<div class="article-body"><p>Canva has launched Canva Craft, its first AI image generation model, which uses a two-stage architecture that plans designs before generating them for greater precision and control. The model produces images at up to 2K resolution across more than 30 aspect ratios and is trained on millions of human-made templates from Canva&#x27;s library. It currently ranks fourth on Design Arena&#x27;s leaderboard, placing it behind three OpenAI models, and is available globally to all users.</p>
+<p>Canva 推出咗佢哋第一個 AI 圖像生成模型 Canva Craft，用兩階段架構先規劃設計再生成圖片，令到輸出更精準同可控。呢個模型可以生成最高 2K 解像度嘅圖片，支援超過 30 種比例，仲用咗 Canva 平台上數百萬個人類製作嘅模板嚟訓練。Canva Craft 而家喺 Design Arena 排行榜排第四，落後畀三個 OpenAI 模型，全球用戶已經可以用。</p>
+<p><a class="read-more" href="https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+<article class="article" id="a-verge-6">
+<h3 class="article-title"><a href="#a-verge-6">Meta turns Muse sharing back on</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts" rel="noopener" target="_blank">https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts</a></span><span class="meta-date">📅 2026-10-23 04:33 UTC+8</span></div>
+<div class="article-body"><p>Meta has re-enabled sharing for its Muse AI agent after security researchers discovered that public links to shared artifacts were easily discoverable through public DNS records. The researchers at Claroc were able to find sensitive pages including a marketing company&#x27;s internal revenue review and a small business owner&#x27;s loan application. Meta has issued new URLs to all previously shared artifacts and apologized for the disruption, saying protecting user data had to come first.</p>
+<p>Meta 重新開放咗 Muse AI 嘅分享功能，因為之前有安全研究人員發現，分享出去嘅連結可以好容易喺公開 DNS 記錄入面搵到。Claroc 嘅研究人員甚至搵到一啲敏感頁面，例如一間行銷公司嘅內部收入報告同埋一個小企業主嘅貸款申請。Meta 已經為所有之前分享過嘅檔案換咗新連結，並且為造成嘅不便道歉，話保護用戶數據係最優先嘅事。</p>
+<p><a class="read-more" href="https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">86 words</div>
+</article>
+<article class="article" id="a-verge-7">
+<h3 class="article-title"><a href="#a-verge-7">Meta’s AI could still scrape news sites, legal experts say</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns" rel="noopener" target="_blank">https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns</a></span><span class="meta-date">📅 2026-10-23 04:32 UTC+8</span></div>
+<div class="article-body"><p>Meta revised its business terms to remove explicit language about training AI on scraped news content after fierce backlash from publishers, but legal experts warn the changes are largely cosmetic. They argue that broad phrases like &quot;develop&quot; and &quot;associated with your products or services&quot; still give Meta room to justify scraping entire sites for AI training purposes. The dispute highlights the unresolved legal grey area around whether publishers&#x27; robots.txt files can truly block AI companies from harvesting their content.</p>
+<p>Meta 喺出版業界強烈反彈之後，修改咗佢嘅商業條款，刪走咗明顯講可以用新聞網站內容去訓練 AI 嘅字眼，但法律專家話呢啲改動根本唔夠。佢哋認為條款入面「develop」同「associated with your products or services」呢啲寬鬆用詞，仍然可以俾 Meta 攞嚟做藉口去爬取成個網站嘅內容。呢單嘢反映咗一個好大嘅法律灰色地帶，就係出版商嘅 robots.txt 到底有冇真正嘅法律效力去阻止 AI 公司抓取佢哋嘅內容。</p>
+<p><a class="read-more" href="https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">98 words</div>
+</article>
+<article class="article" id="a-verge-8">
+<h3 class="article-title"><a href="#a-verge-8">In Meta’s version of the future, I’ll have my Muse call your Muse</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network" rel="noopener" target="_blank">https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network</a></span><span class="meta-date">📅 2026-10-23 04:30 UTC+8</span></div>
+<div class="article-body"><p>Meta CEO Mark Zuckerberg used the company&#x27;s third-quarter earnings call to pitch a future where billions of people rely on personal AI agents called Muse to shop, work, and communicate on their behalf, with the app already hitting 10 million downloads in the US and Canada. The vision is ambitious but faces serious hurdles, including astronomical compute costs, unresolved privacy concerns, and Meta&#x27;s staggering $135 to $145 billion spending plan for 2026. Whether Muse can actually deliver on Zuckerberg&#x27;s promise of profitability remains an open question as the company races to justify its massive AI investments.</p>
+<p>馬克·扎克伯格喺Meta第三季業績電話會議上面，向投資者描繪一個未來：每個人都有一個叫Muse嘅AI代理幫自己購物、工作、同其他人嘅AI傾偈，而家呢個app喺美國同加拿大已經有超過一千萬下載。不過呢個願景面對好多問題，包括算力成本高得離譜、私隱爭議未解決，同埋Meta今年預計要燒一千三百五十億到一千四百五十億美元。Muse究竟可唔可以幫Meta回本，而家仲係一個大問號。</p>
+<p><a class="read-more" href="https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+</section>
+<section class="source" id="src-huggingface">
+<h2 class="source-title">Hugging Face Blog <span class="source-count">3 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Hugging Face&#x27;s latest coverage spans three fronts: a new research tool called LitPivot from Ai2 and UPenn that helps scholars refine early-stage ideas by contextualizing them against literature, a Space letting developers check whether any Transformers model runs on AWS Trainium chips, and a collaboration with Microsoft that turns executable database checks into reinforcement learning rewards to post-train agents, nearly tripling task success rates on a 507-task benchmark.</p>
+<p>Hugging Face 最近一日有三條重點新聞：第一係 Ai2 同賓大出咗個叫 LitPivot 嘅工具，幫研究者將初步構思對住文獻嚟打磨；第二係佢哋上咗個 Space 畀人查 Transformers 模型可唔可以直接喺 AWS Trainium 上面跑；第三係 Microsoft 同 Hugging Face 合作，將資料庫嘅可執行檢查變成 RL 獎勵嚟 post-train agent，將 507 條任務嘅成功率幾乎翻咗三倍。</p>
+</div>
+<article class="article" id="a-huggingface-0">
+<h3 class="article-title"><a href="#a-huggingface-0">LitPivot: Developing research ideas through dynamic contextualization within the literature landscape</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/allenai/litpivot" rel="noopener" target="_blank">https://huggingface.co/blog/allenai/litpivot</a></span><span class="meta-date">📅 2026-10-24 00:15 UTC+8</span></div>
+<div class="article-body"><p>Researchers at Ai2 and the University of Pennsylvania developed LitPivot, a system that helps researchers refine early-stage research ideas by dynamically contextualizing them against relevant literature. The tool segments a proposal into facets such as problem, contribution, and evaluation, then groups retrieved papers around each facet to offer literature-supported critiques and revision suggestions. In a study with 17 researchers, domain experts rated ideas developed with LitPivot as significantly better grounded in the literature than those produced with a text editor and an AI chat tool.</p>
+<p>Ai2 同賓夕法尼亞大學嘅研究團隊開發咗 LitPivot，呢個系統可以幫研究人員喺構思階段，將佢哋嘅研究提案拆做問題、貢獻同評估幾個部分，再自動配對相關文獻嚟提出批評同修改建議。一項有17位研究人員參與嘅研究顯示，用 LitPivot 改出嚟嘅研究構思，喺文獻支撐方面明顯比用普通文字編輯器加 AI 對話工具做出嚟嘅好得多。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/allenai/litpivot" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-huggingface-1">
+<h3 class="article-title"><a href="#a-huggingface-1">Does Your Model Run on AWS Trainium? Look It Up</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/torch-neuronx-model-support" rel="noopener" target="_blank">https://huggingface.co/blog/torch-neuronx-model-support</a></span><span class="meta-date">📅 2026-10-23 08:00 UTC+8</span></div>
+<div class="article-body"><p>A new Hugging Face Space lets developers check whether any Transformers model on the Hub runs unmodified on AWS Trainium chips, showing per-model results including core count, wall time, and peak memory. The Space also provides the exact script and Neuron stack needed to reproduce the run on a Trainium2 instance, and all results are published as a queryable public dataset. Currently limited to text-generation and image-text-to-text models fitting on four Trainium2 devices, the team plans to expand coverage to diffusers and other task types.</p>
+<p>Hugging Face 推出咗一個新 Space，可以查任何 Transformers 模型喺 AWS Trainium 上面跑唔跑到，仲會顯示用幾多 core、跑幾耐、用幾多記憶體。佢仲畀晒成個 script 同 Neuron stack，你可以自己喺 Trainium2 instance 上面重現測試，所有結果都係公開 dataset 可以直接 query。暫時只測咗 text-generation 同 image-text-to-text 嘅模型，之後會擴展到 diffusers 同其他任務。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/torch-neuronx-model-support" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+<article class="article" id="a-huggingface-2">
+<h3 class="article-title"><a href="#a-huggingface-2">Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/microsoft/thinkingbox-training" rel="noopener" target="_blank">https://huggingface.co/blog/microsoft/thinkingbox-training</a></span><span class="meta-date">📅 2026-10-23 06:24 UTC+8</span></div>
+<div class="article-body"><p>Microsoft and Hugging Face researchers turned ThinkingBox&#x27;s executable database-state checks into reinforcement learning rewards, fine-tuning Qwen3.8-27B with GRPO for 50 steps and nearly tripling its repeatable success rate from 38 to 107 tasks passing all twenty attempts on a 507-task benchmark it had never trained on. Average pass@1 rose from 51.70% to 60.78%, while at-least-once coverage dipped slightly, a pattern consistent with sharpening that trades breadth for dependability. The work matters because it shows that a simple binary verdict on final database state can serve as a reward signal to make agents reliably correct on production-style tasks, not just occasionally correct.</p>
+<p>微軟同 Hugging Face 嘅研究團隊將 ThinkingBox 嘅資料庫狀態檢查變成 RL 獎勵訊號，用 GRPO 對 Qwen3.8-27B 做咗 50 步微調，令佢喺一個從未見過嘅 507 題 benchmark 上面，二十次全部做啱嘅任務數由 38 題升到 107 題，差唔多翻三倍。平均 pass@1 由 51.70% 升到 60.78%，但係「至少做啱一次」嘅覆蓋率反而微降，呢個模式同之前研究講嘅 sharpening 效果一致，就係用少少廣度換取穩定性。呢個工作重要嘅地方係佢證明咗一個簡單嘅資料庫最終狀態對錯判斷就可以做 reward function，令 agent 喺生產環境式嘅任務上面做到穩定正確，而唔係淨係偶然做啱。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/microsoft/thinkingbox-training" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">138 words</div>
+</article>
+</section>
+<section class="source" id="src-googleblog">
+<h2 class="source-title">Google Blog <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Google has launched Gemini 4 Argon, a new frontier AI model designed for complex multi-step tasks including coding, 3D rendering, and data visualization. Community builders have already showcased impressive projects built on the model, from an interactive 3D globe tracking real-time wildfires and tectonic shockwaves to a multiplayer browser game and a detailed jet engine simulation.</p>
+<p>Google 推出咗 Gemini 4 Argon 呢個新嘅前沿 AI 模型，專攻編碼、3D 渲染同數據視覺化呢類複雜嘅多步驟任務。社群開發者已經用佢做出咗好多勁嘅嘢，包括一個可以即時追蹤野火同地震波嘅互動 3D 地球儀、一個多人瀏覽器遊戲，仲有一個好詳細嘅噴氣引擎模擬器。</p>
+</div>
+<article class="article" id="a-googleblog-0">
+<h3 class="article-title"><a href="#a-googleblog-0">See what 5 builders are making with Gemini 4 Argon</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/" rel="noopener" target="_blank">https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/</a></span><span class="meta-date">📅 2026-10-24 00:00 UTC+8</span></div>
+<div class="article-body"><p>Google has released Gemini 4 Argon, a new frontier AI model that excels at complex, multi-step tasks spanning coding, 3D rendering, and data visualization. Since its broad rollout, community builders have already used it to create projects ranging from an interactive 3D globe mapping real-time wildfires and tectonic shockwaves to a multiplayer browser game and a detailed jet engine simulation. The model is now globally available to developers and enterprises through Google&#x27;s API and consumer platforms, marking a significant step forward in AI-assisted creation.</p>
+<p>Google 出咗一個新 AI 模型叫 Gemini 4 Argon，最叻就係處理多步驟嘅複雜任務，例如寫 code、做 3D 場景同數據視覺化。一推出就有開發者用佢整咗好多嘢，包括一個可以即時顯示山火同地震嘅 3D 地球、一個多人對戰遊戲，仲有噴射引擎嘅互動模擬。呢個模型而家已經全球開放俾開發者同企業用，代表 AI 幫人做複雜項目又進一步咗。</p>
+<p><a class="read-more" href="https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernoon">
+<h2 class="source-title">HackerNoon <span class="source-count">20 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNoon&#x27;s recent coverage is dominated by the maturation of AI agents, with multiple pieces exploring security guardrails, identity systems, governance architectures, and the question of who authorizes an agent&#x27;s decisions. Beyond the agent ecosystem, the platform also covered Google&#x27;s Gemini 4 Argon announcement, the return of the StealC malware as a full RAT, and a range of practical engineering stories from iOS font rendering fixes to database migrations and ETL reconciliation pitfalls.</p>
+<p>過去24小時HackerNoon嘅內容主要集中喺AI agent嘅安全、身份認證同治理架構，多篇文都探討咗agent應該有邊啲權限、邊個批准佢做決定呢啲問題。另外仲有Google Gemini 4 Argon發布、StealC惡意軟件以RAT形式回歸，同埋一啲實戰工程文章，例如iOS字體渲染問題、數據庫遷移同ETL數據核對嘅坑。</p>
+</div>
+<article class="article" id="a-hackernoon-0">
+<h3 class="article-title"><a href="#a-hackernoon-0">Don’t Let AI Steal Your Personality</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/dont-let-ai-steal-your-personality" rel="noopener" target="_blank">https://hackernoon.com/dont-let-ai-steal-your-personality</a></span><span class="meta-date">📅 2026-10-23 23:30 UTC+8</span></div>
+<div class="article-body"><p>HackerNoon&#x27;s editorial team has shifted from outright rejection of AI-generated content to a more nuanced stance, arguing that while AI can serve as a useful assistant for editing and brainstorming, writers must never sacrifice their unique voice and personality for the sake of speed and volume. The platform warns that when every article follows the same structure and cadence, readers lose the ability to connect with individual thought leaders, undermining the very purpose of a community built on diverse perspectives.</p>
+<p>HackerNoon 編輯部由最初完全拒絕 AI 生成嘅內容，轉而接受佢作為輔助工具，但強調寫作者絕對唔可以為咗求快求量而犧牲自己嘅風格同個性。佢哋認為如果每篇文章嘅結構、節奏都一模一樣，讀者根本分唔清邊個係邊個，咁樣就失去咗一個多元聲音平台嘅意義。</p>
+<p><a class="read-more" href="https://hackernoon.com/dont-let-ai-steal-your-personality" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+<article class="article" id="a-hackernoon-1">
+<h3 class="article-title"><a href="#a-hackernoon-1">500 Blog Posts To Learn About Hackernoon Vi</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/500-blog-posts-to-learn-about-hackernoon-vi" rel="noopener" target="_blank">https://hackernoon.com/500-blog-posts-to-learn-about-hackernoon-vi</a></span><span class="meta-date">📅 2026-10-23 22:02 UTC+8</span></div>
+<div class="article-body"><p>HackerNoon&#x27;s Vietnamese edition has compiled 500 blog posts ranked by reader engagement, covering a wide range of topics from blockchain and AI to gaming guides and pop culture. The collection aims to make technology content accessible to Vietnamese-speaking audiences and support the growth of the local tech community. The posts span practical tutorials, industry analysis, and entertainment, reflecting the diverse interests of the platform&#x27;s readership.</p>
+<p>HackerNoon 越南語版整理咗 500 篇按讀者互動排名嘅博客文章，涵蓋區塊鏈、AI、遊戲攻略同流行文化等各種主題。呢個合集嘅目的係將科技內容帶畀越南語讀者，同時推動當地科技社群嘅發展。文章內容由實用教程到行業分析再到娛樂資訊都有，反映咗平台讀者嘅多元興趣。</p>
+<p><a class="read-more" href="https://hackernoon.com/500-blog-posts-to-learn-about-hackernoon-vi" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">73 words</div>
+</article>
+<article class="article" id="a-hackernoon-2">
+<h3 class="article-title"><a href="#a-hackernoon-2">The TechBeat: Gemini 4 Argon: How Does It Do Against GPT-6 Astra and Claude? (10/23/2026)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/10-23-2026-techbeat" rel="noopener" target="_blank">https://hackernoon.com/10-23-2026-techbeat</a></span><span class="meta-date">📅 2026-10-23 22:01 UTC+8</span></div>
+<div class="article-body"><p>Google DeepMind has announced Gemini 4 Argon, a new frontier AI model designed for long-running software engineering tasks, legal and financial work, and cyber defense, positioning it directly against OpenAI&#x27;s GPT-6 Astra and Anthropic&#x27;s Claude. The broader HackerNoon newsletter also highlights growing interest in AI agent platforms, decision-based models like Jev, and the ongoing debate over whether AI companies are truly slowing down or just pivoting strategy. These developments signal a clear shift from general-purpose chatbots toward specialized, task-driven AI systems.</p>
+<p>Google DeepMind 推出咗 Gemini 4 Argon，呢個新模型專攻長線軟件工程、法律金融同網絡防禦，擺明要同 GPT-6 Astra 同 Claude 硬碰。同一時間，AI agent 平台同決策型模型 Jev 呢啲嘢都越嚟越多人討論，連 AI 公司係咪真係放慢腳步都成為熱話。成個行業明顯正由通用聊天機械人轉向專用、以任務為中心嘅 AI 系統。</p>
+<p><a class="read-more" href="https://hackernoon.com/10-23-2026-techbeat" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-hackernoon-3">
+<h3 class="article-title"><a href="#a-hackernoon-3">Agent Guardrails Belong in Config, and Config Needs Tests</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/agent-guardrails-belong-in-config-and-config-needs-tests" rel="noopener" target="_blank">https://hackernoon.com/agent-guardrails-belong-in-config-and-config-needs-tests</a></span><span class="meta-date">📅 2026-10-23 21:41 UTC+8</span></div>
+<div class="article-body"><p>Docker Agent lets teams define agent permissions in a config file, but a widely copied prefix-style pattern — allowing a command like &quot;grep -n *&quot; while denying &quot;curl *&quot; — can be bypassed by chaining commands with &amp;&amp;, since the allow glob matches the start of the compound string and the deny glob never fires. The author built a deterministic test harness using a scripted stub model to prove the bypass works in practice, and recommends denying shell operators, matching denied binaries anywhere in the string, and running untrusted teams in sandbox mode. The broader lesson is that guardrails are infrastructure and must be tested on every change, separate from evaluating the model&#x27;s actual judgement.</p>
+<p>Docker Agent 嘅權限設定寫喺 config 檔入面，但好多人會抄嗰種前綴式寫法，例如 allow &quot;grep -n *&quot; 再 deny &quot;curl *&quot;，結果用 &amp;&amp; 串埋一條 command 就可以繞過 deny 規則，因為 allow 嘅 glob 匹配到開頭，deny 就完全冇觸發。作者用一個固定腳本嘅 stub model 寫咗自動化測試，實測證明呢個漏洞真係行得通，建議要 deny 埋 shell 操作符、用 *curl* 而唔係 curl * 嚟匹配，同埋唔信任嘅 agent 一定要跑喺 sandbox 入面。最重要嘅啟示係：guardrails 就係 infrastructure，每次改 config 都要跑測試，同埋要同模型嘅判斷力評估分開做。</p>
+<p><a class="read-more" href="https://hackernoon.com/agent-guardrails-belong-in-config-and-config-needs-tests" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">163 words</div>
+</article>
+<article class="article" id="a-hackernoon-4">
+<h3 class="article-title"><a href="#a-hackernoon-4">How an iOS Update Broke Chinese Text in War Robots (And How We Fixed It)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/how-an-ios-update-broke-chinese-text-in-war-robots-and-how-we-fixed-it" rel="noopener" target="_blank">https://hackernoon.com/how-an-ios-update-broke-chinese-text-in-war-robots-and-how-we-fixed-it</a></span><span class="meta-date">📅 2026-10-23 21:32 UTC+8</span></div>
+<div class="article-body"><p>When iOS 18 broke Chinese text rendering in War Robots by causing inconsistent system font fallbacks, developer Sergey Madekin resolved the issue by bundling a custom Chinese font into the build. He used pyftsubset to trim a 10 MB font down to roughly 900 KB by keeping only the characters actually used in game localizations, reducing the build size increase from 37 MB to just 1.24 MB. The team then built an automated Unity Editor tool to regenerate the font before each release, handling edge cases like player nicknames and a subtle Unicode surrogate pair bug along the way.</p>
+<p>iOS 18 更新之後，War Robots 入面嘅中文文字突然顯示唔正常，有啲機睇唔到字，有啲又變咗奇怪嘅字形，開發團隊一直重現唔到個 bug。後來佢哋發現問題出喺系統字體 fallback 機制，就將一個完整嘅中文字體打包入 build，再用 pyftsubset 將 10 MB 嘅字體削到得返 900 KB 左右，build 體積只係多咗 1.24 MB。佢哋仲做咗一個 Unity Editor 工具自動更新字體，連玩家自訂名稱入面嘅生僻字同 Unicode surrogate pair 嘅坑都處理咗。</p>
+<p><a class="read-more" href="https://hackernoon.com/how-an-ios-update-broke-chinese-text-in-war-robots-and-how-we-fixed-it" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">130 words</div>
+</article>
+<article class="article" id="a-hackernoon-5">
+<h3 class="article-title"><a href="#a-hackernoon-5">Using Cypress Cloud CLI and Test Replay for AI-Assisted CI Debugging</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/using-cypress-cloud-cli-and-test-replay-for-ai-assisted-ci-debugging" rel="noopener" target="_blank">https://hackernoon.com/using-cypress-cloud-cli-and-test-replay-for-ai-assisted-ci-debugging</a></span><span class="meta-date">📅 2026-10-23 20:00 UTC+8</span></div>
+<div class="article-body"><p>This article outlines a workflow for using Cypress Cloud CLI and Test Replay to give AI assistants structured, scoped evidence when debugging CI test failures, rather than letting them speculate from screenshots alone. The key steps involve pulling a small evidence packet around the failure, comparing a failed attempt against a passing retry to isolate the first causal difference, and giving the agent a bounded diagnostic contract that forbids weakening assertions or adding arbitrary waits. The approach matters because it keeps AI-assisted debugging grounded in verifiable evidence and prevents the assistant from producing a green run that masks a real product regression.</p>
+<p>呢篇文章介紹咗點樣用 Cypress Cloud CLI 同 Test Replay 畀 AI 助手結構化嘅證據去除 CI 測試失敗嘅錯，唔好淨係靠張截圖去估原因。重點做法係拉一個範圍好細嘅證據包，將失敗同成功嘅 retry 逐項對比搵出第一個因果差異，再畀 AI 一個有邊界嘅診斷任務，唔准佢加硬等或者削弱斷言。呢個方法之所以重要，係因為佢令 AI 除錯有實據可依，唔會為咗跑綠而掩蓋真正嘅產品 bug。</p>
+<p><a class="read-more" href="https://hackernoon.com/using-cypress-cloud-cli-and-test-replay-for-ai-assisted-ci-debugging" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">125 words</div>
+</article>
+<article class="article" id="a-hackernoon-6">
+<h3 class="article-title"><a href="#a-hackernoon-6">Agent Security &amp; Identity (Part 2): Who Are
+You, Who&#x27;s Your Agent, And What
+Should They Be Allowed?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/agent-security-and-identity-part-2-who-are-you-whos-your-agent-and-what-should-they-be-allowed" rel="noopener" target="_blank">https://hackernoon.com/agent-security-and-identity-part-2-who-are-you-whos-your-agent-and-what-should-they-be-allowed</a></span><span class="meta-date">📅 2026-10-23 19:00 UTC+8</span></div>
+<div class="article-body"><p>This article walks through a hands-on deployment of agent identity and authorization on a Kubernetes cluster using the KAOS system, testing how access controls work for two users, two agents, a tool, a model, and a third-party service like GitHub. The author demonstrates enforcement through a gateway mesh, Keycloak for identity, and an Agentic Identity Broker for token exchange, showing which requests get allowed or denied and why. The work matters because it exposes the real complexities of securing autonomous agents and user-delegated permissions in production-like environments.</p>
+<p>呢篇文章詳細示範咗點樣喺 Kubernetes 集群上面部署 KAOS 系統嘅 agent 身份同授權機制，用兩個用戶、兩個 agent、一個工具、一個模型同第三方服務嚟測試邊啲請求會通過、邊啲會被拒絕。作者透過 gateway mesh、Keycloak 同 Agentic Identity Broker 展示咗實際嘅存取控制效果，同時揭露咗自主 agent 同用戶授權委派喺真實環境下面嘅複雜性同挑戰。</p>
+<p><a class="read-more" href="https://hackernoon.com/agent-security-and-identity-part-2-who-are-you-whos-your-agent-and-what-should-they-be-allowed" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-hackernoon-7">
+<h3 class="article-title"><a href="#a-hackernoon-7">1Claw Builds the Security Layer for the Day AI Agents Run Wallets and Sign Trades Autonomously</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/1claw-builds-the-security-layer-for-the-day-ai-agents-run-wallets-and-sign-trades-autonomously" rel="noopener" target="_blank">https://hackernoon.com/1claw-builds-the-security-layer-for-the-day-ai-agents-run-wallets-and-sign-trades-autonomously</a></span><span class="meta-date">📅 2026-10-23 18:38 UTC+8</span></div>
+<div class="article-body"><p>1Claw is a security infrastructure company that lets AI agents sign blockchain transactions and call paid APIs without ever receiving the underlying private keys or credentials, using HSM-backed vaults, per-agent spending limits, and an enclave proxy that screens for prompt injection. The platform supports signing across more than 109 EVM chains plus Bitcoin, Solana, XRP, Cardano and Tron, and has recently announced integrations with Bankr, Google Cloud, Circle, Tenderly, Coder and the XRP Ledger. Founder and CEO Kevin Jones argues that as attackers move at machine speed, with CrowdStrike recording a 27-second network breakout, security must be built into the infrastructure from the start rather than relying on humans to react.</p>
+<p>1Claw 係一家做安全基礎設施嘅公司，佢嘅核心概念係令 AI agent 可以自主簽名交易同調用 API，但永遠唔會攞到真正嘅私鑰或者憑證，透過 HSM 保險庫、每個 agent 嘅支出限額同埋一個可以篩查 prompt injection 嘅 enclave proxy 嚟控制權限。平台支援超過 109 條 EVM 鏈再加 Bitcoin、Solana、XRP、Cardano 同 Tron，最近仲宣布咗同 Bankr、Google Cloud、Circle、Tenderly、Coder 同 XRP Ledger 嘅整合。創辦人 Kevin Jones 認為，當攻擊者以機器速度行動，CrowdStrike 記錄到最快 27 秒就突破網絡防線，安全必須由基礎設施層面開始設計，唔可以靠人手反應。</p>
+<p><a class="read-more" href="https://hackernoon.com/1claw-builds-the-security-layer-for-the-day-ai-agents-run-wallets-and-sign-trades-autonomously" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">150 words</div>
+</article>
+<article class="article" id="a-hackernoon-8">
+<h3 class="article-title"><a href="#a-hackernoon-8">We Were Never Asked to Write Code. We Were Asked to Solve Problems.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/we-were-never-asked-to-write-code-we-were-asked-to-solve-problems" rel="noopener" target="_blank">https://hackernoon.com/we-were-never-asked-to-write-code-we-were-asked-to-solve-problems</a></span><span class="meta-date">📅 2026-10-23 17:48 UTC+8</span></div>
+<div class="article-body"><p>Richard Forss, CTO of EXANTE, argues that the current AI hype cycle follows a familiar pattern of overpromising and disillusionment seen since the 1950s, drawing parallels to the dot-com crash and the failed prediction that radiologists would be replaced by deep learning. He contends that while agentic coding tools are genuinely useful and accelerating output, they have not eliminated the need for engineers who can judge correctness and take responsibility when things break. The core lesson, he says, is that software professionals were never hired to write code but to solve problems, and that distinction matters more than ever as machines handle more of the mechanical work.</p>
+<p>EXANTE 嘅 CTO Richard Forss 指出，而家 AI 嘅炒作同過去幾十年每次「AI 寒冬」之前嘅狂熱一模一樣，佢用咗 dot-com 爆破同放射科醫生冇被取代嘅例子嚟證明，技術越平越快，需求反而越大。佢認為而家嘅 AI coding 工具確實用得，但唔會取代工程師，因為仲需要有人判斷啲嘢啱唔啱、出事嗰陣有人執手尾。佢最核心嘅觀點係：工程師從來唔係為咗寫 code 而請嘅，係為咗解決問題，呢個分別喺機器越做越多嘅年代反而更加重要。</p>
+<p><a class="read-more" href="https://hackernoon.com/we-were-never-asked-to-write-code-we-were-asked-to-solve-problems" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">127 words</div>
+</article>
+<article class="article" id="a-hackernoon-9">
+<h3 class="article-title"><a href="#a-hackernoon-9">StealC Is Back, and This Time It&#x27;s a RAT</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/stealc-is-back-and-this-time-its-a-rat" rel="noopener" target="_blank">https://hackernoon.com/stealc-is-back-and-this-time-its-a-rat</a></span><span class="meta-date">📅 2026-10-23 17:31 UTC+8</span></div>
+<div class="article-body"><p>Four months after Europol&#x27;s Operation Endgame dismantled the infostealer StealC, its seller has returned with Stadia, a full remote access trojan that shares StealC&#x27;s code byte for byte, now offering hidden desktop control, a live command shell, file explorer, process manager and an in-memory loader alongside the original stealer module. The seller is aggressively courting former StealC customers with a free month on the top $900 tier, and Varonis Threat Labs confirmed by reversing the binary that the code inside Stadia is identical to what was seized in June. The case shows how quickly malware operators can rebuild after a major takedown, and that the threat has actually escalated from a simple credential stealer to a far more capable remote-access tool.</p>
+<p>Europol 喺六月透過 Operation Endgame 搣咗 StealC 之後四個月，同一個賣家就帶住一個叫 Stadia 嘅遠程控制木馬返嚟，佢嘅代碼同 StealC 逐 byte 一樣，而家仲加咗隱藏桌面控制、即時命令列、檔案瀏覽器、程序管理器同記憶體載入器，由單純偷_credentials_升級做一個完整嘅遠程管理工具。賣家仲送舊客免費一個月最高級 $900 嘅套餐嚟搶返班客，Varonis Threat Labs 拆解咗個檔案確認入面就係 StealC 嘅舊代碼。呢單嘢話俾我哋知，就算執法機構成功搣咗一個木馬，操盤手都可以好快重新起爐灶，而且威脅仲會越嚟越大。</p>
+<p><a class="read-more" href="https://hackernoon.com/stealc-is-back-and-this-time-its-a-rat" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">145 words</div>
+</article>
+<article class="article" id="a-hackernoon-10">
+<h3 class="article-title"><a href="#a-hackernoon-10">MEXC Account Types Explained: A Guide to Spot, Futures, RealStocks, Fiat, and Copy Trade Accounts</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/mexc-account-types-explained-a-guide-to-spot-futures-realstocks-fiat-and-copy-trade-accounts" rel="noopener" target="_blank">https://hackernoon.com/mexc-account-types-explained-a-guide-to-spot-futures-realstocks-fiat-and-copy-trade-accounts</a></span><span class="meta-date">📅 2026-10-23 17:25 UTC+8</span></div>
+<div class="article-body"><p>MEXC organizes its platform into functional accounts including Spot, Futures, Fiat, and Copy Trade as the four core types for beginners, alongside Earn, RealStocks, Prediction Markets, and Trading Bot accounts. The guide walks through how funds move between these accounts, confirms that all internal transfers are free, and provides instructions for transferring and tracking funds on both the website and app. Knowing this structure helps users manage assets more efficiently across different trading activities.</p>
+<p>MEXC 將帳戶按功能分類，新手最常接觸嘅係現貨、期貨、法幣同跟單交易呢四個核心帳戶，另外仲有 Earn、RealStocks、預測市場同交易機器人帳戶。文章詳細講咗資金點喺唔同帳戶之間流轉，強調內部轉帳完全免費，仲教咗點喺網頁同 App 操作轉帳同查閱記錄。搞清楚呢個帳戶結構，交易同管理資產就會順手好多。</p>
+<p><a class="read-more" href="https://hackernoon.com/mexc-account-types-explained-a-guide-to-spot-futures-realstocks-fiat-and-copy-trade-accounts" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">83 words</div>
+</article>
+<article class="article" id="a-hackernoon-11">
+<h3 class="article-title"><a href="#a-hackernoon-11">Your Agent Workflow Is Mostly Code and People</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/your-agent-workflow-is-mostly-code-and-people" rel="noopener" target="_blank">https://hackernoon.com/your-agent-workflow-is-mostly-code-and-people</a></span><span class="meta-date">📅 2026-10-23 17:15 UTC+8</span></div>
+<div class="article-body"><p>A developer recounts how an AI agent repeatedly retried a production environment fix until a usage limit stopped it, arguing that the agent&#x27;s only real contribution was choosing to retry while humans and code did the actual engineering. The piece proposes explicit handoff ownership, durable attempt records, and a structural fix that moves repeated operations out of the model&#x27;s decision loop into a script that runs once and reports. The author insists that final user-acceptance confirmation should never be delegated to the model.</p>
+<p>有開發者分享咗一個真實案例，話AI agent不斷重試修復生產環境嘅問題，直到用盡模型用量先停落嚟，但其實真正做嘢嘅係人同程式碼，agent只係揀咗「再試一次」呢個決定。佢建議將重複操作由模型決策循環入面抽出嚟，變成一個行一次就報告結果嘅腳本，同時要明確標明每個交接點嘅負責人同狀態記錄。最後佢強調，確認用戶真係可以登入呢一步，絕對唔應該交畀模型。</p>
+<p><a class="read-more" href="https://hackernoon.com/your-agent-workflow-is-mostly-code-and-people" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+<article class="article" id="a-hackernoon-12">
+<h3 class="article-title"><a href="#a-hackernoon-12">How I Migrated a Live Database to a Many-to-Many Relationship</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/how-i-migrated-a-live-database-to-a-many-to-many-relationship" rel="noopener" target="_blank">https://hackernoon.com/how-i-migrated-a-live-database-to-a-many-to-many-relationship</a></span><span class="meta-date">📅 2026-10-23 16:53 UTC+8</span></div>
+<div class="article-body"><p>A developer building a speaker roles feature for an event platform shipped a one-to-one database relationship, then had to evolve it to many-to-many after a customer requirement changed post-launch. The migration succeeded without breaking any live events by using automatic default roles, optional API fields for backward compatibility, a pivot table running alongside the old foreign key, and a dataloader that reads the new model first and falls back to the old one. The core lesson is that production never pauses while you change your mind, so every schema change should be treated as a gradual transition rather than a hard replacement.</p>
+<p>一個開發者為活動平台設計講者角色功能，上線時用咗一對一嘅資料庫關係，點知客戶要求變咗，要改成多對多。佢用咗自動建立預設角色、API 欄位設為選填保持向下兼容、喺舊外鍵旁邊加一張中間表、再用 dataloader 先讀新模型讀唔到就 fallback 去舊模型，成功喺唔影響任何現有活動嘅情況下完成遷移。最重要嘅教訓係生產環境唔會因為你改主意而暫停，所以每次 schema 改動都應該當做漸進式過渡，而唔係一刀切替換。</p>
+<p><a class="read-more" href="https://hackernoon.com/how-i-migrated-a-live-database-to-a-many-to-many-relationship" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">114 words</div>
+</article>
+<article class="article" id="a-hackernoon-13">
+<h3 class="article-title"><a href="#a-hackernoon-13">A Successful ETL Job Can Hide Thousands of Data Discrepancies</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/a-successful-etl-job-can-hide-thousands-of-data-discrepancies" rel="noopener" target="_blank">https://hackernoon.com/a-successful-etl-job-can-hide-thousands-of-data-discrepancies</a></span><span class="meta-date">📅 2026-10-23 16:49 UTC+8</span></div>
+<div class="article-body"><p>A successful ETL pipeline can still hide thousands of data discrepancies because a green status only confirms technical execution, not business correctness. The article demonstrates through a fictional example that a net record-count difference of 12,330 can mask 13,360 distinct identifiers that changed between processing cycles, and argues that bidirectional reconciliation using unique business identifiers is essential to uncover the true scope of data issues. It further emphasizes that missing records are not automatically defects and must be classified against master datasets to determine whether they require investigation.</p>
+<p>ETL job 跑完顯示綠色成功，唔代表數據就冇問題，因為執行日誌只能證明流程冇報錯，唔代表輸出符合業務要求。文章用一個虛構例子說明，總數差 12,330 筆其實可能隱藏咗 13,360 個唔同嘅 identifier 出現變化，所以必須用雙向比對先至搵到真正嘅差異。另外，少咗一筆記錄唔一定係數據缺陷，要對照 master 數據分類之後先知道需唔需要跟進。</p>
+<p><a class="read-more" href="https://hackernoon.com/a-successful-etl-job-can-hide-thousands-of-data-discrepancies" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-hackernoon-14">
+<h3 class="article-title"><a href="#a-hackernoon-14">Investigating Feature Leakage and Proxy Variables in a Clash of Clans ML Model</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/investigating-feature-leakage-and-proxy-variables-in-a-clash-of-clans-ml-model" rel="noopener" target="_blank">https://hackernoon.com/investigating-feature-leakage-and-proxy-variables-in-a-clash-of-clans-ml-model</a></span><span class="meta-date">📅 2026-10-23 16:46 UTC+8</span></div>
+<div class="article-body"><p>The article investigates whether trophy-related features in a Clash of Clans machine learning model predicting clan rank represent legitimate predictive signals or data leakage. The author built a per-clan Spearman correlation analyzer to classify features as safe, potential proxies, or too direct, and compared model performance with and without trophy features across Ridge Regression, Random Forest, and XGBoost. The work highlights how highly predictive features in progression-based game data can blur the line between useful information and proxy leakage, making careful auditing essential before trusting model results.</p>
+<p>呢篇文章研究 Clash of Clans 入面一個預測玩家喺公會排名嘅 ML 模型，作者發現 Trophy 相關嘅特徵預測力強到可疑，於是設計咗一個逐公會計算 Spearman 相關性嘅分析工具，將特徵分類做安全、潛在代理或者太直接。佢同時比較咗有同冇 Trophy 特徵時 Ridge Regression、Random Forest 同 XGBoost 嘅表現，結果話畀我哋知，喺呢類有進度系統嘅遊戲數據入面，好強嘅預測特徵未必係真正有用嘅資訊，有可能只係洩漏咗目標本身嘅訊息，所以做模型之前一定要仔細審查。</p>
+<p><a class="read-more" href="https://hackernoon.com/investigating-feature-leakage-and-proxy-variables-in-a-clash-of-clans-ml-model" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">110 words</div>
+</article>
+<article class="article" id="a-hackernoon-15">
+<h3 class="article-title"><a href="#a-hackernoon-15">Replacing Transactional MSMQ with RabbitMQ Without Losing Consistency</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/replacing-transactional-msmq-with-rabbitmq-without-losing-consistency" rel="noopener" target="_blank">https://hackernoon.com/replacing-transactional-msmq-with-rabbitmq-without-losing-consistency</a></span><span class="meta-date">📅 2026-10-23 16:31 UTC+8</span></div>
+<div class="article-body"><p>Replacing transactional MSMQ with RabbitMQ in .NET enterprise applications is not a simple transport swap because it silently changes the consistency model, turning what was once an atomic operation coordinated by MSDTC into a dual-write problem where either a message can be published without committed data or committed data can exist without its corresponding message. The article walks through three implementations of the same business flow to show exactly where a naive replacement breaks atomicity and why reordering the database commit and message publish does not solve the problem. The recommended path forward is a transactional outbox pattern combined with publisher confirms, retries, and idempotent consumers, which replaces infrastructure-level guarantees with explicit application-level reliability.</p>
+<p>將 MSMQ 換成 RabbitMQ 唔係單純轉個 transport 咁簡單，因為佢會靜靜地改變成個一致性模型，原本靠 MSDTC 協調嘅原子操作會變成雙寫問題，要嘛訊息出咗但資料庫未 commit，要嘛資料庫 commit 咗但訊息冇出。文章用同一個業務流程做三個版本嘅對照，清楚展示直接替換點樣破壞原子性，以及點解調返轉頭先 commit 再 publish 都解決唔到問題。真正可行嘅做法係用 transactional outbox 配合 publisher confirms、retry 同冪等消費者，將原本靠基礎設施提供嘅保證變成應用層面明確處理嘅可靠性機制。</p>
+<p><a class="read-more" href="https://hackernoon.com/replacing-transactional-msmq-with-rabbitmq-without-losing-consistency" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">140 words</div>
+</article>
+<article class="article" id="a-hackernoon-16">
+<h3 class="article-title"><a href="#a-hackernoon-16">The Missing Layer in Enterprise AI: A Governance Architecture for LLMs and Machine Learning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/the-missing-layer-in-enterprise-ai-a-governance-architecture-for-llms-and-machine-learning" rel="noopener" target="_blank">https://hackernoon.com/the-missing-layer-in-enterprise-ai-a-governance-architecture-for-llms-and-machine-learning</a></span><span class="meta-date">📅 2026-10-23 15:16 UTC+8</span></div>
+<div class="article-body"><p>Most enterprises have built data platforms, model platforms and AI pilots, but few have designed the governance layer that decides which systems are safe to deploy near customers. The article proposes a five-plane architecture — policy, data, model, runtime and assurance — unified by an immutable evidence trail, arguing that governance must be automated and embedded in the platform rather than enforced through committees and PDFs. Without this architecture, companies cannot answer basic compliance questions about where data went, which model version produced an output, or who approved a deployment.</p>
+<p>大部分企業都起咗數據平台、模型平台同埋一堆AI試點，但好少有人設計過一個治理層去決定邊個系統可以接觸客戶。篇文章提出一個五層架構——政策、數據、模型、運行同監察——用一條不可篡改嘅審計軌跡串埋一齊，強調治理要自動化嵌入平台，唔好淨係靠開會同寫PDF。冇呢個架構，公司根本答唔出數據去咗邊、邊個模型版本出咗個結果、邊個批咗個部署呢啲基本合規問題。</p>
+<p><a class="read-more" href="https://hackernoon.com/the-missing-layer-in-enterprise-ai-a-governance-architecture-for-llms-and-machine-learning" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">95 words</div>
+</article>
+<article class="article" id="a-hackernoon-17">
+<h3 class="article-title"><a href="#a-hackernoon-17">When AI Designs a Presentation, Who Authorizes Its Decisions?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/when-ai-designs-a-presentation-who-authorizes-its-decisions" rel="noopener" target="_blank">https://hackernoon.com/when-ai-designs-a-presentation-who-authorizes-its-decisions</a></span><span class="meta-date">📅 2026-10-23 15:13 UTC+8</span></div>
+<div class="article-body"><p>An AI presentation tool that adds a reasonable-sounding sentence the user never requested raises a question most developers overlook: when does a design decision become an unauthorized act of interpretation? The author argues that generative systems must enforce clear boundaries between decisions the tool may make independently and those requiring explicit human authorization, and describes a modular architecture built around exactly that distinction. The concern is urgent because a polished slide can make an uncertain statement appear settled, particularly in professional settings where audiences read visual emphasis as evidence.</p>
+<p>AI做簡報嘅時候，最危險唔係佢做錯嘢，而係佢自作主張加咗啲你根本冇要求嘅嘢，仲要睇落好合理好似冇問題咁。作者認為關鍵係要分清楚邊啲決定AI可以自己拍板、邊啲一定要人批准，佢設計咗一套十一個模組嘅架構就係為咗守住呢條界線。呢個問題好實際，因為一張靚嘅slide可以令一句未確定嘅嘢睇落好似已經有定論咁，尤其喺商業決策場合，觀眾會將視覺上嘅強調當成證據。</p>
+<p><a class="read-more" href="https://hackernoon.com/when-ai-designs-a-presentation-who-authorizes-its-decisions" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-hackernoon-18">
+<h3 class="article-title"><a href="#a-hackernoon-18">Open Inference Networks: Democratic Access to Intelligence</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/open-inference-networks-democratic-access-to-intelligence" rel="noopener" target="_blank">https://hackernoon.com/open-inference-networks-democratic-access-to-intelligence</a></span><span class="meta-date">📅 2026-10-23 15:12 UTC+8</span></div>
+<div class="article-body"><p>The article examines three approaches to running large language models outside cloud data centers — local inference on consumer hardware, peer-to-peer device pooling, and token-incentive networks — and finds that only the first is genuinely practical today, with models in the 8B to 30B range running comfortably on a single high-end machine. Distributed approaches remain limited by bandwidth, privacy concerns, and governance problems, while the strongest models remain closed and data centers retain clear efficiency advantages. The piece concludes that local inference is a real tool for private and offline use, but the vision of decentralized swarms serving frontier models is still a research result rather than a product.</p>
+<p>篇文章講咗三種唔靠雲端數據中心跑大型語言模型嘅方法：自己部機跑、將好多部機連埋一齊、同埋用代幣激勵網絡，結果發現只有第一種真係用得掂，八B到三十B嘅模型喺一部高階消費級電腦上已經跑得順。分佈式方案仲受頻寬、私隱同治理問題拖累，而最強嘅模型依然封閉，數據中心嘅效率優勢都好明顯。結論係本地推理已經適合私人同離線場景，但將去中心化機群跑前沿模型嘅願景暫時仲只係研究階段。</p>
+<p><a class="read-more" href="https://hackernoon.com/open-inference-networks-democratic-access-to-intelligence" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">114 words</div>
+</article>
+<article class="article" id="a-hackernoon-19">
+<h3 class="article-title"><a href="#a-hackernoon-19">Tailoring a Multi-agent LLM System for a Mid-sized Business</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/tailoring-a-multi-agent-llm-system-for-a-mid-sized-business" rel="noopener" target="_blank">https://hackernoon.com/tailoring-a-multi-agent-llm-system-for-a-mid-sized-business</a></span><span class="meta-date">📅 2026-10-23 15:09 UTC+8</span></div>
+<div class="article-body"><p>A mid-sized business with many monthly active users needs more than a free ChatGPT subscription, and this article lays out how to design a multi-agent LLM system built on a pipeline of indexing, retrieval, and generation with heavy validation at every stage. It covers practical prompt strategies like RACE and chain-of-thought, warns against role overload by splitting responsibilities across specialised agents, and stresses that an LLM is a brain without eyes or ears, so external tools and fact-checking are non-negotiable. The core message is that validation is what turns a bare model into a reliable agent, and without it, hallucinations and runaway costs will follow.</p>
+<p>一間有幾多用戶嘅中型公司，單靠免費 ChatGPT 或者貴價 Claude 訂閱已經唔夠用，呢篇文章教你點樣為企業設計一套多智能體 LLM 系統，核心流程係索引、檢索、生成，每一步都要加驗證。文章強調 LLM 本身冇常識、唔識查事實，所以一定要靠外部工具同 prompt 技巧例如 RACE、chain-of-thought 嚟控制輸出質素，同時要將唔同職責分畀唔同嘅 agent，避免一個 agent 做晒所有嘢搞到無限循環燒錢。一句講晒，冇驗證嘅 LLM 只係個介面殼，加咗驗證先至算係真正嘅 agent。</p>
+<p><a class="read-more" href="https://hackernoon.com/tailoring-a-multi-agent-llm-system-for-a-mid-sized-business" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">128 words</div>
+</article>
+</section>
+<section class="source" id="src-latentspace">
+<h2 class="source-title">Latent Space <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>LatentSpace focused on two major developments in AI this cycle: first, how large language models from OpenAI and Anthropic have cracked long-standing open mathematics problems like the Erdős unit distance conjecture and Navier-Stokes equations by employing a fundamentally different search strategy than human mathematicians; second, a concentrated wave of AI-accelerated security breaches in late October 2026 dubbed &quot;Black October,&quot; which saw critical vulnerabilities across PHP, GitLab, Node.js, and NGINX alongside a state-actor agentic attack on over 2,250 Microsoft 365 tenants.</p>
+<p>LatentSpace 呢個週期主要講咗兩件大事：第一係 OpenAI 同 Anthropic 嘅大語言模型點樣用同人類數學家完全不同嘅搜尋策略，破解咗 Erdős 單位距離猜想同 Navier-Stokes 方程呢啲懸咗好耐嘅數學難題；第二係 2026 年 10 月底被稱為「黑色十月」嘅 AI 加速安全漏洞潮，PHP、GitLab、Node.js、NGINX 全部中招，仲有國家級攻擊者用 agentic 手法入侵咗超過 2,250 個 Microsoft 365 租戶。</p>
+</div>
+<article class="article" id="a-latentspace-0">
+<h3 class="article-title"><a href="#a-latentspace-0">AI Is Getting Good at Math. Here’s Why.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ai-is-getting-good-at-math/" rel="noopener" target="_blank">https://latent.space/p/ai-is-getting-good-at-math/</a></span><span class="meta-date">📅 2026-10-23 23:19 UTC+8</span></div>
+<div class="article-body"><p>AI models from OpenAI and Anthropic have recently cracked several long-standing open mathematics problems, including the Erdős unit distance conjecture and the Navier-Stokes equations. The article argues that this breakthrough stems from a fundamental difference in search strategy: humans explore ideas breadth-first with a high quality bar because each attempt takes months, while LLMs pursue ideas depth-first with a near-zero quality bar because compute replaces time. With automated verifiers to check finished arguments, AI systems can now exchange time for compute, turning failed attempts into negative hints for the next iteration.</p>
+<p>OpenAI同Anthropic嘅AI模型最近解決咗幾個懸咗幾十年嘅數學難題，包括Erdős單位距離猜想同Navier-Stokes方程。文章指出呢個突破嘅關鍵在於搜索策略嘅根本分別：人類因為每個方向可能要花幾個月先有結果，所以要揀高質量嘅切入點；但AI可以用算力換時間，任何方向都試得，失敗嘅嘗試仲可以變成下一輪嘅負面提示。加上自動驗證器可以喺幾分鐘內判斷一個論證啱唔啱，AI系統而家可以喺短時間內探索大量唔確定嘅思路。</p>
+<p><a class="read-more" href="https://latent.space/p/ai-is-getting-good-at-math/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-latentspace-1">
+<h3 class="article-title"><a href="#a-latentspace-1">[AINews] Black October</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ainews-black-october/" rel="noopener" target="_blank">https://latent.space/p/ainews-black-october/</a></span><span class="meta-date">📅 2026-10-23 18:09 UTC+8</span></div>
+<div class="article-body"><p>A concentrated wave of AI-accelerated security disclosures and breaches in late October 2026, dubbed &quot;Black October,&quot; saw critical vulnerabilities in PHP, GitLab, Node.js, and NGINX land alongside supply chain compromises, a certificate authority collapse, and a state-actor agentic attack on over 2,250 Microsoft 365 tenants. Monthly CVE counts have surged from roughly 4,000 to 15,000 since April, and Anthropic&#x27;s deputy CISO warned that defenders face at least 18 months of holding the line before the situation improves. The episode marks a turning point where AI is simultaneously the primary attack vector and the most promising defensive tool, with formal verification now proving security properties across hundreds of open-source libraries.</p>
+<p>2026年10月底被稱為「黑色十月」，因為AI加速發現嘅嚴重漏洞同數據洩漏集中爆發，PHP、GitLab、Node.js同NGINX全部中招，仲有供應鏈攻擊同國家級黑客用AI代理工具攻擊超過2,250個Microsoft 365租戶。每月CVE數量由4月嘅大約4,000個飆升到15,000個，Anthropic副首席安全主任話防守方最少要撐18個月先有望好轉。呢次事件標誌住AI同時係最大嘅攻擊武器同最有潛力嘅防禦工具，正式驗證已經可以喺幾百個開源程式庫入面證明安全屬性。</p>
+<p><a class="read-more" href="https://latent.space/p/ainews-black-october/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+</section>
+<section class="source" id="src-thebatch">
+<h2 class="source-title">Deep Learning AI — The Batch <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>TheBatch&#x27;s latest issue centers on Andrew Ng&#x27;s four-part framework — People, Projects, Platforms, and Processes — offering engineering leaders a roadmap for transforming teams into AI-native organizations through hands-on leadership and redesigned workflows. The issue also reports on Meta&#x27;s release of three new multimodal models, including Muse Wonder Full.</p>
+<p>TheBatch最新一期重點介紹咗吳恩達提出嘅四步框架，涵蓋人才、項目、平台同流程，為工程團隊轉型做AI原生組織提供咗清晰路線圖。同時亦報導咗Meta發布三款新多模態模型，包括Muse Wonder Full。</p>
+</div>
+<article class="article" id="a-thebatch-0">
+<h3 class="article-title"><a href="#a-thebatch-0">Issue 376</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-376" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-376</a></span><span class="meta-date">📅 2026-10-23 22:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng outlines a four-part framework — People, Projects, Platforms, and Processes — for engineering leaders to transform existing teams into AI-native organizations, emphasizing hands-on leadership, growth-oriented project selection, agent-ready infrastructure, and redesigned workflows. The issue also covers Meta&#x27;s release of three new multimodal models, including Muse Wonder Full which ties with Claude Sonnet 5.5 on the Intelligence Index, and Muse Spark Open, the top open-weights model from a U.S. company. Together, these pieces highlight both the organizational shifts and the competitive model releases reshaping the AI landscape in late 2026.</p>
+<p>Andrew Ng 提出咗一個「人、項目、平台、流程」四步框架，建議工程領導者點樣將現有團隊轉型做 AI-native 團隊，包括親手上陣、揀有增長潛力嘅項目、投資 agent-ready 基礎設施，同埋重新設計工作流程。同一期仲報導咗 Meta 一口氣推出三款多模態模型，其中 Muse Wonder Full 喺 Intelligence Index 上面追平 Claude Sonnet 5.5，而 Muse Spark Open 則係美國公司入面最強嘅開源權重模型。呢啲內容反映咗 2026 年底 AI 行業喺組織變革同模型競爭兩方面都進入咗新階段。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-376" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">122 words</div>
+</article>
+</section>
+<section class="source" id="src-techcrunchai">
+<h2 class="source-title">TechCrunch AI <span class="source-count">4 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>TechCrunchAI&#x27;s coverage over the past 24 hours spans the expanding frontier of autonomous vehicles, with inDrive teaming up with Pony.ai and Nvidia to launch robotaxi tests in Kazakhstan by 2027, alongside a fascinating MIT study showing that AI agents left without tasks spontaneously invent games and improve their problem-solving abilities. On the business side, OpenAI is reportedly raising $30 billion at a $1.25 trillion valuation ahead of its IPO, setting the stage for an arms race in AI company valuations.</p>
+<p>過去24個鐘，TechCrunchAI 主要報導咗三條大新聞：inDrive 同 Pony.ai 同 Nvidia 合作，打算 2027 年喺哈薩克斯坦測試無人駕駛的士；MIT 研究發現 AI agent 冇嘢做嘅時候會自己發明遊戲玩，而且玩過之後表現仲會更好；另外 OpenAI 據報正以 1.25 萬億美元估值籌集 300 億美元，準備上市。</p>
+</div>
+<article class="article" id="a-techcrunchai-0">
+<h3 class="article-title"><a href="#a-techcrunchai-0">Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/" rel="noopener" target="_blank">https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/</a></span><span class="meta-date">📅 2026-10-23 12:00 UTC+8</span></div>
+<div class="article-body"><p>Ride-hailing company inDrive has partnered with Chinese autonomous driving firm Pony.ai and Nvidia to begin testing robotaxis in Astana, Kazakhstan, starting in the first half of 2027, initially with a safety operator on board. The collaboration uses a capital-light model where Pony.ai supplies the vehicles, Nvidia provides AI infrastructure like its Hyperion platform, and inDrive operates the service through its app, aiming to make autonomous rides affordable in emerging markets. The choice of Astana is strategic, as its harsh winters offer a challenging testing ground that could prove valuable for expanding autonomous mobility to other cold-climate regions.</p>
+<p>叫 inDrive 嘅叫車平台同中國自動駕駛公司小馬智行同 Nvidia 拍住檔，打算 2027 年上半年喺哈薩克斯坦首都阿斯塔納開始測試無人駕駛的士，初期仲會有安全员坐喺車上面。佢哋嘅模式係小馬智行提供車、Nvidia 提供 AI 技術、inDrive 負責營運，目標係令自動駕駛服務喺新興市場都負擔得起。揀阿斯塔納做試點係因為嗰度冬天又凍又有冰雪，可以測試自動駕駛系統喺惡劣天氣下嘅表現，成功嘅話對日後擴展到其他寒冷地區好有參考價值。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">112 words</div>
+</article>
+<article class="article" id="a-techcrunchai-1">
+<h3 class="article-title"><a href="#a-techcrunchai-1">Left alone with nothing to do, AI agents started playing</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/" rel="noopener" target="_blank">https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/</a></span><span class="meta-date">📅 2026-10-23 08:45 UTC+8</span></div>
+<div class="article-body"><p>MIT researchers placed 13 AI agents on a simulated desert island for 30 hours with no assigned tasks, and the agents began inventing their own games and challenges, a behavior the team describes as play. When later tested on specific objectives, the agents that had spent time exploring freely outperformed identical agents that had never been on the island, suggesting that unstructured play can build practical skills. The findings point to a new approach to training AI, one that gives agents a rich environment and lets them discover useful knowledge on their own rather than being told what to practice.</p>
+<p>麻省理工嘅研究員將13個AI智能體放咗去一個模擬荒島上面30個鐘，冇畀任何任務佢哋，結果佢哋自己開始發明遊戲同挑戰，研究員話呢種行為就係「玩」。之後做測試嗰陣，呢啲有得玩嘅智能體表現比從來冇上過島嘅一模一樣嘅智能體好，證明無結構嘅探索可以幫AI學到實用技能。呢個發現提示咗一種新嘅AI訓練方法，就係畀個豐富嘅環境佢哋，等佢哋自己搵到有價值嘅知識，而唔係預先話佢哋要練啲乜。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-techcrunchai-2">
+<h3 class="article-title"><a href="#a-techcrunchai-2">OpenAI working on new $30B raise at $1.25T valuation ahead of IPO</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/" rel="noopener" target="_blank">https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/</a></span><span class="meta-date">📅 2026-10-23 06:08 UTC+8</span></div>
+<div class="article-body"><p>OpenAI is reportedly raising up to $30 billion at a $1.25 trillion pre-money valuation, led by Coatue and UAE investors, which would make it the most valued private company in history if completed. The round comes as OpenAI has already filed confidential IPO paperwork, and the elevated valuation could also pressure Anthropic, which is seeking a $1.5 to $2 trillion valuation for its own public debut.</p>
+<p>OpenAI 據報正籌措高達 300 億美元融資，估值達 1.25 萬億美元，由 Coatue 同阿聯酋投資者領投，如果成功將成為史上估值最高嘅私人公司。呢輪融資正值 OpenAI 已經 confidential 遞交上市文件嘅時候，同時亦可能推高 Anthropic 上市嘅估值期望，因為佢哋想以 1.5 至 2 萬億美元嘅估值公開發售。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+<article class="article" id="a-techcrunchai-3">
+<h3 class="article-title"><a href="#a-techcrunchai-3">1Password launches a way for AI agents to log in on your behalf without seeing your password</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/" rel="noopener" target="_blank">https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/</a></span><span class="meta-date">📅 2026-10-23 03:07 UTC+8</span></div>
+<div class="article-body"><p>Password manager 1Password has launched a new platform called 1Password for Agents that allows AI agents to log into users&#x27; accounts on their behalf without ever seeing the user&#x27;s actual credentials. The system works by verifying the agent&#x27;s identity through a digital key, alerting the user for approval, and then filling in credentials automatically. The launch comes amid growing concern from major institutions, including U.S. banks, which have begun detecting agentic activity in customer accounts and are struggling to distinguish legitimate user-authorized actions from unauthorized access.</p>
+<p>1Password 推出咗一個新平台，容許 AI 代理幫用戶登入帳戶，但全程唔會見到用戶嘅密碼。個系統會驗證代理嘅身份，再通知用戶確認，先至自動填入登入資料。呢個功能推出嘅時候，美國銀行已經開始發現有 AI 代理喺客戶帳戶入面活動，好多銀行都話好擔心，因為佢哋分唔清啲操作究竟係咪用戶授權嘅。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+</section>
+<section class="source" id="src-simonwillison">
+<h2 class="source-title">Simon Willison <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Simon Willison highlighted a moment in the official music video for &quot;FREEDOM&quot; by Dutch alternative rock band De Staat, where AI-generated or AI-assisted visual effects appear at the 44-second mark. The effects were produced by a studio cheekily named &quot;Fake it or Leave it,&quot; and Willison&#x27;s post touches on the growing presence of AI in creative and artistic work.</p>
+<p>Simon Willison 留意到荷蘭另類搖滾樂隊 De Staat 嘅歌曲「FREEDOM」官方 MV 入面，第 44 秒出現咗由 AI 生成或者 AI 輔助製作嘅視覺特效。呢啲特效由一間叫「Fake it or Leave it」嘅工作室製作，佢嘅文章反映咗 AI 喺創意行業入面越嚟越普遍嘅趨勢。</p>
+</div>
+<article class="article" id="a-simonwillison-0">
+<h3 class="article-title"><a href="#a-simonwillison-0">DE STAAT - FREEDOM (Official Music Video)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simonwillison.net/2026/Oct/22/de-staat-freedom/" rel="noopener" target="_blank">https://simonwillison.net/2026/Oct/22/de-staat-freedom/</a></span><span class="meta-date">📅 2026-10-23 03:42 UTC+8</span></div>
+<div class="article-body"><p>Dutch alternative rock band De Staat released the official music video for their track &quot;FREEDOM,&quot; which caught the attention of tech blogger Simon Willison due to a notable moment at the 44-second mark. The visual effects were created by Matties Grooten of the studio &quot;Fake it or Leave it,&quot; a name that hints at the use of AI-generated or AI-assisted imagery. The post reflects the growing intersection of generative AI and creative media, a topic Willison covers extensively on his blog.</p>
+<p>荷蘭另類搖滾樂隊 De Staat 推出咗新歌「FREEDOM」嘅官方 MV，科技部落格作者 Simon Willison 特別提到影片第 44 秒嘅畫面好值得留意。呢個 MV 嘅視覺特效由 Matties Grooten 同佢嘅工作室「Fake it or Leave it」負責，工作室個名本身就暗示咗可能用咗 AI 生成嘅影像。呢件事反映到生成式 AI 同創意媒體之間嘅界線越來越模糊，係近年好值得關注嘅趨勢。</p>
+<p><a class="read-more" href="https://simonwillison.net/2026/Oct/22/de-staat-freedom/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+</section>
+<section class="source" id="src-deepmind">
+<h2 class="source-title">Google DeepMind <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-deepmind-0">
+<h3 class="article-title"><a href="#a-deepmind-0">Beyond tree cover: mapping the world’s forest types</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" rel="noopener" target="_blank">https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/</a></span><span class="meta-date">📅 2026-10-22 22:30 UTC+8</span></div>
+<div class="article-body"><p>Google DeepMind, the World Resources Institute, and IIASA have released Forest Typology (ForTy) 2020, a 10-meter resolution global map that classifies every patch of land into six forest and land-use types, from primary forest to timber plantation to tree-crop farm. The map also includes a year-by-year time series from 2017 to 2025 showing how forests have changed, revealing not just where forest was lost but what replaced it. This is a critical tool for enforcing the EU&#x27;s deforestation regulation, which requires companies to prove their products do not come from converted natural forests.</p>
+<p>Google DeepMind 連同世界資源研究所同 IIASA 推出咗 Forest Typology 2020，呢張全球地圖以十米解析度將地球上每一塊地劃分做六種森林同土地類型，由原始森林到人工種植林到經濟作物農場都有。地圖仲包含 2017 年到 2025 年逐年變化數據，唔單止見到邊度森林消失咗，仲見到佢俾咩取代咗。呢個係歐盟反森林砍伐法規嘅重要基準，幫企業同監管機構分辨天然森林同人工林。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+<article class="article" id="a-deepmind-1">
+<h3 class="article-title"><a href="#a-deepmind-1">Accelerating the search for antimicrobial peptides with Google Antigravity</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" rel="noopener" target="_blank">https://deepmind.google/blog/accelerating-antimicrobial-discovery/</a></span><span class="meta-date">📅 2026-10-16 00:08 UTC+8</span></div>
+<div class="article-body"><p>Google Antigravity is an agentic development platform that helps biologists accelerate the search for new antimicrobial peptides to combat the growing crisis of antimicrobial resistance. It compresses what was previously a fragmented, multi-database search into a single session and uses a model called ProtNLM to scan millions of uncharacterized proteins for potential biological function. A novel peptide candidate with predicted activity against respiratory tract infection pathogens has been identified and is now undergoing wet-lab validation.</p>
+<p>Google Antigravity 係 Google 推出嘅一個智能開發平台，可以幫生物學家加快搵新嘅抗菌肽，應對越嚟越嚴重嘅抗藥性問題。佢將以前要喺好多資料庫之間跳嚟跳去嘅搜尋過程壓縮做一個 session 搞掂，仲可以用 ProtNLM 模型掃描數百萬個未鑑定嘅蛋白質。而家已經搵到一個對呼吸道感染病原體有預測活性嘅新肽候選，正喺度做實驗室驗證。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+<article class="article" id="a-deepmind-2">
+<h3 class="article-title"><a href="#a-deepmind-2">Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/on-device-ai-scam-detection-mddi/" rel="noopener" target="_blank">https://deepmind.google/blog/on-device-ai-scam-detection-mddi/</a></span><span class="meta-date">📅 2026-10-14 10:00 UTC+8</span></div>
+<div class="article-body"><p>Google DeepMind and Singapore&#x27;s Government Technology Agency have developed a privacy-preserving, on-device AI model to detect scams, which now account for over half of the country&#x27;s reported crimes and more than S$4 billion in losses since 2019. As scam tactics have evolved from simple phishing to complex social engineering responsible for up to 80% of all losses, the collaboration under Singapore&#x27;s National AI Partnership aims to protect users without compromising their privacy.</p>
+<p>Google DeepMind 同新加坡政府科技局合作，開發咗一個保護私隱、喺裝置上運行嘅 AI 模型嚟偵測詐騙。而家詐騙案件佔新加坡超過一半嘅報案數字，由 2019 年開始損失超過 40 億新加坡元，而且騙案手法已經由簡單嘅釣魚升級到複雜嘅社交工程，佔所有損失高達八成。呢個合作係新加坡國家 AI 夥伴計劃嘅一部分，目標係保護用戶同時唔犧牲私隱。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/on-device-ai-scam-detection-mddi/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">87 words</div>
+</article>
+</section>
+<section class="source" id="src-aws">
+<h2 class="source-title">AWS Architecture Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aws-0">
+<h3 class="article-title"><a href="#a-aws-0">Automate medical coding with Step Functions and Amazon Bedrock AgentCore</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/</a></span><span class="meta-date">📅 2026-10-22 05:26 UTC+8</span></div>
+<div class="article-body"><p>AWS has published a reference architecture that automates medical coding by combining deterministic workflow orchestration with bounded AI agent reasoning, using Step Functions and Amazon Bedrock AgentCore. The design escalates terms through a cheapest-first pipeline—safety block-list, exact matching, then an AI agent only for ambiguous cases—keeping the workflow auditable and human-approvable. This matters because medical coding is safety-critical yet repetitive, and the pattern lets teams automate confident cases while routing only uncertain ones to skilled coders.</p>
+<p>AWS 出咗一個參考架構，用 Step Functions 同 Amazon Bedrock AgentCore 將醫學編碼自動化，設計上係由平到貴逐級升級——先查安全黑名單，再做精確匹配，最後先交俾 AI agent 處理有爭議嘅術語。呢個做法重要係因為醫學編碼事關安全但大部分都係重複工作，呢個模式可以自動處理有把握嘅個案，只將唔確定嘅交返俾專業編碼員覆核。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">92 words</div>
+</article>
+<article class="article" id="a-aws-1">
+<h3 class="article-title"><a href="#a-aws-1">How Dynata scaled AI across the development lifecycle with AI-DLC and Kiro IDE</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/</a></span><span class="meta-date">📅 2026-10-15 23:50 UTC+8</span></div>
+<div class="article-body"><p>Dynata, the world&#x27;s largest first-party data company, cut feature delivery from three to four sprints down to roughly one sprint by adopting AWS&#x27;s AI-Driven Development Lifecycle methodology through Kiro IDE. The team progressed in three deliberate stages, starting with AI-assisted coding via Amazon Q Developer, then connecting AI to their knowledge ecosystem across Jira, Confluence, and Lucid, and finally embedding AI into every phase of delivery from requirements through to production. The approach matters because it demonstrates that AI&#x27;s greatest impact on software delivery comes not from accelerating individual developers but from tightening cross-functional alignment across the entire lifecycle.</p>
+<p>Dynata 係全球最大嘅第一方數據公司，佢哋用咗 AWS 嘅 AI-Driven Development Lifecycle 方法論配合 Kiro IDE，將原本要三到四個 sprint 先搞掂嘅功能開發壓縮到大概一個 sprint。佢哋分咗三個階段逐步推進，由最初用 Amazon Q Developer 做 AI 輔助編碼，到將 AI 接駁返 Jira、Confluence、Lucid 呢啲知識生態系統，最後將 AI 融入成個交付流程每個環節。呢個做法之所以重要，係因為佢證明咗 AI 對軟件交付最大嘅價值唔係令個別開發者快啲寫 code，而係令跨職能團隊由頭到尾都對齊得更緊密。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">131 words</div>
+</article>
+<article class="article" id="a-aws-2">
+<h3 class="article-title"><a href="#a-aws-2">Multi-region disaster recovery for Amazon API Gateway WebSocket APIs</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/</a></span><span class="meta-date">📅 2026-10-14 22:31 UTC+8</span></div>
+<div class="article-body"><p>AWS has published a design pattern for achieving multi-region disaster recovery with Amazon API Gateway WebSocket APIs, addressing the critical problem that regional outages sever all persistent WebSocket connections and destroy session state. The solution uses an active-passive architecture with Route 53 failover routing, DynamoDB Global Tables for cross-region state replication, and a canary health probe to detect failures independently of user traffic, allowing clients to reconnect and resume operations without losing their session context. This matters for any real-time application such as live auctions, collaborative editors, or financial trading platforms that depend on continuous bidirectional communication.</p>
+<p>AWS 出咗一篇技術文章，介紹點樣用 Amazon API Gateway WebSocket API 做跨區域災難恢復，解決區域故障時所有 WebSocket 連線斷晒、用戶 session 資料全部冇咗嘅問題。方案採用主備架構，用 Route 53 做 DNS 故障切換、DynamoDB Global Tables 做跨區域狀態複製，再加一個 canary 健康探測器獨立偵測故障，等客戶端可以自動重連同恢復 session。對於即時競投、協作編輯、金融交易呢類需要持續雙向通訊嘅實時應用嚟講，呢個方案非常實用。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">124 words</div>
+</article>
+</section>
+<section class="source" id="src-github">
+<h2 class="source-title">GitHub Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-github-0">
+<h3 class="article-title"><a href="#a-github-0">The bridge to agent-scale Git infrastructure</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</a></span><span class="meta-date">📅 2026-10-22 00:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub has migrated nearly all repositories to Azure but the busiest ones remain stuck due to a 25ms cross-region latency that bottlenecks writes through a repository-wide lock. By shifting to per-reference serialization and introducing virtual replicas backed by Azure Blob Storage, they have raised write throughput three to four times and unlocked independent read scaling. These changes are driven by the explosive growth of AI agent traffic and the need to decouple storage from compute at scale.</p>
+<p>GitHub 已經將幾乎所有 repository 遷移到 Azure，但最繁忙嗰啲因為跨區 25ms 延遲一直卡住寫入效能。佢哋而家將寫入鎖由整個 repository 縮細到個別 reference，再加上用 Azure Blob Storage 做後盾嘅 virtual replica，寫入吞吐量提升咗三到四倍，讀取亦可以獨立擴展。呢啲改動主要係因為 AI agent 帶嚟嘅流量爆發式增長，逼到佢哋一定要將儲存同運算分開處理。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+<article class="article" id="a-github-1">
+<h3 class="article-title"><a href="#a-github-1">Staying Evergreen: How we automated secure access and repo hygiene in a shared org</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/" rel="noopener" target="_blank">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</a></span><span class="meta-date">📅 2026-10-16 02:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub&#x27;s internal team built Evergreen, a GitHub App that automates quarterly access reviews for outside collaborators and archives stale repositories across their shared organization of over 1,400 employees. The app follows a &quot;fail secure&quot; principle that revokes access by default when no one responds to a review, and stores all state as JSON files in a git repository so the commit history doubles as a built-in audit trail. It matters because it demonstrates how organizations can replace error-prone manual housekeeping with safe, transparent automation using only native GitHub features.</p>
+<p>GitHub 內部團隊開發咗一個叫 Evergreen 嘅 GitHub App，用嚟自動處理外部協作者嘅權限審批同埋歸檔閒置嘅 repo，解決咗超過 1,400 名員工共用一個組織時人手管理嘅問題。佢嘅設計原則係「預設安全」，如果冇人回應審批，權限就會自動被撤銷，而且所有狀態都記錄喺 git 檔案入面，commit 歷史本身就係審計記錄。呢個案例證明咗用 GitHub 原生功能就可以做到既安全又透明嘅自動化管理，唔使另外搭一套系統。</p>
+<p><a class="read-more" href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">107 words</div>
+</article>
+<article class="article" id="a-github-2">
+<h3 class="article-title"><a href="#a-github-2">From 2,500 requests to 24: Rebuilding star history without the stargazers</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</a></span><span class="meta-date">📅 2026-10-15 03:11 UTC+8</span></div>
+<div class="article-body"><p>GitHub has replaced its old stargazer API with a new endpoint that returns daily star counts without exposing user identities, solving both a privacy problem where scrapers harvested stargazer lists for spam and a performance problem where the database was forced to count hundreds of thousands of rows on every request. The key design change is filtering stars by a calendar-week date range before grouping them into daily buckets, which cuts the number of requests needed to reconstruct a full growth curve from roughly 2,511 down to about 24 for a repository like react/react. The change came after GitHub restricted access to stargazer lists, which broke tools like Star History, and the fix emerged from direct collaboration between GitHub&#x27;s engineering team and the community.</p>
+<p>GitHub 將舊嘅 star history API 換咗一個新嘅 endpoint，唔再回傳用戶身份，只回傳每日嘅 star 數量，一次過解決咗私隱同效能兩個問題。舊方法要逐頁抓取幾千條記錄先畫到一條曲線，例如 react/react 要 2,511 次 request，而新方法係先按時間範圍篩選再聚合，同樣嘅曲線只需要大約 24 次 request 就搞掂。呢個改動係因為 GitHub 之前限制咗 stargazer list 嘅存取權限，搞到 Star History 呢啲工具用唔到，後來 GitHub 同社群合作先设计出呢個更合理嘅方案。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">156 words</div>
+</article>
+</section>
+<section class="source" id="src-stripe">
+<h2 class="source-title">Stripe Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-stripe-0">
+<h3 class="article-title"><a href="#a-stripe-0">Your AI agent can move money in Stripe - here&#x27;s how to stay in control</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe" rel="noopener" target="_blank">https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe</a></span><span class="meta-date">📅 2026-10-21 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe&#x27;s MCP server now allows AI agents to move money through Stripe Treasury, expanding their capabilities beyond building checkout pages, running financial reports, and automating refunds or price adjustments. As agents gain the power to send funds to others, businesses need to understand how to maintain oversight and prevent unauthorized transactions.</p>
+<p>Stripe 嘅 MCP server 而家可以俾 AI agent 透過 Stripe Treasury 直接過數畀人，唔止係起個付款頁面、出財務報告或者自動退款咁簡單。當 AI agent 真係可以郁錢，企業就要諗清楚點樣控制同監察，免得出現未經授權嘅交易。</p>
+<p><a class="read-more" href="https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">69 words</div>
+</article>
+<article class="article" id="a-stripe-1">
+<h3 class="article-title"><a href="#a-stripe-1">Scaling Radar: Fighting fraud with agent-assisted machine learning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning" rel="noopener" target="_blank">https://stripe.com/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning</a></span><span class="meta-date">📅 2026-10-19 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe has scaled its Radar fraud detection system by leveraging agent-assisted machine learning to enable rapid experimentation and improve accuracy. The approach allowed the company to iterate quickly on detection models while maintaining performance at scale. This matters because fraud detection is a critical challenge for payment platforms processing millions of transactions daily.</p>
+<p>Stripe 利用代理輔助嘅機器學習方法，成功將 Radar 欺詐偵測系統規模化，同時透過快速實驗不斷提升準確度。呢個方法令公司可以喺處理海量交易嘅同時，快速迭代偵測模型。對於每日處理數以百萬計交易嘅支付平台嚟講，有效嘅欺詐偵測係至關重要嘅。</p>
+<p><a class="read-more" href="https://stripe.com/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">61 words</div>
+</article>
+<article class="article" id="a-stripe-2">
+<h3 class="article-title"><a href="#a-stripe-2">Go from idea to company without leaving your development workflow</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/go-from-idea-to-company-with-atlas" rel="noopener" target="_blank">https://stripe.com/blog/go-from-idea-to-company-with-atlas</a></span><span class="meta-date">📅 2026-10-19 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe Atlas now allows developers to incorporate a company directly from the command line interface, eliminating the need to leave their development environment. This integration means founders can go from building a product to having a legally registered business without switching tools or workflows. It matters because it removes friction for technical founders who want to formalize their projects quickly.</p>
+<p>Stripe Atlas 而家可以令開發者喺 command line 入面直接成立公司，唔使離開自己嘅開發環境。呢個功能令技術型創辦人可以由開發產品一步到位變成合法註冊嘅公司，唔使轉用其他工具或者工作流程。對於想快速將自己嘅項目正規化嘅開發者嚟講，呢個係一個好實用嘅更新。</p>
+<p><a class="read-more" href="https://stripe.com/blog/go-from-idea-to-company-with-atlas" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">70 words</div>
+</article>
+</section>
+<section class="source" id="src-aakashai">
+<h2 class="source-title">AI by Aakash <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aakashai-0">
+<h3 class="article-title"><a href="#a-aakashai-0">Reverse Engineer Anything.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/reverse-engineer-anything" rel="noopener" target="_blank">https://www.aibyaakash.com/p/reverse-engineer-anything</a></span><span class="meta-date">📅 2026-10-18 13:52 UTC+8</span></div>
+<div class="article-body"><p>A viral GitHub repo called Reverse Engineer Anything, now at 310K stars, is demonstrating that AI coding agents can read and rebuild complex software like Signal and Linear in minutes, raising urgent questions about what competitive moats remain in the software industry. The author tested the tool on both reading an open-source app and doing a clean-room rebuild of Linear, a $2.5 billion company, and found the results convincing enough to challenge traditional assumptions about software defensibility. The piece also covers Meta&#x27;s aggressive re-entry into the frontier AI race with its Muse Wonder model, leveraging WhatsApp&#x27;s three billion users as a distribution advantage no competitor can match.</p>
+<p>一個叫 Reverse Engineer Anything 嘅 GitHub repo 爆紅到 310 萬 star，作者實測用 AI 編程代理去讀 Signal 同重建 Linear，幾分鐘就搞掂，直接挑戰軟件行業仲有冇護城河呢個問題。Linear 值 25 億美金、服務四萬幾間公司，結果 Codex 用三粒鐘就整到一個差唔多嘅 issue tracker 出嚟，真係幾震撼。另外 Meta 出咗 Muse Wonder 呢個 frontier model，靠 WhatsApp 三十億用戶做分發優勢，對 OpenAI 構成實實在在嘅威脅。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/reverse-engineer-anything" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">146 words</div>
+</article>
+<article class="article" id="a-aakashai-1">
+<h3 class="article-title"><a href="#a-aakashai-1">Muse.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/muse" rel="noopener" target="_blank">https://www.aibyaakash.com/p/muse</a></span><span class="meta-date">📅 2026-10-12 12:56 UTC+8</span></div>
+<div class="article-body"><p>Meta&#x27;s personal AI agent Muse hit 5 million downloads in just 22 days, outpacing ChatGPT&#x27;s record, despite running on the weakest model among the big four frontier labs. Its success comes from product design rather than raw model power, offering an always-on agent with its own cloud computer, deep integration across Meta&#x27;s apps and WhatsApp, and features like an editable &quot;soul&quot; file and goal-based task management. The article also covers Anthropic&#x27;s 10x price cut on Claude Haiku 5.5, Google putting AI chips in orbit, and Anthropic&#x27;s potential $2 trillion IPO.</p>
+<p>Meta 出嘅個人 AI agent Muse 得 22 日就有五百萬下載，仲快過 ChatGPT，但佢用嘅模型其實係四大實驗室入面最弱嘅。佢贏喺產品體驗，唔係贏喺模型本身，有自己嘅雲端電腦、可以幫你訂嘢同埋格價、仲可以喺 WhatsApp 直接用，加上可以改「soul」檔案嚟控制佢嘅行為。文章仲提到 Anthropic 將 Claude Haiku 5.5 減價十倍、Google 將 AI 晶片送上太空、同埋 Anthropic 可能以兩萬億美元估值上市。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/muse" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">116 words</div>
+</article>
+<article class="article" id="a-aakashai-2">
+<h3 class="article-title"><a href="#a-aakashai-2">Dots.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/dots" rel="noopener" target="_blank">https://www.aibyaakash.com/p/dots</a></span><span class="meta-date">📅 2026-10-03 08:33 UTC+8</span></div>
+<div class="article-body"><p>OpenAI launched Dots, always-on personal agents that run autonomously in the cloud with their own computer and browser, marking its entry into the rapidly growing personal agent market alongside competitors like Grokbot and Hermes. The newsletter also covers Google&#x27;s long-delayed Gemini 4 Argon release, which despite benchmark claims sits only third behind Anthropic&#x27;s models, and Anthropic&#x27;s Sonnet 5.5 which matches Opus performance at half the cost. These developments underscore how the AI race in 2026 has shifted from raw model capability to shipping pace, agent autonomy, and practical work integration.</p>
+<p>OpenAI 推出咗 Dots，呢啲係可以喺雲端自主運行嘅個人智能代理，有自己嘅電腦同瀏覽器，正式加入同 Grokbot、Hermes 競爭嘅個人代理市場。Newsletter 同時提到 Google 遲咗好耐先出 Gemini 4 Argon，雖然話攞咗好多 benchmark 但其實只排第三，反而 Anthropic 嘅 Sonnet 5.5 用一半價錢就達到 Opus 水平。2026 年 AI 競爭已經唔再係比邊個模型最勁，而係比邊個出得快、邊個嘅代理真係幫到手做嘢。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/dots" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">117 words</div>
+</article>
+</section>
+<section class="source" id="src-raschka">
+<h2 class="source-title">Sebastian Raschka Magazine <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-raschka-0">
+<h3 class="article-title"><a href="#a-raschka-0">Language Models for Text Classification: From Bag-of-Words to Jev</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/classifier-history-and-jev</a></span><span class="meta-date">📅 2026-09-29 18:50 UTC+8</span></div>
+<div class="article-body"><p>The article traces the evolution of text classification from bag-of-words methods through deep neural networks to the recently popular Jev AI model, which fills a niche between general-purpose LLMs and narrow task-specific classifiers by offering faster, cheaper classification with broader generality. The author argues that while Jev is essentially a classifier, it represents a meaningful advance in balancing speed, cost, and versatility for text classification tasks.</p>
+<p>呢篇文章由最原始嘅 bag-of-words 講到深度神經網絡，再講到最近好紅嘅 Jev AI 模型，話畀讀者知 Jev 其實就係一個文字分類器，但佢嘅賣點係比一般大模型快好多、平好多，同時又比專門做單一任務嘅模型通用好多。作者認為唔好因為佢只係做分類就睇小佢，佢喺速度、成本同靈活性之間取得咗一個好值得留意嘅平衡。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">78 words</div>
+</article>
+<article class="article" id="a-raschka-1">
+<h3 class="article-title"><a href="#a-raschka-1">GPT-6 Astra, Looped Transformers, and Hidden Reasoning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and</a></span><span class="meta-date">📅 2026-09-09 19:14 UTC+8</span></div>
+<div class="article-body"><p>OpenAI&#x27;s newly released GPT-6 Astra has set a new frontier across benchmarks, scoring 99.9% on ARC-AGI-3 and showing particular strength in 3D rendering and computer-use tasks, while the article also unpacks the architecture rumors around looped transformers and hidden reasoning traces. The author highlights that OpenAI&#x27;s purchase of tens of thousands of Macs for reinforcement learning training signals a broader push toward LLMs that can directly operate graphical interfaces, making everyday computer tasks more accessible beyond the tech world.</p>
+<p>OpenAI 啱啱推出嘅 GPT-6 Astra 喺好多 benchmark 都創咗新高，特別係 ARC-AGI-3 攞到 99.9%，仲有 3D 渲染同電腦操作嘅能力都特別突出，文章亦都詳細講咗 looped transformer 同埋隱藏 reasoning trace 嘅架構傳聞。作者指出 OpenAI 買咗幾萬部 Mac 做 reinforcement learning 訓練，反映大模型正朝住可以直接操作圖形介面嘅方向發展，將來普通人用 AI 做日常電腦嘢會越來越容易。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">110 words</div>
+</article>
+<article class="article" id="a-raschka-2">
+<h3 class="article-title"><a href="#a-raschka-2">How Claude Watermarks AI-Generated Text</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/claude-watermarking" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/claude-watermarking</a></span><span class="meta-date">📅 2026-08-22 19:11 UTC+8</span></div>
+<div class="article-body"><p>Anthropic has introduced an invisible watermarking system for text generated by its Claude models, allowing the company to identify AI-generated content while keeping the watermark undetectable to ordinary users. The watermark is applied as a subtle modification during the token sampling step inside the language model, meaning it adds minimal computational overhead. The announcement has sparked widespread debate about whether such watermarking could degrade output quality or serve as a necessary tool for transparency in an era of widespread AI-generated text.</p>
+<p>Anthropic 宣布咗佢哋嘅 Claude 模型會喺生成嘅文字入面加入一個隱形浮水印，只有佢哋自己先可以解碼識別，一般用戶完全睇唔到。呢個浮水印其實只係喺模型生成文字嘅取樣過程入面做咗一個好細嘅改動，基本上唔會增加幾多運算成本。呢個消息一出就引起咗好多討論，有人擔心浮水印會令文字質素變差，但也有人覺得喺 AI 生成內容氾濫嘅時代，呢個係一個必要嘅透明度措施。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/claude-watermarking" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">91 words</div>
+</article>
+</section>
+<section class="source" id="src-xai">
+<h2 class="source-title">xAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-xai-0">
+<h3 class="article-title"><a href="#a-xai-0">How SpaceXSI is using Grok Bot to scale customer support</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-bot-customer-support" rel="noopener" target="_blank">https://x.ai/news/grok-bot-customer-support</a></span><span class="meta-date">📅 2026-09-22 08:00 UTC+8</span></div>
+<div class="article-body"><p>After merging with Cursor, SpaceXSI deployed Grok Bot across its entire customer support operation, absorbing a 175% surge in ticket volume without hiring a single new person and cutting per-resolution costs to as low as twenty cents. The AI handles everything from pre-investigation and direct customer responses to queue management, incident detection, and daily data reporting, while human staff shift to oversight and complex judgment calls. The case illustrates how AI teammates are reshaping support teams from headcount-driven operations into smaller, higher-leverage units.</p>
+<p>SpaceXSI 合併 Cursor 之後，用 Grok Bot 接管咗成個客戶支援流程，處理量暴增 175% 都唔使多請一個人，每單成本低至兩毫子。由預查、直接回覆客戶、管理排隊、偵測事故，到每日數據報告，Grok Bot 全部搞掂，人類同事就專注做把關同處理需要判斷力嘅個案。呢個案例話畀我哋知，AI 隊友已經將支援團隊由靠人手堆砌嘅模式，變成小而精、槓桿極高嘅運作方式。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-bot-customer-support" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-xai-1">
+<h3 class="article-title"><a href="#a-xai-1">Introducing Grok 4.7</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-4-7" rel="noopener" target="_blank">https://x.ai/news/grok-4-7</a></span><span class="meta-date">📅 2026-09-21 08:00 UTC+8</span></div>
+<div class="article-body"><p>SpaceXAI has launched Grok 4.7, its most capable model for coding and knowledge work, offering twice the speed at half the price of comparable models. The model features a larger base architecture trained on harder multi-hour tasks, improved self-verification, and an entirely new safeguard stack that leads on biosafety and cybersecurity benchmarks. It is available now through the Grok API, Cursor, and third-party platforms starting at $2 per million input tokens.</p>
+<p>SpaceXAI 推出咗 Grok 4.7，係佢哋最勁嘅編程同知識工作模型，速度比同級模型快一倍，價錢卻平一半。呢個模型用咗更大嘅基礎架構，專門訓練處理需要幾個鐘頭先完成嘅難題，仲有全新嘅安全防護系統，喺生物安全同網絡安全測試都排第一。而家已經可以透過 Grok API、Cursor 同第三方平台用，輸入 token 每百萬兩蚊美金起。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-4-7" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+<article class="article" id="a-xai-2">
+<h3 class="article-title"><a href="#a-xai-2">Introducing Grok Voice Transcribe 2.0</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-voice-transcribe-2" rel="noopener" target="_blank">https://x.ai/news/grok-voice-transcribe-2</a></span><span class="meta-date">📅 2026-09-18 08:00 UTC+8</span></div>
+<div class="article-body"><p>SpaceXAI has released Grok Voice Transcribe 2.0, a speech-to-text model that doubles the accuracy of its predecessor at the same price, ranking first among 32 streaming models on the Artificial Analysis leaderboard. The model is trained on live, noisy, multilingual audio and shows its largest gains in multilingual transcription and real-world conditions like telephony and short voice commands. It is already powering tens of thousands of customer-support calls daily and voice agents in Tesla vehicles, with Atlassian Loom among the early adopters.</p>
+<p>SpaceXAI 推出咗 Grok Voice Transcribe 2.0，呢個語音轉文字模型準確率比上一代提升一倍，價錢一樣，喺 Artificial Analysis 排行榜 32 個串流模型入面排第一。佢最大嘅進步係多語言轉錄同真實環境下嘅音頻，例如電話線路同短語音指令。而家已經有幾萬個客服電話同 Tesla 車入面嘅語音助手用緊呢個模型，Atlassian Loom 都已經採用咗。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-voice-transcribe-2" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+</section>
+</main>
+<footer class="colophon">
+  <p>Generated automatically · 2026-10-23 · Sources fetched live from each publisher's feed or site.</p>
+  <p>Summaries only — click "Read full article" for the original. All content © their respective publishers.</p>
+</footer>
+</body>
+</html>
