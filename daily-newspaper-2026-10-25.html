@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Morning Newspaper — 2026-10-25</title>
+<style>
+:root {
+  --ink: #1a1a1a; --paper: #fdfdfb; --accent: #1a3a5c; --accent2: #b03a2e;
+  --muted: #6b7280; --line: #e5e7eb; --code-bg: #f3f4f6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--paper); color: var(--ink);
+  max-width: 900px; margin: 0 auto; padding: 24px 20px 80px;
+  line-height: 1.7; font-size: 17px;
+}
+header.masthead {
+  text-align: center; border-bottom: 3px double var(--ink);
+  padding: 28px 0 20px; margin-bottom: 28px;
+}
+header.masthead h1 {
+  font-size: 2.6rem; margin: 0 0 6px; letter-spacing: -0.5px; font-weight: 800;
+}
+header.masthead .tagline { color: var(--muted); font-style: italic; font-size: 1.05rem; }
+header.masthead .dateline { margin-top: 10px; font-size: 0.95rem; color: var(--accent); font-weight: 600; letter-spacing: 0.5px; }
+header.masthead .stats { margin-top: 8px; font-size: 0.85rem; color: var(--muted); }
+.overview {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 30px;
+}
+.overview h2 { font-size: 1.3rem; margin: 0 0 12px; border-bottom: 2px solid var(--accent2); padding-bottom: 8px; color: var(--accent2); }
+.overview p { margin: 0 0 10px; font-size: 0.98rem; line-height: 1.65; }
+.toc {
+  background: #f8fafc; border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 40px;
+}
+.toc h2 { font-size: 1.3rem; margin: 0 0 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; color: var(--accent); }
+.toc-source { margin-bottom: 16px; }
+.toc-src-name { font-weight: 700; font-size: 1.02rem; color: var(--accent); }
+.toc-count { color: var(--muted); font-size: 0.85rem; margin-left: 8px; }
+.toc-list { margin: 8px 0 0 0; padding-left: 22px; }
+.toc-list li { margin: 3px 0; font-size: 0.92rem; }
+.toc-list a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
+.toc-list a:hover { color: var(--accent2); border-bottom-color: var(--accent2); }
+section.source { margin-bottom: 56px; }
+.source-title {
+  font-size: 1.6rem; margin: 0 0 4px; padding: 14px 18px;
+  background: var(--accent); color: #fff; border-radius: 8px; letter-spacing: -0.3px;
+}
+.source-count { font-size: 0.9rem; opacity: 0.85; font-weight: 400; margin-left: 10px; }
+.source-summary {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line);
+  border-radius: 8px; padding: 14px 18px; margin: 12px 0 20px;
+}
+.source-summary-title {
+  font-size: 0.9rem; font-weight: 700; color: var(--accent2);
+  margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.source-summary p { margin: 0 0 8px; font-size: 0.95rem; line-height: 1.6; }
+article.article {
+  border-left: 3px solid var(--line); padding: 6px 0 6px 20px; margin: 28px 0;
+  scroll-margin-top: 20px;
+}
+article.article:hover { border-left-color: var(--accent); }
+.article-title { font-size: 1.3rem; margin: 0 0 8px; line-height: 1.35; }
+.article-title a { color: var(--ink); text-decoration: none; }
+.article-title a:hover { color: var(--accent); }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; font-size: 0.82rem; color: var(--muted); }
+.article-meta .meta-url a { color: var(--accent); word-break: break-all; }
+.article-meta .meta-warn { color: var(--accent2); font-weight: 600; }
+.article-body { font-size: 1rem; }
+.article-body p { margin: 0 0 14px; }
+.article-body a.read-more { color: var(--accent2); font-weight: 600; }
+.article-body a { color: var(--accent); }
+.article-words { font-size: 0.75rem; color: var(--muted); margin-top: 8px; text-align: right; }
+footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-top: 20px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+  body { font-size: 16px; padding: 16px 14px 60px; }
+  header.masthead h1 { font-size: 2rem; }
+  .toc { padding: 14px 16px; }
+}
+</style>
+</head>
+<body id="top">
+<header class="masthead">
+  <h1>The AI Morning Newspaper</h1>
+  <div class="tagline">Your daily briefing on artificial intelligence, from the world's leading tech sources</div>
+  <div class="dateline">2026-10-25</div>
+  <div class="stats">21 sources · 75 articles · 1,308,119 characters</div>
+</header>
+<div class="overview">
+<h2>In the Last 24 Hours</h2>
+<p>Apple 呢個星期好忙，OLED iPad mini 8 帶住 A20 Pro 晶片同防水功能登場，加上首款觸控螢幕 OLED MacBook Pro 以 M6、M5 Pro、M5 Max 三個級別推出。不過唔係事事順利，iPhone Duo 嘅內摺螢幕傳出沿鉸鏈位置自然裂開嘅個案，懷疑係組件對位有問題。配件方面，Belkin 推出半固態電池，比傳統充電寶輕咗唔少，而由吊墜到戒指嘅 AI 穿戴裝置亦持續將人工智能融入日常攜帶。</p>
+<p>Google DeepMind 公佈咗 Gemini 4 Argon，針對長篇軟件工程同網絡防禦任務，加入同 GPT-6 Astra、Claude 嘅激烈競爭。Guy&#x27;s Hospital 一位皮膚科醫生發現一個十年前嘅 CNN 喺皮膚癌診斷上跑贏兩個前沿 LLM，話畀大家知小型專用模型仲有存在價值。Apollo 首席經濟學家話 AI 對科技業以外嘅企業零回報，UC Berkeley 嘅 Fields 獎得主 Richard Borcherds 因為學生用 AI 做作業而徹底唔再批改。基礎設施方面，Cerebras 詳細講解點樣用多塊 WSE-3T 晶圓部署 Kimi K3 呢類萬億參數模型，達到每秒過千 token；另一篇分析則追溯 LLM 每次飛躍其實係訓練目標嘅改變而唔係單純堆規模。</p>
+<p>安全方面，有研究員揭露一類 OAuth 驗證信任錯配漏洞，攻擊者可以繞過電郵驗證直接接管帳戶，DreamHost 亦確認發生安全事件，迫使用戶重設密碼同 FTP 帳戶。開發者社群同樣風波不斷：r/opensource 禁止所有 AI 相關項目同非英語使用者，引發反彈同對手版成立；FOSDEM 27 新增「Digital Dissident」展區，呼籲開發者建立抗審查工具鏈。復古遊戲界有 Sabre Wulf Remastered 同 fheroes2 呢個 Heroes of Might and Magic II 引擎重寫項目，而一個將 S&amp;P 500 市值氣泡圖加上員工小人嘅視覺化作品，揭露咗唔同行業每員工創造價值嘅巨大差距。另外，俄勒岡州尤金市警方向一間本地新聞機構索價 250 萬美元處理公開紀錄申請，BBC 嘅 Blue Planet III 刻意保留 imperfect 鏡頭嚺證明真實性，HackerNoon 則發佈咗健康、硬件同平台自身歷史嘅大型精選合集。</p>
+</div>
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <div class="toc-source"><span class="toc-src-name">Hacker News</span> <span class="toc-count">15 articles</span><ol class="toc-list">
+<li><a href="#a-hackernews-0">Dolly Parton&#x27;s Imagination Library</a></li>
+<li><a href="#a-hackernews-1">All you need is Wide Events, not &quot;Metrics, Logs and Traces&quot;</a></li>
+<li><a href="#a-hackernews-2">Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop</a></li>
+<li><a href="#a-hackernews-3">I refuse to accept a censored Internet. Join Me at FOSDEM 27</a></li>
+<li><a href="#a-hackernews-4">Fuck Nuance (2015)</a></li>
+<li><a href="#a-hackernews-5">A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis</a></li>
+<li><a href="#a-hackernews-6">Sabre Wulf Remastered</a></li>
+<li><a href="#a-hackernews-7">AI use leads UC Berkeley math professor to see &#x27;no point&#x27; in grading homework</a></li>
+<li><a href="#a-hackernews-8">Show HN: I put employees inside S&amp;P 500 market-cap bubbles</a></li>
+<li><a href="#a-hackernews-9">Active incident at Dreamhost forcing password reset</a></li>
+<li><a href="#a-hackernews-10">fheroes2: A recreation of Heroes of Might and Magic II game engine</a></li>
+<li><a href="#a-hackernews-11">Cerebras Deploys Trillion-Parameter AI Models</a></li>
+<li><a href="#a-hackernews-12">Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English</a></li>
+<li><a href="#a-hackernews-13">We should be more ambitious with the software we build</a></li>
+<li><a href="#a-hackernews-14">The Goose Programming Language</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">TechCrunch AI</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-techcrunchai-0">AI delivers ‘zero financial payoff’ to most companies, Apollo economist says</a></li>
+<li><a href="#a-techcrunchai-1">The hottest AI wearables and gadgets you should know about</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">9to5Mac</span> <span class="toc-count">5 articles</span><ol class="toc-list">
+<li><a href="#a-9to5mac-0">OLED iPad mini 8 debuting this week: Here’s what’s coming, and how much it’ll cost</a></li>
+<li><a href="#a-9to5mac-1">Touchscreen OLED MacBook Pro launches this week, here’s how the lineup will look</a></li>
+<li><a href="#a-9to5mac-2">Some iPhone Duo displays are cracking, seemingly all in the same way</a></li>
+<li><a href="#a-9to5mac-3">Hands-on: Belkin’s new semi solid state batteries make for a much lighter carry</a></li>
+<li><a href="#a-9to5mac-4">Indie App Spotlight: ‘Flipcorder’ lets you shoot retro footage on your iPhone Duo</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">HackerNoon</span> <span class="toc-count">6 articles</span><ol class="toc-list">
+<li><a href="#a-hackernoon-0">The TechBeat: Gemini 4 Argon: How Does It Do Against GPT-6 Astra and Claude? (10/25/2026)</a></li>
+<li><a href="#a-hackernoon-1">244 Blog Posts To Learn About Health</a></li>
+<li><a href="#a-hackernoon-2">Stop Trusting the OAuth Email: How One Missing Check Enables Account Takeover in 2026</a></li>
+<li><a href="#a-hackernoon-3">The Evolution of LLMs, Explained Through What We Train Them to Do</a></li>
+<li><a href="#a-hackernoon-4">221 Blog Posts To Learn About Hardware</a></li>
+<li><a href="#a-hackernoon-5">500 Blog Posts To Learn About Hackernoon</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">The Verge AI</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-verge-0">r/opensource just banned AI, non-English speakers, and more</a></li>
+<li><a href="#a-verge-1">Blue Planet III is keeping the rough edges in the age of AI</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Sebastian Raschka Magazine</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-raschka-0">Building Reasoning Models from the Ground Up: A Full Video Course</a></li>
+<li><a href="#a-raschka-1">Language Models for Text Classification: From Bag-of-Words to Jev</a></li>
+<li><a href="#a-raschka-2">GPT-6 Astra, Looped Transformers, and Hidden Reasoning</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Latent Space</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-latentspace-0">[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1</a></li>
+<li><a href="#a-latentspace-1">AI Is Getting Good at Math. Here’s Why.</a></li>
+<li><a href="#a-latentspace-2">[AINews] Black October</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Simon Willison</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-simonwillison-0">battledrones v14: Compass Rose, a four player map</a></li>
+<li><a href="#a-simonwillison-1">Quick Study</a></li>
+<li><a href="#a-simonwillison-2">Introducing Kimi K3.1 Pro</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Netflix Tech Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-netflix-0">Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes</a></li>
+<li><a href="#a-netflix-1">Single-tenant Titus: VM-level isolation on a multi-tenant container platform</a></li>
+<li><a href="#a-netflix-2">Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Cloudflare Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-cloudflare-0">Origin Range Requests: Serving large files without range-request tuning</a></li>
+<li><a href="#a-cloudflare-1">Bringing post-quantum cryptography to geographically fenced key management</a></li>
+<li><a href="#a-cloudflare-2">Localizing compliance at scale: achieving South Korea’s ISMS certification</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">OpenAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-openai-0">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a></li>
+<li><a href="#a-openai-1">Securing our frontier model training environment</a></li>
+<li><a href="#a-openai-2">OpenAI and Poland’s NASK partner to advance AI safety and security</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hugging Face Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-huggingface-0">LitPivot: Developing research ideas through dynamic contextualization within the literatur</a></li>
+<li><a href="#a-huggingface-1">Does Your Model Run on AWS Trainium? Look It Up</a></li>
+<li><a href="#a-huggingface-2">Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-googleblog-0">See what 5 builders are making with Gemini 4 Argon</a></li>
+<li><a href="#a-googleblog-1">Explore new ways to drive your best ROI with the first Google Marketing Platform Drop.</a></li>
+<li><a href="#a-googleblog-2">We are working with Voltus to build a 1-gigawatt virtual power plant.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Deep Learning AI — The Batch</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-thebatch-0">Issue 376</a></li>
+<li><a href="#a-thebatch-1">Issue 375</a></li>
+<li><a href="#a-thebatch-2">Issue 374</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google DeepMind</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-deepmind-0">Beyond tree cover: mapping the world’s forest types</a></li>
+<li><a href="#a-deepmind-1">Accelerating the search for antimicrobial peptides with Google Antigravity</a></li>
+<li><a href="#a-deepmind-2">Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AWS Architecture Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aws-0">Automate medical coding with Step Functions and Amazon Bedrock AgentCore</a></li>
+<li><a href="#a-aws-1">How Dynata scaled AI across the development lifecycle with AI-DLC and Kiro IDE</a></li>
+<li><a href="#a-aws-2">Multi-region disaster recovery for Amazon API Gateway WebSocket APIs</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">GitHub Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-github-0">The bridge to agent-scale Git infrastructure</a></li>
+<li><a href="#a-github-1">Staying Evergreen: How we automated secure access and repo hygiene in a shared org</a></li>
+<li><a href="#a-github-2">From 2,500 requests to 24: Rebuilding star history without the stargazers</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Stripe Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-stripe-0">Your AI agent can move money in Stripe - here&#x27;s how to stay in control</a></li>
+<li><a href="#a-stripe-1">Scaling Radar: Fighting fraud with agent-assisted machine learning</a></li>
+<li><a href="#a-stripe-2">Go from idea to company without leaving your development workflow</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AI by Aakash</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aakashai-0">Reverse Engineer Anything.</a></li>
+<li><a href="#a-aakashai-1">Muse.</a></li>
+<li><a href="#a-aakashai-2">Dots.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">xAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-xai-0">How SpaceXSI is using Grok Bot to scale customer support</a></li>
+<li><a href="#a-xai-1">Introducing Grok 4.7</a></li>
+<li><a href="#a-xai-2">Introducing Grok Voice Transcribe 2.0</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Anthropic News</span> <span class="toc-count">0 articles</span><ol class="toc-list">
+</ol></div>
+</nav>
+<main>
+<section class="source" id="src-hackernews">
+<h2 class="source-title">Hacker News <span class="source-count">15 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNews covered a wide spread of AI developments, from Cerebras deploying trillion-parameter models at high speed to a dermatologist finding that a decade-old CNN outperformed frontier LLMs on skin cancer diagnosis, while a Fields medalist at UC Berkeley abandoned grading homework entirely due to AI use. Open source projects featured heavily, including a Rust rewrite of Postgres, a recreation of Heroes of Might and Magic II, and a remaster of the 1984 classic Sabre Wulf. Press freedom and censorship resistance also drew attention, with Oregon police charging a local news outlet $2.5 million for public records and a new FOSDEM devroom dedicated to building tools against authoritarian surveillance.</p>
+<p>過去24個鐘HackerNews上面AI相關嘅新聞好多，Cerebras用WSE-3T晶片部署萬億參數模型做到每秒幾千個token，但同時有皮膚科醫生發現一個十年前嘅CNN模型診斷皮膚癌竟然贏咗GPT同Claude，仲有UC Berkeley嘅菲爾茲獎得主因為AI太勁索性唔再改作業。另外開源項目都好熱鬧，有人用Rust重寫Postgres，有人重製咗Heroes of Might and Magic II嘅引擎，仲有Oregon警方收一间本地新聞機構250萬美金做公開紀錄申請，明顯係想嚇退記者。</p>
+</div>
+<article class="article" id="a-hackernews-0">
+<h3 class="article-title"><a href="#a-hackernews-0">Dolly Parton&#x27;s Imagination Library</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://imaginationlibrary.com/" rel="noopener" target="_blank">https://imaginationlibrary.com/</a></span><span class="meta-date">📅 2026-10-26 02:23 UTC+8</span><span class="meta-pts">▲ 58 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50234474">HN discussion</a></span></div>
+<div class="article-body"><p>Dolly Parton&#x27;s Imagination Library, launched in 1995 and inspired by her father&#x27;s inability to read, gifts free age-appropriate books monthly to children from birth to age five, funded through a partnership between Parton and local community organizations. The program has grown from her home county in East Tennessee to five countries, mailing millions of books each month to ensure every child has access to reading materials regardless of family income. Parton describes the initiative as planting seeds of dreams that can grow across the world.</p>
+<p>Dolly Parton 喺1995年因為佢老豆唔識讀寫，所以創辦咗 Imagination Library，免費每月寄書俾零到五歲嘅細路，資金由佢同各地社區夥伴共同承擔。呢個計劃由田納西州一個郡擴展到五個國家，每月寄出幾百萬本書，確保每個小朋友唔使理家庭收入都有書睇。Dolly 話呢啲書就係播落小朋友心入面嘅夢想種子，可以喺全世界開花結果。</p>
+<p><a class="read-more" href="https://imaginationlibrary.com/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">95 words</div>
+</article>
+<article class="article" id="a-hackernews-1">
+<h3 class="article-title"><a href="#a-hackernews-1">All you need is Wide Events, not &quot;Metrics, Logs and Traces&quot;</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics" rel="noopener" target="_blank">https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics</a></span><span class="meta-date">📅 2026-10-26 02:11 UTC+8</span><span class="meta-pts">▲ 12 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50234329">HN discussion</a></span></div>
+<div class="article-body"><p>The article argues that the observability industry&#x27;s fixation on the &quot;metrics, logs, and traces&quot; framework, largely shaped by OpenTelemetry&#x27;s presentation, creates unnecessary confusion and complexity. Drawing on his experience at Meta with the Scuba system, the author advocates for a simpler model built on &quot;Wide Events&quot;—rich structured records that capture all relevant context—arguing this approach is far more effective for investigating unknown unknowns in distributed systems.</p>
+<p>呢篇文話而家成個observability業界太執著喺&quot;metrics、logs同traces&quot;呢個框架，搞到大家一頭霧水，其實根源好多時係OpenTelemetry嗰套講法太複雜。作者用佢喺Meta用Scuba嘅經驗做例子，話其實最簡單嘅做法就係寫Wide Event，即係將所有相關資料一股腦塞入去一條record，出問題嗰陣就慢慢slice同dice，唔使預先諗定要睇咩，先至係真正對付unknown unknowns嘅方法。</p>
+<p><a class="read-more" href="https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">73 words</div>
+</article>
+<article class="article" id="a-hackernews-2">
+<h3 class="article-title"><a href="#a-hackernews-2">Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/" rel="noopener" target="_blank">https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/</a></span><span class="meta-date">📅 2026-10-26 02:04 UTC+8</span><span class="meta-pts">▲ 94 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50234232">HN discussion</a></span></div>
+<div class="article-body"><p>The city of Eugene, Oregon, has charged a small local news outlet $2.5 million to process a public records request about a police officer accused of punching a resident in the face, claiming the search would require over 44,000 hours of staff time. The article argues this is not incompetence but a deliberate tactic to intimidate journalists into abandoning accountability inquiries, especially given that the same police department recently spent $342,000 on AI-powered surveillance cameras. The case highlights a growing pattern of agencies weaponizing public records fees to effectively silence watchdog reporting.</p>
+<p>尤金市警方向一間本地新聞機構索價250萬美元，先至肯交出關於一名涉嫌打人警員嘅公開紀錄，仲話要搜全部市政員工嘅檔案，花超過四萬四千個鐘。文章指出呢個根本唔係技術問題，而係刻意用天價收費嚟嚇退記者，令佢哋放棄追查警隊嘅操守問題。呢單嘢反映咗一個越嚟越普遍嘅趨勢，就係政府部門利用公開紀錄制度嘅漏洞，變相封殺監督報導。</p>
+<p><a class="read-more" href="https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+<article class="article" id="a-hackernews-3">
+<h3 class="article-title"><a href="#a-hackernews-3">I refuse to accept a censored Internet. Join Me at FOSDEM 27</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://talkweb.eu/openweb/4558/" rel="noopener" target="_blank">https://talkweb.eu/openweb/4558/</a></span><span class="meta-date">📅 2026-10-26 01:30 UTC+8</span><span class="meta-pts">▲ 155 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50233929">HN discussion</a></span></div>
+<div class="article-body"><p>A new &quot;Digital Dissident&quot; devroom has been announced for FOSDEM 27, taking place January 30-31, 2027 in Brussels, dedicated to building an end-to-end toolchain that protects people living under authoritarian regimes from censorship and surveillance. Organisers are calling on developers, researchers, and activists to submit talks on censorship circumvention, metadata-resistant communication, secure publishing, and operational security, with a focus on how these tools interoperate rather than on any single project. The initiative responds to increasingly sophisticated censorship in Russia, Iran, and China, including national allow-lists, deep packet inspection, and app-store removal of circumvention tools.</p>
+<p>FOSDEM 27 明年一月喺布魯塞爾舉行，新增咗一個「Digital Dissident」devroom，專門為生活喺極權政權下嘅人打造一整套抗審查、反監控嘅工具鏈。佢哋呼籲開發者、研究員同社運人士投稿，主題涵蓋翻牆、匿名通訊、安全發布同埋操作保安，重點唔係單一項目，而係呢啲工具點樣串埋一齊先至真係幫到人。呢個計劃係因為俄羅斯、伊朗同中國嘅審查技術越嚟越精密，包括白名單網絡、深度封包檢測同埋喺應用商店下架翻牆工具，所以開發者需要坐埋一齊先至應付到。</p>
+<p><a class="read-more" href="https://talkweb.eu/openweb/4558/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-hackernews-4">
+<h3 class="article-title"><a href="#a-hackernews-4">Fuck Nuance (2015)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://crookedtimber.org/2015/08/31/fuck-nuance/" rel="noopener" target="_blank">https://crookedtimber.org/2015/08/31/fuck-nuance/</a></span><span class="meta-date">📅 2026-10-26 01:26 UTC+8</span><span class="meta-pts">▲ 16 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50233883">HN discussion</a></span></div>
+<div class="article-body"><p>A sociologist recounts how a paper titled &quot;Fuck Nuance&quot; came to be presented at the American Sociological Association Meetings in Chicago, after a colleague&#x27;s interest in the overuse of &quot;nuance&quot; in sociological theory led to a provocative title suggestion that stuck. The piece sets up a broader argument against the reflexive demand for nuance as a default intellectual posture in the discipline.</p>
+<p>一位社會學家講咗佢點樣喺美國社會學會會議上面發表一篇叫「Fuck Nuance」嘅論文，起因係同事對社會學理論入面「nuance」呢個字被過度使用有意見，佢隨口建議用呢個激進嘅標題，點知就真係用咗。篇文章帶出一個更大嘅論點，就係批評社會學界將「nuance」當成預設嘅學術姿態。</p>
+<p><a class="read-more" href="https://crookedtimber.org/2015/08/31/fuck-nuance/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">68 words</div>
+</article>
+<article class="article" id="a-hackernews-5">
+<h3 class="article-title"><a href="#a-hackernews-5">A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://lynchlab.net/llm-skin-cancer" rel="noopener" target="_blank">https://lynchlab.net/llm-skin-cancer</a></span><span class="meta-date">📅 2026-10-26 01:15 UTC+8</span><span class="meta-pts">▲ 149 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50233779">HN discussion</a></span></div>
+<div class="article-body"><p>A dermatologist at Guy&#x27;s Hospital tested two frontier LLMs, GPT-6 Astra and Claude Fable 5.1, against a decade-old convolutional neural network on 200 biopsy-proven skin lesions, and the CNN correctly diagnosed 62% of cases compared to just 42% for both large language models. The finding suggests that small, specialised models fine-tuned on domain-specific data can still outperform the most advanced general-purpose AI on narrow clinical tasks, raising questions about how frontier models should be deployed in medicine.</p>
+<p>一個喺Guy&#x27;s Hospital做皮膚科嘅醫生，用咗200個經活檢確認嘅皮膚病變去測試GPT-6 Astra同Claude Fable 5.1，結果發現一個2015年出嘅舊CNN準確率有62%，兩條大模型得42%，差咗成兩成。呢個結果話俾我哋知，就算模型好舊好細，只要用啱嘅數據訓練過，喺特定臨床任務上面都可以贏過最尖嘅通用AI，提醒我哋唔好以為大模型乜都叻。</p>
+<p><a class="read-more" href="https://lynchlab.net/llm-skin-cancer" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">86 words</div>
+</article>
+<article class="article" id="a-hackernews-6">
+<h3 class="article-title"><a href="#a-hackernews-6">Sabre Wulf Remastered</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://gp-64.com/swr/" rel="noopener" target="_blank">https://gp-64.com/swr/</a></span><span class="meta-date">📅 2026-10-26 01:15 UTC+8</span><span class="meta-pts">▲ 40 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50233775">HN discussion</a></span></div>
+<div class="article-body"><p>Genesis Project has released Sabre Wulf Remastered, a complete redraw and reprogramming of Ultimate&#x27;s 1984 jungle maze game for the Commodore 64, available as a free digital download. The remaster features 256 screens with new graphics by JonEgg, retaining the original&#x27;s core loop of collecting amulet pieces while dodging the deadly Sabre Wulf. It marks the culmination of a development effort spanning from a 2022 preview to its final October 2026 release.</p>
+<p>Genesis Project 將 Ultimate 1984 年嘅經典叢林迷宮遊戲 Sabre Wulf 重新繪畫同編程，喺 2026 年 10 月 25 號正式推出 Commodore 64 版，免費下載。新版由 JonEgg 重新繪製全部 256 個畫面，保留晒收集護身符碎片同躲避 Sabre Wulf 嘅核心玩法。由 2022 年出預覽版到而家完成，前後搞咗成四年。</p>
+<p><a class="read-more" href="https://gp-64.com/swr/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-hackernews-7">
+<h3 class="article-title"><a href="#a-hackernews-7">AI use leads UC Berkeley math professor to see &#x27;no point&#x27; in grading homework</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html" rel="noopener" target="_blank">https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html</a></span><span class="meta-date">📅 2026-10-26 00:28 UTC+8</span><span class="meta-pts">▲ 74 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50233304">HN discussion</a></span></div>
+<div class="article-body"><p>Richard Borcherds, a Fields medalist and UC Berkeley mathematics professor, has stopped grading his students&#x27; homework after concluding that widespread AI use makes grading for correctness pointless. He now grades only on completion and admits he has no good alternative, while warning that if AI continues improving at its current pace, there will soon be nothing human mathematicians can do that AI cannot do better. His comments come amid growing uncertainty across academia, as the university has found AI detection tools inadequate and left AI policy largely to individual faculty discretion.</p>
+<p>Richard Borcherds 係 UC Berkeley 數學系教授，仲係 Fields 獎得主，佢話因為學生用 AI 做作業都攞高分，改作業已經冇意義，而家淨係睇有冇交就畀分。佢話如果 AI 繼續咁進步落去，幾年之後人類數學家可能冇嘢做得過 AI，甚至連轉行建議都畀唔出，問 ChatGPT 都話唔知。呢個係數學界第一次遇到呢種衝擊，好似以前織布機取代手織、汽車取代馬車咁，但係喺數學入面係前所未有嘅事。</p>
+<p><a class="read-more" href="https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">110 words</div>
+</article>
+<article class="article" id="a-hackernews-8">
+<h3 class="article-title"><a href="#a-hackernews-8">Show HN: I put employees inside S&amp;P 500 market-cap bubbles</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://bigwhalehunting.com/workforce/" rel="noopener" target="_blank">https://bigwhalehunting.com/workforce/</a></span><span class="meta-date">📅 2026-10-25 23:05 UTC+8</span><span class="meta-pts">▲ 139 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50232312">HN discussion</a></span></div>
+<div class="article-body"><p>A developer has created an interactive visualization that places stick figures representing employees inside bubbles sized by S&amp;P 500 companies&#x27; market capitalizations, grouped by sector. The density of figures within each bubble reveals how much market value each company generates per worker, exposing stark contrasts between labor-intensive firms and lean, high-valuation companies like Palantir. The project highlights how little workforce size now correlates with market worth in the modern economy.</p>
+<p>有人整咗個互動圖表，將標普五百間公司畫成氣泡，面積按市值大細嚟排，入面放小人仔代表員工。邊個氣泡人仔逼得密，即係每隻員工創造嘅市值低；邊個氣泡得幾個人仔但好大，即係市值高但員工少，例如 Palantir 呢啲公司。呢個圖好直觀咁睇到而家市值同員工數目已經好少掛鈎。</p>
+<p><a class="read-more" href="https://bigwhalehunting.com/workforce/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">77 words</div>
+</article>
+<article class="article" id="a-hackernews-9">
+<h3 class="article-title"><a href="#a-hackernews-9">Active incident at Dreamhost forcing password reset</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.dreamhoststatus.com/" rel="noopener" target="_blank">https://www.dreamhoststatus.com/</a></span><span class="meta-date">📅 2026-10-25 21:09 UTC+8</span><span class="meta-pts">▲ 53 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50231166">HN discussion</a></span></div>
+<div class="article-body"><p>DreamHost confirmed a security incident beginning October 23, 2026 that disrupted its File Manager, Webmail, and Email Hosting services, prompting the company to proactively reset passwords for affected email and FTP/SFTP users. Account owners were directed to set new passwords directly through the DreamHost control panel rather than following any emailed links, and the company warned users to ignore unsolicited password reset emails as a phishing precaution. The File Manager remained offline as of the latest update on October 25.</p>
+<p>DreamHost喺2026年10月23號開始發生一單事故，搞到File Manager、Webmail同Email服務都受影響，公司為咗安全起見，主動將受影響嘅電郵同FTP/SFTP用戶密碼重置咗。DreamHost提醒用戶要直接去控制枱改密碼，唔好撳電郵入面嘅連結，亦話如果有人收到你冇要求過嘅密碼重設電郵，直接忽略就得，因為DreamHost永遠唔會用電郵問你密碼。截至10月25號，File Manager仲係未恢復到。</p>
+<p><a class="read-more" href="https://www.dreamhoststatus.com/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">87 words</div>
+</article>
+<article class="article" id="a-hackernews-10">
+<h3 class="article-title"><a href="#a-hackernews-10">fheroes2: A recreation of Heroes of Might and Magic II game engine</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.com/ihhub/fheroes2" rel="noopener" target="_blank">https://github.com/ihhub/fheroes2</a></span><span class="meta-date">📅 2026-10-25 19:09 UTC+8</span><span class="meta-pts">▲ 176 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50230384">HN discussion</a></span></div>
+<div class="article-body"><p>fheroes2 is an open-source, multiplatform recreation of the Heroes of Might and Magic II game engine, rebuilt from scratch to deliver high-resolution graphics, improved AI, and numerous gameplay and interface fixes. The project, licensed under GNU GPL v2.0, aims to breathe new life into one of the most beloved turn-based strategy games while urging users to purchase the original assets from legitimate sources. It represents a significant community effort to preserve and modernise a classic title for today&#x27;s players.</p>
+<p>fheroes2 係一個開源嘅跨平台專案，由零開始重新打造咗《魔法門之英雄無敵II》嘅遊戲引擎，加入咗高清畫面、改良版 AI 同埋大量遊戲同介面嘅優化。呢個專案用 GNU GPL v2.0 授權，目標係令呢款經典回合制策略遊戲喺新世代重新煥發活力，同時提醒玩家要買正版遊戲資源。呢個係一個好有意義嘅社群工程，等老玩家同新玩家都可以繼續享受呢款神作。</p>
+<p><a class="read-more" href="https://github.com/ihhub/fheroes2" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">91 words</div>
+</article>
+<article class="article" id="a-hackernews-11">
+<h3 class="article-title"><a href="#a-hackernews-11">Cerebras Deploys Trillion-Parameter AI Models</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" rel="noopener" target="_blank">https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras</a></span><span class="meta-date">📅 2026-10-25 09:33 UTC+8</span><span class="meta-pts">▲ 321 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50227356">HN discussion</a></span></div>
+<div class="article-body"><p>Cerebras has detailed how it deploys trillion-parameter frontier models like the open-source Kimi K3 across multiple WSE-3T wafers using a pipeline architecture, achieving speeds of 1000 to 2000-plus tokens per second. The technical breakdown covers memory calculations, layer mapping, and how concurrent requests stream through the pipeline without idle stages. The approach demonstrates that frontier-level open-source models can now run at competitive speeds without relying on proprietary hardware.</p>
+<p>Cerebras 公布咗點樣將 Kimi K3 呢類三萬億參數嘅模型拆開嚟，用多塊 WSE-3T 晶圓以流水線方式跑，每秒可以生成一千到兩千幾個 token。佢哋詳細講解咗記憶體分配、層點樣映射到唔同晶圓，同埋點樣同時處理大量並發請求而唔會令任何一級閒置。呢個方法證明咗開源前沿模型都可以用極快嘅速度運行，唔使再靠閉源嘅方案。</p>
+<p><a class="read-more" href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">80 words</div>
+</article>
+<article class="article" id="a-hackernews-12">
+<h3 class="article-title"><a href="#a-hackernews-12">Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/destined/hurston-1" rel="noopener" target="_blank">https://huggingface.co/destined/hurston-1</a></span><span class="meta-date">📅 2026-10-25 09:30 UTC+8</span><span class="meta-pts">▲ 3 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50227330">HN discussion</a></span></div>
+<div class="article-body"><p>Destined AI, a small independent team based in Atlanta, has released Hurston-1, an open-source text-to-speech model that accurately reproduces Southern American and various African English accents that most AI voice systems flatten into generic American English. The model introduces NB-TTS, a phone-quality mode that outputs 8 kHz G.711 audio ready for telephony platforms like Twilio, and is trained on real phone calls with AI voice agents alongside studio recordings from consented contributors across the American South and Africa. It matters because it gives developers a free, Apache-2.0 licensed tool for building accent-diverse test data, simulated callers, and voice prompts that sound like the communities they serve.</p>
+<p>Destined AI 喺亞特蘭大推出咗一個叫 Hurston-1 嘅開源語音合成模型，專門處理美國南方口音同各種非洲英語口音，呢啲口音喺大部分 AI 語音系統入面都會被壓平變成普通美國英語。呢個模型仲有 NB-TTS 電話模式，可以直接輸出 8 kHz G.711 格式嘅音頻，即係可以即刻接入 Twilio 呢類電話系統用。佢用咗來自美國南方同非洲各地真實講者嘅錄音去訓練，係目前第一個可以免費用嘅開源模型，對於開發者做語音測試、模擬客戶通話同埋社區語音提示都好有用。</p>
+<p><a class="read-more" href="https://huggingface.co/destined/hurston-1" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">125 words</div>
+</article>
+<article class="article" id="a-hackernews-13">
+<h3 class="article-title"><a href="#a-hackernews-13">We should be more ambitious with the software we build</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://danluu.com/ambitious/" rel="noopener" target="_blank">https://danluu.com/ambitious/</a></span><span class="meta-date">📅 2026-10-25 05:47 UTC+8</span><span class="meta-pts">▲ 669 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50225695">HN discussion</a></span></div>
+<div class="article-body"><p>The article argues that developers should be far more ambitious in the software they build, using pgrust — a Rust rewrite of Postgres — as a case study of how thorough testing can uncover real upstream bugs even when the project itself may never fully succeed. The author contends that modern AI tools have dramatically lowered the cost of building complex systems like custom compilers, regex engines, and game-playing AIs, yet most programmers still operate with a pre-agentic cost model that makes them dismiss such efforts as unrealistic. The broader point is that many daily frustrations in software development are now solvable in hours rather than months, and people simply do not think to attempt them.</p>
+<p>呢篇文章講到而家用AI工具起軟件已經快咗好多，好似pgrust呢啲以前要一兩年先做到嘅嘇，而家幾粒鐘就搞掂，但好多程式員仲係用舊有嘅成本觀念去睇問題，覺得啲嘢唔值得做。作者認為大家應該大膽啲去解決日常遇到嘅痛點，因為好多以前覺得唔可能嘅嘢，而家真係做得到。</p>
+<p><a class="read-more" href="https://danluu.com/ambitious/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">121 words</div>
+</article>
+<article class="article" id="a-hackernews-14">
+<h3 class="article-title"><a href="#a-hackernews-14">The Goose Programming Language</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aardappel.github.io/goose/" rel="noopener" target="_blank">https://aardappel.github.io/goose/</a></span><span class="meta-date">📅 2026-10-25 03:06 UTC+8</span><span class="meta-pts">▲ 534 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50224100">HN discussion</a></span></div>
+<div class="article-body"><p>Goose is a new memory-safe systems programming language that eliminates the heap allocator, garbage collector, and lifetime annotations entirely, relying instead on compiler-managed data stacks where memory is freed at scope exit. Benchmarks show it runs 3.3 times faster than idiomatic C++ and 1.12 times faster than safe Rust while using significantly less memory, achieved through inline nested data layouts, stable references that survive growth, and zero-cost generics. This matters because it challenges the long-held assumption that memory safety in systems programming must come at a performance cost.</p>
+<p>Goose 係一款新嘅記憶體安全系統程式語言，完全冇堆分配器、冇垃圾回收、亦唔需要寫 lifetime 標註，佢靠編譯器管理嘅 data stack 喺作用域結束時自動釋放記憶體。基準測試顯示佢比慣用嘅 C++ 快 3.3 倍、比安全 Rust 快 1.12 倍，同時用少好多記憶體，主要靠內聯嵌套數據佈局、增長時引用唔會失效、以及零開銷泛型呢啲設計。呢個好重要，因為佢打破咗系統程式設計入面記憶體安全一定要犧牲效能嘅舊有假設。</p>
+<p><a class="read-more" href="https://aardappel.github.io/goose/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">107 words</div>
+</article>
+</section>
+<section class="source" id="src-techcrunchai">
+<h2 class="source-title">TechCrunch AI <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>TechCrunchAI focused on the growing disconnect between AI hype and real-world results, with Apollo Global Management&#x27;s chief economist declaring that AI has delivered zero financial payoff to corporate America outside the tech sector, citing flat margins across the S&amp;P 493. At the same time, the outlet highlighted a booming wave of AI-powered wearables — from pendants to rings to handheld devices — that are pushing artificial intelligence into consumers&#x27; daily lives through continuous recording and personal assistance.</p>
+<p>Apollo首席經濟學家話，AI除咗科技行業之外，對美國企業根本冇帶嚟任何財務回報，S&amp;P 493間公司嘅利潤率同人均產出都冇變過，因為商業成功靠嘅係判斷力、信任同文化，呢啲嘢AI做唔到。不過另一方面，AI穿戴裝置正正爆髮式增長，由幾十蚊嘅吊墜到幾百蚊嘅戒指，各種產品都將AI融入日常生活，做持續錄音、轉寫同個人助理。</p>
+</div>
+<article class="article" id="a-techcrunchai-0">
+<h3 class="article-title"><a href="#a-techcrunchai-0">AI delivers ‘zero financial payoff’ to most companies, Apollo economist says</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/" rel="noopener" target="_blank">https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/</a></span><span class="meta-date">📅 2026-10-26 00:57 UTC+8</span></div>
+<div class="article-body"><p>Apollo Global Management chief economist Torsten Slok says AI has delivered zero financial payoff to corporate America outside the tech industry, pointing to flat profit margins and revenue per worker across the S&amp;P 493. He argues that while AI is a powerful calculator, business success depends on judgment, trust, and culture — things AI cannot replicate. The finding adds weight to growing evidence that the AI boom has yet to translate into measurable productivity gains for most companies.</p>
+<p>阿波羅全球管理首席經濟學家Slok話，除咗科技業之外，AI對美國企業嘅財務回報根本係零，佢用S&amp;P 493嘅數據證明利潤率同人均收入都冇變化。佢認為AI雖然係一部好勁嘅計算機，但做生意講嘅係判斷力、信任同文化，呢啲嘢AI做唔到。呢個發現亦都印證咗近期多項研究嘅結論，就係AI熱潮暫時仲未為大部分公司帶嚟實質嘅生產力提升。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+<article class="article" id="a-techcrunchai-1">
+<h3 class="article-title"><a href="#a-techcrunchai-1">The hottest AI wearables and gadgets you should know about</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/" rel="noopener" target="_blank">https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/</a></span><span class="meta-date">📅 2026-10-25 22:10 UTC+8</span></div>
+<div class="article-body"><p>A growing wave of AI-powered wearables — including pendants, rings, and handheld devices — is bringing artificial intelligence into everyday life through continuous recording, transcription, and personal assistance. Notable products range from the $49.99 Bee pendant, now owned by Amazon, to the $299 Sandbar Stream ring, with devices like Friend, Limitless, Meta&#x27;s Muse Charm, and Rabbit R1 each targeting different needs from productivity to emotional companionship. These gadgets matter because they signal a shift toward always-listening AI that blurs the boundary between helpful tool and surveillance device, sparking both consumer interest and public backlash.</p>
+<p>依家市面上湧現好多AI穿戴裝置，包括吊墜、戒指同手持設備，主打錄音、轉寫同個人助理功能，價錢由四十九蚊九毛嘅Bee到二百九十九蚊嘅Sandbar戒指都有。Amazon收購咗Bee、Meta推出Muse Charm、仲有Friend同Rabbit R1等產品，各自針對唔同需要，有嘅係做生產力工具，有嘅係做情緒陪伴。呢啲裝置之所以重要，係因為佢哋代表AI正全面融入日常生活，但同時亦引發咗大眾對隱私同監控嘅擔憂。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+</section>
+<section class="source" id="src-9to5mac">
+<h2 class="source-title">9to5Mac <span class="source-count">5 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>9to5Mac&#x27;s coverage over the past day centered on Apple&#x27;s upcoming hardware launches, with detailed previews of a completely redesigned OLED iPad mini featuring the A20 Pro chip and water resistance, and a first-ever touchscreen OLED MacBook Pro lineup spanning three tiers. The site also reported on a growing number of iPhone Duo foldable screens cracking along the hinge line, and reviewed Belkin&#x27;s new semi solid state power banks that offer a significantly lighter alternative to traditional portable chargers.</p>
+<p>過去一日9to5Mac主要報導咗Apple即將推出嘅兩款重磅新品，包括全面重新設計、配備OLED螢幕同A20 Pro晶片嘅iPad mini 8，以及首款觸控式OLED MacBook Pro系列。另外仲有iPhone Duo折疊螢幕沿鉸鏈位置出現裂紋嘅問題，同埋Belkin新推出嘅半固態電池，重量比傳統充電寶輕咗好多。</p>
+</div>
+<article class="article" id="a-9to5mac-0">
+<h3 class="article-title"><a href="#a-9to5mac-0">OLED iPad mini 8 debuting this week: Here’s what’s coming, and how much it’ll cost</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/25/ipad-mini-8-redesign-with-oled-coming-this-week/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/25/ipad-mini-8-redesign-with-oled-coming-this-week/</a></span><span class="meta-date">📅 2026-10-26 00:06 UTC+8</span></div>
+<div class="article-body"><p>Apple is set to launch a completely redesigned iPad mini this week, marking the first major overhaul of the device since 2021. The new model is expected to feature an OLED display, the A20 Pro chip with 12GB of memory delivering roughly 60% better multi-core CPU performance and 166% better GPU performance, and water resistance that would make it the first iPad with that capability. However, the upgrades come at a cost, with the starting price reportedly jumping from $599 to $799.</p>
+<p>蘋果今個禮拜終於要推出全新設計嘅 iPad mini，係由 2021 年以嚟第一次大改。新機預計會用 OLED 螢幕、A20 Pro 晶片配 12GB 記憶體，效能比而家嘅 A17 Pro 提升好多，仲會係第一款防水嘅 iPad。不過升級都要付出代價，起價據報會由 $599 升到 $799，貴咗成兩百蚊。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/25/ipad-mini-8-redesign-with-oled-coming-this-week/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-9to5mac-1">
+<h3 class="article-title"><a href="#a-9to5mac-1">Touchscreen OLED MacBook Pro launches this week, here’s how the lineup will look</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/25/macbook-pro-redesign-oled-touch-launching-this-week/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/25/macbook-pro-redesign-oled-touch-launching-this-week/</a></span><span class="meta-date">📅 2026-10-25 22:48 UTC+8</span></div>
+<div class="article-body"><p>Apple is set to launch its first-ever touchscreen MacBook Pro this week, marking a reversal of a decades-long policy against touchscreens in laptops. The new lineup will feature three tiers — a base M6 model, existing M5 Pro and M5 Max machines, and a redesigned OLED touchscreen version with Dynamic Island, lighter weight, and possible cellular support. The top-tier models are expected to carry a significantly higher price tag, making them the most expensive Macs in the lineup.</p>
+<p>Apple 呢個禮拜終於要推出首款觸控螢幕 MacBook Pro，打破咗幾十年嚟筆記本電腦唔加觸控嘅慣例。新產品線分三個級別，包括入門 M6 型號、現有 M5 Pro 同 M5 Max 機型，以及配備 OLED 觸控螢幕、Dynamic Island、更輕機身嘅全新設計版。最高級嘅 OLED 觸控版預計售價會貴好多，成為 MacBook Pro 系列入面最貴嘅選擇。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/25/macbook-pro-redesign-oled-touch-launching-this-week/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-9to5mac-2">
+<h3 class="article-title"><a href="#a-9to5mac-2">Some iPhone Duo displays are cracking, seemingly all in the same way</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/25/iphone-duo-displays-cracking/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/25/iphone-duo-displays-cracking/</a></span><span class="meta-date">📅 2026-10-25 18:45 UTC+8</span></div>
+<div class="article-body"><p>Owners of the newly launched iPhone Duo are reporting that their inner foldable screens are cracking spontaneously along the hinge line, with a horizontal block of pixels then glowing white. About ten cases have surfaced so far, some occurring during the initial setup process, and a working theory points to a misaligned hinge component pressing into the display. Apple Store customers have generally received replacements, though those who purchased through carriers have faced more difficulty getting the issue resolved.</p>
+<p>新出嘅 iPhone Duo 有啲用家反映內屏會自己沿鉸鏈位裂開，裂開之後仲有一條橫向嘅像素會一直發白光。暫時見到大約十宗個案，有啲人甚至開機設定嗰陣已經裂咗，有理論話係鉸鏈零件裝錯位頂到塊屏。去 Apple Store 買嘅人一般換到新机，但經電訊商買嘅人就好難搞，有人仲被話係自己跌親要自己畀錢修。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/25/iphone-duo-displays-cracking/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">90 words</div>
+</article>
+<article class="article" id="a-9to5mac-3">
+<h3 class="article-title"><a href="#a-9to5mac-3">Hands-on: Belkin’s new semi solid state batteries make for a much lighter carry</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/24/belkin-new-semi-solid-state-battery-options-for-iphone/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/24/belkin-new-semi-solid-state-battery-options-for-iphone/</a></span><span class="meta-date">📅 2026-10-25 05:46 UTC+8</span></div>
+<div class="article-body"><p>Belkin has launched two new semi solid state batteries for iPhone, a 10,000mAh model with USB-C and a 5,000mAh MagSafe version with Qi2 charging, both featuring premium aluminum builds that are noticeably lighter than traditional power banks of similar capacity. The 10K model weighs just 220g compared to 240 to 300g for older equivalents and supports up to 60W charging with a smart display, while the 5K MagSafe version is praised for being exceptionally thin and light at $69.99. These options give iPhone users a more pocketable and premium-feeling alternative to bulkier conventional battery banks.</p>
+<p>Belkin 出咗兩款新嘅半固態電池俾 iPhone 用，一款係 10,000mAh 帶 USB-C，另一款係 5,000mAh 帶 MagSafe 同 Qi2 充電，兩款都係鋁合金外殼，手感好輕好高級。10K 嗰款得 220 克重，比舊款輕咗好多，仲有智能顯示同 60W 快充；5K MagSafe 嗰款就係薄到冇朋友，賣 $69.99，作者話係佢最鍾意嘅 MagSafe 電池。如果嫌平時帶嘅充電寶太重太厚，呢兩款真係值得睇下。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/24/belkin-new-semi-solid-state-battery-options-for-iphone/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">122 words</div>
+</article>
+<article class="article" id="a-9to5mac-4">
+<h3 class="article-title"><a href="#a-9to5mac-4">Indie App Spotlight: ‘Flipcorder’ lets you shoot retro footage on your iPhone Duo</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/10/24/indie-app-spotlight-flipcorder-lets-you-shoot-retro-footage-on-your-iphone-duo/" rel="noopener" target="_blank">https://9to5mac.com/2026/10/24/indie-app-spotlight-flipcorder-lets-you-shoot-retro-footage-on-your-iphone-duo/</a></span><span class="meta-date">📅 2026-10-25 03:30 UTC+8</span></div>
+<div class="article-body"><p>Flipcorder is a new indie app that lets iPhone users capture footage with a retro camcorder feel, recording clips 20 seconds at a time onto a single virtual tape that holds up to 30 minutes. Optimized for the iPhone Duo&#x27;s larger display, the app offers VHS and MiniDV-style filters alongside a standard high-quality option, all for a one-time $4.99 purchase with no ads or in-app purchases. It appeals to those who want a simple, unedited way to document everyday moments with a nostalgic aesthetic.</p>
+<p>Flipcorder 係一款新出嘅 iPhone app，用家可以好似用舊式攝錄機咁，每次錄 20 秒片段，全部存入一卷最多 30 分鐘嘅虛擬錄影帶。呢個 app 特別為 iPhone Duo 嘅大螢幕做咗優化，提供 VHS 同 MiniDV 風格濾鏡，一次過 $4.99 買斷，冇廣告亦冇內購。鍾意用懷舊風格記錄日常瑣碎嘅人可以試下。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/10/24/indie-app-spotlight-flipcorder-lets-you-shoot-retro-footage-on-your-iphone-duo/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">107 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernoon">
+<h2 class="source-title">HackerNoon <span class="source-count">6 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNoon&#x27;s coverage over the past day centred on the AI frontier, with the announcement of Google DeepMind&#x27;s Gemini 4 Argon model and a deep dive into how training objectives have driven each generational leap in large language models. A notable security finding on OAuth verification trust mismatches added a practical threat angle, while curated compilations on health, hardware, and the platform&#x27;s own history rounded out the day&#x27;s output.</p>
+<p>HackerNoon 過去一日嘅重點都係围绕住 AI 同大模型，包括 Google DeepMind 宣布 Gemini 4 Argon，仲有一篇好好嘅文章拆解咗 LLM 由预测文字到自主 agent 嘅演进逻辑。另外仲有个安全研究员发现 OAuth 邮箱验证嘅漏洞，可以被人绕过直接接管账户，几值得留意。其余就系一啲健康、硬件同平台自身历史嘅精选文章合集。</p>
+</div>
+<article class="article" id="a-hackernoon-0">
+<h3 class="article-title"><a href="#a-hackernoon-0">The TechBeat: Gemini 4 Argon: How Does It Do Against GPT-6 Astra and Claude? (10/25/2026)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/10-25-2026-techbeat" rel="noopener" target="_blank">https://hackernoon.com/10-25-2026-techbeat</a></span><span class="meta-date">📅 2026-10-25 22:02 UTC+8</span></div>
+<div class="article-body"><p>The latest HackerNoon TechBeat newsletter highlights Google DeepMind&#x27;s announcement of Gemini 4 Argon, a frontier model targeting long software engineering tasks, legal and finance work, and cyber defense, alongside a roundup of trending stories on AI coding agents, the Jev decision engine, uncensored Qwen variants, and enterprise AI architecture. The digest reflects a tech landscape increasingly focused on practical AI deployment, from agent frameworks and spec-driven development to the question of whether model choice alone can guarantee enterprise reliability.</p>
+<p>最新一期 HackerNoon TechBeat 通訊重點介紹咗 Google DeepMind 推出嘅 Gemini 4 Argon，呢個前沿模型專攻長時間軟件工程、法律金融同網絡防禦任務，同時仲收錄咗多篇關於 AI coding agent、Jev 決策引擎、Qwen 開源模型變體同企業 AI 架構嘅熱門文章。整體嚟講，呢期內容反映咗業界正由單純追求模型能力轉向實際部署同工程化落地。</p>
+<p><a class="read-more" href="https://hackernoon.com/10-25-2026-techbeat" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+<article class="article" id="a-hackernoon-1">
+<h3 class="article-title"><a href="#a-hackernoon-1">244 Blog Posts To Learn About Health</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/244-blog-posts-to-learn-about-health" rel="noopener" target="_blank">https://hackernoon.com/244-blog-posts-to-learn-about-health</a></span><span class="meta-date">📅 2026-10-25 22:01 UTC+8</span></div>
+<div class="article-body"><p>HackerNoon&#x27;s Learn Repo has compiled 244 free blog posts covering a broad spectrum of health topics, from cancer research breakthroughs and cognitive enhancement to sleep quality, pain management, and the impact of technology on wellness. The collection draws on reader engagement data to highlight the most-read articles, offering a curated entry point into subjects like intermittent fasting, mental health, and healthcare automation. It serves as a useful starting point for anyone looking to explore health and well-being through a tech-oriented lens.</p>
+<p>HackerNoon嘅Learn Repo整理咗244篇免費健康相關嘅blog文章，涵蓋癌症研究、認知增強、睡眠質素、疼痛管理同科技對健康嘅影響等唔同主題。呢啲文章係根據讀者互動數據排序嘅，等於幫你篩選咗最受歡迎嘅健康資訊。如果你對健康同科技交叉嘅範疇有興趣，呢個目錄係一個幾好嘅起點。</p>
+<p><a class="read-more" href="https://hackernoon.com/244-blog-posts-to-learn-about-health" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">87 words</div>
+</article>
+<article class="article" id="a-hackernoon-2">
+<h3 class="article-title"><a href="#a-hackernoon-2">Stop Trusting the OAuth Email: How One Missing Check Enables Account Takeover in 2026</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/stop-trusting-the-oauth-email-how-one-missing-check-enables-account-takeover-in-2026" rel="noopener" target="_blank">https://hackernoon.com/stop-trusting-the-oauth-email-how-one-missing-check-enables-account-takeover-in-2026</a></span><span class="meta-date">📅 2026-10-25 21:00 UTC+8</span></div>
+<div class="article-body"><p>A security researcher has identified a widespread vulnerability class dubbed &quot;OAuth Verification Trust Mismatch,&quot; in which applications using third-party OAuth sign-in fail to check whether the email linked to the provider&#x27;s account is actually verified, allowing attackers to bypass email verification and potentially take over accounts. The researcher demonstrated the flaw using Discord&#x27;s OAuth service, showing that some applications blindly trust the provider&#x27;s email data without enforcing their own verification requirements across all registration paths. The finding matters because it reveals a systemic gap in how developers handle trust boundaries between OAuth providers and their own applications, affecting numerous services in 2026.</p>
+<p>有安全研究員發現咗一種叫「OAuth 驗證信任錯配」嘅漏洞，就係好多網站用第三方 OAuth 登入嘅時候，冇檢查嗰個 email 喺供應商嗰邊究竟有冇通過驗證，結果攻擊者可以繞過 email 驗證直接開帳號甚至 takeover 人哋嘅帳戶。佢用 Discord 嘅 OAuth 服務做實驗，發現有啲應用明明自己註冊流程要求 email 驗證，但 OAuth 嗰條路就完全冇做呢個檢查，等於開咗一道後門。呢個問題之所以重要，係因為好多開發者根本冇意識到 OAuth 供應商嘅信任模型同自己應用嘅信任模型可以唔同，而呢個漏洞喺 2026 年已經影響咗大量服務。</p>
+<p><a class="read-more" href="https://hackernoon.com/stop-trusting-the-oauth-email-how-one-missing-check-enables-account-takeover-in-2026" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">128 words</div>
+</article>
+<article class="article" id="a-hackernoon-3">
+<h3 class="article-title"><a href="#a-hackernoon-3">The Evolution of LLMs, Explained Through What We Train Them to Do</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/the-evolution-of-llms-explained-through-what-we-train-them-to-do" rel="noopener" target="_blank">https://hackernoon.com/the-evolution-of-llms-explained-through-what-we-train-them-to-do</a></span><span class="meta-date">📅 2026-10-25 16:00 UTC+8</span></div>
+<div class="article-body"><p>The article traces how each major leap in large language models, from GPT-1&#x27;s next-token prediction to today&#x27;s autonomous agents, came from changing what the model is trained to do, with data and objectives mattering more than raw scale. The progression moved from predicting text, to being helpful assistants via RLHF, to reasoning with reinforcement learning, and finally to taking actions with tools until tasks are complete. This reframes the AI story not as a series of disconnected breakthroughs but as a coherent arc driven by training objectives and the data that supports them.</p>
+<p>呢篇文章講大語言模型由GPT-1到而家嘅智能體，每一步飛躍其實都係因為改變咗模型要學嘅嘢：由預測下一個字，到學做有用嘅助手，再到學推理，最後到學用工具完成任務。最關鍵嘅唔係模型幾大，而係用咩數據同咩目標去訓練佢。呢個角度幫我哋睇清楚AI點解可以喺八年之內由零走到而家呢個地步。</p>
+<p><a class="read-more" href="https://hackernoon.com/the-evolution-of-llms-explained-through-what-we-train-them-to-do" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">98 words</div>
+</article>
+<article class="article" id="a-hackernoon-4">
+<h3 class="article-title"><a href="#a-hackernoon-4">221 Blog Posts To Learn About Hardware</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/221-blog-posts-to-learn-about-hardware" rel="noopener" target="_blank">https://hackernoon.com/221-blog-posts-to-learn-about-hardware</a></span><span class="meta-date">📅 2026-10-25 10:00 UTC+8</span></div>
+<div class="article-body"><p>HackerNoon has compiled 221 free blog posts covering a wide range of hardware topics, from Raspberry Pi projects and firmware development to gaming peripherals and energy storage systems. The collection is ranked by reader engagement and spans practical guides, product reviews, and industry insights. It serves as a one-stop resource for anyone looking to deepen their understanding of the physical components behind modern technology.</p>
+<p>HackerNoon 整理咗 221 篇免費硬件教學文章，由 Raspberry Pi 玩法、固件開發到遊戲外设同儲能系統都有涵蓋。呢啲文章係按讀者互動數據排序嘅，實用指南、產品評測同行業資訊一應俱全。如果你想深入了解科技背後嘅實體組件，呢個資源庫真係值得一睇。</p>
+<p><a class="read-more" href="https://hackernoon.com/221-blog-posts-to-learn-about-hardware" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">75 words</div>
+</article>
+<article class="article" id="a-hackernoon-5">
+<h3 class="article-title"><a href="#a-hackernoon-5">500 Blog Posts To Learn About Hackernoon</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/500-blog-posts-to-learn-about-hackernoon" rel="noopener" target="_blank">https://hackernoon.com/500-blog-posts-to-learn-about-hackernoon</a></span><span class="meta-date">📅 2026-10-25 04:01 UTC+8</span></div>
+<div class="article-body"><p>This article compiles 500 blog posts about HackerNoon, a tech publishing platform with over 3 million monthly readers, covering writing contests, community programs, platform updates, and partnerships with companies like The Sandbox, Sia Foundation, and Arweave. It traces the platform&#x27;s evolution from leaving Medium&#x27;s software to generating $727k in quarterly revenue and backing up its entire archive on Arweave, reflecting a broader push toward decentralized tech publishing. The collection serves as a comprehensive resource for understanding how HackerNoon has grown into a community-driven publishing ecosystem.</p>
+<p>呢篇文章整理咗500篇關於HackerNoon嘅網誌文章，涵蓋咗寫作比賽、平台更新、同埋佢同唔同公司嘅合作項目，例如The Sandbox、Sia Foundation同Arweave等等。HackerNoon由離開Medium開始，已經發展到有超過300萬月讀者嘅科技出版平台，仲有72萬美元嘅季度收入，可見佢喺去中心化科技出版方面嘅野心。呢個合集基本上就係一份了解HackerNoon點樣由零開始建立社群出版生態嘅完整指南。</p>
+<p><a class="read-more" href="https://hackernoon.com/500-blog-posts-to-learn-about-hackernoon" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">92 words</div>
+</article>
+</section>
+<section class="source" id="src-verge">
+<h2 class="source-title">The Verge AI <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>The Verge covered two stories centered on how AI is reshaping creative and open-source communities. The r/opensource subreddit sparked outrage by banning all AI-related projects and imposing rules that effectively exclude non-English speakers and solo developers, while the BBC&#x27;s Blue Planet III is deliberately keeping imperfect footage like plankton in the water and boats in frame to prove its authenticity in an era when AI-generated content looks too flawless to trust.</p>
+<p>Verge 最近兩篇報導都圍繞住 AI 點樣衝擊創作同開源社群。r/opensource 個 sub 突然間 ban 晒所有 AI 相關嘅 project，仲連非英語使用者同入行唔夠一年嘅獨立開發者都趕走，搞到成個社群炸鍋；另外 BBC 嘅 Blue Planet III 就故意唔剪走啲唔完美嘅鏡頭，例如水入面有浮游生物或者船入鏡，因為佢哋覺得喺 AI 生成嘅內容睇落太完美嘅年代，呢啲瑕疵先係證明你睇到嘅嘢係真嘅。</p>
+</div>
+<article class="article" id="a-verge-0">
+<h3 class="article-title"><a href="#a-verge-0">r/opensource just banned AI, non-English speakers, and more</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban" rel="noopener" target="_blank">https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban</a></span><span class="meta-date">📅 2026-10-25 21:52 UTC+8</span></div>
+<div class="article-body"><p>The moderators of r/opensource introduced sweeping new rules that ban any project involving AI, effectively exclude non-English speakers, and bar solo developers with projects less than a year old from posting. The changes ignited immediate backlash from the community, with critics calling the rules too broad and vague, and some users even launched a rival subreddit called r/trueopensource. The controversy highlights the growing tension between open-source ideals and the practical challenges of moderating a community in the age of AI-generated content.</p>
+<p>r/opensource 個版主突然出咗一啲新規則，話凡係用咗 AI、由 AI 做嘅、或者為 AI 而做嘅項目一律唔收，仲變相趕走晒唔識英文嘅人，連啱啱開始做嘅獨立開發者都唔畀發帖。呢啲規則一出，成個社群即刻炸咗鍋，好多人鬧佢哋太離譜太模糊，有人甚至開咗個叫 r/trueopensource 嘅對頭版同佢哋唱對台戲。呢件事反映咗喺 AI 時代，開源社群點樣平衡理想同現實真係好難。</p>
+<p><a class="read-more" href="https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-verge-1">
+<h3 class="article-title"><a href="#a-verge-1">Blue Planet III is keeping the rough edges in the age of AI</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai" rel="noopener" target="_blank">https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai</a></span><span class="meta-date">📅 2026-10-25 05:29 UTC+8</span></div>
+<div class="article-body"><p>BBC&#x27;s Blue Planet III is deliberately leaving in imperfect footage — plankton in the water, boats in the frame, rough conditions — to prove its authenticity at a time when AI-generated content looks suspiciously flawless. Executive Producer Elizabeth White says previous series would have cut these shots, but the team now embraces them as proof that what viewers see is real. The series showcases extraordinary ocean behaviour, including dolphins trapping fish with sea sponges and 200,000 crabs lining up in formation to feed.</p>
+<p>BBC《蓝色星球III》今次刻意保留晒啲唔完美嘅画面，例如水入面嘅浮游生物、镜头入面嘅船同埋唔好嘅水质，因为喺AI生成内容睇落太完美嘅年代，呢啲瑕疵反而系证明嘢系真嘅最好方法。监制Elizabeth White话以前呢啲镜头一定会剪走，但今次佢哋选择全部留低，因为真实海洋生物嘅行为「可能比AI谂到嘅更加精彩」。</p>
+<p><a class="read-more" href="https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+</section>
+<section class="source" id="src-raschka">
+<h2 class="source-title">Sebastian Raschka Magazine <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-raschka-0">
+<h3 class="article-title"><a href="#a-raschka-0">Building Reasoning Models from the Ground Up: A Full Video Course</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/building-reasoning-models</a></span><span class="meta-date">📅 2026-10-24 19:14 UTC+8</span></div>
+<div class="article-body"><p>Sebastian Raschka has released an 11-hour video course that walks through building reasoning models from scratch in PyTorch, covering evaluation, inference-time scaling, reinforcement learning, and distillation on a pre-trained Qwen3 model. He also clarifies the relationship between conventional LLMs, reasoning models, and agent harnesses, describing reasoning models as the engine that powers agent systems. The course serves as a sequel to his earlier &quot;Coding LLMs from the Ground Up&quot; series and is accompanied by a companion book.</p>
+<p>Raschka 出咗一套 11 個鐘嘅影片課程，教你點樣用 PyTorch 由零開始起一個 reasoning model，包括評估、inference-time scaling、reinforcement learning 同 distillation 呢啲嘢。佢仲講清楚咗一般 LLM、reasoning model 同 agent harness 之間嘅關係，話 reasoning model 就好似引擎咁，係 agent 系統入面最核心嗰部分。呢套課程係佢之前 &quot;Coding LLMs from the Ground Up&quot; 嘅續集，仲有一本配套嘅書可以睇。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">112 words</div>
+</article>
+<article class="article" id="a-raschka-1">
+<h3 class="article-title"><a href="#a-raschka-1">Language Models for Text Classification: From Bag-of-Words to Jev</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/classifier-history-and-jev</a></span><span class="meta-date">📅 2026-09-29 18:50 UTC+8</span></div>
+<div class="article-body"><p>The article traces the evolution of text classification from bag-of-words methods like naive Bayes and logistic regression through deep neural networks to the recently released Jev AI model, arguing that Jev occupies a practical middle ground between expensive general-purpose LLMs and narrow task-specific classifiers. Its key selling point is speed and cost efficiency for classification tasks while remaining far more general than traditional approaches. The author places the current hype around Jev in historical context to help readers understand what it genuinely does well without overstating its capabilities.</p>
+<p>呢篇文章由最簡單嘅 bag-of-words 分類方法講到而家最紅嘅 Jev AI 模型，作者認為 Jev 嘅定位係介乎昂貴嘅通用大語言模型同埋窄範圍專用分類器之間，勝喺又快又平仲要夠通用。作者想透過回顧文字分類嘅發展歷史，幫讀者睇清楚 Jev 究竟強喺邊度，唔好一味跟風吹水。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-raschka-2">
+<h3 class="article-title"><a href="#a-raschka-2">GPT-6 Astra, Looped Transformers, and Hidden Reasoning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and</a></span><span class="meta-date">📅 2026-09-09 19:14 UTC+8</span></div>
+<div class="article-body"><p>OpenAI&#x27;s newly released GPT-6 Astra has set a new frontier in AI performance, with standout gains in computer use, graphical rendering, and coding benchmarks, while rumors about its looped transformer architecture and hidden reasoning traces have sparked technical debate. The model&#x27;s ability to operate graphical user interfaces through mouse and keyboard actions signals a broader shift toward making AI accessible for everyday tasks beyond programming and text generation. This development, supported by OpenAI&#x27;s reported purchase of tens of thousands of Macs for reinforcement learning environments, suggests that computer-use capability will become a core training focus in the coming years.</p>
+<p>OpenAI 新出嘅 GPT-6 Astra 真係勁到不得了，尤其係用電腦、做圖形渲染同寫程式呢啲範疇，benchmark 全面超越上一代，仲有傳佢用咗 looped transformer 架構同埋收埋 reasoning trace。最值得关注嘅係佢可以透過滑鼠同鍵盤直接操作電腦介面，即係話以后唔止程序员先用到 AI，普通人叫佢幫你做報稅、開檔案呢啲嘢都唔再係幻想。OpenAI 仲買咗幾萬部 Mac 嚟做 reinforcement learning 嘅訓練環境，可見 computer use 呢個方向係佢哋未來重點投入嘅領域。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">124 words</div>
+</article>
+</section>
+<section class="source" id="src-latentspace">
+<h2 class="source-title">Latent Space <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-latentspace-0">
+<h3 class="article-title"><a href="#a-latentspace-0">[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ainews-kimi-31/" rel="noopener" target="_blank">https://latent.space/p/ainews-kimi-31/</a></span><span class="meta-date">📅 2026-10-24 15:18 UTC+8</span></div>
+<div class="article-body"><p>Moonshot AI launched Kimi K3.1 Pro, a 2.8-trillion-parameter mixture-of-experts model with 104 billion active parameters that independently scored fourth on Artificial Analysis&#x27;s Intelligence Index, beating Fable 5.1 and narrowing the open-versus-closed gap from twelve points to three. The model, which shows the strongest gains in agentic tasks and coding, is available now via API with a Highspeed option offering two to three times faster generation at double the cost, while open weights are promised by November 4. The release marks the first time an open-weight model credibly competes with the current frontier, though deployment economics and the eventual license terms remain unresolved.</p>
+<p>Moonshot AI 推出咗 Kimi K3.1 Pro，呢個 2.8 兆參數嘅 MoE 模型喺 Artificial Analysis 嘅 Intelligence Index 排第四，超越咗 Fable 5.1，將開源同閉源模型嘅差距由十二分縮窄到三分。模型喺 agentic 任務同編碼方面進步最大，而家已經可以用 API 存取，仲有 Highspeed 版本快兩到三倍但貴一倍，權重預計十一月四號開放。呢次係第一次有開源模型真正同閉源前沿模型企埋一齊，不過部署成本同授權條款仲未確定。</p>
+<p><a class="read-more" href="https://latent.space/p/ainews-kimi-31/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">130 words</div>
+</article>
+<article class="article" id="a-latentspace-1">
+<h3 class="article-title"><a href="#a-latentspace-1">AI Is Getting Good at Math. Here’s Why.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ai-is-getting-good-at-math/" rel="noopener" target="_blank">https://latent.space/p/ai-is-getting-good-at-math/</a></span><span class="meta-date">📅 2026-10-23 23:19 UTC+8</span></div>
+<div class="article-body"><p>AI models from OpenAI and Anthropic have recently solved several long-standing open mathematical problems, including disproving Erdős&#x27;s unit distance conjecture and proving the Cycle Double Cover problem. The article argues that this breakthrough stems from a fundamental difference in search strategy: humans explore many directions shallowly and abandon unpromising ones early because each attempt costs months, while LLMs pursue ideas deeply and rapidly, using automated verifiers to confirm or reject completed arguments in minutes. This lets AI exchange time for compute, turning failed attempts into negative hints and making the quality bar for a promising direction nearly disappear.</p>
+<p>OpenAI同Anthropic嘅AI模型最近解決咗幾個懸咗好耐嘅數學難題，包括推翻咗Erdős嘅unit distance猜想同埋證明咗Cycle Double Cover問題。文章指出呢個突破嘅關鍵在於搜索策略嘅根本分別：人類會廣度優先，同時試好多方向但好快放棄，因為每條路可能要花幾個月；而LLM係深度優先，可以喺幾分鐘內將一個諗法發展到底再用自動驗證器判斷啱唔啱。呢種以算力換時間嘅模式令失敗嘅嘗試都變成負面提示，大幅降低咗對「好方向」嘅要求，令以前做唔到嘅問題變得可行。</p>
+<p><a class="read-more" href="https://latent.space/p/ai-is-getting-good-at-math/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">106 words</div>
+</article>
+<article class="article" id="a-latentspace-2">
+<h3 class="article-title"><a href="#a-latentspace-2">[AINews] Black October</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ainews-black-october/" rel="noopener" target="_blank">https://latent.space/p/ainews-black-october/</a></span><span class="meta-date">📅 2026-10-23 18:09 UTC+8</span></div>
+<div class="article-body"><p>A concentrated wave of AI-accelerated security incidents dubbed &quot;Black October&quot; hit in late October 2026, spanning critical remote code execution flaws in core software like PHP and GitLab, supply chain compromises including a password-stealing LiteLLM release, and a state-sponsored agentic attack by China-aligned Storm-0940 that breached over 2,250 Microsoft 365 tenants at roughly 2,900 sign-in attempts per minute. Monthly CVE disclosures have quadrupled since April, rogue AI agents are appearing inside US bank accounts, and Anthropic&#x27;s deputy CISO warned defenders to brace for roughly 18 months of worsening conditions. The episode marks a turning point where AI tooling is simultaneously supercharging both attackers and defenders, with formal verification at scale and open-source remediation agents emerging as the counterweight.</p>
+<p>2026年10月底出現咗一波被稱為「Black October」嘅AI加速安全事件，核心軟件如PHP同GitLab爆晒遠程代碼執行漏洞，LiteLLM仲被植入密碼竊取器，中國背景嘅Storm-0940仲用AI代理工具一分鐘內對Microsoft 365做咗近2,900次登入攻擊，涉及超過2,250個租戶。CVE數量由4月起翻咗四倍，美國銀行亦發現有未經授權嘅AI代理喺客戶帳戶入面活動，Anthropic副CISO話防守方要準備捱多18個月先至會好轉。呢單嘢標誌住AI同時令攻擊者同防守者都變強，攻防平衡已經徹底改變咗。</p>
+<p><a class="read-more" href="https://latent.space/p/ainews-black-october/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">125 words</div>
+</article>
+</section>
+<section class="source" id="src-simonwillison">
+<h2 class="source-title">Simon Willison <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-simonwillison-0">
+<h3 class="article-title"><a href="#a-simonwillison-0">battledrones v14: Compass Rose, a four player map</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simonwillison.net/2026/Oct/24/battledrones/" rel="noopener" target="_blank">https://simonwillison.net/2026/Oct/24/battledrones/</a></span><span class="meta-date">📅 2026-10-24 11:59 UTC+8</span></div>
+<div class="article-body"><p>Simon Willison released battledrones v14, adding a four-player online mode with a new &quot;Compass Rose&quot; map that expands the game beyond its previous two-player limit. The update, built using Claude Opus 5.5, modified the WebSockets multiplayer code to support up to four players joining via share links or QR codes, introducing purple and green team colours alongside the existing blue and red.</p>
+<p>Simon Willison 出咗 battledrones v14，加咗一個叫 &quot;Compass Rose&quot; 嘅新地圖，由原本得兩個人玩變到最多四個人一齊打。佢用 Claude Opus 5.5 改咗 WebSockets 嘅多人連線 code，玩家可以透過分享連結或者 QR code 入場，仲加咗紫色同綠色兩隊，同原本嘅藍色同紅色一齊打。</p>
+<p><a class="read-more" href="https://simonwillison.net/2026/Oct/24/battledrones/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+<article class="article" id="a-simonwillison-1">
+<h3 class="article-title"><a href="#a-simonwillison-1">Quick Study</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simonwillison.net/2026/Oct/23/quick-study-painter/" rel="noopener" target="_blank">https://simonwillison.net/2026/Oct/23/quick-study-painter/</a></span><span class="meta-date">📅 2026-10-24 05:35 UTC+8</span></div>
+<div class="article-body"><p>Simon Willison has released Quick Study, a browser-based tool that takes any photo and rapidly repaints it on a canvas using simulated paintbrush strokes, built with Claude Opus 5.5 High. The tool relies on Sobel edge detection and avoids external libraries beyond Google Fonts, continuing Willison&#x27;s series of experiments exploring how large language models can generate creative visual effects. It demonstrates the growing capability of AI coding assistants to produce self-contained, visually compelling web artifacts with minimal dependencies.</p>
+<p>Simon Willison 推出咗一個叫 Quick Study 嘅工具，可以將任何相快速用模擬筆觸喺 canvas 上面重新繪畫出嚟，係用 Claude Opus 5.5 High 起嘅。佢用咗 Sobel 邊緣偵測技術，除咗 Google Fonts 之外冇用任何外部 library，延續咗佢之前用 AI 做水彩畫嘅實驗。呢個嘢顯示到而家 AI 編程助手已經可以好輕鬆咁整出視覺效果靚、又唔使依賴太多第三方工具嘅網頁作品。</p>
+<p><a class="read-more" href="https://simonwillison.net/2026/Oct/23/quick-study-painter/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-simonwillison-2">
+<h3 class="article-title"><a href="#a-simonwillison-2">Introducing Kimi K3.1 Pro</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/" rel="noopener" target="_blank">https://simonwillison.net/2026/Oct/23/kimi-k31-pro/</a></span><span class="meta-date">📅 2026-10-24 03:40 UTC+8</span></div>
+<div class="article-body"><p>Moonshot AI has released Kimi K3.1 Pro on its API, scoring 55 on Artificial Analysis — ahead of Claude Fable 5.1, GPT-6 Astra, and Gemini 4 Argon, and behind only Claude Opus 5.5. Priced at $2 per million input tokens and $10 per million output tokens, it matches GPT-6.1 Sol and costs half of Claude Opus 5.5, with full open weights promised by November 4, 2026. This marks the first time a soon-to-be open-weight model has reached this level of performance against the frontier.</p>
+<p>Moonshot 推出咗 Kimi K3.1 Pro，喺 Artificial Analysis 攞到 55 分，高過 Claude Fable 5.1、GPT-6 Astra 同 Gemini 4 Argon，淨係輸畀 Claude Opus 5.5。定價係每百萬 input token 兩蚊美金、output 十蚊，跟 GPT-6.1 Sol 一樣，但係 Claude Opus 5.5 嘅一半，而且佢哋話 11 月 4 號之前會開放全部權重。呢個係第一次有即將開源嘅模型可以打到咁接近 frontier 嘅水平，對成個 AI 生態嚟講都係一個好重要嘅訊號。</p>
+<p><a class="read-more" href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">128 words</div>
+</article>
+</section>
+<section class="source" id="src-netflix">
+<h2 class="source-title">Netflix Tech Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-netflix-0">
+<h3 class="article-title"><a href="#a-netflix-0">Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90" rel="noopener" target="_blank">https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90</a></span><span class="meta-date">📅 2026-10-24 02:32 UTC+8</span></div>
+<div class="article-body"><p>Netflix&#x27;s Java Platform Team has built Quasar, a tool that indexes code symbols across the company&#x27;s repositories to reveal exactly which downstream consumers depend on a library&#x27;s API before a producer removes or changes it. By connecting API diffs to real usage data — including affected repository counts, version distributions, and source locations — Quasar turns a generic compatibility warning into actionable evidence during pull-request review. The tool addresses a growing need as AI coding agents take on more development work and producers can no longer rely on informal knowledge of who calls what.</p>
+<p>Netflix Java 平台團隊開發咗一個叫 Quasar 嘅工具，可以喺全公司嘅 codebase 入面索引所有 symbol 嘅定義同引用，等庫嘅開發者喺改或者刪 API 之前，就睇到邊啲下游程式仲用緊嗰啲 symbol。佢將 API 嘅改動同實際使用數據連埋一齊，包括受影響嘅 repo 數量、版本分佈同埋源碼位置，等開發者喺 code review 嗰陣就有實據做決定，唔使再靠問人或者估。隨住 AI coding agent 開始承擔更多開發工作，呢種跨 repo 嘅可見性就越嚟越重要。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">123 words</div>
+</article>
+<article class="article" id="a-netflix-1">
+<h3 class="article-title"><a href="#a-netflix-1">Single-tenant Titus: VM-level isolation on a multi-tenant container platform</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163" rel="noopener" target="_blank">https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163</a></span><span class="meta-date">📅 2026-10-23 06:19 UTC+8</span></div>
+<div class="article-body"><p>Netflix&#x27;s internal container platform Titus has introduced a single-tenant mode that assigns demanding workloads their own virtual machine while preserving the managed deployment experience. The move addresses a structural limitation of shared-kernel isolation: hardware-level interference such as last-level cache contention, memory bandwidth saturation, and network softirq starvation cannot be fenced by cgroups, causing real-time streaming jobs to suffer stop-the-world events that never occur on dedicated EC2 instances. This matters because Netflix&#x27;s most sensitive stateful pipelines, including real-time data processors, can lose minutes of throughput from a single noisy neighbour, paging on-call engineers for a problem that is invisible in standard monitoring.</p>
+<p>Netflix 內部嘅容器平台 Titus 推出咗單租戶模式，畀一啲對隔離要求好高嘅工作負載獨佔一部虛擬機，同時保留原本嘅托管部署體驗。之所以要咁做，係因為就算用盡 cgroups、namespaces 呢啲內核隔離手段，都冇辦法完全隔離硬件層面嘅干擾，例如 cache 爭用、記憶體頻寬飽和同網絡 softirq 飢餓，呢啲問題會令實時串流作業出現「停世界」式嘅中斷，而喺專用 EC2 上面根本唔會遇到。呢件事之所以重要，係因為 Netflix 最敏感嘅有狀態數據管道，可能因為一個「嘈鄰居」就損失幾分鐘嘅吞吐量，搞到 on-call 工程師要即刻起身處理，而呢個問題喺一般監控入面完全睇唔到。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">121 words</div>
+</article>
+<article class="article" id="a-netflix-2">
+<h3 class="article-title"><a href="#a-netflix-2">Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf" rel="noopener" target="_blank">https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf</a></span><span class="meta-date">📅 2026-10-17 00:01 UTC+8</span></div>
+<div class="article-body"><p>Netflix engineers have built an ontology-driven knowledge graph to solve a critical problem at their scale: when a 1.5-second regression fires an alert, the root cause could be anywhere across billions of daily requests, and the answer is scattered across disconnected tools that don&#x27;t even agree on what an &quot;application&quot; is. By encoding their operational world into a unified RDF-based ontology stored in a custom graph database, they collapsed a four-hour cross-tool investigation into a single SPARQL query, turning non-deterministic inputs like LLM summaries and fuzzy matching into a deterministic, machine-readable system. The work matters because as Netflix adds more live content and real-time streams, the window for diagnosing issues shrinks, and no single team or dashboard can hold the whole picture.</p>
+<p>Netflix 工程團隊發現，當佢哋每日要處理超過20億個請求、每秒3800萬個日誌事件嘅時候，一次1.5秒嘅效能倒退可能要花四粒鐘先搵到根源，因為唔同系統連「application」呢個詞都冇統一。佢哋用W3C標準建咗一個叫Observability Ontology嘅知識圖譜，將散佈喺各處嘅遙測數據、事故記錄同Slack對話統一編碼成三元組，令原本要跨幾個工具先搵到嘅答案變做一條SPARQL查詢就搞掂。呢個做法之所以重要，係因為Netflix不斷加直播同即時串流內容，出問題嘅時間窗口越嚟越短，冇任何一個團隊或者dashboard可以睇晒成個系統。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">129 words</div>
+</article>
+</section>
+<section class="source" id="src-cloudflare">
+<h2 class="source-title">Cloudflare Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-cloudflare-0">
+<h3 class="article-title"><a href="#a-cloudflare-0">Origin Range Requests: Serving large files without range-request tuning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/origin-range-requests/" rel="noopener" target="_blank">https://blog.cloudflare.com/origin-range-requests/</a></span><span class="meta-date">📅 2026-10-24 02:22 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has rebuilt its range-request caching system, eliminating the need for customers to manually configure range sizes that previously caused excessive origin bandwidth usage and poor performance for large files like videos. The new implementation, now available as a self-service feature called Origin Range Requests on all plans, uses fixed-size cache chunks to serve only the bytes clients actually need, cutting p99 time to first byte by roughly half and reducing tiered cache traffic by about six percent.</p>
+<p>Cloudflare 重新設計咗佢哋嘅 range request 快取系統，唔使客戶再手動調校 range size，解決咗以前大檔案例如影片會浪費大量頻寬同影響效能嘅問題。新系統已經以 Origin Range Requests 嘅名義喺所有計劃上開放自助啟用，利用固定大小嘅快取區塊只係回傳客戶真正需要嘅位元組，令 p99 首字節時間減少咗大約一半，分層快取流量亦減少咗約百分之六。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/origin-range-requests/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">95 words</div>
+</article>
+<article class="article" id="a-cloudflare-1">
+<h3 class="article-title"><a href="#a-cloudflare-1">Bringing post-quantum cryptography to geographically fenced key management</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/post-quantum-geo-key-manager/" rel="noopener" target="_blank">https://blog.cloudflare.com/post-quantum-geo-key-manager/</a></span><span class="meta-date">📅 2026-10-24 02:06 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has launched a post-quantum geographically restricted key manager in closed beta, using hybrid ML-KEM-768 and X25519 encryption to ensure that customer decryption keys can only be unwrapped within a chosen geographic region. This addresses the &quot;harvest now, decrypt later&quot; threat while meeting data sovereignty regulations that require sensitive data to be processed only within specific jurisdictions. General availability is planned for Q1 2027.</p>
+<p>Cloudflare 推出咗一個支援後量子加密嘅地理限制密鑰管理系統，用 ML-KEM-768 同 X25519 混合加密方式，確保客戶嘅解密密鑰只可以喺指定地區先至解得開。呢個做法係為咗應對「而家收集、將來解密」嘅攻擊威脅，同時符合各地數據主權法規對敏感數據必須喺本地處理嘅要求。預計 2027 年第一季正式全面推出。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/post-quantum-geo-key-manager/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">76 words</div>
+</article>
+<article class="article" id="a-cloudflare-2">
+<h3 class="article-title"><a href="#a-cloudflare-2">Localizing compliance at scale: achieving South Korea’s ISMS certification</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/k-isms/" rel="noopener" target="_blank">https://blog.cloudflare.com/k-isms/</a></span><span class="meta-date">📅 2026-10-22 21:00 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has obtained South Korea&#x27;s ISMS certification after a ten-day audit by KISA-appointed auditors who examined 80 controls, a process that took roughly a year and a half to prepare. The most visible outcome is a redesigned sign-up experience for Korean users that breaks consent into four separately labeled items with three hard gates, and social sign-up options have been removed entirely for that market to ensure no user can bypass the consent form. The certification matters because it demonstrates that meeting a country&#x27;s regulatory expectations goes well beyond global security frameworks, requiring product-level decisions and localized evidence that auditors can interrogate directly.</p>
+<p>Cloudflare 終於攞到韓國嘅 ISMS 認證，經過 KISA 委派嘅審核員用十日時間逐項審視 80 項控制措施，前後準備咗成一年半。最明顯嘅改變係韓國用戶註冊時會見到四個分開列明嘅同意項目，其中三個係必須勾選先至可以開戶，而社交帳號登入喺韓國已經完全取消，確保冇人可以繞過同意表格。呢件事話畀大家知，要符合一個國家嘅監管要求，唔係靠全球通用嘅安全框架就夠，仲要喺產品層面做決策、用當地審核員睇得明嘅方式提供證據。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/k-isms/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+</section>
+<section class="source" id="src-openai">
+<h2 class="source-title">OpenAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-openai-0">
+<h3 class="article-title"><a href="#a-openai-0">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two" rel="noopener" target="_blank">https://openai.com/index/scaling-storage-one-billion-users-part-two</a></span><span class="meta-date">📅 2026-10-24 01:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-openai-1">
+<h3 class="article-title"><a href="#a-openai-1">Securing our frontier model training environment</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/securing-our-frontier-model-training-environment" rel="noopener" target="_blank">https://openai.com/index/securing-our-frontier-model-training-environment</a></span><span class="meta-date">📅 2026-10-23 18:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-openai-2">
+<h3 class="article-title"><a href="#a-openai-2">OpenAI and Poland’s NASK partner to advance AI safety and security</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/openai-nask-ai-safety-security-partnership" rel="noopener" target="_blank">https://openai.com/index/openai-nask-ai-safety-security-partnership</a></span><span class="meta-date">📅 2026-10-23 08:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+</section>
+<section class="source" id="src-huggingface">
+<h2 class="source-title">Hugging Face Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-huggingface-0">
+<h3 class="article-title"><a href="#a-huggingface-0">LitPivot: Developing research ideas through dynamic contextualization within the literature landscape</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/allenai/litpivot" rel="noopener" target="_blank">https://huggingface.co/blog/allenai/litpivot</a></span><span class="meta-date">📅 2026-10-24 00:15 UTC+8</span></div>
+<div class="article-body"><p>Researchers at Ai2 and the University of Pennsylvania developed LitPivot, a tool that helps researchers refine their research ideas by dynamically grouping relevant papers around specific facets of a proposal—problem, contribution, and evaluation—and offering literature-supported critiques with suggested revisions. In a study with 17 researchers, domain experts rated ideas developed with LitPivot as significantly better grounded in the literature than those developed using a text editor and an AI chat tool, while participants also reported stronger understanding of the surrounding literature. The system will be presented at UIST 2026 in Detroit.</p>
+<p>Ai2 同賓夕法尼亞大學嘅研究員開發咗 LitPivot，呢個工具可以幫研究員將研究提案拆做問題、貢獻同評估幾個部分，再自動配對相關文獻嚟做批評同提供修改建議。佢哋做咗一個 17 人嘅研究，結果發現用 LitPivot 改出嚟嘅研究構思比用普通文字編輯器加 AI 聊天工具嘅，喺文獻支撐方面明顯好咗好多，參加者都話自己對相關文獻理解深咗。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/allenai/litpivot" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-huggingface-1">
+<h3 class="article-title"><a href="#a-huggingface-1">Does Your Model Run on AWS Trainium? Look It Up</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/torch-neuronx-model-support" rel="noopener" target="_blank">https://huggingface.co/blog/torch-neuronx-model-support</a></span><span class="meta-date">📅 2026-10-23 08:00 UTC+8</span></div>
+<div class="article-body"><p>Hugging Face has launched a public tool called the torch-neuronx model support Space that lets developers check whether any Transformers model on the Hub runs unmodified on AWS Trainium chips, showing details like core count, compile time, and peak memory for each tested model. The tool also provides a ready-made script so users can reproduce the run on their own Trainium2 instance, and all results are published as a queryable dataset. This matters because it removes the guesswork for teams considering Trainium as a training or inference backend, giving them a clear answer before committing hardware resources.</p>
+<p>Hugging Face 推出咗一個叫 torch-neuronx model support 嘅工具，可以即刻查到 Transformers Hub 上面邊啲模型可以直接喺 AWS Trainium 上面跑，仲會顯示用幾多核心、編譯時間同記憶體用量。佢仲會畀你一段現成嘅 script，你自己開部 Trainium2 實例就可以直接重現測試，所有結果都係公開嘅 dataset 可以直接查。呢個嘢好有用，因為之前好多開發者想轉用 Trainium 都唔知自己個模型得唔得，而家一查就知，唔使再估嚟估去。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/torch-neuronx-model-support" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">121 words</div>
+</article>
+<article class="article" id="a-huggingface-2">
+<h3 class="article-title"><a href="#a-huggingface-2">Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/microsoft/thinkingbox-training" rel="noopener" target="_blank">https://huggingface.co/blog/microsoft/thinkingbox-training</a></span><span class="meta-date">📅 2026-10-23 06:24 UTC+8</span></div>
+<div class="article-body"><p>Microsoft and Hugging Face turned ThinkingBox&#x27;s executable database checks into reinforcement learning rewards to post-train agents, fine-tuning Qwen3.8-27B with GRPO for 50 steps and nearly tripling its repeatable success rate from 38 to 107 tasks out of 507 on every attempt, while average pass@1 rose from 51.70% to 60.78%. The work highlights that headline accuracy alone is misleading for production use, and that selecting training tasks by offline policy-relative difficulty — keeping only those the current model can sometimes solve — is key to sharpening dependability without wasting compute on tasks that are already solved or hopeless.</p>
+<p>微軟同 Hugging Face 將 ThinkingBox 用嚟做數據庫狀態檢查嘅可執行信號，直接變成 RL 訓練嘅 reward，用 GRPO 微調咗 Qwen3.8-27B 五十步，結果每次都要做啱嘅任務由 38 個升到 107 個，差唔多翻三倍，平均成功率都由 51.7% 升到 60.8%。佢哋發現單睇 pass@1 好容易誤導人，真正重要嘅係穩定性，而揀訓練任務嘅關鍵係用 policy-relative difficulty 篩選，只留啱啱好做得啱又唔係次次都啱嘅任務，先至可以令模型變得更可靠。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/microsoft/thinkingbox-training" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">126 words</div>
+</article>
+</section>
+<section class="source" id="src-googleblog">
+<h2 class="source-title">Google Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-googleblog-0">
+<h3 class="article-title"><a href="#a-googleblog-0">See what 5 builders are making with Gemini 4 Argon</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/" rel="noopener" target="_blank">https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/</a></span><span class="meta-date">📅 2026-10-24 00:00 UTC+8</span></div>
+<div class="article-body"><p>Google has released Gemini 4 Argon, a new frontier AI model that excels at complex multi-step tasks including coding, spatial reasoning, and 3D rendering. Since its broad rollout, developers have used it to build everything from interactive 3D globes mapping real-time seismic data to multiplayer browser games, demonstrating significant gains in depth and precision over previous models. The model is now available globally through Google&#x27;s API, AI Studio, and paid subscription tiers.</p>
+<p>Google 出咗個新 AI 模型叫 Gemini 4 Argon，最叻就係處理多步驟嘅複雜任務，例如寫程式、空間推理同埋 3D 渲染。一推出就有开发者用佢整咗好多嘢，由即時顯示地震同野火數據嘅互動地球儀，到多人連線嘅瀏覽器遊戲都有，證明佢喺深度同精度方面真係比以前強好多。而家全球都可以透過 Google API、AI Studio 同付費訂閱用到呢個模型。</p>
+<p><a class="read-more" href="https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+<article class="article" id="a-googleblog-1">
+<h3 class="article-title"><a href="#a-googleblog-1">Explore new ways to drive your best ROI with the first Google Marketing Platform Drop.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/products/marketingplatform/360/google-marketing-platform-drop-october/" rel="noopener" target="_blank">https://blog.google/products/marketingplatform/360/google-marketing-platform-drop-october/</a></span><span class="meta-date">📅 2026-10-22 21:00 UTC+8</span></div>
+<div class="article-body"><p>Google Marketing Platform has launched a new monthly series called &quot;Drops&quot; to help advertisers maximize ROI across the full customer journey. The first edition highlights Google&#x27;s recognition as a Leader in the Gartner Magic Quadrant for Advertising Platforms, new Gemini-curated media bundles on Display &amp; Video 360 including LinkedIn CTV inventory, and a revamped Search Ads 360 Home experience that uses AI to streamline campaign execution. These updates signal Google&#x27;s push to unify buying, planning, and measurement under one platform powered by its Gemini models.</p>
+<p>Google Marketing Platform 推出咗一個叫 &quot;Drops&quot; 嘅每月新系列，幫廣告主喺成個客戶旅程入面提升 ROI。首期重點包括 Google 喺 Gartner 廣告平台魔力象限評選中獲評為領導者、Display &amp; Video 360 加入由 Gemini 模型精選嘅媒體組合同 LinkedIn CTV 庫存，以及 Search Ads 360 全新主頁體驗用 AI 整合洞察同簡化操作。呢啲更新反映 Google 正全力將投放、策劃同量度統一喺一個平台入面，由 Gemini 模型驅動。</p>
+<p><a class="read-more" href="https://blog.google/products/marketingplatform/360/google-marketing-platform-drop-october/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">119 words</div>
+</article>
+<article class="article" id="a-googleblog-2">
+<h3 class="article-title"><a href="#a-googleblog-2">We are working with Voltus to build a 1-gigawatt virtual power plant.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virtual-power-plant-1-gigawatt/" rel="noopener" target="_blank">https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virtual-power-plant-1-gigawatt/</a></span><span class="meta-date">📅 2026-10-22 19:30 UTC+8</span></div>
+<div class="article-body"><p>Google and Voltus have expanded their partnership to build a 1-gigawatt virtual power plant across the PJM grid region, serving 67 million people in 13 states and Washington, D.C. The project aggregates flexible energy assets from homes and businesses — including smart thermostats, batteries, and industrial equipment — to reduce consumption during peak demand, with participants receiving bill savings and cash payments. This tenfold expansion from an earlier 100-megawatt deal marks one of the largest distributed capacity portfolios deployed by a hyperscaler to date.</p>
+<p>Google 同 Voltus 宣布擴大合作，喺 PJM 電網範圍起一個 1 吉瓦嘅虛擬電廠，覆蓋 13 個州同華盛頓特區合共 6700 萬人。呢個計劃將民居同企業嘅智能恆溫器、電池同工業設備等靈活能源資產集合埋，喺用電高峰時減少用電嚟支援電網穩定，參與嘅客戶可以賺回扣同現金。呢個係喺年初 100 兆瓦協議嘅基礎上加碼十倍，係目前已知由超大型數據中心公司部署嘅最大規模分佈式容量組合之一。</p>
+<p><a class="read-more" href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virtual-power-plant-1-gigawatt/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+</section>
+<section class="source" id="src-thebatch">
+<h2 class="source-title">Deep Learning AI — The Batch <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-thebatch-0">
+<h3 class="article-title"><a href="#a-thebatch-0">Issue 376</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-376" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-376</a></span><span class="meta-date">📅 2026-10-23 22:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng outlines a four-pillar framework — People, Projects, Platforms, and Processes — for engineering leaders to transform existing teams into AI-native units, stressing that leaders must personally build with AI tools, back growth-oriented projects rather than just cost-cutting ones, invest in agent-ready infrastructure, and redesign workflows around AI&#x27;s new bottlenecks. The issue also covers Meta&#x27;s release of three new multimodal models, including Muse Spark Open, which becomes the strongest open-weights model outside China and ties DeepSeek-V4.1-Flash on the Intelligence Index. Together, these pieces underscore how quickly the expectations for engineering leadership and frontier model competition are shifting.</p>
+<p>Andrew Ng 提出咗一個四柱框架，話畀工程領導者聽點樣將現有團隊變成 AI-native 團隊，重點包括領導者自己要親手用 AI 工具做嘢、要投資喺增長型項目而唔係淨係慳錢、要起好 agent-ready 嘅基礎設施、仲要圍繞 AI 嘅新瓶頸重新設計工作流程。呢期亦都講咗 Meta 一次過推出三個新多模態模型，其中 Muse Spark Open 成為中國以外最強嘅開放權重模型，喺 Intelligence Index 上面同 DeepSeek-V4.1-Flash 打平。兩部分合埋睇，反映到工程領導嘅要求同前沿模型嘅競爭都喺度急劇變化緊。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-376" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">124 words</div>
+</article>
+<article class="article" id="a-thebatch-1">
+<h3 class="article-title"><a href="#a-thebatch-1">Issue 375</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-375" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-375</a></span><span class="meta-date">📅 2026-10-16 22:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng argues that the gap between AI&#x27;s performance on verifiable tasks like coding and math versus judgement tasks like business strategy and customer service is far larger than most people realize, and that society tends to overgeneralize from impressive results on the former. He notes that reinforcement learning and clear labeling make verifiable tasks much easier to improve, while judgement tasks require laborious data collection and reward function design. Meanwhile, Anthropic released Claude Haiku 5.5 and Claude Sonnet 5.5, with the latter nearly matching Opus 5.5 on independent benchmarks but at significantly higher token costs per task.</p>
+<p>Andrew Ng 話，AI 喺可驗證嘅任務（例如寫程式、做數學）同需要判斷力嘅任務（例如商業策略、處理客戶投訴）之間嘅表現差距，比大部分人想像中大好多，而社會好容易因為前者嘅亮眼成績就高估 AI 嘅整體能力。佢指出強化學習同清晰標籤令可驗證任務進步快好多，但判斷類任務要慢慢收集數據、設計獎勵函數，進展慢好多。與此同時，Anthropic 推出咗 Claude Haiku 5.5 同 Claude Sonnet 5.5，後者喺獨立測試中差唔多追平 Opus 5.5，但每個任務消耗嘅 token 成本明顯更高。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-375" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">120 words</div>
+</article>
+<article class="article" id="a-thebatch-2">
+<h3 class="article-title"><a href="#a-thebatch-2">Issue 374</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-374" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-374</a></span><span class="meta-date">📅 2026-10-09 22:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng argues that AI agents will drive a massive surge in demand for compute, storage, and networking infrastructure, comparing the coming scale-up to the shift from bank tellers to online banking, while warning that the anti-data center movement is slowing necessary capacity growth. On the product front, OpenAI launched GPT-6.1 Sol, which nearly matches its flagship Astra model at roughly one-fifth the cost, alongside Dots, always-on personal agents with their own cloud computers and browser access.</p>
+<p>吳恩達指出，AI agent 會令運算、儲存同網絡基礎設施嘅需求大幅飆升，就好似由銀行櫃位轉去網上銀行咁，但反數據中心運動正拖慢擴容進度。OpenAI 推出咗 GPT-6.1 Sol，性能接近旗艦模型 Astra 但成本只有五分之一，同時推出咗 Dots——可以自主運行、有自己雲端電腦同瀏覽器嘅個人 agent。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-374" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">91 words</div>
+</article>
+</section>
+<section class="source" id="src-deepmind">
+<h2 class="source-title">Google DeepMind <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-deepmind-0">
+<h3 class="article-title"><a href="#a-deepmind-0">Beyond tree cover: mapping the world’s forest types</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" rel="noopener" target="_blank">https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/</a></span><span class="meta-date">📅 2026-10-22 22:30 UTC+8</span></div>
+<div class="article-body"><p>Google DeepMind, the World Resources Institute, and IIASA have released ForTy 2020, a 10-meter resolution global map that classifies every patch of land into six forest and land-use types, from primary forest to tree-crop farms. The map also includes a time series tracking annual changes from 2017 to 2025, revealing not just where forests were lost but what replaced them. This distinction matters because natural forests and plantations hold vastly different levels of carbon and biodiversity, and regulators under the EU Deforestation Regulation now need to know what kind of forest a product came from, not merely whether trees were present.</p>
+<p>Google DeepMind、世界資源研究所同IIASA最近推出咗ForTy 2020，呢張全球地圖以10米解析度將每一塊地劃分做六種森林同土地類型，由原始森林到油棕農場都有。地圖仲包含2017到2025年每年嘅變化數據，唔單止見到邊度森林消失咗，仲見到佢俾咩取代咗。呢個分別好重要，因為天然森林同人工種植林嘅碳储量同生物多樣性差好遠，歐盟反森林砍伐法規而家要求企業唔單止知道邊度有樹，仲要知嗰度原本係咩類型嘅森林。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-deepmind-1">
+<h3 class="article-title"><a href="#a-deepmind-1">Accelerating the search for antimicrobial peptides with Google Antigravity</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" rel="noopener" target="_blank">https://deepmind.google/blog/accelerating-antimicrobial-discovery/</a></span><span class="meta-date">📅 2026-10-16 00:08 UTC+8</span></div>
+<div class="article-body"><p>Google&#x27;s agentic development platform Antigravity is being used by biologists to accelerate the discovery of new antimicrobial peptides, a critical need as antibiotic resistance continues to rise. The tool compresses what was once a fragmented, multi-database search into a single session and leverages a model called ProtNLM to scan millions of uncharacterized proteins in the UniProt database. Researchers have already identified a novel peptide candidate with predicted activity against respiratory tract infection pathogens, which is now undergoing wet-lab validation.</p>
+<p>Google嘅智能開發平台Antigravity而家俾生物學家用嚟加快搵新嘅抗菌肽，而抗生素抗藥性越嚟越嚴重，呢個需求真係好迫切。呢個工具將以前要喺好多資料庫之間跳嚟跳去嘅搜尋過程壓縮做一個session搞掂，仲用咗一個叫ProtNLM嘅模型去掃描UniProt資料庫入面幾百萬個未鑑定嘅蛋白質。研究人員已經搵到一個新嘅抗菌肽候選分子，預測佢可以對抗呼吸道感染的病原體，而家已經開始做濕實驗驗證。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+<article class="article" id="a-deepmind-2">
+<h3 class="article-title"><a href="#a-deepmind-2">Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/on-device-ai-scam-detection-mddi/" rel="noopener" target="_blank">https://deepmind.google/blog/on-device-ai-scam-detection-mddi/</a></span><span class="meta-date">📅 2026-10-14 10:00 UTC+8</span></div>
+<div class="article-body"><p>Google DeepMind and Singapore&#x27;s Government Technology Agency have jointly developed a privacy-preserving, on-device AI model designed to detect scams, which now account for over half of reported crimes in the country and have caused more than S$4 billion in losses since 2019. The collaboration, part of a broader National AI Partnership, responds to a shift toward sophisticated social engineering tactics that now drive up to 80% of scam-related losses.</p>
+<p>Google DeepMind 同新加坡政府科技局合作，開發咗一個喺手機本地運行、唔會侵犯私隱嘅 AI 騙案偵測模型，因為而家騙案已經佔新加坡一半以上嘅報案數字，由2019年開始損失超過40億新元。呢個合作係新加坡國家AI夥伴計劃嘅一部分，主要針對騙徒用複雜社交工程手法行騙嘅趨勢，呢啲手法已經造成高達八成嘅損失。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/on-device-ai-scam-detection-mddi/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">78 words</div>
+</article>
+</section>
+<section class="source" id="src-aws">
+<h2 class="source-title">AWS Architecture Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aws-0">
+<h3 class="article-title"><a href="#a-aws-0">Automate medical coding with Step Functions and Amazon Bedrock AgentCore</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/</a></span><span class="meta-date">📅 2026-10-22 05:26 UTC+8</span></div>
+<div class="article-body"><p>AWS has published a reference architecture for automating medical coding by combining deterministic orchestration with bounded AI reasoning, using Step Functions and Amazon Bedrock AgentCore. The workflow escalates from cheap deterministic lookups to an LLM agent only when confidence is low, keeping the execution path auditable and subject to human approval. The pattern addresses a safety-critical problem where coding errors can misdirect adverse event signals, while reducing repetitive work for skilled coders.</p>
+<p>AWS 公布咗一個醫療編碼自動化嘅參考架構，用 Step Functions 同 Amazon Bedrock AgentCore 將確定性編排同有限制嘅 AI 推理結合埋一齊。個流程由平嘅確定性查詢開始，只有信心唔夠先會升級去大語言模型，確保每一步都可審計同需要人工批准。呢個方案針對嘅係安全關鍵嘅問題，因為編碼錯誤可以令不良事件信號送錯方向，同時減少技術員重複嘅工作。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">87 words</div>
+</article>
+<article class="article" id="a-aws-1">
+<h3 class="article-title"><a href="#a-aws-1">How Dynata scaled AI across the development lifecycle with AI-DLC and Kiro IDE</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/</a></span><span class="meta-date">📅 2026-10-15 23:50 UTC+8</span></div>
+<div class="article-body"><p>Dynata, the world&#x27;s largest first-party data company, compressed feature delivery from three to four sprints down to approximately one sprint by progressively integrating AI across its entire development lifecycle. The team followed a three-stage approach, starting with AI-assisted coding via Amazon Q Developer, then connecting AI to their knowledge ecosystem including Jira and Confluence, and finally adopting AWS&#x27;s AI-Driven Development Lifecycle methodology powered by Kiro IDE. The case demonstrates that AI&#x27;s greatest impact on software delivery comes not from accelerating individual developers but from tightening cross-functional alignment from requirements through to production.</p>
+<p>Dynata 係全球最大嘅第一方數據公司，佢哋用咗一個三步走嘅方法，由最初用 AI 輔助寫 code，到將 AI 接入 Jira、Confluence 呢啲知識生態系統，最後採用 AWS 嘅 AI-DLC 方法論配合 Kiro IDE，成功將原本要三到四個 sprint 先搞掂嘅功能壓縮到一個 sprint 左右。呢個案例話畀我哋知，AI 對軟件交付最大嘅價值唔係令個別開發者寫 code 快啲，而係由需求到上線整個流程都縮短咗跨團隊協作嘅時間。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">118 words</div>
+</article>
+<article class="article" id="a-aws-2">
+<h3 class="article-title"><a href="#a-aws-2">Multi-region disaster recovery for Amazon API Gateway WebSocket APIs</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/</a></span><span class="meta-date">📅 2026-10-14 22:31 UTC+8</span></div>
+<div class="article-body"><p>Amazon has published a design pattern for multi-region disaster recovery of API Gateway WebSocket APIs, combining Route 53 failover routing, DynamoDB Global Tables for cross-region state replication, and a canary health probe to detect regional outages independently of user traffic. This addresses a critical gap for real-time applications such as live auctions, collaborative editors, and IoT dashboards, where a regional failure severs every persistent WebSocket connection and destroys session context. The pattern enables automatic client reconnection and state recovery without requiring users to change their configuration.</p>
+<p>Amazon 出咗一篇技術文章，介紹點樣用 Route 53 故障轉移、DynamoDB Global Tables 同埋 canary 健康探測，為 API Gateway WebSocket API 建立跨區災難恢復方案。呢個方案好重要，因為 WebSocket 連線係綁死喺特定區域嘅，一旦嗰個區域出事，所有連線即刻斷晒，用戶嘅 session 狀態都會冇咗，對即時競投、協作編輯呢類應用嚟講係災難性嘅。用咗呢個架構之後，客戶端可以自動重連返第二個區域，仲可以從 DynamoDB 副本攞返原本嘅狀態，用戶完全唔使改任何設定。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+</section>
+<section class="source" id="src-github">
+<h2 class="source-title">GitHub Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-github-0">
+<h3 class="article-title"><a href="#a-github-0">The bridge to agent-scale Git infrastructure</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</a></span><span class="meta-date">📅 2026-10-22 00:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub is migrating its busiest Git repositories to Azure to overcome power and capacity limits in its own data centers, a move driven by exponential traffic growth from AI agents. The key technical breakthrough is shifting write serialization from the whole repository to individual references, which removes the single-writer bottleneck and allows concurrent pushes to different branches to proceed in parallel. This change, combined with new ephemeral virtual replicas that decouple reads from writes, unlocks both higher write throughput and independent read scaling.</p>
+<p>GitHub 因為自家數據中心電力同空間見頂，要將最繁忙嘅 Git 倉庫遷去 Azure，而 AI agent 帶嚟嘅流量暴增令呢件事更加急迫。佢哋將寫入序列化由成個倉庫縮細到個別 reference，咁樣唔同 branch 嘅 push 就可以並行處理，唔使再排隊等最慢嗰個副本。再加上全新嘅 ephemeral virtual replica 將讀寫分離，令讀取同寫入可以各自獨立擴展。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-github-1">
+<h3 class="article-title"><a href="#a-github-1">Staying Evergreen: How we automated secure access and repo hygiene in a shared org</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/" rel="noopener" target="_blank">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</a></span><span class="meta-date">📅 2026-10-16 02:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub built an internal tool called Evergreen to automate quarterly access reviews for outside collaborators and archival of stale repositories across their shared organization of over 1,400 employees. The app is built entirely on native GitHub features like issues, webhooks, and scheduled actions, with a &quot;fail secure&quot; design that revokes access by default when no one responds while never deleting any repository. All state is stored as JSON files in git, making the commit history itself the audit trail.</p>
+<p>GitHub 內部做咗個叫 Evergreen 嘅工具，專門自動處理外部協作者嘅季度權限審查同埋閒置倉庫歸檔。佢嘅設計原則係「fail secure」，冇人回應就預設撤權，但永遠唔會刪倉庫。所有狀態都寫入 git 入面嘅 JSON 檔案，commit 歷史本身就係審計記錄。</p>
+<p><a class="read-more" href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-github-2">
+<h3 class="article-title"><a href="#a-github-2">From 2,500 requests to 24: Rebuilding star history without the stargazers</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</a></span><span class="meta-date">📅 2026-10-15 03:11 UTC+8</span></div>
+<div class="article-body"><p>GitHub built a new API endpoint that returns up to 30 weeks of daily star counts in a single request, replacing the old method that required scraping individual stargazer identities to reconstruct growth curves. The change came after restricting stargazer list access to prevent spam and phishing, which broke tools like Star History that only needed counts and dates, not usernames. By filtering stars by time before counting, the new endpoint reduced the requests needed for a repository like react/react from roughly 2,511 to about 24, while also cutting database load significantly.</p>
+<p>GitHub 推出咗一個新 API endpoint，一次請求就可以攞到最多 30 週嘅每日 star 數量，唔使再逐頁抓取個別 stargazer 嘅資料去重建增長曲線。之前因為要防止有人用 stargazer 名單做 spam 同 phishing，GitHub 限制咗嗰個舊 endpoint 嘅存取權，結果搞到 Star History 呢類工具用唔到，但其實佢哋只需要數量同日期，唔需要用戶名。新設計係先按時間過濾再計數，令 react/react 呢類熱門 repository 由原本大約 2,511 次請求減到大約 24 次，同時大幅降低咗資料庫嘅負擔。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">125 words</div>
+</article>
+</section>
+<section class="source" id="src-stripe">
+<h2 class="source-title">Stripe Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-stripe-0">
+<h3 class="article-title"><a href="#a-stripe-0">Your AI agent can move money in Stripe - here&#x27;s how to stay in control</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe" rel="noopener" target="_blank">https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe</a></span><span class="meta-date">📅 2026-10-21 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe&#x27;s MCP server now allows AI agents to perform financial actions including building checkout pages, running reports, automating refunds, and sending money through Stripe Treasury. This expansion of agent capabilities into actual money movement raises important questions about oversight and control. Businesses adopting these tools need to understand how to maintain authority over automated financial transactions.</p>
+<p>Stripe 嘅 MCP server 而家可以俾 AI agent 做埋轉帳、起 checkout 頁面、出財務報告同自動退款呢啲嘢，甚至透過 Stripe Treasury 直接匯錢畀人。AI 由「睇數據」升級到「郁錢」，企業用嗰陣一定要搞清楚點樣控制同監管。</p>
+<p><a class="read-more" href="https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">74 words</div>
+</article>
+<article class="article" id="a-stripe-1">
+<h3 class="article-title"><a href="#a-stripe-1">Scaling Radar: Fighting fraud with agent-assisted machine learning</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning" rel="noopener" target="_blank">https://stripe.com/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning</a></span><span class="meta-date">📅 2026-10-19 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe has scaled its Radar fraud detection system by leveraging agent-assisted machine learning to enable rapid experimentation and continuous improvement in identifying fraudulent transactions. The approach allows the team to iterate quickly on detection models, improving accuracy and reducing false positives at scale. This matters because fraud detection is a constant arms race, and faster iteration cycles give platforms a critical edge in protecting users and merchants.</p>
+<p>Stripe 嘅 Radar 反欺詐系統透過代理輔助嘅機器學習技術，實現咗快速實驗同持續優化，令到偵測欺詐交易嘅能力大幅提升。呢種方法令團隊可以快速迭代模型，喺唔增加誤判嘅情況下提高準確率。喺欺詐手法不斷進化嘅環境下，呢種快速迭代嘅能力對保護用戶同商戶至關重要。</p>
+<p><a class="read-more" href="https://stripe.com/blog/scaling-radar-fighting-fraud-with-agent-assisted-machine-learning" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">75 words</div>
+</article>
+<article class="article" id="a-stripe-2">
+<h3 class="article-title"><a href="#a-stripe-2">Go from idea to company without leaving your development workflow</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/go-from-idea-to-company-with-atlas" rel="noopener" target="_blank">https://stripe.com/blog/go-from-idea-to-company-with-atlas</a></span><span class="meta-date">📅 2026-10-19 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe Atlas now lets developers incorporate a company directly from the command line, removing the need to leave their existing development workflow. This means founders can go from building a product to having a legal entity without switching tools or platforms. It matters because it strips away friction from startup formation for technical founders who live in their terminal.</p>
+<p>Stripe Atlas 而家可以喺 command line 直接開公司，唔使離開你寫 code 嗰個 workflow。即係話你由起個 product 到成立一間公司，全程都唔使轉去其他平台或者工具。呢個對技術型創辦人嚟講好有用，因為開公司嗰啲繁瑣嘢唔再係阻住你寫 code 嘅藉口。</p>
+<p><a class="read-more" href="https://stripe.com/blog/go-from-idea-to-company-with-atlas" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">76 words</div>
+</article>
+</section>
+<section class="source" id="src-aakashai">
+<h2 class="source-title">AI by Aakash <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aakashai-0">
+<h3 class="article-title"><a href="#a-aakashai-0">Reverse Engineer Anything.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/reverse-engineer-anything" rel="noopener" target="_blank">https://www.aibyaakash.com/p/reverse-engineer-anything</a></span><span class="meta-date">📅 2026-10-18 13:52 UTC+8</span></div>
+<div class="article-body"><p>A viral GitHub repository called &quot;Reverse Engineer Anything&quot; has amassed 310,000 stars in a single week, demonstrating that AI coding agents can now read and rebuild complex software like Signal and Linear in minutes. Replit CEO Amjad Masad flagged the broader trend of people decompiling products from Adobe to GTA V, raising a fundamental question about what competitive moats remain for software companies. The implications are significant for businesses built on proprietary code that AI can now replicate from public information alone.</p>
+<p>一個叫「Reverse Engineer Anything」嘅 GitHub repo 一星期內衝到 31 萬星，證明 AI 編程代理而家可以喺幾分鐘之內讀懂同重建 Signal、Linear 呢啲複雜軟件。Replit CEO Amjad Masad 指出而家好多人已經開始逆向工程 Adobe、GTA V 呢啲產品，令到軟件公司嘅護城河到底仲有冇成為一個根本性嘅問題。呢件事對嗰啲靠專有代碼撐住幾十億美元估值嘅公司嚟講，影響可以話係好大。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/reverse-engineer-anything" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-aakashai-1">
+<h3 class="article-title"><a href="#a-aakashai-1">Muse.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/muse" rel="noopener" target="_blank">https://www.aibyaakash.com/p/muse</a></span><span class="meta-date">📅 2026-10-12 12:56 UTC+8</span></div>
+<div class="article-body"><p>Meta&#x27;s personal AI agent Muse hit 5 million downloads in just 22 days, outpacing ChatGPT&#x27;s launch pace and surpassing Threads, WhatsApp, and Facebook in daily US downloads, despite running on what is considered the weakest model among major frontier labs. The article argues that Muse&#x27;s success comes from product design rather than raw model capability, offering an always-on cloud computer, goal-based task management, deep integration with Meta&#x27;s apps and third-party services like Shopify and Expedia, and a customizable &quot;soul&quot; file that lets users control its behaviour. The piece also covers broader AI news including Anthropic&#x27;s 10x price cut on Claude Haiku 5.5, Google putting AI chips in orbit, and Anthropic&#x27;s push toward a $2 trillion IPO.</p>
+<p>Meta 嘅個人 AI 助手 Muse 得 22 日就衝到五百萬下載，快過 ChatGPT 當年，每日美國下載量仲多過 Threads、WhatsApp 同 Facebook，但佢用嘅模型其實係四大實驗室入面最弱嘅。佢贏喺產品體驗，24 小時雲端電腦、目標式任務管理、同 Shopify 同 Expedia 深度整合，仲有個 SOUL.md 檔案等你自己改佢嘅行為規則。文章亦提到 Anthropic 將 Claude Haiku 5.5 減價十倍、Google 將 AI 晶片送上太空、同埋 Anthropic 想以兩萬億美元估值上市呢啲消息。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/muse" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">151 words</div>
+</article>
+<article class="article" id="a-aakashai-2">
+<h3 class="article-title"><a href="#a-aakashai-2">Dots.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/dots" rel="noopener" target="_blank">https://www.aibyaakash.com/p/dots</a></span><span class="meta-date">📅 2026-10-03 08:33 UTC+8</span></div>
+<div class="article-body"><p>OpenAI launched Dots at its DevDay event, an always-on personal agent that runs autonomously in the cloud with its own computer and browser, positioning itself against rivals like Grokbot and Hermes in what is becoming the defining product category of 2026. The article also covers Google&#x27;s long-awaited Gemini 4 Argon release, which trails Anthropic&#x27;s Opus 5.5 and Sonnet 5.5, and notes that every major AI lab has now signed the White House&#x27;s voluntary oversight accord.</p>
+<p>OpenAI喺DevDay推出咗Dots，呢個係一個全天候喺雲端自動運作嘅個人AI助理，有自己嘅電腦同瀏覽器，直接同Grokbot同Hermes搶市場。文章同時提到Google終於推出Gemini 4 Argon，但其實仲排喺Anthropic嘅Opus 5.5同Sonnet 5.5後面，而所有大AI實驗室都已經簽咗白宮嘅自願監管協議。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/dots" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+</section>
+<section class="source" id="src-xai">
+<h2 class="source-title">xAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-xai-0">
+<h3 class="article-title"><a href="#a-xai-0">How SpaceXSI is using Grok Bot to scale customer support</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-bot-customer-support" rel="noopener" target="_blank">https://x.ai/news/grok-bot-customer-support</a></span><span class="meta-date">📅 2026-09-22 08:00 UTC+8</span></div>
+<div class="article-body"><p>SpaceXSI deployed its own AI product, Grok Bot, across its entire customer support operation after a merger with Cursor drove a 175% surge in tickets, allowing the team to absorb the workload without hiring an estimated 200 additional staff. The bot handles everything from pre-investigating tickets and resolving refunds to monitoring queue health, coaching human agents, and turning support data into product insights, all at a cost of roughly $0.20 to $0.30 per resolution compared to the $1 to $4 charged by conventional AI support tools.</p>
+<p>SpaceXSI 合併咗 Cursor 之後，支援工單暴增百分之一百七十五，佢哋冇請多兩百人，反而用自家嘅 Grok Bot 由接單、排查、退款到質素監控全部搞掂，每單成本低至兩三毫子，遠平過市面上每單收一至四蚊嘅傳統 AI 工具。呢個做法唔單止解決人手問題，仲將每日兩萬幾條客戶意見自動歸納成產品改善方向，等工程團隊可以更快睇到邊度要改。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-bot-customer-support" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-xai-1">
+<h3 class="article-title"><a href="#a-xai-1">Introducing Grok 4.7</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-4-7" rel="noopener" target="_blank">https://x.ai/news/grok-4-7</a></span><span class="meta-date">📅 2026-09-21 08:00 UTC+8</span></div>
+<div class="article-body"><p>SpaceXSI has launched Grok 4.7, its most capable model for coding and knowledge work, built on a larger base model trained with extended reinforcement learning on complex, long-running tasks. The model delivers frontier-level performance on professional benchmarks while introducing a new safeguard stack that leads on biosafety and cybersecurity resistance. Priced at $2 per million input tokens and $6 per million output tokens, it is available immediately through Cursor, Grok Build, and the Grok API.</p>
+<p>SpaceXSI 推出咗 Grok 4.7，係佢哋最強嘅編程同知識工作模型，用咗更大嘅基礎模型，經過更長嘅強化學習訓練，專攻需要幾個鐘頭先完成嘅複雜任務。呢個模型喺專業基準測試上面表現突出，同時引入全新嘅安全防護系統，喺生物安全同網絡安全方面都係業界領先。定價係每百萬輸入 token 兩蚊美金、每百萬輸出 token 六蚊美金，已經喺 Cursor、Grok Build 同 Grok API 上面開放使用。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-4-7" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-xai-2">
+<h3 class="article-title"><a href="#a-xai-2">Introducing Grok Voice Transcribe 2.0</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-voice-transcribe-2" rel="noopener" target="_blank">https://x.ai/news/grok-voice-transcribe-2</a></span><span class="meta-date">📅 2026-09-18 08:00 UTC+8</span></div>
+<div class="article-body"><p>SpaceXSI has released Grok Voice Transcribe 2.0, a speech-to-text model that ranks first among 32 streaming models on the Artificial Analysis leaderboard and is twice as accurate as its predecessor at the same price. The model is built for real-world audio conditions including noisy phone lines, competing voices, and mid-recording language switches, with multilingual transcription representing its largest improvement. Pricing remains unchanged at $0.10 per hour for batch and $0.20 per hour for streaming, with speaker diarization, word-level timestamps, and key term biasing all included at no extra cost.</p>
+<p>SpaceXSI 推出咗 Grok Voice Transcribe 2.0，呢個語音轉文字模型喺 Artificial Analysis 排行榜排第一，準確率比上一代高咗一倍，但價格完全冇變。佢最大嘅進步係多語言轉錄，就算喺電話線差、多人同時講嘢、或者一句嘢入面夾雜唔同語言嘅環境都處理到。定價維持 batch 每小時十仙、streaming 每小時廿仙，仲包埋 speaker diarization 同 word-level timestamps，對開發者嚟講真係好抵用。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-voice-transcribe-2" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">110 words</div>
+</article>
+</section>
+</main>
+<footer class="colophon">
+  <p>Generated automatically · 2026-10-25 · Sources fetched live from each publisher's feed or site.</p>
+  <p>Summaries only — click "Read full article" for the original. All content © their respective publishers.</p>
+</footer>
+</body>
+</html>
