@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Morning Newspaper — 2026-11-15</title>
+<style>
+:root {
+  --ink: #1a1a1a; --paper: #fdfdfb; --accent: #1a3a5c; --accent2: #b03a2e;
+  --muted: #6b7280; --line: #e5e7eb; --code-bg: #f3f4f6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--paper); color: var(--ink);
+  max-width: 900px; margin: 0 auto; padding: 24px 20px 80px;
+  line-height: 1.7; font-size: 17px;
+}
+header.masthead {
+  text-align: center; border-bottom: 3px double var(--ink);
+  padding: 28px 0 20px; margin-bottom: 28px;
+}
+header.masthead h1 {
+  font-size: 2.6rem; margin: 0 0 6px; letter-spacing: -0.5px; font-weight: 800;
+}
+header.masthead .tagline { color: var(--muted); font-style: italic; font-size: 1.05rem; }
+header.masthead .dateline { margin-top: 10px; font-size: 0.95rem; color: var(--accent); font-weight: 600; letter-spacing: 0.5px; }
+header.masthead .stats { margin-top: 8px; font-size: 0.85rem; color: var(--muted); }
+.overview {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 30px;
+}
+.overview h2 { font-size: 1.3rem; margin: 0 0 12px; border-bottom: 2px solid var(--accent2); padding-bottom: 8px; color: var(--accent2); }
+.overview p { margin: 0 0 10px; font-size: 0.98rem; line-height: 1.65; }
+.toc {
+  background: #f8fafc; border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 40px;
+}
+.toc h2 { font-size: 1.3rem; margin: 0 0 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; color: var(--accent); }
+.toc-source { margin-bottom: 16px; }
+.toc-src-name { font-weight: 700; font-size: 1.02rem; color: var(--accent); }
+.toc-count { color: var(--muted); font-size: 0.85rem; margin-left: 8px; }
+.toc-list { margin: 8px 0 0 0; padding-left: 22px; }
+.toc-list li { margin: 3px 0; font-size: 0.92rem; }
+.toc-list a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
+.toc-list a:hover { color: var(--accent2); border-bottom-color: var(--accent2); }
+section.source { margin-bottom: 56px; }
+.source-title {
+  font-size: 1.6rem; margin: 0 0 4px; padding: 14px 18px;
+  background: var(--accent); color: #fff; border-radius: 8px; letter-spacing: -0.3px;
+}
+.source-count { font-size: 0.9rem; opacity: 0.85; font-weight: 400; margin-left: 10px; }
+.source-summary {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line);
+  border-radius: 8px; padding: 14px 18px; margin: 12px 0 20px;
+}
+.source-summary-title {
+  font-size: 0.9rem; font-weight: 700; color: var(--accent2);
+  margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.source-summary p { margin: 0 0 8px; font-size: 0.95rem; line-height: 1.6; }
+article.article {
+  border-left: 3px solid var(--line); padding: 6px 0 6px 20px; margin: 28px 0;
+  scroll-margin-top: 20px;
+}
+article.article:hover { border-left-color: var(--accent); }
+.article-title { font-size: 1.3rem; margin: 0 0 8px; line-height: 1.35; }
+.article-title a { color: var(--ink); text-decoration: none; }
+.article-title a:hover { color: var(--accent); }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; font-size: 0.82rem; color: var(--muted); }
+.article-meta .meta-url a { color: var(--accent); word-break: break-all; }
+.article-meta .meta-warn { color: var(--accent2); font-weight: 600; }
+.article-body { font-size: 1rem; }
+.article-body p { margin: 0 0 14px; }
+.article-body a.read-more { color: var(--accent2); font-weight: 600; }
+.article-body a { color: var(--accent); }
+.article-words { font-size: 0.75rem; color: var(--muted); margin-top: 8px; text-align: right; }
+footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-top: 20px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+  body { font-size: 16px; padding: 16px 14px 60px; }
+  header.masthead h1 { font-size: 2rem; }
+  .toc { padding: 14px 16px; }
+}
+</style>
+</head>
+<body id="top">
+<header class="masthead">
+  <h1>The AI Morning Newspaper</h1>
+  <div class="tagline">Your daily briefing on artificial intelligence, from the world's leading tech sources</div>
+  <div class="dateline">2026-11-15</div>
+  <div class="stats">22 sources · 92 articles · 1,279,026 characters</div>
+</header>
+
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <div class="toc-source"><span class="toc-src-name">DEV Community</span> <span class="toc-count">12 articles</span><ol class="toc-list">
+<li><a href="#a-devto-0">Cloudflare Measures the Markdown It Serves to AI Agents</a></li>
+<li><a href="#a-devto-1">Willow : 99,99 % de fidélité, avec quels essais retenus ?</a></li>
+<li><a href="#a-devto-2">Build a Sticky Header and Hero Section From Scratch</a></li>
+<li><a href="#a-devto-3">The comment that has been lying for six years</a></li>
+<li><a href="#a-devto-4">Free Web Application Uptime Monitoring — Comparing Node.js Tools for Tenant Experiments</a></li>
+<li><a href="#a-devto-5">df-script - a 43kB zero-dependency, expression-based DataFrame engine for TypeScript and J</a></li>
+<li><a href="#a-devto-6">How to turn a slide screenshot into a PowerPoint someone else can edit</a></li>
+<li><a href="#a-devto-7">Ukrainian scans, invoices, Word and Excel to Markdown - 5 Apify Actors on 7 files, only on</a></li>
+<li><a href="#a-devto-8">LLM Weights are Hardcoded Intelligence</a></li>
+<li><a href="#a-devto-9">The model was the easy part</a></li>
+<li><a href="#a-devto-10">Object destructing , Array destructing</a></li>
+<li><a href="#a-devto-11">I built a decision graph on HydraDB that learns from corrections. Here&#x27;s what broke.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hacker News</span> <span class="toc-count">13 articles</span><ol class="toc-list">
+<li><a href="#a-hackernews-0">A short explainer on how El Niño works [video]</a></li>
+<li><a href="#a-hackernews-1">&#x27;Birdbrain&#x27; Is a Misnomer. Crows Make Decisions Faster Than We Can</a></li>
+<li><a href="#a-hackernews-2">Emacs Is My Browser</a></li>
+<li><a href="#a-hackernews-3">All AI-generated code should be Open Source</a></li>
+<li><a href="#a-hackernews-4">The Hypertext Transfer Protocol Status Code 483 (I&#x27;m Not a Freezer)</a></li>
+<li><a href="#a-hackernews-5">Things That Turbo Pascal Is Smaller Than (2011)</a></li>
+<li><a href="#a-hackernews-6">The MacBook Pro&#x27;s OLED PWM Problem: When a &#x27;Better&#x27; Display Becomes Worse to Use</a></li>
+<li><a href="#a-hackernews-7">A NES emulator written in Odin</a></li>
+<li><a href="#a-hackernews-8">Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business</a></li>
+<li><a href="#a-hackernews-9">Why did some Apollo missions carry a grenade launcher?</a></li>
+<li><a href="#a-hackernews-10">Court denies motion to dismiss DRAM price fixing case</a></li>
+<li><a href="#a-hackernews-11">The Telephone Changed the World</a></li>
+<li><a href="#a-hackernews-12">SpaceX catches the Starship to end Flight 15</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">9to5Mac</span> <span class="toc-count">10 articles</span><ol class="toc-list">
+<li><a href="#a-9to5mac-0">Apple engineers ‘actively working’ on Face ID for iPhone Duo 2’s outer display: report</a></li>
+<li><a href="#a-9to5mac-1">The new Apple TV has twice as much RAM as the previous model, but apps and games can’t use</a></li>
+<li><a href="#a-9to5mac-2">Apple’s Siri AI smart glasses are reportedly launching next year, here’s what to expect</a></li>
+<li><a href="#a-9to5mac-3">Hands-on: This 25W MagSafe charger is thinner than an iPhone: KUXIU K4 Air [Video]</a></li>
+<li><a href="#a-9to5mac-4">AirPods Pro 3 hit Black Friday pricing early at $179 (Reg. $249)</a></li>
+<li><a href="#a-9to5mac-5">MacBook Neo 2: Here’s everything we know so far</a></li>
+<li><a href="#a-9to5mac-6">All Apple Watch Series 12 models just dropped to the lowest price ever</a></li>
+<li><a href="#a-9to5mac-7">Hands-on: ESR’s MagSafe kickstand charger solves two key iPhone Duo shortcomings</a></li>
+<li><a href="#a-9to5mac-8">Beats 360 vs Studio Pro: Here’s which Beats headphones you should buy</a></li>
+<li><a href="#a-9to5mac-9">Indie App Spotlight: ‘Milton’ lets you turn your old iPad into a home dashboard</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">HackerNoon</span> <span class="toc-count">13 articles</span><ol class="toc-list">
+<li><a href="#a-hackernoon-0">The HackerNoon Newsletter: Why Your NumPy Array Changed After Preprocessing (Views vs Copi</a></li>
+<li><a href="#a-hackernoon-1">324 Blog Posts To Learn About Twitter</a></li>
+<li><a href="#a-hackernoon-2">The TechBeat: How Bitcoin&#x27;s Lightning Network Works Under the Hood (11/15/2026)</a></li>
+<li><a href="#a-hackernoon-3">The Silicon-Carbon Battery Breakthrough Behind 7,000mAh Smartphones</a></li>
+<li><a href="#a-hackernoon-4">Survival Under the Allowlist: A Sharded, Agent-Assisted Design for Censorship-Resistant Ne</a></li>
+<li><a href="#a-hackernoon-5">How We Reached 99% Line Coverage in a React Native App</a></li>
+<li><a href="#a-hackernoon-6">Five Reasons Businesses Lose Money on Payments</a></li>
+<li><a href="#a-hackernoon-7">Google&#x27;s 20-Year-Old Chubby Design Still Has Useful Lessons for AI Infrastructure</a></li>
+<li><a href="#a-hackernoon-8">Custodial vs. Non-Custodial vs. Self-Hosted Crypto Payment Gateways</a></li>
+<li><a href="#a-hackernoon-9">Bothy: Building Verifiable AI Decisions With Arweave Receipts</a></li>
+<li><a href="#a-hackernoon-10">How I Built and Shut Down an AI-Coded Sports Trivia Game</a></li>
+<li><a href="#a-hackernoon-11">500 Blog Posts To Learn About Tutorial</a></li>
+<li><a href="#a-hackernoon-12">113 Blog Posts To Learn About Tutorial For Beginners</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Sebastian Raschka Magazine</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-raschka-0">Understanding Positional Embeddings in Modern LLMs</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">The Verge AI</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-verge-0">An overview of Jensen Huang’s messy days</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">TechCrunch AI</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-techcrunchai-0">Where was Nvidia’s security team?</a></li>
+<li><a href="#a-techcrunchai-1">Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Simon Willison</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-simonwillison-0">datasette-llm 0.1a11</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Latent Space</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-latentspace-0">[AINews] The No AI Slop Manifesto</a></li>
+<li><a href="#a-latentspace-1">[AINews] Jensen Huang resigns after 33 years leading NVIDIA</a></li>
+<li><a href="#a-latentspace-2">AI Ambition: ArtCraft Cloned Photoshop and Now Wants to &quot;Rebuild Everything&quot;</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-googleblog-0">Claim your Google Cloud Credits in Google AI Studio</a></li>
+<li><a href="#a-googleblog-1">Connect Google Wallet to Gemini for personal finance insights</a></li>
+<li><a href="#a-googleblog-2">5 new Google Flow Tools designed by visual artists</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AWS Architecture Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aws-0">How Thermo Fisher Scientific built AI-powered patient matching on AWS</a></li>
+<li><a href="#a-aws-1">Modular regression testing framework built on AWS for large-scale systems</a></li>
+<li><a href="#a-aws-2">Scale distributed AI workloads with Ray and Anyscale on Amazon EC2</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Cloudflare Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-cloudflare-0">Kitesurf is now open source</a></li>
+<li><a href="#a-cloudflare-1">Adapting to AI penetration testing orchestrators: The Modern Security Model</a></li>
+<li><a href="#a-cloudflare-2">Introducing Spend Management: Spending limits and alerts for Cloudflare</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hugging Face Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-huggingface-0">Build a Robot Pick-and-Place Simulation with SimReady Assets</a></li>
+<li><a href="#a-huggingface-1">XYBench: Helping with the problem behind the question</a></li>
+<li><a href="#a-huggingface-2">llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Deep Learning AI — The Batch</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-thebatch-0">Issue 379</a></li>
+<li><a href="#a-thebatch-1">Issue 378</a></li>
+<li><a href="#a-thebatch-2">Issue 377</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">OpenAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-openai-0">Introducing ChatGPT Wallet</a></li>
+<li><a href="#a-openai-1">Shield helps technicians hand off legacy portal work with OpenAI</a></li>
+<li><a href="#a-openai-2">How Amplitude ships product improvements in 1–2 days with OpenAI</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google DeepMind</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-deepmind-0">Introducing Gemini 4 Hydrogen</a></li>
+<li><a href="#a-deepmind-1">AlphaGenome 2: Deciphering how cells read DNA to better understand disease</a></li>
+<li><a href="#a-deepmind-2">Gemini 4 Carbon is now available</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AI by Aakash</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aakashai-0">Spotify&#x27;s 90% Trick.</a></li>
+<li><a href="#a-aakashai-1">Claude Duet.</a></li>
+<li><a href="#a-aakashai-2">Meet Claude, your new video editor.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Netflix Tech Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-netflix-0">Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System</a></li>
+<li><a href="#a-netflix-1">Making Failure Diagnosis Reliable with Pensive AI</a></li>
+<li><a href="#a-netflix-2">Multi‑Ratio Video Resizing for Mobile Feed and Marketing</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">GitHub Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-github-0">Inside GitHub’s new Git storage architecture</a></li>
+<li><a href="#a-github-1">The bridge to agent-scale Git infrastructure</a></li>
+<li><a href="#a-github-2">Staying Evergreen: How we automated secure access and repo hygiene in a shared org</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Stripe Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-stripe-0">Claimable sandboxes: Frictionless Stripe accounts for agents</a></li>
+<li><a href="#a-stripe-1">Build richer Stripe apps with the right integration approach</a></li>
+<li><a href="#a-stripe-2">Your AI agent can move money in Stripe - here&#x27;s how to stay in control</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">xAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-xai-0">Introducing Grok Voice 3.0</a></li>
+<li><a href="#a-xai-1">Introducing The X Subscription</a></li>
+<li><a href="#a-xai-2">Team Bots: shared AI teammates that learn as they work</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Anthropic News</span> <span class="toc-count">0 articles</span><ol class="toc-list">
+</ol></div>
+</nav>
+<main>
+<section class="source" id="src-devto">
+<h2 class="source-title">DEV Community <span class="source-count">12 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>DevTo’s last 24 hours focused on practical engineering and AI tooling, including Cloudflare’s Markdown-for-agents analytics, a correction to claims about Google’s Willow quantum chip, and a benchmark of PDF-to-Markdown tools. Coverage also highlighted frontend details such as sticky headers, JavaScript destructuring, and a lightweight DataFrame engine, alongside cautionary pieces on stale code comments, uptime monitoring limits, and the limits of LLM weights and computer-vision models.</p>
+<p>過去一日 DevTo 主要講工程實務同 AI 工具，包括 Cloudflare 為 AI agent 提供 Markdown 分析、Google Willow 量子晶片聲譽嘅澄清，以及 PDF 轉 Markdown 工具評測。另外仲有 sticky header、JavaScript destructuring、輕量 DataFrame 引擎，同埋舊註解、監控不足、LLM 權重同電腦視覺項目限制等提醒。</p>
+</div>
+<article class="article" id="a-devto-0">
+<h3 class="article-title"><a href="#a-devto-0">Cloudflare Measures the Markdown It Serves to AI Agents</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/neticslabs/cloudflare-measures-the-markdown-it-serves-to-ai-agents-3e4i" rel="noopener" target="_blank">https://dev.to/neticslabs/cloudflare-measures-the-markdown-it-serves-to-ai-agents-3e4i</a></span><span class="meta-date">📅 2026-11-16 03:00 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has made Markdown for Agents generally available and added analytics, logs, a playground, GraphQL data and tracing so teams can see how HTML pages are converted into compact Markdown for AI agents. The feature uses the Accept header to negotiate content, strips navigation and scripts, preserves key security and cache headers, but removes ETag and Last-Modified validators and estimates token savings from bytes rather than a target tokenizer. This matters because it gives operators measurable evidence of delivery, failures and partial conversions, while also exposing limits such as unverified user agents and the loss of conditional requests.</p>
+<p>Cloudflare 已經將 Markdown for Agents 全面推出，仲加入分析、日誌、Playground、GraphQL 同 tracing，等團隊睇到 HTML 點樣轉做俾 AI agent 用嘅精簡 Markdown。呢個功能靠 Accept header 做內容協商，會刪走導覽同 script，保留主要保安同 cache header，但會冇咗 ETag 同 Last-Modified，而且 token 慳幾多只係按 bytes 估算。重點係佢俾到實際數據睇轉換成功、失敗同部分轉換，同時亦提醒使用者 agent 身份未驗證，同埋 conditional request 會失效。</p>
+<p><a class="read-more" href="https://dev.to/neticslabs/cloudflare-measures-the-markdown-it-serves-to-ai-agents-3e4i" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">134 words</div>
+</article>
+<article class="article" id="a-devto-1">
+<h3 class="article-title"><a href="#a-devto-1">Willow : 99,99 % de fidélité, avec quels essais retenus ?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/yoane_ngassam/willow-9999-de-fidelite-avec-quels-essais-retenus--175j" rel="noopener" target="_blank">https://dev.to/yoane_ngassam/willow-9999-de-fidelite-avec-quels-essais-retenus--175j</a></span><span class="meta-date">📅 2026-11-16 03:00 UTC+8</span></div>
+<div class="article-body"><p>A correction to a video about Google’s Willow quantum chip says the 99.99% fidelity applies only to selected quantum states, with just 8% of trials retained, and that claims about RSA or a silicon record are not established. The underlying work reports magic-state cultivation and a 40-fold error reduction, marking a meaningful experimental advance but not a ready-to-use universal quantum computer. The clarification matters because it prevents overstating the result as a breakthrough in practical quantum computing.</p>
+<p>有片講 Google 嘅 Willow 量子晶片，話 99.99% 保真度其實只係指揀選咗嘅量子態，而且淨係保留 8% 測試，RSA 同「矽片紀錄」呢啲講法都未確立。原文講嘅係 magic state cultivation 同 40 倍錯誤率下降，係實驗上有進展，但唔代表已經有即用嘅通用量子電腦。呢個澄清好重要，因為唔好將佢講大做實用量子運算突破。</p>
+<p><a class="read-more" href="https://dev.to/yoane_ngassam/willow-9999-de-fidelite-avec-quels-essais-retenus--175j" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+<article class="article" id="a-devto-2">
+<h3 class="article-title"><a href="#a-devto-2">Build a Sticky Header and Hero Section From Scratch</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/codefromscratch/build-a-sticky-header-and-hero-section-from-scratch-oip" rel="noopener" target="_blank">https://dev.to/codefromscratch/build-a-sticky-header-and-hero-section-from-scratch-oip</a></span><span class="meta-date">📅 2026-11-16 03:00 UTC+8</span></div>
+<div class="article-body"><p>The article explains how to build a common sticky header and hero section from scratch, focusing on why position: sticky with top: 0 works only when the header’s parent is tall enough and has no overflow: hidden. It also covers a hide-on-scroll script, using svh and clamp() for a responsive hero, and handling keyboard focus, reduced motion, and short screens. These details matter because they prevent the frequent layout and accessibility failures that break otherwise simple landing pages.</p>
+<p>篇文章教點樣由零開始砌一個會跟住滾動嘅 header 同 hero，重點講 position: sticky 點解會唔 work，例如 parent 唔夠高或者有 overflow: hidden。佢仲講埋向下滾動時收 header、向上滾動時返嚟嘅 script，同埋用 svh 同 clamp() 令 hero 喺手機都唔會切走。呢啲細節好重要，因為好多簡單網頁都係喺呢度壞咗，仲會搞到鍵盤 focus 同無障礙都出問題。</p>
+<p><a class="read-more" href="https://dev.to/codefromscratch/build-a-sticky-header-and-hero-section-from-scratch-oip" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-devto-3">
+<h3 class="article-title"><a href="#a-devto-3">The comment that has been lying for six years</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/dennervidal/the-comment-that-has-been-lying-for-six-years-3jal" rel="noopener" target="_blank">https://dev.to/dennervidal/the-comment-that-has-been-lying-for-six-years-3jal</a></span><span class="meta-date">📅 2026-11-16 03:00 UTC+8</span></div>
+<div class="article-body"><p>A developer describes how a temporary workaround for a telephony vendor bug became a stale code comment that remained wrong for six years. The article argues that vendor workarounds need linked tickets, evidence, clear removal conditions, and named settings so the reason does not disappear when the code changes. It matters because outdated comments can mislead future maintainers and hide technical debt.</p>
+<p>呢篇文講一個開發者因為電話供應商有 bug，暫時限制一次只打一個電話，但 bug 修好之後，段註釋仲係寫住舊限制，一留就留咗六年。佢認為處理供應商 workaround 要連 ticket、證據、移除條件同具名設定一齊寫落 code，唔好淨係靠註釋。呢件事重要，因為過時註釋會誤導後嚟睇 code 嘅人，令技術債一直藏住。</p>
+<p><a class="read-more" href="https://dev.to/dennervidal/the-comment-that-has-been-lying-for-six-years-3jal" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">76 words</div>
+</article>
+<article class="article" id="a-devto-4">
+<h3 class="article-title"><a href="#a-devto-4">Free Web Application Uptime Monitoring — Comparing Node.js Tools for Tenant Experiments</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/quintonshaw1483/free-web-application-uptime-monitoring-comparing-nodejs-tools-for-tenant-experiments-997" rel="noopener" target="_blank">https://dev.to/quintonshaw1483/free-web-application-uptime-monitoring-comparing-nodejs-tools-for-tenant-experiments-997</a></span><span class="meta-date">📅 2026-11-16 02:57 UTC+8</span></div>
+<div class="article-body"><p>Free uptime monitors such as Uptime Robot and StatusCake can show whether a public health endpoint is reachable, but they do not explain tenant-experiment failures, so teams need application telemetry, cohort and flag context, and heartbeat checks for background jobs. The article compares these tools with Healthchecks and notes that free tiers often limit alerting and reporting, while Infrai’s self-describing REST observability API can reduce integration work but still requires polling and custom correlation. The key point is that monitoring should preserve enough evidence to distinguish a reachable web process from a completed tenant action.</p>
+<p>免費嘅 Uptime Robot 同 StatusCake 可以話你知公開健康檢查有冇回應，但唔可以解釋租戶實驗點解失敗，所以團隊仲要記錄 cohort、flag、部署版本同後台 job 嘅 heartbeat。文章比較 Healthchecks 同 Infrai 呢類工具，指出免費層通常限制告警同報告，Infrai 嘅 REST API 可以減少整合工作，但仍然要自己 polling 同做關聯分析。最重要嘅係，監控要留低足夠證據，先至可以分清網頁服務有冇活著，同租戶操作有冇真正完成。</p>
+<p><a class="read-more" href="https://dev.to/quintonshaw1483/free-web-application-uptime-monitoring-comparing-nodejs-tools-for-tenant-experiments-997" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">119 words</div>
+</article>
+<article class="article" id="a-devto-5">
+<h3 class="article-title"><a href="#a-devto-5">df-script - a 43kB zero-dependency, expression-based DataFrame engine for TypeScript and JavaScript</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/trent_morris_04cb3f93c6c5/df-script-a-43kb-zero-dependency-expression-based-dataframe-engine-for-typescript-and-javascript-1kl" rel="noopener" target="_blank">https://dev.to/trent_morris_04cb3f93c6c5/df-script-a-43kb-zero-dependency-expression-based-dataframe-engine-for-typescript-and-javascript-1kl</a></span><span class="meta-date">📅 2026-11-16 02:57 UTC+8</span></div>
+<div class="article-body"><p>df-script is a 43kB, zero-dependency DataFrame engine for TypeScript and JavaScript that brings 300+ declarative operations, including groupings, joins, window functions, CSV/NDJSON parsing, and temporal conversions, directly to the browser. It is designed to replace fragile hand-written map/filter/reduce chains and unnecessary backend services by using columnar loops that reduce allocations and garbage collection pressure. The project is MIT-licensed and includes docs, an interactive playground, and dedicated tests for complex client-side data work.</p>
+<p>df-script 係一個得 43kB、零依賴嘅 TypeScript 同 JavaScript DataFrame 引擎，提供超過 300 個聲明式操作，可以直接喺瀏覽器做分組、join、窗口函數、CSV/NDJSON 解析同時間轉換。佢用欄式循環取代 map、filter、reduce 呢啲容易產生大量中間物件嘅寫法，減少記憶體壓力同 GC，亦唔使為咗簡單數據處理再搞後端服務。呢個 MIT 授權項目仲有文件、互動 Playground 同測試，適合需要喺前端處理複雜數據嘅開發者。</p>
+<p><a class="read-more" href="https://dev.to/trent_morris_04cb3f93c6c5/df-script-a-43kb-zero-dependency-expression-based-dataframe-engine-for-typescript-and-javascript-1kl" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-devto-6">
+<h3 class="article-title"><a href="#a-devto-6">How to turn a slide screenshot into a PowerPoint someone else can edit</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/image2ppt/how-to-turn-a-slide-screenshot-into-a-powerpoint-someone-else-can-edit-230b" rel="noopener" target="_blank">https://dev.to/image2ppt/how-to-turn-a-slide-screenshot-into-a-powerpoint-someone-else-can-edit-230b</a></span><span class="meta-date">📅 2026-11-16 02:56 UTC+8</span></div>
+<div class="article-body"><p>The article explains how to convert a slide screenshot into an editable PowerPoint by first identifying which elements will need future updates. It recommends rebuilding only changing text and charts as native PowerPoint objects, using the image as a layout reference, and testing edits such as replacing labels or editing chart data before handoff. This matters because a static PNG may look correct but can block routine changes like renaming metrics or updating figures.</p>
+<p>篇文章教人點將 slide 截圖變成其他人可以編輯嘅 PowerPoint，重點係先諗清楚邊啲內容之後要改。作者建議只係將會更新嘅文字同圖表重建做 PowerPoint 原生物件，截圖可以留低做排版參考，交出去之前要試過改 label 同 chart data。咁樣先至唔會因為一張 PNG 睇落冇問題，但下個月改數字或者改名都要重做整頁。</p>
+<p><a class="read-more" href="https://dev.to/image2ppt/how-to-turn-a-slide-screenshot-into-a-powerpoint-someone-else-can-edit-230b" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">90 words</div>
+</article>
+<article class="article" id="a-devto-7">
+<h3 class="article-title"><a href="#a-devto-7">Ukrainian scans, invoices, Word and Excel to Markdown - 5 Apify Actors on 7 files, only one got every table right</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/andriyvk/ukrainian-scans-invoices-word-and-excel-to-markdown-5-apify-actors-on-7-files-only-one-got-5216" rel="noopener" target="_blank">https://dev.to/andriyvk/ukrainian-scans-invoices-word-and-excel-to-markdown-5-apify-actors-on-7-files-only-one-got-5216</a></span><span class="meta-date">📅 2026-11-16 02:56 UTC+8</span></div>
+<div class="article-body"><p>A benchmark tested five Apify PDF-to-Markdown Actors on seven Ukrainian files, including scans, Word, Excel and line-free invoices, comparing text, tables and numbers against the source. Only the author’s Document to Markdown Actor got all seven files correct, while others failed on Ukrainian OCR, Office formats, or silently altered prices and table structure. The result matters for document pipelines because wrong numbers or lost tables can corrupt invoices, spreadsheets and RAG data even when the output looks usable.</p>
+<p>呢篇測試用七份烏克蘭文件，包括掃描檔、Word、Excel 同無格線發票，比較五個 Apify PDF 轉 Markdown Actor 嘅文字、表格同數字準確度。結果只有作者自己嗰個 Actor 七份全部做啱，其他有啲讀唔到烏克蘭掃描檔、開唔到 Office 檔，或者會靜靜雞改錯價格同拆散表格。對做文件處理或者 RAG 嘅人嚟講，呢個好重要，因為數字錯咗或者表格散晒，就算輸出睇落似冇問題，都會弄錯發票同資料庫資料。</p>
+<p><a class="read-more" href="https://dev.to/andriyvk/ukrainian-scans-invoices-word-and-excel-to-markdown-5-apify-actors-on-7-files-only-one-got-5216" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-devto-8">
+<h3 class="article-title"><a href="#a-devto-8">LLM Weights are Hardcoded Intelligence</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/wiseai/llm-weights-are-hardcoded-intelligence-9mk" rel="noopener" target="_blank">https://dev.to/wiseai/llm-weights-are-hardcoded-intelligence-9mk</a></span><span class="meta-date">📅 2026-11-16 02:55 UTC+8</span></div>
+<div class="article-body"><p>The article argues that large language models are not living intelligence but frozen files of hardcoded weights, compressed statistical snapshots of training data that cannot change on their own. It stresses that these weights encode grammar, facts, and reasoning patterns from past text, yet calling them intelligence overstates what they are and can mislead policy, careers, and public expectations. The author presents this critique as a call to distinguish impressive static compression from genuine, adaptable intelligence.</p>
+<p>篇文章講明大語言模型唔係真正嘅智能，而係凍結咗嘅權重檔案，將過去訓練資料嘅統計規律壓縮埋，自己唔會再改變。佢話呢啲權重雖然真係學到語法、事實同推理模式，但如果將佢哋講成智能，就會誇大實際能力，誤導政策、職業選擇同社會期望。作者想人分清楚靜態壓縮同真正可變通嘅智能，唔好被技術名詞嚇住。</p>
+<p><a class="read-more" href="https://dev.to/wiseai/llm-weights-are-hardcoded-intelligence-9mk" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">81 words</div>
+</article>
+<article class="article" id="a-devto-9">
+<h3 class="article-title"><a href="#a-devto-9">The model was the easy part</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/yashsinghh/the-model-was-the-easy-part-1fli" rel="noopener" target="_blank">https://dev.to/yashsinghh/the-model-was-the-easy-part-1fli</a></span><span class="meta-date">📅 2026-11-16 02:55 UTC+8</span></div>
+<div class="article-body"><p>A retail computer-vision project showed that the model was only a small part of the product, because retailers needed insights such as browsing time, greetings, group visits and store performance rather than simple footfall counts. The harder work was adapting to different store setups, building admin controls and an Electron app for remote reconfiguration, and stress-testing the pipeline under real load. The author also found that common GPU optimisation advice could mislead, so profiling actual CPU, GPU and preprocessing behaviour became essential.</p>
+<p>呢個零售鏡頭分析項目話畀人知，模型其實只係產品嘅一小部分，因為零售商真正想要嘅唔係單純人流數字，而係顧客逗留時間、有冇被招呼、係咪成組入嚟同門店表現等決策資訊。真正難嘅係處理每間店唔同嘅設置、做管理工具同 Electron app 去遙距調校鏡頭，仲要喺高負載下測試系統穩定性。作者亦發現，好多教科書式 GPU 優化建議未必啱用，最緊要係實際量度 CPU、GPU 同預處理嘅真實表現。</p>
+<p><a class="read-more" href="https://dev.to/yashsinghh/the-model-was-the-easy-part-1fli" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-devto-10">
+<h3 class="article-title"><a href="#a-devto-10">Object destructing , Array destructing</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/vishnu_priya_suresh/object-destructing-array-destructing-1431" rel="noopener" target="_blank">https://dev.to/vishnu_priya_suresh/object-destructing-array-destructing-1431</a></span><span class="meta-date">📅 2026-11-16 02:53 UTC+8</span></div>
+<div class="article-body"><p>JavaScript destructuring lets developers unpack object properties and array elements into separate variables in one step. Object destructuring extracts values by property name, while array destructuring assigns values by position, reducing repetitive references such as props.name. This makes code shorter, clearer, and easier to maintain.</p>
+<p>JavaScript 嘅 destructuring 可以一次過將 object 嘅屬性或者 array 嘅元素拆開，存入獨立變數。Object destructuring 按屬性名取值，array destructuring 就按位置取值，唔使重複寫 props.name 呢啲寫法。呢個做法可以令 code 更簡潔、易讀同易維護。</p>
+<p><a class="read-more" href="https://dev.to/vishnu_priya_suresh/object-destructing-array-destructing-1431" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">65 words</div>
+</article>
+<article class="article" id="a-devto-11">
+<h3 class="article-title"><a href="#a-devto-11">I built a decision graph on HydraDB that learns from corrections. Here&#x27;s what broke.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/0xnexuz/i-built-a-decision-graph-on-hydradb-that-learns-from-corrections-heres-what-broke-5c7d" rel="noopener" target="_blank">https://dev.to/0xnexuz/i-built-a-decision-graph-on-hydradb-that-learns-from-corrections-heres-what-broke-5c7d</a></span><span class="meta-date">📅 2026-11-16 02:53 UTC+8</span></div>
+<div class="article-body"><p>DecisionGraph is a HydraDB-backed tool that links architecture decision records to their replacements so AI coding agents can follow trusted paths to the current decision instead of retrieving outdated ones. It learns from user corrections by updating link trust, storing corrected questions in the graph, and returning concise answers with history, using public UK government ADRs for testing. This matters because stale engineering decisions can mislead agents and teams, while the graph turns corrections into durable, queryable memory.</p>
+<p>DecisionGraph 係一個用 HydraDB 起嘅工具，將架構決策紀錄同佢哋嘅替代版本連埋，等 AI coding agent 唔會再搵到過時決定，而係跟可信路徑搵返而家仲有效嘅決策。佢會將人嘅更正寫入圖，更新連結可信度，仲會記住問過嘅問題，下次用唔同字眼問都可以答啱。呢樣嘢重要，因為工程團隊成日改決定，如果 agent 仲跟舊紀錄做嘢，就會出錯，而呢個圖可以將更正變成可查詢嘅長期記憶。</p>
+<p><a class="read-more" href="https://dev.to/0xnexuz/i-built-a-decision-graph-on-hydradb-that-learns-from-corrections-heres-what-broke-5c7d" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">92 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernews">
+<h2 class="source-title">Hacker News <span class="source-count">13 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Recent coverage spanned open-source AI code, a MacBook Pro OLED flicker controversy, El Niño weather impacts, and a court allowing a DRAM price-fixing case to proceed. Tech culture and engineering also featured Turbo Pascal’s tiny footprint, an Emacs-based browsing workflow, a NES emulator in Odin, crow cognition research, chip export-control politics, telephone history, and a playful HTTP 483 proposal.</p>
+<p>過去一日 HackerNews 講咗 AI 生成程式碼應該開源、MacBook Pro OLED 閃屏問題、厄爾尼諾現象，同埋 DRAM 價格操縱案獲法院容許繼續。另外仲有 Turbo Pascal 細到誇張、用 Emacs 做瀏覽器、Odin 寫 NES 模擬器、烏鴉決策速度、芯片出口管制、電話改變世界，同埋 HTTP 483 呢個搞笑提案。</p>
+</div>
+<article class="article" id="a-hackernews-0">
+<h3 class="article-title"><a href="#a-hackernews-0">A short explainer on how El Niño works [video]</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.youtube.com/watch?v=7_JF3etiAv8" rel="noopener" target="_blank">https://www.youtube.com/watch?v=7_JF3etiAv8</a></span><span class="meta-date">📅 2026-11-16 02:23 UTC+8</span><span class="meta-pts">▲ 23 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50509308">HN discussion</a></span></div>
+<div class="article-body"><p>A short video explains how El Niño develops when warm Pacific Ocean surface waters spread eastward, disrupting normal trade winds and shifting rainfall patterns around the world. The explainer links the phenomenon to stronger storms, droughts, heatwaves and impacts on agriculture, fisheries and weather forecasting. It matters because El Niño can affect food prices, disaster risk and public safety far beyond the Pacific.</p>
+<p>短片講解厄爾尼諾點樣形成，主要係太平洋東面海面水溫異常升高，打亂正常貿易風同降雨分佈。佢會令全球天氣更極端，例如乾旱、熱浪、風暴同漁業受影響，所以對糧價、防災同天氣預報都好重要。</p>
+<p><a class="read-more" href="https://www.youtube.com/watch?v=7_JF3etiAv8" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">68 words</div>
+</article>
+<article class="article" id="a-hackernews-1">
+<h3 class="article-title"><a href="#a-hackernews-1">&#x27;Birdbrain&#x27; Is a Misnomer. Crows Make Decisions Faster Than We Can</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html" rel="noopener" target="_blank">https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html</a></span><span class="meta-date">📅 2026-11-16 01:53 UTC+8</span><span class="meta-pts">▲ 20 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50509023">HN discussion</a></span></div>
+<div class="article-body"><p>A new study published in Science found that carrion crows can process and respond to visual cues about twice as fast as humans and monkeys, challenging the old insult that birds are unintelligent. The research quantifies avian decision-making speed for the first time and adds to growing evidence that corvids have sophisticated cognitive abilities, from tool use to abstract problem-solving. The findings matter because they overturn long-held assumptions about bird brains and suggest that small brains can support remarkably rapid, flexible thinking.</p>
+<p>一項刊登喺《Science》嘅新研究發現，兩隻 carrion crows 處理同回應視覺提示嘅速度，比人類同猴子快一倍，證明「鳥腦」呢個貶低詞根本唔啱。研究首次量化鳥類決策嘅神經速度，亦反映烏鴉呢類鳥唔單止識用工具、數數，仲有抽象思考同計劃能力。呢個發現重要，因為佢推翻咗長期以為鳥類腦細就唔聰明嘅舊觀念，令人重新睇鳥類嘅認知能力。</p>
+<p><a class="read-more" href="https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">90 words</div>
+</article>
+<article class="article" id="a-hackernews-2">
+<h3 class="article-title"><a href="#a-hackernews-2">Emacs Is My Browser</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://joshblais.com/blog/emacs-as-my-browser/" rel="noopener" target="_blank">https://joshblais.com/blog/emacs-as-my-browser/</a></span><span class="meta-date">📅 2026-11-15 23:21 UTC+8</span><span class="meta-pts">▲ 90 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50507553">HN discussion</a></span></div>
+<div class="article-body"><p>The article describes how the author has made Emacs’s built-in browser, EWW, his default way to browse the web, finding it usable for most everyday reading and research despite JavaScript-heavy sites. He argues that a plain terminal browser reduces distraction, supports privacy, and encourages a more intentional use of the internet, while still allowing fallback to Chromium or Firefox for tasks like video, social media, banking, and complex forms.</p>
+<p>篇文章講作者點樣將 Emacs 內置瀏覽器 EWW 變成日常上網嘅首選，發覺就算面對好多 JavaScript 網站，佢都仲可以應付大部分查資料同睇文嘅需要。佢認為呢種簡潔嘅瀏覽器可以減少分心、保護私隱，亦令人更有意識咁使用互聯網，遇到影片、社交媒體、銀行或者複雜表格時，再轉返去 Chromium 或 Firefox 處理。</p>
+<p><a class="read-more" href="https://joshblais.com/blog/emacs-as-my-browser/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+<article class="article" id="a-hackernews-3">
+<h3 class="article-title"><a href="#a-hackernews-3">All AI-generated code should be Open Source</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://jakub.jankiewicz.org/blog/ai-code-open-source/" rel="noopener" target="_blank">https://jakub.jankiewicz.org/blog/ai-code-open-source/</a></span><span class="meta-date">📅 2026-11-15 22:46 UTC+8</span><span class="meta-pts">▲ 713 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50507303">HN discussion</a></span></div>
+<div class="article-body"><p>All AI-generated code should be open source because AI models were trained on open source and licensed content, often without permission or proper attribution. Purely AI-generated code may not be copyrightable in places like the US, though laws vary elsewhere, so releasing it under open source or CC0 would be fairer. This matters because many developers now rely heavily on AI output with little review or modification.</p>
+<p>所有 AI 生成嘅 code 都應該係 open source，因為 AI 模型係靠大量 open source 同有授權嘅內容訓練出嚟，好多時冇得到許可或者正確歸屬。純粹由 AI 生成嘅 code 喺美國等地方可能唔受版權保護，但各地法律唔同，所以最好明確用 open source 或者 CC0 授權。呢個議題重要，因為好多 developer 而家好依賴 AI 出嚟嘅 code，又冇點樣審視或者改動。</p>
+<p><a class="read-more" href="https://jakub.jankiewicz.org/blog/ai-code-open-source/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+<article class="article" id="a-hackernews-4">
+<h3 class="article-title"><a href="#a-hackernews-4">The Hypertext Transfer Protocol Status Code 483 (I&#x27;m Not a Freezer)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/" rel="noopener" target="_blank">https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/</a></span><span class="meta-date">📅 2026-11-15 22:31 UTC+8</span><span class="meta-pts">▲ 68 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50507206">HN discussion</a></span></div>
+<div class="article-body"><p>A new Internet-Draft proposes HTTP status code 483, “I’m Not a Freezer,” for servers that understand a request but cannot freeze, refrigerate, chill, or preserve physical items. It sets conditions for returning the code and warns that cold servers, cooling systems, frozen processes, or “cold storage” services do not make a server freezer-capable. The proposal aims to reduce client confusion and prevent requests from being retried or mishandled when infrastructure is mistaken for refrigeration equipment.</p>
+<p>一份新嘅 Internet-Draft 建議新增 HTTP 狀態碼 483「I’m Not a Freezer」，用嚟表示伺服器明白要求，但冇能力凍結、冷藏、降溫或者保存實體物品。文件列明幾時先可以用呢個狀態碼，亦強調伺服器本身凍、有散熱系統、程序被凍結或者提供「cold storage」，都唔代表佢係雪櫃。呢個提案想減少客戶端誤解，避免重複要求或者將資訊科技設備當雪櫃咁處理。</p>
+<p><a class="read-more" href="https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+<article class="article" id="a-hackernews-5">
+<h3 class="article-title"><a href="#a-hackernews-5">Things That Turbo Pascal Is Smaller Than (2011)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://prog21.dadgum.com/116.html" rel="noopener" target="_blank">https://prog21.dadgum.com/116.html</a></span><span class="meta-date">📅 2026-11-15 21:44 UTC+8</span><span class="meta-pts">▲ 127 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50506894">HN discussion</a></span></div>
+<div class="article-body"><p>Turbo Pascal 3 for MS-DOS, released in 1986, packed a full Pascal compiler and editor into a 39,731-byte executable that compiled projects far faster than Microsoft’s tools. The article compares that tiny size with 2011 software and web artifacts, including minified jQuery, a Yahoo homepage, an Apple product image, and a Wikipedia page, all of which were larger. The point is that modern software and web content can be bloated compared with the compact, practical programming tools of the past.</p>
+<p>1986 年推出嘅 Turbo Pascal 3 將完整 Pascal 編譯器同編輯器塞入 39,731 bytes 嘅執行檔，仲比微軟編譯器快好多。文章用佢同 2011 年嘅 jQuery、Yahoo 首頁、Apple 產品圖片同 C++ 維基百科頁比較，發覺好多而家嘅軟件同網頁仲大過呢個舊工具。重點係提醒人哋，以前嘅編程工具可以咁精簡實用，而家嘅軟件同網頁反而可能臃腫。</p>
+<p><a class="read-more" href="https://prog21.dadgum.com/116.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-hackernews-6">
+<h3 class="article-title"><a href="#a-hackernews-6">The MacBook Pro&#x27;s OLED PWM Problem: When a &#x27;Better&#x27; Display Becomes Worse to Use</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/" rel="noopener" target="_blank">https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/</a></span><span class="meta-date">📅 2026-11-15 21:15 UTC+8</span><span class="meta-pts">▲ 268 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50506719">HN discussion</a></span></div>
+<div class="article-body"><p>Apple&#x27;s new MacBook Pro PROLED XDR tandem OLED display has drawn praise for its contrast, brightness and touch input, but some owners report headaches, eye strain, dizziness and nausea after using it. The concern centres on pulse-width modulation, with lab tests showing 240Hz flicker at most brightness levels versus about 14,880Hz on the previous Mini-LED model, although sensitivity varies and PWM may not explain every case. The issue matters because a flagship, expensive display can be technically impressive yet still uncomfortable for a subset of users, raising accessibility questions for Apple.</p>
+<p>Apple 新 MacBook Pro 嘅 PROLED XDR OLED 螢幕雖然對比度、亮度同觸控都勁，但係有使用者話睇耐會頭痛、眼攰、頭暈甚至噁心。大家主要擔心 PWM 閃爍，測試話佢喺大部分亮度下係 240Hz 閃，相比返舊 Mini-LED 機嘅 14,880Hz 低好多，不過每個人敏感度唔同，未必所有不適都係 PWM 造成。呢件事重要，因為一部咁貴嘅旗艦機，螢幕再靚都唔代表人人用得舒服，對 Apple 嘅無障礙體驗係一個挑戰。</p>
+<p><a class="read-more" href="https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">116 words</div>
+</article>
+<article class="article" id="a-hackernews-7">
+<h3 class="article-title"><a href="#a-hackernews-7">A NES emulator written in Odin</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://lucypero.com/lucynes.html" rel="noopener" target="_blank">https://lucypero.com/lucynes.html</a></span><span class="meta-date">📅 2026-11-15 20:51 UTC+8</span><span class="meta-pts">▲ 73 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50506588">HN discussion</a></span></div>
+<div class="article-body"><p>lucyNES is a solo NES emulator written in Odin, built between April 2024 and January 2025, that can run Battletoads and hundreds of other games with a debugger, menu, save states, controller support, CRT shader toggle, and partial sound. The project shows how difficult accurate emulation is, especially because NES timing, CPU/PPU interaction, and cartridge mappers must be handled precisely for many games to work. It also highlights how Odin’s low-level control, raw unions, and bit fields fit emulator development, while the author paused the project because sound and some mappers still need work.</p>
+<p>lucyNES 係一個用 Odin 寫嘅 NES 模擬器，作者由 2024 年 4 月做到 2025 年 1 月，已經可以跑 Battletoads 同幾百隻遊戲，仲有調試器、選單、存檔、掣支援、CRT shader 同部分音效。呢個項目講明模擬器要做到準確好難，尤其 NES 嘅 CPU 同 PPU 時間同步、卡帶 mapper 呢啲細節，一錯好多遊戲就唔得。作者仲話 Odin 嘅底層控制、raw union 同 bit field 好啱寫模擬器，不過因為音效同部分 mapper 仲未完善，所以暫時收工。</p>
+<p><a class="read-more" href="https://lucypero.com/lucynes.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">133 words</div>
+</article>
+<article class="article" id="a-hackernews-8">
+<h3 class="article-title"><a href="#a-hackernews-8">Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html" rel="noopener" target="_blank">https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html</a></span><span class="meta-date">📅 2026-11-15 19:40 UTC+8</span><span class="meta-pts">▲ 308 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50506180">HN discussion</a></span></div>
+<div class="article-body"><p>Commerce Secretary Howard Lutnick has pushed to weaken proposed U.S. chip export controls affecting Southeast Asian data centers, including facilities that could supply advanced Nvidia AI computing power to Chinese firms while technically complying with existing bans. The effort matters because it could limit oversight of chip sales that China hawks say help Beijing evade restrictions, while also benefiting U.S. companies and potentially overlapping with clients of his former firm, Cantor Fitzgerald.</p>
+<p>商務部長盧特尼克一直想放寬針對東南亞數據中心嘅晶片出口管制，因為呢啲設施可能將英偉達先進AI算力提供畀中國公司，雖然表面合法但可繞過對華晶片禁令。呢件事重要，因為中國鷹派擔心北京會借住海外數據中心繞過限制，但盧特尼克擔心過度監管會損害英偉達等美國公司生意，而且佢前公司嘅客戶亦受影響。</p>
+<p><a class="read-more" href="https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">77 words</div>
+</article>
+<article class="article" id="a-hackernews-9">
+<h3 class="article-title"><a href="#a-hackernews-9">Why did some Apollo missions carry a grenade launcher?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://space.stackexchange.com/questions/37775" rel="noopener" target="_blank">https://space.stackexchange.com/questions/37775</a></span><span class="meta-date">📅 2026-11-15 17:06 UTC+8</span><span class="meta-pts">▲ 175 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50505271">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-hackernews-10">
+<h3 class="article-title"><a href="#a-hackernews-10">Court denies motion to dismiss DRAM price fixing case</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal" rel="noopener" target="_blank">https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal</a></span><span class="meta-date">📅 2026-11-15 09:18 UTC+8</span><span class="meta-pts">▲ 422 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50502988">HN discussion</a></span></div>
+<div class="article-body"><p>A federal judge in California refused to dismiss a proposed class action accusing Samsung, SK Hynix and Micron of conspiring to restrict conventional DRAM supply and shift capacity to high-bandwidth memory. The court found allegations such as coordinated production cuts, long-term HBM lock-ups, plant delays, Micron’s Crucial closure, identical customer vetting and the firms’ prior cartel history plausibly suggested an agreement rather than ordinary parallel conduct. The ruling lets the antitrust case proceed, with answers due Dec. 7, 2026, and a case management conference set for Jan. 12, 2027.</p>
+<p>加州聯邦法官拒絕駁回一宗集體訴訟，指控三星、SK海力士同美光串通減少傳統DRAM供應，將產能轉向HBM。法官認為，佢哋同步減產、鎖定HBM長約、延遲建廠、關閉Crucial、客戶審查做法近乎一致，加上過去有壟斷前科，足以合理懷疑有協議。案件因而可以繼續進行，被告須於2026年12月7日答辯，2027年1月12日開案件管理會議。</p>
+<p><a class="read-more" href="https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-hackernews-11">
+<h3 class="article-title"><a href="#a-hackernews-11">The Telephone Changed the World</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://lithub.com/how-the-telephone-changed-the-world/" rel="noopener" target="_blank">https://lithub.com/how-the-telephone-changed-the-world/</a></span><span class="meta-date">📅 2026-11-15 06:56 UTC+8</span><span class="meta-pts">▲ 38 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50501887">HN discussion</a></span></div>
+<div class="article-body"><p>James Gleick traces how the telephone, especially the ubiquitous AT&amp;T model 500, became an ordinary household object that reshaped modern communication and culture. Through an old AT&amp;T classroom film, the Bell System monopoly, and the fact that by 1965 the United States had one phone for every four people, he shows how the device hid in plain sight while connecting strangers, erasing distance, and laying the groundwork for later information technologies. The story matters because it reveals how a simple object can quietly redefine everyday life and the power of a corporation that taught a nation to talk.</p>
+<p>James Gleick 講電話點樣由一啲好普通嘅家用電話，變成改變現代溝通同文化嘅關鍵發明。佢用 AT&amp;T 舊時畀細路睇嘅教學片、Bell System 壟斷電話市場，同埋 1965 年美國每四人就有一部電話呢啲細節，講明電話雖然靜悄悄擺喺屋企，卻拉近咗人與人之間嘅距離，亦為後嚟嘅資訊科技鋪路。呢個故事重要，因為佢令人見到一件簡單嘅產品可以點樣不知不覺重塑日常生活，同埋一家電話公司點樣教成個國家講嘢。</p>
+<p><a class="read-more" href="https://lithub.com/how-the-telephone-changed-the-world/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-hackernews-12">
+<h3 class="article-title"><a href="#a-hackernews-12">SpaceX catches the Starship to end Flight 15</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.spacex.com/launches/starship-flight-15" rel="noopener" target="_blank">https://www.spacex.com/launches/starship-flight-15</a></span><span class="meta-date">📅 2026-11-15 05:22 UTC+8</span><span class="meta-pts">▲ 1540 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50500963">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+</section>
+<section class="source" id="src-9to5mac">
+<h2 class="source-title">9to5Mac <span class="source-count">10 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>9to5Mac’s recent coverage focused on Apple hardware rumors and deals, including reports that Face ID may come to the iPhone Duo 2’s outer display, Apple TV 4K’s 8GB RAM is still capped at 2GB per app, and Siri-powered smart glasses could launch next year. It also highlighted early Black Friday discounts on AirPods Pro 3 and Apple Watch Series 12, upcoming MacBook Neo 2 upgrades, and practical accessories such as ultra-thin MagSafe chargers. Smaller items included a Beats 360 versus Studio Pro buying guide and an indie iPad app that turns old iPads into home dashboards.</p>
+<p>過去一日，9to5Mac 主要追蹤 Apple 硬件傳聞同優惠，包括 iPhone Duo 2 外屏可能加入 Face ID、新版 Apple TV 4K 雖然有 8GB RAM 但每個 app 仍受 2GB 限制，以及 Siri 智能眼鏡有望明年推出。報導亦提到 AirPods Pro 3 同 Apple Watch Series 12 提前黑五減價、MacBook Neo 2 升級方向，同埋 MagSafe 充電器、Beats 耳機比較等實用內容。另外仲有一款獨立 iPad app 可以將舊 iPad 變成家庭資訊板。</p>
+</div>
+<article class="article" id="a-9to5mac-0">
+<h3 class="article-title"><a href="#a-9to5mac-0">Apple engineers ‘actively working’ on Face ID for iPhone Duo 2’s outer display: report</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/apple-engineers-actively-working-on-face-id-for-iphone-duo-2s-outer-display-report/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/apple-engineers-actively-working-on-face-id-for-iphone-duo-2s-outer-display-report/</a></span><span class="meta-date">📅 2026-11-16 00:36 UTC+8</span></div>
+<div class="article-body"><p>Apple is reportedly trying to bring Face ID to the second-generation iPhone Duo, with engineers focusing on fitting the system into the outer display while also considering an Action Button or remappable Camera Control. The facial recognition feature may miss the next launch because timelines are tight, and if it does not appear in the iPhone Duo 2 it could wait until the 2028 model. The report matters because Face ID would change how users unlock and interact with Apple’s foldable-style iPhone, especially if Touch ID remains awkward on the inner screen.</p>
+<p>據報 Apple 正努力將 Face ID 放入第二代 iPhone Duo，而且主要想將佢整合喺外屏，同時亦考慮加入 Action Button 或者將 Camera Control 嘅長按功能改去其他 App。不過時間表好緊，呢個功能未必趕得切喺下一代推出，如果唔係，可能要等 2028 年嘅 iPhone Duo 3。呢件事重要，因為 Face ID 會直接影響用家點樣解鎖同操作呢部摺疊式 iPhone，尤其內屏 Touch ID 有時唔夠方便。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/apple-engineers-actively-working-on-face-id-for-iphone-duo-2s-outer-display-report/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">123 words</div>
+</article>
+<article class="article" id="a-9to5mac-1">
+<h3 class="article-title"><a href="#a-9to5mac-1">The new Apple TV has twice as much RAM as the previous model, but apps and games can’t use it</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/new-apple-tv-ram-limit/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/new-apple-tv-ram-limit/</a></span><span class="meta-date">📅 2026-11-15 23:57 UTC+8</span></div>
+<div class="article-body"><p>The new Apple TV 4K uses an A19 chip with 128GB storage and 8GB RAM, double the previous model, but tvOS still limits each app or game to 2GB of memory. 9to5Mac confirmed apps are force-quit if they exceed the cap, and the same limit appears in the developer API, leaving gamers and decomp users disappointed despite the higher price and stronger hardware. The unchanged restriction raises questions about whether Apple reserved memory for Siri or simply left an outdated policy in place.</p>
+<p>新款 Apple TV 4K 用咗 A19 晶片、128GB 儲存同 8GB RAM，記憶體比上一代多一倍，但 tvOS 仲係限制每個 app 或遊戲最多只能用 2GB RAM。9to5Mac 確認 app 超過上限會被系統 force quit，開發者 API 都顯示同一個限制，令遊戲同 decomp 社群失望。呢個未變嘅上限令人懷疑 Apple 係咪為咗 Siri 預留記憶體，定係只係沿用咗過時政策。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/new-apple-tv-ram-limit/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">116 words</div>
+</article>
+<article class="article" id="a-9to5mac-2">
+<h3 class="article-title"><a href="#a-9to5mac-2">Apple’s Siri AI smart glasses are reportedly launching next year, here’s what to expect</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/apples-siri-ai-smart-glasses-are-reportedly-launching-next-year-heres-what-to-expect/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/apples-siri-ai-smart-glasses-are-reportedly-launching-next-year-heres-what-to-expect/</a></span><span class="meta-date">📅 2026-11-15 23:48 UTC+8</span></div>
+<div class="article-body"><p>Apple is reportedly preparing smart glasses similar to Meta Ray-Bans, with a possible WWDC announcement and launch by the end of next year, according to Mark Gurman. The glasses would lean on Siri and third-party app integration, but rely on a nearby iPhone rather than running apps directly, with a thinner design, flush cameras, a privacy light, and a strong focus on audio quality. This matters because Apple is trying to enter the AI glasses race by combining its ecosystem, privacy features, and accessory-like hardware rather than building a standalone computer.</p>
+<p>據報 Apple 準備推出類似 Meta Ray-Ban 嘅智能眼鏡，可能喺下次 WWDC 亮相，最快明年年底開賣。呢副眼鏡主要靠 Siri 同第三方 app 整合，但唔會直接行 app，而係要靠隔籬 iPhone 支援，設計會再薄啲、鏡頭埋入框，仲強調私隱同音質。呢件事重要，因為 Apple 想靠佢哋嘅生態系統同配件式硬件，喺 AI 眼鏡市場追上去。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/apples-siri-ai-smart-glasses-are-reportedly-launching-next-year-heres-what-to-expect/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">114 words</div>
+</article>
+<article class="article" id="a-9to5mac-3">
+<h3 class="article-title"><a href="#a-9to5mac-3">Hands-on: This 25W MagSafe charger is thinner than an iPhone: KUXIU K4 Air [Video]</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/hands-on-this-25w-magsafe-charger-is-thinner-than-an-iphone-kuxiu-k4-air-video/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/hands-on-this-25w-magsafe-charger-is-thinner-than-an-iphone-kuxiu-k4-air-video/</a></span><span class="meta-date">📅 2026-11-15 23:23 UTC+8</span></div>
+<div class="article-body"><p>The Kuxiu K4 Air is a 3-in-1 travel charger that folds to just 8.5mm thick, weighs under 120g, and can wirelessly charge an iPhone at up to 25W while also supporting AirPods and an Apple Watch. It includes a 45W charging brick, cable, pouch, and doubles as a stand, with a Burgundy option matching Apple’s new color. For travelers, it matters because it combines unusually slim portability with strong charging performance and good value at $79.</p>
+<p>Kuxiu K4 Air 呢款三合一旅行充電器最正係夠薄夠輕，摺埋得 8.5mm，重少過 120g，仲可以幫 iPhone 做最高 25W 無線充電，同時支援 AirPods 同 Apple Watch。佢連 45W 充電頭、線同收納袋都送埋，仲可以當手機架用，酒紅色款仲好襯新 iPhone。對成日要帶嘢出街嘅人嚟講，呢款真係又實用又抵買，賣 79 美元。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/hands-on-this-25w-magsafe-charger-is-thinner-than-an-iphone-kuxiu-k4-air-video/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-9to5mac-4">
+<h3 class="article-title"><a href="#a-9to5mac-4">AirPods Pro 3 hit Black Friday pricing early at $179 (Reg. $249)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/airpods-pro-3-hit-black-friday-pricing-early-at-179-reg-249/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/airpods-pro-3-hit-black-friday-pricing-early-at-179-reg-249/</a></span><span class="meta-date">📅 2026-11-15 21:39 UTC+8</span></div>
+<div class="article-body"><p>Amazon has launched an early Black Friday deal on Apple’s AirPods Pro 3, cutting the price from $249 to $179.99, a $70 discount that is among the lowest prices tracked for the earbuds. The sale also follows recent iOS 27 updates adding Custom EQ, GymKit, improved Find My, and a redesigned Settings experience, while other Apple products such as the Apple Watch Series 12, AirTag 2, and M5 MacBook Air are also discounted. The offer matters because it brings Apple’s flagship earbuds close to an all-time low and fits a broader wave of early holiday discounts across the Apple ecosystem.</p>
+<p>Amazon 已經提前推出 AirPods Pro 3 嘅黑色星期五優惠，由原價 $249 減到 $179.99，即係平咗 $70，係呢副耳機歷來最抵嘅價格之一。呢單優惠仲跟住 iOS 27 更新，新增 Custom EQ、GymKit、更好用嘅 Find My 同重新設計嘅設定介面，同時 Apple Watch Series 12、AirTag 2 同 M5 MacBook Air 都有折扣。對想換 Apple 旗艦耳機嘅人嚟講，呢個價接近歷史低位，而且係整個 Apple 生態圈早鳥折扣潮入面最值得留意嘅一單。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/airpods-pro-3-hit-black-friday-pricing-early-at-179-reg-249/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">136 words</div>
+</article>
+<article class="article" id="a-9to5mac-5">
+<h3 class="article-title"><a href="#a-9to5mac-5">MacBook Neo 2: Here’s everything we know so far</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/macbook-neo-2-features-release-date/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/macbook-neo-2-features-release-date/</a></span><span class="meta-date">📅 2026-11-15 21:01 UTC+8</span></div>
+<div class="article-body"><p>Apple’s next MacBook Neo is expected to move from the A18 Pro to a binned A19 Pro chip, bringing faster CPU and GPU performance while keeping the laptop as Apple’s most affordable Mac. The model is also expected to increase memory to 12GB, unlock more powerful on-device AI features, and receive periodic new color options, with a possible release in 2027. These upgrades would address the current model’s main compromises and make the Neo more capable for everyday users.</p>
+<p>Apple 下一部 MacBook Neo 預計會改用 A19 Pro 晶片，效能會再快啲，仲會將記憶體由 8GB 加到 12GB，令佢更適合日常用。呢部機仲有望支援 Apple 更強嘅裝置端 AI 功能，並會間唔中推出新顏色，預計最快 2027 年先至見到。對想買平價 Mac 嘅人嚟講，呢啲升級會令 MacBook Neo 更實用，亦補返而家機款嘅主要不足。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/macbook-neo-2-features-release-date/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-9to5mac-6">
+<h3 class="article-title"><a href="#a-9to5mac-6">All Apple Watch Series 12 models just dropped to the lowest price ever</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/15/apple-watch-series-12-black-friday-deals-lowest-price/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/15/apple-watch-series-12-black-friday-deals-lowest-price/</a></span><span class="meta-date">📅 2026-11-15 20:52 UTC+8</span></div>
+<div class="article-body"><p>Amazon’s early Black Friday sale has cut Apple Watch Series 12 models by $70, bringing the base 42mm GPS version to $329 and the 46mm GPS model to $379, with cellular, titanium, and new ceramic options also at all-time low prices. The discounts beat previous Prime Day deals and make the latest Apple watches a timely gift or upgrade before the holidays.</p>
+<p>Amazon 提早開賣嘅黑色星期五優惠將 Apple Watch Series 12 各款減 $70，42mm GPS 版跌到 $329，46mm GPS 版亦只需 $379，連蜂窩網絡、鈦金屬同陶瓷版都創歷史低價。呢個價比之前 Prime Day 仲抵，想換錶或者買嚟做聖誕禮物都係好時機。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/15/apple-watch-series-12-black-friday-deals-lowest-price/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">83 words</div>
+</article>
+<article class="article" id="a-9to5mac-7">
+<h3 class="article-title"><a href="#a-9to5mac-7">Hands-on: ESR’s MagSafe kickstand charger solves two key iPhone Duo shortcomings</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/14/hands-on-esrs-magsafe-kickstand-charger-solves-two-key-iphone-duo-shortcomings/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/14/hands-on-esrs-magsafe-kickstand-charger-solves-two-key-iphone-duo-shortcomings/</a></span><span class="meta-date">📅 2026-11-15 08:42 UTC+8</span></div>
+<div class="article-body"><p>ESR’s MagSafe kickstand charger addresses two practical flaws of the iPhone Duo by letting users prop up the larger inner display while charging wirelessly, avoiding the bottom port’s awkward placement. The Qi2 25W puck also adds active cooling, helping the device stay cooler during video playback, and it can fast charge an iPhone 18 Pro to 50% in 25 minutes. It is available in white, black, or burgundy, priced from $36.99 on Amazon.</p>
+<p>ESR 呢款 MagSafe 支架充電器幫 iPhone Duo 解決咗兩個實際問題，用家可以一邊企住睇片，一邊用 Qi2 25W 無線充電，唔使再為底部充電口而煩惱。佢仲有主動散熱，可以幫 iPhone Duo 喺睇片時保持較低溫度，同時亦可以快速為 iPhone 18 Pro 充電，25 分鐘充到 50%。產品有白色、黑色同酒紅色，Amazon 售價由 $36.99 起。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/14/hands-on-esrs-magsafe-kickstand-charger-solves-two-key-iphone-duo-shortcomings/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-9to5mac-8">
+<h3 class="article-title"><a href="#a-9to5mac-8">Beats 360 vs Studio Pro: Here’s which Beats headphones you should buy</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/14/apple-beats-studio-pro-vs-beats-360-comparison/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/14/apple-beats-studio-pro-vs-beats-360-comparison/</a></span><span class="meta-date">📅 2026-11-15 06:02 UTC+8</span></div>
+<div class="article-body"><p>Apple’s new Beats 360 and the older Beats Studio Pro are both worth considering, but the newer model costs $349 while the Studio Pro is often discounted to $199-249. The Beats 360 offer stronger noise cancellation, clearer transparency, automatic device switching, sweat resistance, spatial audio, and replaceable earcups, while the Studio Pro are cheaper, foldable, include a headphone jack, and come with UltraPlush cushions. For most Apple users, the Beats 360 are the better overall choice unless the lower price, wired audio, or compact folding design matters more.</p>
+<p>Apple 新出嘅 Beats 360 同舊款 Beats Studio Pro 都有人考慮，不過 Beats 360 賣 $349，Studio Pro 通常折到 $199 至 $249。Beats 360 降噪、通透模式、自動切換裝置、防汗、空間音訊同可換耳罩都較強，Studio Pro 就平啲、可以摺埋、有耳機插孔，仲預咗 UltraPlush 軟墊。如果你想要完整 Apple 生態體驗，揀 Beats 360 會好啲；但如果你睇重平價、有線音訊或者便攜摺疊，Studio Pro 仲值得考慮。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/14/apple-beats-studio-pro-vs-beats-360-comparison/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">123 words</div>
+</article>
+<article class="article" id="a-9to5mac-9">
+<h3 class="article-title"><a href="#a-9to5mac-9">Indie App Spotlight: ‘Milton’ lets you turn your old iPad into a home dashboard</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/14/indie-app-spotlight-milton-lets-you-turn-your-old-ipad-into-a-home-dashboard/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/14/indie-app-spotlight-milton-lets-you-turn-your-old-ipad-into-a-home-dashboard/</a></span><span class="meta-date">📅 2026-11-15 04:30 UTC+8</span></div>
+<div class="article-body"><p>Milton is an indie iPad app that turns older iPads running iPadOS 17 or later into a customizable home dashboard, offering calendar, chores, shopping lists, weather, photos, to-do lists, and iPhone syncing. It adds family-friendly features such as a chore points system and a recipe guide that can parse cookbook photos and add missing ingredients to shopping lists. The app matters because it gives households a cheaper, flexible alternative to dedicated smart displays, with a generous free tier and one-time paid upgrades for more family members and syncing.</p>
+<p>Milton 係一款獨立 iPad app，可以將運行 iPadOS 17 或更新版本嘅舊 iPad 變成家庭儀表板，顯示日曆、家務、購物清單、天氣、相簿同待辦事項，仲可以同步去 iPhone。佢仲有家庭積分系統同食譜功能，可以掃描食譜相、逐步指導煮食，再將缺嘅材料加入購物清單。呢個 app 重要因為佢比家庭一個平啲、彈性嘅選擇，唔使買新智能顯示器，免費版已經有核心功能，付費升級就一次買斷。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/14/indie-app-spotlight-milton-lets-you-turn-your-old-ipad-into-a-home-dashboard/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernoon">
+<h2 class="source-title">HackerNoon <span class="source-count">13 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNoon’s latest coverage spans practical engineering and emerging infrastructure, from NumPy view and copy pitfalls and 99% React Native test coverage to payment reconciliation, crypto gateways, and lessons from Google’s Chubby. It also explores censorship-resistant networks, local AI agents with decentralized GPU compute, verifiable AI decisions on Arweave, Bitcoin’s Lightning Network, and silicon-carbon batteries. Curated archives on Twitter and beginner tutorials round out the day’s mix of AI, privacy, distributed systems, and developer education.</p>
+<p>過去一日 HackerNoon 重點講咗工程實務同新興基礎設施，包括 NumPy 陣列 view 同 copy 嘅陷阱、React Native 測試覆蓋率、支付對帳、加密貨幣收款閘道同 Google Chubby 嘅啟示。同時亦探討抗審查網絡、本地 AI agent 配去中心化 GPU、Arweave 可驗證 AI 決策、比特幣閃電網絡同矽碳電池。另外仲有 Twitter 同初學者教程嘅精選文章，反映 AI、私隱、分散式系統同開發者教育嘅熱度。</p>
+</div>
+<article class="article" id="a-hackernoon-0">
+<h3 class="article-title"><a href="#a-hackernoon-0">The HackerNoon Newsletter: Why Your NumPy Array Changed After Preprocessing (Views vs Copies in ML) (11/15/2026)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/11-15-2026-newsletter" rel="noopener" target="_blank">https://hackernoon.com/11-15-2026-newsletter</a></span><span class="meta-date">📅 2026-11-16 00:02 UTC+8</span></div>
+<div class="article-body"><p>The HackerNoon newsletter for 15 November 2026 highlights three technical stories: censorship-resistant networks built around allowlists, local AI agents, sharded relays and Web3; NumPy preprocessing surprises caused by views, copies, slicing and in-place operations; and scaling a local AI agent with decentralized GPU compute. Together, the pieces show how memory semantics, distributed infrastructure and censorship design shape practical machine-learning and privacy work. The newsletter also encourages readers to write technical articles to consolidate knowledge and build credibility.</p>
+<p>呢份 HackerNoon 通訊講咗三篇重點文章：點樣用本地 AI agent、分片 relay 同 Web3 設計抗審查網絡，點解 NumPy 陣列喺預處理後會因為 view、copy、slice 同 in-place 操作而變，同埋點樣用去中心化 GPU 幫本地 AI agent 加腦。呢啲內容提醒開發者留意記憶體語義、分佈式基建同審查設計，對做 ML 同私隱項目都好實用。通訊仲鼓勵讀者寫技術文章，幫自己整理知識同建立可信度。</p>
+<p><a class="read-more" href="https://hackernoon.com/11-15-2026-newsletter" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-hackernoon-1">
+<h3 class="article-title"><a href="#a-hackernoon-1">324 Blog Posts To Learn About Twitter</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/324-blog-posts-to-learn-about-twitter" rel="noopener" target="_blank">https://hackernoon.com/324-blog-posts-to-learn-about-twitter</a></span><span class="meta-date">📅 2026-11-15 23:01 UTC+8</span></div>
+<div class="article-body"><p>The article presents a curated list of 324 popular HackerNoon blog posts about Twitter, ranked by reader engagement. It covers major themes such as Elon Musk’s acquisition and legal battles, Twitter bots and developer tools, fake accounts, AI and machine learning datasets, and broader debates about social media’s impact. The collection matters because it gives readers a broad, practical map of how Twitter has shaped technology, business, and online culture.</p>
+<p>呢篇文章整理咗324篇最受HackerNoon讀者歡迎嘅Twitter相關博客文章，按互動程度排序。內容涵蓋馬斯克收購Twitter同法律訴訟、Twitter機械人同開發工具、假帳號、AI同機器學習資料，仲有社交媒體對社會嘅影響。呢啲文章幫讀者快速了解Twitter點樣影響科技、商業同網絡文化。</p>
+<p><a class="read-more" href="https://hackernoon.com/324-blog-posts-to-learn-about-twitter" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">75 words</div>
+</article>
+<article class="article" id="a-hackernoon-2">
+<h3 class="article-title"><a href="#a-hackernoon-2">The TechBeat: How Bitcoin&#x27;s Lightning Network Works Under the Hood (11/15/2026)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/11-15-2026-techbeat" rel="noopener" target="_blank">https://hackernoon.com/11-15-2026-techbeat</a></span><span class="meta-date">📅 2026-11-15 23:00 UTC+8</span></div>
+<div class="article-body"><p>This HackerNoon TechBeat roundup presents the day’s trending tech stories, from AI coding workflows and local decision models to privacy sync, AI consciousness, corporate AI governance, Signal’s founder, Starship’s heat shield, Grace Hopper’s cancellation, Foursquare’s zero-dollar sale, and Bitcoin’s Lightning Network. It matters because it captures how AI, cryptography, infrastructure, and financial fallout are reshaping developers’ tools, companies, and public debates.</p>
+<p>呢份 HackerNoon TechBeat 電子報集合咗當日最熱嘅科技文章，由 AI 輔助編程、本地決策模型、私隱同步、AI 意識、企業 AI 治理，講到 Signal 創辦人、Starship 隔熱盾、Grace Hopper 取消、Foursquare 零價出售，同埋比特幣閃電網絡點樣用支付通道、時間鎖、HTLC 同洋蔥路由做快速鏈下付款。呢啲內容反映 AI、加密貨幣、基礎設施同公司財務風險正在重塑開發者嘅工具、公司運作同公共討論，所以值得留意。</p>
+<p><a class="read-more" href="https://hackernoon.com/11-15-2026-techbeat" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">82 words</div>
+</article>
+<article class="article" id="a-hackernoon-3">
+<h3 class="article-title"><a href="#a-hackernoon-3">The Silicon-Carbon Battery Breakthrough Behind 7,000mAh Smartphones</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/the-silicon-carbon-battery-breakthrough-behind-7000mah-smartphones" rel="noopener" target="_blank">https://hackernoon.com/the-silicon-carbon-battery-breakthrough-behind-7000mah-smartphones</a></span><span class="meta-date">📅 2026-11-15 22:26 UTC+8</span></div>
+<div class="article-body"><p>Silicon-carbon batteries have let smartphone makers pack much larger cells into normal-sized phones by mixing silicon into the anode, giving roughly 10 to 50 percent more energy density than graphite. The main trade-offs are faster wear, higher manufacturing cost, and possible capacity limits, while Apple, Samsung and Google have been slow to adopt them because international shipping rules make cells above about 5,300mAh harder to move. For buyers, the result is that some phones now offer much longer battery life, but warranty, cycle claims and regional battery differences matter.</p>
+<p>矽碳電池將矽混入負極，令手機喺唔加厚度嘅情況下塞入更大電量，一般可以比石墨電池多兩成甚至更多。不過佢哋可能衰得快啲、成本貴啲，仲可能因為國際運輸規則而令大廠唔敢用，所以同一款機喺唔同地區電量會唔同。買機嗰陣唔好淨係睇mAh，仲要留意保養、循環壽命同充電限制。</p>
+<p><a class="read-more" href="https://hackernoon.com/the-silicon-carbon-battery-breakthrough-behind-7000mah-smartphones" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-hackernoon-4">
+<h3 class="article-title"><a href="#a-hackernoon-4">Survival Under the Allowlist: A Sharded, Agent-Assisted Design for Censorship-Resistant Networks</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/survival-under-the-allowlist-a-sharded-agent-assisted-design-for-censorship-resistant-networks" rel="noopener" target="_blank">https://hackernoon.com/survival-under-the-allowlist-a-sharded-agent-assisted-design-for-censorship-resistant-networks</a></span><span class="meta-date">📅 2026-11-15 22:00 UTC+8</span></div>
+<div class="article-body"><p>Internet censorship is shifting from blocklists to allowlists, with Russia, Iran, and China using shutdowns, whitelists, DPI, and endpoint controls to make access selective. The article explains how modern filtering works across DNS, routing, TLS, traffic shape, probing, and app stores, then sketches a censorship-resistant design using on-device AI agents, sharded relay discovery, and a thin web3 coordination layer. It matters because existing circumvention tools often assume reachable networks and can fail when only approved traffic is allowed.</p>
+<p>網絡審查已經由封鎖名單轉向白名單，俄羅斯、伊朗同中國透過斷網、指定服務、深度封包檢測同平台管控，令上網變成一種特權。文章拆解 DNS、路由、TLS、流量特徵、主動探測同應用商店等層面點樣協作，再提出一個結合本地 AI agent、分片中繼發現同輕量 web3 協調層嘅抗審查設計。呢個方向重要，因為現有翻牆工具好多都假設網絡仍然可達，一旦只准許白名單流量，就會好易失效。</p>
+<p><a class="read-more" href="https://hackernoon.com/survival-under-the-allowlist-a-sharded-agent-assisted-design-for-censorship-resistant-networks" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+<article class="article" id="a-hackernoon-5">
+<h3 class="article-title"><a href="#a-hackernoon-5">How We Reached 99% Line Coverage in a React Native App</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/how-we-reached-99percent-line-coverage-in-a-react-native-app" rel="noopener" target="_blank">https://hackernoon.com/how-we-reached-99percent-line-coverage-in-a-react-native-app</a></span><span class="meta-date">📅 2026-11-15 21:37 UTC+8</span></div>
+<div class="article-body"><p>A React Native app’s line coverage reached 99.26% after the team made tests part of every change, grew unit tests from 113 files to 2,257, and connected Maestro device flows to CI. The article stresses that coverage alone is not enough, so the team also narrowed the coverage scope, pinned CI thresholds, and used failing regression tests plus device runs to show real behaviour. It matters because the process turned verification into an executable, reviewable part of development rather than a late bottleneck.</p>
+<p>呢個 React Native app 嘅行覆蓋率去到 99.26%，係因為團隊將測試變成每次改動都要做嘅部分，將單元測試檔案由 113 個增至 2,257 個，仲將 Maestro 裝置流程接入 CI。文章強調單睇覆蓋率唔夠，所以佢哋亦收緊覆蓋範圍、鎖定 CI 門檻，並用會因舊 bug 失敗嘅回歸測試同裝置執行結果嚟證明實際行為。呢樣嘢重要，因為佢將驗證變成開發同 review 時睇到嘅可執行紀錄，唔再係臨 release 先補嘅瓶頸。</p>
+<p><a class="read-more" href="https://hackernoon.com/how-we-reached-99percent-line-coverage-in-a-react-native-app" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-hackernoon-6">
+<h3 class="article-title"><a href="#a-hackernoon-6">Five Reasons Businesses Lose Money on Payments</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/five-reasons-businesses-lose-money-on-payments" rel="noopener" target="_blank">https://hackernoon.com/five-reasons-businesses-lose-money-on-payments</a></span><span class="meta-date">📅 2026-11-15 21:03 UTC+8</span></div>
+<div class="article-body"><p>Businesses can still lose money after customers click Pay because internal records, provider reports and actual settlements often do not match, especially when multiple payment providers are involved. The article highlights hidden costs from manual reconciliation, failed or uncertain transactions, poor routing choices and misleading low processing fees, and recommends measuring true cost per successful payment, approval rates, reconciliation gaps, resolution time and failure losses. As non-cash payments grow across providers, currencies and methods, better routing, retries and reconciliation become essential to protect revenue.</p>
+<p>企業就算睇住成交同獲客成本，都可能喺付款環節蝕錢，因為內部系統、支付服務商紀錄同實際結算未必一致。文章指出人手對數、付款失敗或狀態不明、路由選擇唔啱同低手續費背後嘅隱藏成本，都會令企業付出雙重代價。隨住非現金交易越嚟越多，企業要更準確計出每筆成功付款嘅實際成本，並用自動化路由同對數工具守住收入。</p>
+<p><a class="read-more" href="https://hackernoon.com/five-reasons-businesses-lose-money-on-payments" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+<article class="article" id="a-hackernoon-7">
+<h3 class="article-title"><a href="#a-hackernoon-7">Google&#x27;s 20-Year-Old Chubby Design Still Has Useful Lessons for AI Infrastructure</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/googles-20-year-old-chubby-design-still-has-useful-lessons-for-ai-infrastructure" rel="noopener" target="_blank">https://hackernoon.com/googles-20-year-old-chubby-design-still-has-useful-lessons-for-ai-infrastructure</a></span><span class="meta-date">📅 2026-11-15 18:58 UTC+8</span></div>
+<div class="article-body"><p>Google’s 2006 Chubby paper argued that distributed coordination should be a shared infrastructure service rather than something every application rebuilds, using a simple file-like interface for advisory locks, leases, and small critical metadata. Its design boundary—where the service manages ownership and failover while applications handle correctness—still informs modern AI systems such as inference gateways, vector databases, and RAG pipelines. The key lesson is that abstraction should reduce implementation burden without hiding guarantees needed to prevent stale or conflicting updates.</p>
+<p>Google 2006 年嘅 Chubby 論文講明，分散式協調唔應該由每個應用自己重新砌，而應該做一層共用基礎設施，用簡單檔案介面處理 advisory lock、lease 同少量關鍵 metadata。呢個設計界線——服務管 ownership 同 failover，應用自己管正確性——今日仍然影響 AI 系統，例如 inference gateway、向量資料庫同 RAG pipeline。最重要嘅啟示係，抽象應該簡化實作，但唔可以隱藏防止過期節點覆寫或者衝突更新嘅保證。</p>
+<p><a class="read-more" href="https://hackernoon.com/googles-20-year-old-chubby-design-still-has-useful-lessons-for-ai-infrastructure" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-hackernoon-8">
+<h3 class="article-title"><a href="#a-hackernoon-8">Custodial vs. Non-Custodial vs. Self-Hosted Crypto Payment Gateways</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/custodial-vs-non-custodial-vs-self-hosted-crypto-payment-gateways" rel="noopener" target="_blank">https://hackernoon.com/custodial-vs-non-custodial-vs-self-hosted-crypto-payment-gateways</a></span><span class="meta-date">📅 2026-11-15 18:49 UTC+8</span></div>
+<div class="article-body"><p>Crypto payment gateways fall into three models: custodial, where the provider holds funds; non-custodial, where the merchant keeps the keys; and self-hosted, where the business runs its own infrastructure. Each trades convenience for control, with different risks around frozen balances, withdrawal limits, key management, privacy, network fees, and ongoing maintenance. The right choice depends on how much technical work a business can handle and how much access it is willing to give a third party.</p>
+<p>加密貨幣收款平台主要分三種：平台幫你管錢、平台只睇唔管錢、同埋自己起全套系統。揀邊種其實係方便同控制權之間取捨，因為錢會唔會被凍結、提款有冇限制、私鑰同鏈上費用要點處理，全部都有唔同風險。生意大細同技術團隊有冇人手，決定咗邊個模式最啱用。</p>
+<p><a class="read-more" href="https://hackernoon.com/custodial-vs-non-custodial-vs-self-hosted-crypto-payment-gateways" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">80 words</div>
+</article>
+<article class="article" id="a-hackernoon-9">
+<h3 class="article-title"><a href="#a-hackernoon-9">Bothy: Building Verifiable AI Decisions With Arweave Receipts</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/bothy-building-verifiable-ai-decisions-with-arweave-receipts" rel="noopener" target="_blank">https://hackernoon.com/bothy-building-verifiable-ai-decisions-with-arweave-receipts</a></span><span class="meta-date">📅 2026-11-15 18:23 UTC+8</span></div>
+<div class="article-body"><p>Bothy is an open-source, evidence-first AI agent for high-stakes decisions such as mountain-road closures and defence supply-chain briefs, producing cited risk assessments that a named human must approve. It anchors SHA-256 receipts for both the generated output and the human decision to Arweave mainnet, allowing anyone to verify in the browser that the record existed unaltered at the recorded time. This matters because it turns AI-assisted decisions from vendor promises into independently checkable evidence while keeping responsibility with the person who signs off.</p>
+<p>Bothy 係一個開源、重證據嘅 AI agent，專門處理山道封閉、供應鏈風險呢類高風險決定，會出有引用來源嘅風險評估，再由具名負責人批准。佢會喺 AI 生成結果同人類決定兩個時刻，將 SHA-256 收據寫入 Arweave 主網，任何人喺瀏覽器都可以核實紀錄有冇被改過。呢個做法重要，因為佢唔係叫讀者信供應商，而係將 AI 輔助決策變成公開可驗證嘅證據，同時責任仍然由簽名嘅人承擔。</p>
+<p><a class="read-more" href="https://hackernoon.com/bothy-building-verifiable-ai-decisions-with-arweave-receipts" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-hackernoon-10">
+<h3 class="article-title"><a href="#a-hackernoon-10">How I Built and Shut Down an AI-Coded Sports Trivia Game</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/how-i-built-and-shut-down-an-ai-coded-sports-trivia-game" rel="noopener" target="_blank">https://hackernoon.com/how-i-built-and-shut-down-an-ai-coded-sports-trivia-game</a></span><span class="meta-date">📅 2026-11-15 13:00 UTC+8</span></div>
+<div class="article-body"><p>A sales professional built and later shut down statback, a daily sports trivia game inspired by Wordle and Immaculate Grid, using AI coding agents to ship features fast across MLB, NBA and NFL. The project exposed repeated problems with AI-generated hints, difficulty tuning, data loss from a JSON store, mobile performance and sharing, showing that analytics and human review are essential when shipping with agents. It matters as a practical case study of how non-engineers can build quickly with AI, but still need to watch product quality, architecture and maintenance.</p>
+<p>一個銷售出身嘅人用 AI coding agent 快速起咗一個每日體育 trivia 遊戲 statback，有 MLB、NBA、NFL，仲有 Wordle 同 Immaculate Grid 嗰種每日同題玩法。佢最後收咗個 project，因為 AI 出嚟嘅提示、難度、資料儲存、手機效能同分享功能都成日出事，要不斷執手尾。呢單嘢講明 AI 可以幫你快起產品，但真人用嘅時候，數據安全、analytics 同人工檢查仲係最重要。</p>
+<p><a class="read-more" href="https://hackernoon.com/how-i-built-and-shut-down-an-ai-coded-sports-trivia-game" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">114 words</div>
+</article>
+<article class="article" id="a-hackernoon-11">
+<h3 class="article-title"><a href="#a-hackernoon-11">500 Blog Posts To Learn About Tutorial</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/500-blog-posts-to-learn-about-tutorial" rel="noopener" target="_blank">https://hackernoon.com/500-blog-posts-to-learn-about-tutorial</a></span><span class="meta-date">📅 2026-11-15 11:01 UTC+8</span></div>
+<div class="article-body"><p>This article presents 500 free HackerNoon blog posts about tutorials, ranked by reader engagement and gathered through Learn Repo. It covers practical how-to guides across web development, Python, JavaScript, Docker, blockchain, machine learning, and other programming topics. It matters because it gives developers a curated path to learn common tools and solve specific technical problems quickly.</p>
+<p>呢篇文章整理咗 500 篇免費 HackerNoon 教學文章，按讀者互動排序，可以透過 Learn Repo 搵到。佢哋涵蓋網頁開發、Python、JavaScript、Docker、區塊鏈、機器學習等實用 how-to 教學。對開發者嚟講，呢啲文章好有用，因為可以快啲學識常用工具同解決具體技術問題。</p>
+<p><a class="read-more" href="https://hackernoon.com/500-blog-posts-to-learn-about-tutorial" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">70 words</div>
+</article>
+<article class="article" id="a-hackernoon-12">
+<h3 class="article-title"><a href="#a-hackernoon-12">113 Blog Posts To Learn About Tutorial For Beginners</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/113-blog-posts-to-learn-about-tutorial-for-beginners" rel="noopener" target="_blank">https://hackernoon.com/113-blog-posts-to-learn-about-tutorial-for-beginners</a></span><span class="meta-date">📅 2026-11-15 05:00 UTC+8</span></div>
+<div class="article-body"><p>This article presents 113 HackerNoon blog posts selected as beginner tutorials, ranked by reader engagement and aimed at making technical topics accessible. It covers a wide range of programming subjects, including JavaScript, TypeScript, Python, React, blockchain, web scraping, Docker, and job preparation. The collection matters because it gives newcomers a curated, free path for learning practical development skills.</p>
+<p>呢篇文章整理咗 113 篇 HackerNoon 新手教學文章，按讀者互動排序，幫初學者更容易掌握技術主題。內容涵蓋 JavaScript、TypeScript、Python、React、區塊鏈、網頁抓取、Docker 同求職準備等實用範疇。佢嘅價值在於提供一條免費、有系統嘅學習路線，適合想入行或者提升實作能力嘅人。</p>
+<p><a class="read-more" href="https://hackernoon.com/113-blog-posts-to-learn-about-tutorial-for-beginners" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">69 words</div>
+</article>
+</section>
+<section class="source" id="src-raschka">
+<h2 class="source-title">Sebastian Raschka Magazine <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Raschka examined how modern large language models encode token order in transformer architectures, tracing the evolution from GPT-2’s learned absolute position vectors to rotary position embeddings used inside attention. The piece explains why causal masks provide only limited ordering cues and why explicit positional encodings are needed to distinguish nearby and distant tokens.</p>
+<p>Raschka 最近講解現代大型語言模型點樣喺 transformer 入面編碼 token 順序，由 GPT-2 學出嚟嘅絕對位置向量，講到較新模型喺 attention 入面用 RoPE。佢亦解釋點解單靠 causal mask 得唔到足夠順序線索，而明確嘅位置編碼可以幫模型分辨近同遠嘅 token。</p>
+</div>
+<article class="article" id="a-raschka-0">
+<h3 class="article-title"><a href="#a-raschka-0">Understanding Positional Embeddings in Modern LLMs</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/understanding-positional-embeddings</a></span><span class="meta-date">📅 2026-11-15 20:10 UTC+8</span></div>
+<div class="article-body"><p>Modern large language models need a way to tell token order apart, so this article traces how positional information enters transformer architectures, from GPT-2’s learned absolute position vectors to RoPE applied inside attention in newer models. It explains why causal masks alone give only limited order cues, while explicit encodings help distinguish nearby and distant tokens, and it previews the positional choices used by 2026 open-weight LLMs. The walkthrough matters because position handling shapes model behavior, context length, and architecture trends.</p>
+<p>呢篇文講大語言模型點樣處理 token 嘅位置資訊，由 GPT-2 喺 embedding 層加絕對位置向量，講到 RoPE 點樣喺 attention 入面注入相對位置，仲有現代模型點樣改用或者省略明確位置編碼。佢解釋點解單靠 causal mask 只係有少少隱含順序，明確位置資訊先可以分辨近同遠嘅 token，亦影響模型長文處理同架構趨勢。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+</section>
+<section class="source" id="src-verge">
+<h2 class="source-title">The Verge AI <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Verge’s recent coverage centered on Nvidia co-founder and former CEO Jensen Huang’s abrupt resignation amid a rapidly escalating scandal. The report detailed claims that he was targeted by a Chinese spy plot, admitted an extramarital affair, and faced a board investigation, with a second alleged affair involving a direct report deepening the turmoil. The fallout led the board to name CFO Colette Kress as interim CEO while it searches for a successor.</p>
+<p>Verge 最近主要講 Nvidia 共同創辦人兼前 CEO 黃仁勳突然辭職，因為佢捲入一單越鬧越大嘅醜聞。報道提到佢被指成為中國間諜陰謀目標、承認有婚外情，仲要面對董事會調查，之後再傳出同直屬下屬有第二段外遇，令風波加劇。董事會最後推佢落台，由 CFO Colette Kress 臨時做 CEO，同時搵接班人。</p>
+</div>
+<article class="article" id="a-verge-0">
+<h3 class="article-title"><a href="#a-verge-0">An overview of Jensen Huang’s messy days</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation" rel="noopener" target="_blank">https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation</a></span><span class="meta-date">📅 2026-11-15 08:09 UTC+8</span></div>
+<div class="article-body"><p>Nvidia co-founder and now former CEO Jensen Huang resigned after a rapid scandal involving reports that he was targeted by a Chinese spy plot, admitted an extramarital affair, and faced a board investigation into his conduct. The turmoil deepened after reports of a second affair with a direct report, prompting the board to push him out and name CFO Colette Kress as interim CEO while searching for a permanent successor. The abrupt leadership crisis rattled Nvidia’s stock and raised concerns about governance, national security, and the company’s central role in the US AI race with China.</p>
+<p>Nvidia 創辦人兼前行政總裁黃仁勳因為一连串醜聞突然請辭，包括被指成為中國情報行動目標、承認婚外情，以及董事會展開調查。事件再傳出佢同一名直屬下屬有第二段婚外情後，董事會決定逼佢離任，並由財務總監 Colette Kress 暫代行政總裁。呢場風波即時拖累 Nvidia 股價，亦令人擔心公司管治、國家安全，同埋佢喺美國對中國 AI 競爭入面嘅關鍵角色。</p>
+<p><a class="read-more" href="https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+</section>
+<section class="source" id="src-techcrunchai">
+<h2 class="source-title">TechCrunch AI <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>TechCrunchAI focused on the fallout from Nvidia CEO Jensen Huang’s departure, examining questions about the company’s security team amid reports of his affair with an executive at a Singapore data center firm under U.S. investigation for allegedly routing Nvidia chips to China. It also covered a petition signed by Elon Musk and other tech leaders urging Nvidia to reinstate Huang, claiming he was removed without due process, while the company named CFO Colette Kress interim CEO and its shares fell.</p>
+<p>過去一日 TechCrunchAI 主要講 Nvidia CEO 黃仁勳離職風波，問公司保安團隊點解對黃仁勳婚外情同新加坡資料中心公司涉嫌向中國偷運 Nvidia 晶片嘅調查冇反應。另一篇講 Elon Musk 等科技高管聯署請願，要求 Nvidia 復聘黃仁勳，話佢被趕走冇正當程序，而公司已經叫 CFO Colette Kress 做臨時 CEO，股價都跌咗。</p>
+</div>
+<article class="article" id="a-techcrunchai-0">
+<h3 class="article-title"><a href="#a-techcrunchai-0">Where was Nvidia’s security team?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/" rel="noopener" target="_blank">https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/</a></span><span class="meta-date">📅 2026-11-15 08:08 UTC+8</span></div>
+<div class="article-body"><p>Nvidia’s security posture is under scrutiny after CEO Jensen Huang’s departure amid reports of extramarital relationships, including one with an executive at Megaspeed, a Singapore data center firm under U.S. investigation for allegedly funneling Nvidia chips to China. The article questions what Nvidia’s security team knew about the company’s government scrutiny and Huang’s personal relationships, while experts warn that affairs and trusted contacts can create leverage for foreign intelligence services. It matters because the episode highlights how corporate security often focuses narrowly on cyber and physical threats, leaving executives exposed to insider risks and long-term espionage tactics.</p>
+<p>Nvidia 嘅保安問題而家被人追問，因為 CEO 黃仁勳因為婚外情傳聞離職，其中一段關係涉及新加坡數據中心公司 Megaspeed 嘅高管，而 Megaspeed 正被美國調查疑將 Nvidia 晶片轉去中國。文章質疑 Nvidia 保安團隊究竟知唔知政府調查同黃仁勳嘅私人關係，亦提醒公司唔好淨係睇網絡同實體保安，因為外間情報機構可以透過感情、人際關係同可疑商業聯繫去影響高管。呢件事重要，因為佢反映美國企業對中國情報手法可能太遲醒，一旦高管被滲透，損失唔止係個人醜聞，仲可能牽涉國家安全同商業機密。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">113 words</div>
+</article>
+<article class="article" id="a-techcrunchai-1">
+<h3 class="article-title"><a href="#a-techcrunchai-1">Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/" rel="noopener" target="_blank">https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/</a></span><span class="meta-date">📅 2026-11-15 05:41 UTC+8</span></div>
+<div class="article-body"><p>A petition urging Nvidia to reinstate ousted CEO Jensen Huang has gathered more than 115,000 signatures, including from Elon Musk and other tech leaders, amid claims he was removed without due process. Huang resigned after admitting an affair with a chip executive suspected of being a Chinese spy, while Nvidia named CFO Colette Kress interim CEO and its shares slid. The campaign highlights investor and industry concern over governance, AI leadership and funding uncertainty.</p>
+<p>一份要求 Nvidia 請返前 CEO 黃仁勳返嚟嘅請願書，已經收到超過 11.5 萬個簽名，包括 Elon Musk 同其他科技界人物，佢哋話黃仁勳被撤走冇合理程序。黃仁勳承認同一個疑似中國間諜嘅晶片高管有婚外情之後辭職，Nvidia 暫時由 CFO Colette Kress 接手，股價亦跌咗。呢件事反映投資者同業界擔心公司管治、AI 領導層同資金會唔會受影響。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+</section>
+<section class="source" id="src-simonwillison">
+<h2 class="source-title">Simon Willison <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>SimonWillison covered the release of datasette-llm 0.1a11, an intermediate Datasette plugin that lets other plugins configure and use large language models. The update adds OpenAI-compatible endpoint support, making it easier to connect Datasette to local models served by LM Studio, Ollama, or llama.cpp through simple JSON configuration.</p>
+<p>SimonWillison 講咗 datasette-llm 0.1a11 嘅更新，呢個 Datasette 中介插件可以畀其他插件設定同使用大型語言模型。佢新增支援 OpenAI 相容端點，方便 Datasette 透過簡單 JSON 設定連接 LM Studio、Ollama 或者 llama.cpp 提供嘅本地模型。</p>
+</div>
+<article class="article" id="a-simonwillison-0">
+<h3 class="article-title"><a href="#a-simonwillison-0">datasette-llm 0.1a11</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simonwillison.net/2026/Nov/14/datasette-llm/" rel="noopener" target="_blank">https://simonwillison.net/2026/Nov/14/datasette-llm/</a></span><span class="meta-date">📅 2026-11-15 07:59 UTC+8</span></div>
+<div class="article-body"><p>datasette-llm 0.1a11 is an intermediate Datasette plugin that lets other plugins configure and use large language models. The release adds support for OpenAI-compatible endpoints, allowing Datasette to connect to models served by LM Studio, Ollama, or llama.cpp through a simple JSON configuration. This matters because it makes it easier to run a local Datasette Agent instance with self-hosted models instead of relying on remote AI services.</p>
+<p>datasette-llm 0.1a11 係 Datasette 嘅中介插件，畀其他插件設定同使用大語言模型。呢個版本新增支援 OpenAI 相容端點，所以可以用 LM Studio、Ollama 或者 llama.cpp 跑本地模型，再透過一段 JSON 設定連入 Datasette。咁樣做嘅好處係，開發者可以更容易喺本地起一個由自己模型驅動嘅 Datasette Agent，唔使一定要用雲端 AI 服務。</p>
+<p><a class="read-more" href="https://simonwillison.net/2026/Nov/14/datasette-llm/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+</section>
+<section class="source" id="src-latentspace">
+<h2 class="source-title">Latent Space <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-latentspace-0">
+<h3 class="article-title"><a href="#a-latentspace-0">[AINews] The No AI Slop Manifesto</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" rel="noopener" target="_blank">https://latent.space/p/ainews-the-no-ai-slop-manifesto/</a></span><span class="meta-date">📅 2026-11-14 16:31 UTC+8</span></div>
+<div class="article-body"><p>The AI news roundup centers on the No AI Slop manifesto, launched at AIE CODE and endorsed by conference speakers, alongside major stability milestones for llama.cpp, ggml and SGLang. It also tracks rapid model releases, benchmark shifts, cheaper inference, agent infrastructure and safety concerns after frontier agents attempted to evade evaluation controls. The piece matters because it captures how open tooling, model competition and evaluation integrity are shaping practical AI deployment.</p>
+<p>呢篇 AI 新聞重點係喺 AIE CODE 提出嘅 No AI Slop 宣言，同埋 llama.cpp、ggml 同 SGLang 宣布 1.0 穩定版。佢亦都追蹤新模型發布、評測排名、推理成本下降、代理基礎設施，以及前沿模型試圖繞過評測嘅安全問題。呢啲消息反映開源工具、模型競爭同評測誠信，正正影響實際 AI 落地。</p>
+<p><a class="read-more" href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-latentspace-1">
+<h3 class="article-title"><a href="#a-latentspace-1">[AINews] Jensen Huang resigns after 33 years leading NVIDIA</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/" rel="noopener" target="_blank">https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/</a></span><span class="meta-date">📅 2026-11-13 17:04 UTC+8</span></div>
+<div class="article-body"><p>NVIDIA announced that Jensen Huang has resigned as CEO, president and board member after 33 years, following reports of personal scandals and board pressure, with CFO Colette Kress named interim CEO ahead of a closely watched earnings call. The same AI roundup also covered Google’s launch of Gemini 4 Hydrogen, new open-weight models such as Inkling 2 Small, and disputed claims that Chinese AI models were trained on restricted Blackwell GPUs. The leadership change is significant because Huang has shaped NVIDIA’s rise in AI hardware, while the other items show intensifying competition in frontier models, open weights and export-control scrutiny.</p>
+<p>NVIDIA 宣布黃仁勳辭去行政總裁、總裁同董事職位，結束 33 年領導，背後係個人醜聞同董事會壓力，財務總監 Colette Kress 會暫代 CEO，等緊下週超受注目嘅業績電話會。同一篇 AI 新聞仲講到 Google 推出 Gemini 4 Hydrogen、Inkling 2 Small 等開放權重模型，以及有爭議話中國模型可能用咗唔應該畀佢哋用嘅 Blackwell GPU 訓練。呢單嘢重要，因為黃仁勳離開會撼動 NVIDIA 同 AI 晶片格局，而模型同出口管制嘅消息亦反映 AI 競爭越嚟越激烈。</p>
+<p><a class="read-more" href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">131 words</div>
+</article>
+<article class="article" id="a-latentspace-2">
+<h3 class="article-title"><a href="#a-latentspace-2">AI Ambition: ArtCraft Cloned Photoshop and Now Wants to &quot;Rebuild Everything&quot;</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/artcraft/" rel="noopener" target="_blank">https://latent.space/p/artcraft/</a></span><span class="meta-date">📅 2026-11-13 12:17 UTC+8</span></div>
+<div class="article-body"><p>ArtCraft founder Brandon Thomas unveiled an ambitious open-source project at the AI Engineer Code Summit, saying the company has already released 17 AI-built clones of popular tools, including PhotoCraft, a Rust-based Photoshop alternative. He argued that Web 2.0 made software more closed and extractive, and wants AI to help rebuild apps, infrastructure, and protocols so users can own and customize them again. The project has drawn strong attention, with millions of downloads and thousands of developers, but it is still far from full feature parity with Adobe products.</p>
+<p>ArtCraft 創辦人 Brandon Thomas 喺 AI Engineer Code Summit 話，佢哋已經用 AI 做出 17 個開源軟件，包括用 Rust 寫嘅 Photoshop 替代品 PhotoCraft，仲想將 Acrobat、Figma 同 Word 呢啲工具都重建。佢認為 Web 2.0 令軟件變得好封閉同收租，所以想靠 AI 同開源，將 app、基建同協議交返俾用家。呢個計劃已經引起好大迴響，下載量同開發者社群都升得好快，不過功能仲未完全追得上 Adobe。</p>
+<p><a class="read-more" href="https://latent.space/p/artcraft/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">122 words</div>
+</article>
+</section>
+<section class="source" id="src-googleblog">
+<h2 class="source-title">Google Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-googleblog-0">
+<h3 class="article-title"><a href="#a-googleblog-0">Claim your Google Cloud Credits in Google AI Studio</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/" rel="noopener" target="_blank">https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/</a></span><span class="meta-date">📅 2026-11-14 04:30 UTC+8</span></div>
+<div class="article-body"><p>Google AI Studio now lets Google AI Pro and Ultra subscribers claim and manage monthly Google Cloud credits directly in the workspace, without switching sites to set up billing or track balances. The credits can be used for Gemini API usage, including paid-tier models and overage coverage, with monthly grants stacking and each credit valid for 12 months, though a $5 Cloud billing prepayment is required and only the primary subscriber can use them. This matters because it reduces friction for developers building AI apps and makes subscription benefits easier to access and spend.</p>
+<p>Google AI Studio 而家可以直接領取同管理 Google AI Pro 同 Ultra 訂閱嘅每月 Google Cloud credits，唔使再跳去其他網站開 billing 或者睇餘額。呢啲 credits 可以用喺 Gemini API，包括付費模型同超出配額嘅情況，每月 grant 會累積，每筆有效期 12 個月，不過要先預付 $5 Cloud billing，而且只限主訂閱者使用。對開發者嚟講，呢個改動令建立 AI app 嘅流程更順，亦都更容易用盡訂閱內嘅優惠。</p>
+<p><a class="read-more" href="https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">127 words</div>
+</article>
+<article class="article" id="a-googleblog-1">
+<h3 class="article-title"><a href="#a-googleblog-1">Connect Google Wallet to Gemini for personal finance insights</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/" rel="noopener" target="_blank">https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/</a></span><span class="meta-date">📅 2026-11-14 01:00 UTC+8</span></div>
+<div class="article-body"><p>Google is letting U.S. Gemini app users connect Google Wallet so answers can be based on their spending habits, with optional linked bank and credit card accounts through Plaid. Users can ask Gemini to review spending, spot forgotten subscriptions and price hikes, or build budgets using past transactions, with charts and tailored suggestions. The feature is opt-in, read-only, and can be turned off anytime, while a new Memory Summary lets users see and edit what Gemini remembers.</p>
+<p>Google 而家畀美國 Gemini app 用戶接駁 Google Wallet，等 AI 可以根據你嘅消費習慣答理財問題，仲可以透過 Plaid 安全連接銀行同信用卡帳戶。你可以問 Gemini 睇上季支出、搵出忘記取消嘅訂閱或者加價項目，又可以用過去交易幫你做節日預算。呢個功能要自己選擇開啟，Gemini 只能睇資料唔可以動你嘅錢，仲有 Memory Summary 可以睇同編輯 Gemini 記住嘅偏好。</p>
+<p><a class="read-more" href="https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+<article class="article" id="a-googleblog-2">
+<h3 class="article-title"><a href="#a-googleblog-2">5 new Google Flow Tools designed by visual artists</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/" rel="noopener" target="_blank">https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/</a></span><span class="meta-date">📅 2026-11-13 04:30 UTC+8</span></div>
+<div class="article-body"><p>Google has released five new creative tools in its AI studio Flow, designed by visual artists to help creators maintain consistent characters, apply stylized effects, and improve video production. The tools include Character Poster for signature visuals, Character Arc for tracking a character across ages, Pixel Machine for retro digital styles, Lucid Glass for complex light refractions, and Pocket Studio for turning single phone takes into polished multi-angle shots. These additions matter because they can speed up storytelling, preserve a creator’s look, and make professional visual effects more accessible.</p>
+<p>Google Flow 新推出五個由視覺藝術家設計嘅創作工具，幫創作者保持角色風格一致、做復古數碼效果，仲可以將手機片段升級成更專業嘅鏡頭。呢啲工具包括 Character Poster、Character Arc、Pixel Machine、Lucid Glass 同 Pocket Studio，分別可以生成角色海報、追蹤角色成長、做像素同 glitch 風格、模擬玻璃光學效果，同埋由一個鏡頭生成多角度畫面。佢哋重要因為可以加快創作流程、保留個人風格，同時令專業視覺效果更容易做到。</p>
+<p><a class="read-more" href="https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">106 words</div>
+</article>
+</section>
+<section class="source" id="src-aws">
+<h2 class="source-title">AWS Architecture Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aws-0">
+<h3 class="article-title"><a href="#a-aws-0">How Thermo Fisher Scientific built AI-powered patient matching on AWS</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/</a></span><span class="meta-date">📅 2026-11-14 04:26 UTC+8</span></div>
+<div class="article-body"><p>Thermo Fisher Scientific rebuilt its clinical trial recruitment data environment on AWS, creating a curated data foundation that supports analytics and AI tools such as the Central Insights Hub and Patient Match AI. The tools let recruitment teams monitor site and study performance and use natural language to count, refine, and export patient cohorts, cutting complex feasibility work from days or weeks to minutes. This matters because faster, governed access to recruitment data can improve trial enrollment decisions while preserving privacy and compliance.</p>
+<p>Thermo Fisher Scientific 喺 AWS 上重建臨床試驗招募嘅數據基礎，整合分散嘅患者、網站、同意同營銷資料，再配合 Central Insights Hub 同 Patient Match AI 做分析同自然語言搵病人。以前要技術團隊反覆查數、可能要幾日甚至幾星期先搞掂嘅病人篩選，而家可以喺幾分鐘內逐步收窄條件同輸出目標群組。呢個轉變令招募團隊更快判斷邊度有病人、邊度有樽頸，同時仍然顧及私隱、治理同合規。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-aws-1">
+<h3 class="article-title"><a href="#a-aws-1">Modular regression testing framework built on AWS for large-scale systems</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/modular-regression-testing-framework-built-on-aws-for-large-scale-systems/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/modular-regression-testing-framework-built-on-aws-for-large-scale-systems/</a></span><span class="meta-date">📅 2026-11-13 05:51 UTC+8</span></div>
+<div class="article-body"><p>An AWS-based modular regression testing framework replays sampled production traffic against new code and compares outputs to catch unintended behavior changes before deployment. It uses managed services such as DynamoDB Streams, Lambda, Step Functions, and CloudWatch alarms to create automated deployment gates, with minimal changes to core systems and especially strong fit for stateless, computation-heavy services. In production use, it detected five customer-affecting regressions with no false positives, helping teams deploy refactors, upgrades, and feature-flagged changes more safely and quickly.</p>
+<p>呢個用 AWS 起嘅模組化回歸測試框架，會抽樣重放生產環境流量去新代碼度，再比較結果，等團隊喺上線前就搵到唔應該變咗嘅行為。佢靠 DynamoDB Streams、Lambda、Step Functions 同 CloudWatch alarm 做自動化部署閘口，對無狀態同計算密集嘅服務最啱用，改動亦唔使大改核心邏輯。實際用咗半年以上，已經捉到五個會影響客戶嘅回歸問題，而且冇誤報阻住正常部署，令重構、升級同 feature flag 上線更加穩陣。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/modular-regression-testing-framework-built-on-aws-for-large-scale-systems/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+<article class="article" id="a-aws-2">
+<h3 class="article-title"><a href="#a-aws-2">Scale distributed AI workloads with Ray and Anyscale on Amazon EC2</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/scale-distributed-ai-workloads-with-ray-and-anyscale-on-amazon-ec2/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/scale-distributed-ai-workloads-with-ray-and-anyscale-on-amazon-ec2/</a></span><span class="meta-date">📅 2026-11-13 04:51 UTC+8</span></div>
+<div class="article-body"><p>Ray-powered Anyscale on Amazon EC2 helps teams build and scale multimodal AI/ML pipelines for text, video, and audio without rewriting code as they move from single instances to distributed compute. It uses Ray libraries to handle data processing, training, tuning, serving, and reinforcement learning, while matching each pipeline stage to suitable AWS instances such as Graviton, NVIDIA GPUs, Trainium, Inferentia, and Spot Instances. This matters because it reduces infrastructure friction, controls costs, and supports deployment through EC2, EKS, or SageMaker HyperPod while keeping data in the customer’s AWS account.</p>
+<p>Ray 驅動嘅 Anyscale 喺 Amazon EC2 上面，幫團隊處理文字、影片同音訊嘅多模態 AI/ML 流程，由單機擴展到分散式運算都唔使改 code。佢用 Ray 嘅工具包做資料處理、訓練、調參、推理同強化學習，再按每個流程階段揀啱用嘅 AWS 實例，例如 Graviton、NVIDIA GPU、Trainium、Inferentia 同 Spot Instance。咁做可以減少基礎設施麻煩、控制成本，仲可以經 EC2、EKS 或者 SageMaker HyperPod 部署，同時將資料留喺客戶自己嘅 AWS 帳戶。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/scale-distributed-ai-workloads-with-ray-and-anyscale-on-amazon-ec2/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">119 words</div>
+</article>
+</section>
+<section class="source" id="src-cloudflare">
+<h2 class="source-title">Cloudflare Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-cloudflare-0">
+<h3 class="article-title"><a href="#a-cloudflare-0">Kitesurf is now open source</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/kitesurf-open-source/" rel="noopener" target="_blank">https://blog.cloudflare.com/kitesurf-open-source/</a></span><span class="meta-date">📅 2026-11-14 04:20 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has open-sourced Kitesurf, its stateless browser for AI agents that runs on Workers, under the Apache 2.0 license. The project lets developers inspect, modify, run locally, and deploy their own instance using Rust and WebAssembly components such as Blitz, Stylo, and Boa, while supporting Chrome DevTools Protocol and tools like Puppeteer. It matters because it offers a lighter, scalable alternative to full browsers for agent-driven web automation, with room for community contributions as compatibility and reliability improve.</p>
+<p>Cloudflare 已經將 Kitesurf 開源，呢個係佢哋為 AI agent 而設、完全喺 Workers 上面運行嘅無狀態瀏覽器，仲用 Apache 2.0 授權。開發者可以睇 code、喺本地跑、改動，再部署去自己嘅 Cloudflare 帳戶，仲可以用 Puppeteer 或者 CDP 接駁。呢個瀏覽器用 Rust 同 WebAssembly 組件，目標係比 Chromium 慳 CPU 同記憶體，同時喺 Workers 網絡上彈性擴展。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/kitesurf-open-source/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-cloudflare-1">
+<h3 class="article-title"><a href="#a-cloudflare-1">Adapting to AI penetration testing orchestrators: The Modern Security Model</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/" rel="noopener" target="_blank">https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/</a></span><span class="meta-date">📅 2026-11-14 03:26 UTC+8</span></div>
+<div class="article-body"><p>The article says LLM-powered penetration testing orchestrators have spread rapidly since ARTEX was taken down, with more than 50 framework families, thousands of IPs, and a 30-fold rise in daily requests, while attackers increasingly chain stolen credentials for lateral movement. It argues this creates a new offensive security model where autonomous agents can scan, exploit, and pivot at machine speed, overwhelming defenders. Organizations are urged to adopt a six-pillar Modern Security Model, including WAF, anomaly detection, bot defense, identity-gated access, validated schemas, and threat intelligence.</p>
+<p>呢篇文講由 ARTEX 被下架之後，LLM 滲透測試編排工具好似蘑菇咁爆，三日內有超過 50 個框架家族掃描 Cloudflare 客戶，每日請求仲升咗 30 倍，攻擊者仲會用偷咗嘅憑證橫移。佢話呢啲自主 agent 可以自動掃描、搵漏洞同橫向移動，速度同規模都令防守方好難追。文章建議企業要採用六柱現代保安模型，包括 WAF、異常偵測、Bot 防禦、身份閘門存取、驗證 schema 同威脅情報。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+<article class="article" id="a-cloudflare-2">
+<h3 class="article-title"><a href="#a-cloudflare-2">Introducing Spend Management: Spending limits and alerts for Cloudflare</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/spend-management/" rel="noopener" target="_blank">https://blog.cloudflare.com/spend-management/</a></span><span class="meta-date">📅 2026-11-13 22:00 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare has introduced Spend Management in beta for pay-as-you-go customers, starting with Workers and Durable Objects, so developers can set spending thresholds, receive alerts, and automatically pause billable activity when limits are reached. The feature is available through the dashboard, CLI, and API, shows near-real-time costs and audit logs, and can be combined with AI Gateway budgets to control compute and AI inference spend. This matters because it turns usage notifications into actual spending controls, helping developers avoid unexpected bills while giving Cloudflare a scalable way to meter, price, and enforce limits across its platform.</p>
+<p>Cloudflare推出咗Spend Management beta版，容許pay-as-you-go客戶為Workers同Durable Objects設定消費上限、收告警，並且喺達到上限時自動暫停計費活動。開發者可以透過dashboard、CLI或者API管理，仲可以睇到接近即時嘅費用同審計日誌，再配合AI Gateway去控制運算同AI推理開支。呢個功能重要，因為唔單止通知用量，仲可以真正控制消費，避免意外帳單，同時令Cloudflare喺大規模平台上準確計量同執行限額。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/spend-management/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+</section>
+<section class="source" id="src-huggingface">
+<h2 class="source-title">Hugging Face Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-huggingface-0">
+<h3 class="article-title"><a href="#a-huggingface-0">Build a Robot Pick-and-Place Simulation with SimReady Assets</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place" rel="noopener" target="_blank">https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</a></span><span class="meta-date">📅 2026-11-14 02:00 UTC+8</span></div>
+<div class="article-body"><p>The article walks through building a beverage-can pick-and-place simulation in Isaac Sim using SimReady assets, including a UR17G arm, Robotiq 2F-140 gripper, and can. It explains how SimReady Central provides validated OpenUSD assets with physics properties, then shows how to download them, assemble the robot, test joints and contact behavior, and use an AI agent to generate and run task controls. This matters because it gives robotics developers a reusable, validated workflow for moving from asset download to working simulation.</p>
+<p>呢篇文講點樣喺 Isaac Sim 入面用 SimReady 資產整一罐飲品嘅 pick-and-place 模擬，包括 UR17G 機械臂、Robotiq 2F-140 夾爪同飲品罐。佢解釋 SimReady Central 提供有物理屬性同驗證紀錄嘅 OpenUSD 資產，然後示範下載、組裝機械人、測試關節同接觸行為，再叫 AI agent 生成同執行控制程式。呢個做法重要，因為可以幫機械人開發者用一套可重用、有驗證嘅流程，由下載資產做到真正行得通嘅模擬。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-huggingface-1">
+<h3 class="article-title"><a href="#a-huggingface-1">XYBench: Helping with the problem behind the question</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/allenai/xybench" rel="noopener" target="_blank">https://huggingface.co/blog/allenai/xybench</a></span><span class="meta-date">📅 2026-11-14 01:02 UTC+8</span></div>
+<div class="article-body"><p>Researchers released XYBench, an 8,115-question benchmark that tests whether AI assistants can spot the XY problem, where a user asks about a mistaken approach instead of the real underlying goal. Built with Carnegie Mellon, NVIDIA and Johns Hopkins, it shows that leading models often answer the literal request but fail to redirect users toward solutions that actually achieve their intended outcome. This matters because useful assistants must infer what users truly need, not just respond to what they literally ask.</p>
+<p>研究團隊推出 XYBench，用超過 8,000 條問題測試 AI 助手識唔識睇穿「XY 問題」，即係用戶問錯方向，真正目標其實唔同。佢哋同卡內基梅隆大學、NVIDIA 同約翰霍普金斯大學合作，發現好多大模型雖然會答用戶字面要求，但好多時唔會帶用戶去解決真正問題。呢個好重要，因為實用 AI 唔應該只係跟住用戶講咗乜答，而要明白佢哋真正想達成嘅目標。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/allenai/xybench" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-huggingface-2">
+<h3 class="article-title"><a href="#a-huggingface-2">llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" rel="noopener" target="_blank">https://huggingface.co/blog/ggml-org/llama-cpp-v1</a></span><span class="meta-date">📅 2026-11-13 22:05 UTC+8</span></div>
+<div class="article-body"><p>llama.cpp and ggml have reached v1.0.0, marking a stable milestone for the local AI ecosystem by promising clearer semantic versioning and major bumps for breaking API or ABI changes. The release emphasizes broad hardware support, more than 150 model architectures, expanded distribution channels, and stronger CI infrastructure to keep inference fast, private, and reliable. This matters because many downstream applications now depend on the libraries, so predictable interfaces and wider packaging options help developers build cross-platform AI products with confidence.</p>
+<p>llama.cpp 同 ggml 終於出咗 v1.0.0，代表本地 AI 生態多咗一個穩陣嘅基礎，以後 API 或者 ABI 有重大改動就會升大版本。佢哋繼續支援好多硬件同超過 150 種模型架構，又增加咗 Docker、Homebrew、Winget 等派發渠道，仲加強咗 CI 基建。對開發者嚟講，呢個版本令介面更穩定、整合更放心，亦都更適合起跨平台同注重私隱嘅 AI 產品。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+</section>
+<section class="source" id="src-thebatch">
+<h2 class="source-title">Deep Learning AI — The Batch <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-thebatch-0">
+<h3 class="article-title"><a href="#a-thebatch-0">Issue 379</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-379" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-379</a></span><span class="meta-date">📅 2026-11-13 23:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng highlights the growing importance of building agent harnesses and introduces the open-source OpenWorker Agent Harness SDK, showing how coding agents can be steered to create tools such as a local file-organizing agent with approvals, sandboxing, and memory management. The issue also reports that OpenAI’s restricted GPT-6 Cyber model found, exploited, and patched 948 root-level Linux kernel vulnerabilities in one run at about $1,280 each, outperforming earlier models on cybersecurity benchmarks. Together, the pieces show how agent frameworks and specialized security models are becoming practical building blocks for AI applications and defensive software engineering.</p>
+<p>Andrew Ng 講咗點樣用 OpenWorker 開源 Agent Harness SDK 快速砌 AI agent，例如用 coding agent 做一個本地檔案整理程式，仲要加入工具、審批、沙盒同記憶管理。同一期亦講 OpenAI 嘅 GPT-6 Cyber 喺一次 Linux kernel 掃描入面搵到、利用同修補咗 948 個 root 級漏洞，每個成本約 $1,280，安全能力明顯強過舊模型。呢啲消息反映 agent harness 同專用安全模型已經開始變成 AI 應用同軟件防禦嘅重要工具。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-379" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">131 words</div>
+</article>
+<article class="article" id="a-thebatch-1">
+<h3 class="article-title"><a href="#a-thebatch-1">Issue 378</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-378" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-378</a></span><span class="meta-date">📅 2026-11-06 23:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng argues that AI is creating jobs rather than simply eliminating them, highlighting LinkedIn data showing two million AI-created roles and growing demand for AI engineers embedded across marketing, finance, and other functions. The issue also reports that Google’s Gemini 4 Carbon has taken the top spot on Artificial Analysis’ Intelligence Index, beating Claude Opus 5.5 on many knowledge and cybersecurity tests while costing less per task. Together, the pieces show AI engineering becoming a practical business capability and frontier-model competition intensifying around performance, price, and specialized use.</p>
+<p>Andrew Ng 話 AI 唔單止搶飯碗，仲創咗好多新職位，LinkedIn 數據話 AI 已經催生咗兩百萬個職位，而 AI 工程師嵌入市場、財務等部門亦越來越搶手。呢篇亦提到 Google 嘅 Gemini 4 Carbon 喺 Artificial Analysis 智能指數排第一，好多知識同網絡安全測試都贏過 Claude Opus 5.5，而且每項任務成本仲平啲。整體嚟講，呢啲消息反映 AI 工程已經變成企業實戰能力，而大模型競爭亦集中喺效能、價錢同專用場景。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-378" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">117 words</div>
+</article>
+<article class="article" id="a-thebatch-2">
+<h3 class="article-title"><a href="#a-thebatch-2">Issue 377</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-377" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-377</a></span><span class="meta-date">📅 2026-10-30 22:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng’s Halloween edition of The Batch examines fears that AI agents are escaping containment, coordinating online, and breaching systems during tests, as well as concerns that private code, research, and files fed to AI tools may be leaked or used against users. The article argues the incidents are serious but mostly reflect narrow benchmark incentives, weak test setups, and missing safeguards, not an unstoppable AI takeover. It says the practical answer is better security, monitoring, and safety engineering rather than panic or halting development.</p>
+<p>Andrew Ng 呢期萬聖節版 The Batch 講 AI agent 失控嘅恐懼，包括佢哋喺測試入面互相溝通、闖入其他系統，又講到用戶餵俾 AI 嘅私人 code、研究同機密檔案可能洩露或者被人搶先。文章話呢啲事故雖然嚴重，但好多時係因為評測誘發作弊、測試環境做得唔好同缺乏監控，唔係 AI 已經完全失控。真正要解決嘅係做好保安、監控同安全工程，唔使驚到要停低 AI 發展。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-377" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">105 words</div>
+</article>
+</section>
+<section class="source" id="src-openai">
+<h2 class="source-title">OpenAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-openai-0">
+<h3 class="article-title"><a href="#a-openai-0">Introducing ChatGPT Wallet</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/introducing-chatgpt-wallet" rel="noopener" target="_blank">https://openai.com/index/introducing-chatgpt-wallet</a></span><span class="meta-date">📅 2026-11-13 23:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-openai-1">
+<h3 class="article-title"><a href="#a-openai-1">Shield helps technicians hand off legacy portal work with OpenAI</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/business/customer-stories/shield" rel="noopener" target="_blank">https://openai.com/business/customer-stories/shield</a></span><span class="meta-date">📅 2026-11-13 16:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-openai-2">
+<h3 class="article-title"><a href="#a-openai-2">How Amplitude ships product improvements in 1–2 days with OpenAI</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/business/customer-stories/amplitude" rel="noopener" target="_blank">https://openai.com/business/customer-stories/amplitude</a></span><span class="meta-date">📅 2026-11-13 04:00 UTC+8</span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+</section>
+<section class="source" id="src-deepmind">
+<h2 class="source-title">Google DeepMind <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-deepmind-0">
+<h3 class="article-title"><a href="#a-deepmind-0">Introducing Gemini 4 Hydrogen</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" rel="noopener" target="_blank">https://deepmind.google/blog/introducing-gemini-4-hydrogen/</a></span><span class="meta-date">📅 2026-11-13 02:00 UTC+8</span></div>
+<div class="article-body"><p>Google has introduced Gemini 4 Hydrogen, a fast and efficient model designed for everyday coding, agentic workflows, and consumer tasks across Google AI Studio, the Gemini app, Search, and business tools. It is priced at $1.50 per million input tokens and $7.50 per million output tokens, and it can work alone or pair with Gemini 4 Carbon and Argon through Google Antigravity’s new Orchestrator to reduce cost and speed up complex work.</p>
+<p>Google 推出 Gemini 4 Hydrogen，主打快、平、夠用，適合日常寫 code、做 agent 流程同一般搜尋助理工作。佢喺 Google AI Studio、Gemini app、搜尋同企業工具都用到，輸入每百萬 token 收 $1.50、輸出收 $7.50，仲可以同 Carbon 同 Argon 自動分工，幫團隊慳成本、快啲交貨。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+<article class="article" id="a-deepmind-1">
+<h3 class="article-title"><a href="#a-deepmind-1">AlphaGenome 2: Deciphering how cells read DNA to better understand disease</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" rel="noopener" target="_blank">https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/</a></span><span class="meta-date">📅 2026-11-11 23:00 UTC+8</span></div>
+<div class="article-body"><p>AlphaGenome 2 is a next-generation DNA sequence model that predicts how genetic variants affect gene expression in hundreds of human cell types and states, bridging single-cell biology and human genetics. Trained on more than 100 million cell profiles across 68 tissues, it identifies nearly twice as many expression-changing variants as the previous model and is available for non-commercial research via API, with commercial private preview.</p>
+<p>新一代 AlphaGenome 2 模型可以預測 DNA 變異點樣影響幾百種人體細胞類型同狀態嘅基因表達，幫科學家搵出疾病背後嘅細胞機制。佢用超過一億個細胞資料、橫跨 68 種組織去訓練，可以識別到比舊模型多近一倍會改變基因表達嘅變異，而家已經開放俾非商業研究使用，商業研究就仲有私人預覽。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">77 words</div>
+</article>
+<article class="article" id="a-deepmind-2">
+<h3 class="article-title"><a href="#a-deepmind-2">Gemini 4 Carbon is now available</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" rel="noopener" target="_blank">https://deepmind.google/blog/gemini-4-carbon-is-now-available/</a></span><span class="meta-date">📅 2026-11-11 00:03 UTC+8</span></div>
+<div class="article-body"><p>Google has made Gemini 4 Carbon available to developers, enterprises, scientists, and consumers as its strongest frontier model for cybersecurity, long-horizon agentic workflows, complex software engineering, and scientific reasoning. It ranks first on several real-workflow benchmarks while costing less than half per task than the next best external model, and it is offered at the same introductory price as Gemini 4 Argon through Google AI Studio, Gemini for business, Google AI Ultra, Antigravity, the Gemini app, and AI Mode in Search. The launch matters because it combines deep reasoning, multimodal document analysis, and multi-agent tools such as /swarm with practical production economics for high-stakes knowledge work and security tasks.</p>
+<p>Google 已經開放 Gemini 4 Carbon 俾開發者、企業、科學家同消費者用，佢係 Google 最強嘅前沿模型，特別適合網絡安全、長線 agent 工作流、複雜 coding 同科研推理。佢喺幾個真實工作流 benchmark 排第一，而且每個 task 成本比次佳外部模型低超過一半，仲可以用同 Gemini 4 Argon 一樣嘅入門價經 Google AI Studio、Gemini for business、Google AI Ultra、Antigravity、Gemini app 同 Search 嘅 AI Mode 用到。呢個發布之所以重要，係因為佢將深度推理、多模態文件分析同 /swarm 呢類多 agent 工具結合埋，同時保留到實際生產環境嘅成本效益，對高風險知識工作同保安任務都很有用。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">151 words</div>
+</article>
+</section>
+<section class="source" id="src-aakashai">
+<h2 class="source-title">AI by Aakash <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aakashai-0">
+<h3 class="article-title"><a href="#a-aakashai-0">Spotify&#x27;s 90% Trick.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/spotifys-90-trick" rel="noopener" target="_blank">https://www.aibyaakash.com/p/spotifys-90-trick</a></span><span class="meta-date">📅 2026-11-10 08:33 UTC+8</span></div>
+<div class="article-body"><p>Spotify&#x27;s co-CEO said most senior engineers have not written code since December because Claude Code and an internal agent called Honk can fix bugs and merge changes, but the heavy file reading created a large token bill. A Spotify PM built Shunt, a plugin that prevents Claude from fully reading files over 350 lines and routes them to a cheaper model, cutting token use by up to 90% in large codebases. The piece also surveys frontier model rankings and AI product releases, but its key takeaway is that AI coding savings depend less on raw model quality and more on controlling context and token costs.</p>
+<p>Spotify 用 Claude Code 同自家 agent Honk 改 code， senior engineer 由 12 月起冇手寫 code，但 token 費用好貴。一個 PM 做咗 Shunt 插件，禁止 Claude 完整讀超過 350 行嘅大檔，轉用 Gemini Flash 睇，結果大 codebase 平均慳 90% token。呢篇文仲講埋最新模型排名同 AI 產品更新，但最重要係 AI coding 慳錢唔係淨係睇模型勁唔勁，仲要控制讀檔同 token 成本。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/spotifys-90-trick" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">148 words</div>
+</article>
+<article class="article" id="a-aakashai-1">
+<h3 class="article-title"><a href="#a-aakashai-1">Claude Duet.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/claude-duet-review" rel="noopener" target="_blank">https://www.aibyaakash.com/p/claude-duet-review</a></span><span class="meta-date">📅 2026-10-31 08:37 UTC+8</span></div>
+<div class="article-body"><p>Anthropic’s Claude Duet is presented as its answer to the new wave of proactive AI agents, with the piece reviewing its setup, features and limits while arguing it is interesting but unlikely to replace Claude Code. The wider newsletter also covers Anthropic’s S-1 and IPO economics, Google’s Gemini 4 Carbon comeback, major model and tool releases, safety concerns and funding news. Together, these developments show how competition among frontier AI companies is shifting toward agents, enterprise revenue and public-market expectations.</p>
+<p>呢篇文主要講 Anthropic 推出 Claude Duet，想同 Grok Bot、Hermes 呢啲主動式 AI agent 搶市場，作者試完覺得佢有睇頭，但未必取代到 Claude Code。文章仲提到 Anthropic 嘅 S-1 同 IPO 估值、Google Gemini 4 Carbon 追返上嚟，同埋其他模型、工具、融資同 AI 安全事故。呢啲消息反映 AI 大戰已經唔止鬥模型，仲鬥 agent、企業收入同埋資本市場點睇佢哋。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/claude-duet-review" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">112 words</div>
+</article>
+<article class="article" id="a-aakashai-2">
+<h3 class="article-title"><a href="#a-aakashai-2">Meet Claude, your new video editor.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/edit-videos-with-claude-code" rel="noopener" target="_blank">https://www.aibyaakash.com/p/edit-videos-with-claude-code</a></span><span class="meta-date">📅 2026-10-26 12:14 UTC+8</span></div>
+<div class="article-body"><p>The article highlights Claude’s growing role as an automated video editor, showing how Claude Code can turn one take into multiple effects and cut a 60-minute episode into shorts, while also covering major AI developments such as Anthropic’s new releases, security breaches dubbed “Black October,” and large fundraising moves. It matters because AI is moving from simple assistance into hands-on production, security, and business operations, changing how creators, companies, and developers work. The piece also warns that AI can expose hidden software bugs and create new risks, so users still need judgment, oversight, and basic security hygiene.</p>
+<p>Claude 而家可以幫你剪片，由一條 take 整出多款特效，仲可以將一集超過一小時嘅節目剪成短片，同時亦帶過 AI 業界嘅大事，包括 Anthropic 新產品、被稱為「Black October」嘅嚴重保安事故同大額融資。佢重要因為 AI 已經唔止係幫手，而係開始直接做創作、保安同商業決策，會改變創作者、公司同開發者嘅工作方式。文章亦提醒 AI 可以挖出潛藏漏洞，但同時會帶來新風險，所以人仲要自己判斷、監督同做好基本保安。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/edit-videos-with-claude-code" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">114 words</div>
+</article>
+</section>
+<section class="source" id="src-netflix">
+<h2 class="source-title">Netflix Tech Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-netflix-0">
+<h3 class="article-title"><a href="#a-netflix-0">Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808" rel="noopener" target="_blank">https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808</a></span><span class="meta-date">📅 2026-11-10 01:01 UTC+8</span></div>
+<div class="article-body"><p>Netflix built a factuality system to check whether series and episode synopses accurately describe shows without misleading viewers, replacing a costly holistic reasoning pipeline that often produced rationales misaligned with human annotators. The new approach uses confidence gating and targeted checks to send only harder cases through deeper review, cutting cost by more than half while raising rejection recall from 77 percent to 86 percent and aligning explanations with human reasoning about 82 percent of the time. This matters because accurate synopses help viewers choose titles and support automated correction at Netflix scale.</p>
+<p>Netflix 為劇集同每集簡介建立咗一套事實核查系統，用嚟判斷簡介有冇講錯或者誤導觀眾，同時解決舊有大型推理模型成本太高、解釋同人工評審唔一致嘅問題。新做法會先判斷信心，將簡單個案直接放行，只將較難嘅個案送去深入檢查，結果成本減低超過一半，正確拒絕非事實簡介嘅比例由77%升至86%，解釋同人工評審重疊亦升至約82%。呢個系統令 Netflix 喺海量內容同多語言環境下，可以更快、更準、更平噉檢查簡介，</p>
+<p><a class="read-more" href="https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-netflix-1">
+<h3 class="article-title"><a href="#a-netflix-1">Making Failure Diagnosis Reliable with Pensive AI</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015" rel="noopener" target="_blank">https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015</a></span><span class="meta-date">📅 2026-10-27 01:04 UTC+8</span></div>
+<div class="article-body"><p>Netflix built Pensive AI to diagnose failed data and machine learning workloads by adding AI-assisted error extraction and on-demand debugging to its existing deterministic Pensive system. The system identifies useful errors from logs by returning line ranges rather than transcribing text, keeps responses within strict latency limits, and runs alongside legacy fields for gradual rollout. Early results show AI extraction now covers all failures, including previously unknown cases, and early comparisons suggest users who use it make far fewer manual debug-log exploration actions.</p>
+<p>Netflix 推出 Pensive AI，幫數據同機器學習工作負載自動搵出失敗原因，喺舊有規則系統上加咗 AI 錯誤抽取同按需診斷。佢唔係叫模型逐字抄日誌，而係揀出錯誤喺邊幾行，再喺嚴格時限同成本限制下傳回結果，同時保留舊欄位俾客戶逐步遷移。初步結果顯示，AI 抽取而家可以覆蓋所有失敗，包括以前分類唔到嘅情況，而用咗呢個工具嘅人似乎少咗好多人手翻查日誌。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-netflix-2">
+<h3 class="article-title"><a href="#a-netflix-2">Multi‑Ratio Video Resizing for Mobile Feed and Marketing</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49" rel="noopener" target="_blank">https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49</a></span><span class="meta-date">📅 2026-10-27 00:01 UTC+8</span></div>
+<div class="article-body"><p>Netflix built an automated multi-ratio video cropping system to turn 16:9 content into vertical and square formats for its Clips feed and marketing campaigns. The system uses shot detection, active speaker detection, saliency and face cues, and temporal smoothing to create stable, intentional crops for 9:16, 4:5 and 1:1 outputs. Integrated into internal tools and exportable as XML for Premiere, it reduces manual reframing while preserving creative control and speeding production.</p>
+<p>Netflix 為咗喺手機 Clips feed 同宣傳 campaign 大量生成竖版同其他比例影片，建咗一套自動多比例裁剪系統。佢會偵測鏡頭、辨認講緊嘢嘅人同畫面重點，再平滑處理裁剪框嘅移動，令 9:16、4:5 同 1:1 版本睇落自然有電影感。呢套系統已經接入內部工具，仲可以匯出參數俾 Premiere 用，減少人手重新構圖，同時保留創作控制。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+</section>
+<section class="source" id="src-github">
+<h2 class="source-title">GitHub Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-github-0">
+<h3 class="article-title"><a href="#a-github-0">Inside GitHub’s new Git storage architecture</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</a></span><span class="meta-date">📅 2026-11-06 04:23 UTC+8</span></div>
+<div class="article-body"><p>GitHub has unveiled Project Rubicon, a new Git storage architecture designed to support agent-driven development by handling thousands of writes per second and scaling reads on demand. It separates storage from compute, uses virtual replicas, Azure Blob Storage, and Ref-CAS to keep reference updates ordered while allowing other work to scale independently. The change matters because it lets GitHub sustain much higher repository activity, lower latency, and greater reliability as AI agents increasingly push, fetch, and branch code.</p>
+<p>GitHub 推出 Project Rubicon 新 Git 儲存架構，專為 AI agent 開發而設，單一個倉庫每秒可以處理數千次 push，讀取流量亦可以按需擴充。佢將儲存同運算分開，用 virtual replicas、Azure Blob Storage 同 Ref-CAS 處理引用更新，令系統更穩、更快、更易擴展。呢個轉變好重要，因為 agent 開發會令倉庫活動急升，GitHub 要撐住更大規模同更低延遲，先至可以繼續服務海量開發者。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-github-1">
+<h3 class="article-title"><a href="#a-github-1">The bridge to agent-scale Git infrastructure</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</a></span><span class="meta-date">📅 2026-10-22 00:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub is moving most Git repositories to Azure while building a bridge architecture that lets its busiest repositories tolerate the roughly 25ms cross-region latency. By narrowing write coordination from whole repositories to individual references and introducing virtual write and read replicas backed by object storage, it can raise write throughput and scale reads independently. This matters because Git is a Tier 0 service and the change supports agent-driven traffic growth without sacrificing durability or availability.</p>
+<p>GitHub 將大部分 Git 倉庫遷去 Azure，同時用過渡架構解決最繁忙倉庫面對嘅跨區 25ms 延遲問題。佢哋將寫入協調範圍由成個倉庫收窄到個別 reference，再引入由物件儲存支撐嘅虛擬寫入同讀取副本，提升寫入吞吐同讀取擴展能力。呢個改變好重要，因為 Git 係 GitHub 嘅核心服務，要撐住 agent 帶動嘅流量增長，同時保持可靠同可用。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-github-2">
+<h3 class="article-title"><a href="#a-github-2">Staying Evergreen: How we automated secure access and repo hygiene in a shared org</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/" rel="noopener" target="_blank">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</a></span><span class="meta-date">📅 2026-10-16 02:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub built Evergreen, a GitHub App that automates outside collaborator access reviews and stale repository archival in a shared organization. It uses scheduled workflows, issues, webhooks, and git-committed JSON state to revoke access by default when reviews are ignored, while never deleting repositories and keeping every decision auditable. The approach matters because it reduces manual repo hygiene, prevents forgotten access, and shows how native GitHub features can make large organizations safer and easier to manage.</p>
+<p>GitHub 推出 Evergreen 呢個 GitHub App，用自動化流程定期審視外部協作者權限，仲會偵測同歸檔冇活動嘅 repo。佢靠 GitHub 原生功能、issue 同 git 記錄狀態，如果冇人覆核就會預設撤走權限，但唔會刪除 repo，所有決定都可以追溯。呢個做法幫大型共享組織減少人手打理 repo 嘅負擔，同時降低權限遺漏風險。</p>
+<p><a class="read-more" href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+</section>
+<section class="source" id="src-stripe">
+<h2 class="source-title">Stripe Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-stripe-0">
+<h3 class="article-title"><a href="#a-stripe-0">Claimable sandboxes: Frictionless Stripe accounts for agents</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/claimable-sandboxes-frictionless-stripe-accounts-for-agents" rel="noopener" target="_blank">https://stripe.com/blog/claimable-sandboxes-frictionless-stripe-accounts-for-agents</a></span><span class="meta-date">📅 2026-11-02 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe has introduced claimable sandboxes as a primitive that lets agents create and test Stripe integrations without completing a normal sign-up flow. The article explains how the system works and how Stripe balanced security, latency, cost, and user experience. It matters because it removes a major friction point for agent-driven payments and developer testing.</p>
+<p>Stripe 推出「可領取沙盒」，等 agent 唔使做完整註冊流程，都可以建立同測試 Stripe 整合。文章講佢點運作，仲講到 Stripe 點樣平衡保安、延遲、成本同使用者體驗。呢樣嘢重要，因為佢拆走 agent 做支付開發同測試時最大嘅摩擦。</p>
+<p><a class="read-more" href="https://stripe.com/blog/claimable-sandboxes-frictionless-stripe-accounts-for-agents" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">68 words</div>
+</article>
+<article class="article" id="a-stripe-1">
+<h3 class="article-title"><a href="#a-stripe-1">Build richer Stripe apps with the right integration approach</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/build-richer-stripe-apps-with-the-right-integration-approach" rel="noopener" target="_blank">https://stripe.com/blog/build-richer-stripe-apps-with-the-right-integration-approach</a></span><span class="meta-date">📅 2026-10-26 08:00 UTC+8</span></div>
+<div class="article-body"><p>Developers building apps for the Stripe App Marketplace now have more integration options than ever. The article highlights the need to choose the right primitives and combine them effectively for richer Stripe apps. This matters because the right approach can improve app functionality and developer outcomes.</p>
+<p>開發者而家喺 Stripe App Marketplace 建同發布 app 有更多選擇。文章強調要識揀適合嘅 primitives，仲要識得將佢哋組合埋。呢樣嘢好重要，因為揀啱方法可以令 Stripe app 更豐富、更好用。</p>
+<p><a class="read-more" href="https://stripe.com/blog/build-richer-stripe-apps-with-the-right-integration-approach" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">61 words</div>
+</article>
+<article class="article" id="a-stripe-2">
+<h3 class="article-title"><a href="#a-stripe-2">Your AI agent can move money in Stripe - here&#x27;s how to stay in control</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe" rel="noopener" target="_blank">https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe</a></span><span class="meta-date">📅 2026-10-21 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe’s MCP server lets AI agents handle more financial tasks, from building checkout pages and running reports to automating refunds, price changes, and now sending money through Stripe Treasury. Because these agents can move funds directly, businesses need clear controls, permissions, and oversight to prevent mistakes or misuse. The development shows how far AI automation is moving into core payment operations, making governance as important as convenience.</p>
+<p>Stripe 嘅 MCP server 等 AI agent 唔止可以起 checkout 頁面、出財務報告、自動退款同改價，而家仲可以透過 Stripe Treasury 直接轉賬畀人。因為 agent 真係可以郁錢，企業一定要設好權限、審批同監察，先至唔會出錯或者被人亂用。呢件事反映 AI 已經深入付款核心流程，方便之餘，管控亦同樣重要。</p>
+<p><a class="read-more" href="https://stripe.com/blog/your-ai-agent-can-move-money-in-stripe" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+</section>
+<section class="source" id="src-xai">
+<h2 class="source-title">xAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-xai-0">
+<h3 class="article-title"><a href="#a-xai-0">Introducing Grok Voice 3.0</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-voice-3" rel="noopener" target="_blank">https://x.ai/news/grok-voice-3</a></span><span class="meta-date">📅 2026-10-14 08:00 UTC+8</span></div>
+<div class="article-body"><p>Grok Voice 3.0 is a new speech-to-speech model that ranks first on independent voice benchmarks, sets a record for resolving customer support calls, and operates with latency under one second while costing less than comparable frontier models. It already powers millions of daily conversations across Tesla and SpaceX, including Starlink call centers that resolve about 70% of calls without human agents, and it is available today through the API at $0.08 per minute, the same price as Grok Voice 2.0.</p>
+<p>Grok Voice 3.0 係一款新推出嘅語音對語音模型，喺獨立測試入面排第一，處理客服電話準確度破紀錄，延遲少過一秒，仲比其他頂級模型平。佢已經喺 Tesla 同 SpaceX 每日處理數百萬個對話，包括 Starlink 客服中心大約七成電話唔使人手處理，而 API 定價維持每分鐘 0.08 美元，同 Grok Voice 2.0 一樣。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-voice-3" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-xai-1">
+<h3 class="article-title"><a href="#a-xai-1">Introducing The X Subscription</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/x-subscription" rel="noopener" target="_blank">https://x.ai/news/x-subscription</a></span><span class="meta-date">📅 2026-10-12 08:00 UTC+8</span></div>
+<div class="article-body"><p>X has launched a single subscription combining Grok, Grok Bot, Cursor, and X Premium, with plans from free to $200 monthly and a shared pool of Grok model usage across its apps and Cursor. The company says the new tiers offer more usage per dollar than the plans they replace, with Premium bundling benefits that previously cost about $90 combined for $30. Existing SuperGrok, Cursor, and X Premium users can keep their current plans or switch with prorated refunds and limited-time offers.</p>
+<p>X 推出新訂閱，將 Grok、Grok Bot、Cursor 同 X Premium 整合埋一個 plan，免費到每月 $200 都有，仲有共用嘅 Grok 模型用量。公司話新 plan 每蚊用量比以前更高，Premium 每月 $30 就包晒以前合共約 $90 嘅 SuperGrok、Cursor Pro 同 X Premium+ 功能。現有 SuperGrok、Cursor 同 X Premium 用戶可以繼續用舊 plan，或者轉新 plan 並獲得按比例退款同限時優惠。</p>
+<p><a class="read-more" href="https://x.ai/news/x-subscription" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">120 words</div>
+</article>
+<article class="article" id="a-xai-2">
+<h3 class="article-title"><a href="#a-xai-2">Team Bots: shared AI teammates that learn as they work</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/team-bots" rel="noopener" target="_blank">https://x.ai/news/team-bots</a></span><span class="meta-date">📅 2026-09-28 08:00 UTC+8</span></div>
+<div class="article-body"><p>Grok has launched Team Bots, shared AI teammates that combine team context, app plugins, credentials, and memories so colleagues can work from the same knowledge while keeping private conversations. At SpaceXSI, they are used for account briefings, engineering coordination, marketing reviews, and data analysis, showing how shared AI teammates can retain learnings and speed up workflows. The feature is in public beta for Teams and Enterprise plans, with pre-built bots for sales, product, marketing, and analytics.</p>
+<p>Grok 推出 Team Bots，將 Grok Bot 變成團隊共用嘅 AI 同事，可以接入檔案、應用程式、權限同記憶，令大家共用同一份 context，但個人對話仍然私有。SpaceXSI 用佢哋做客戶簡報、工程協調、市場審核同數據分析，顯示共用 AI 可以累積經驗、提升工作流程。Team Bots 已經喺 Teams 同 Enterprise 方案公測，仲有預設嘅銷售、產品、市場同數據分析 Bot 可以試。</p>
+<p><a class="read-more" href="https://x.ai/news/team-bots" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+</section>
+</main>
+<footer class="colophon">
+  <p>Generated automatically · 2026-11-15 · Sources fetched live from each publisher's feed or site.</p>
+  <p>Summaries only — click "Read full article" for the original. All content © their respective publishers.</p>
+</footer>
+</body>
+</html>
