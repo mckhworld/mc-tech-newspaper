@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>AI Morning Newspaper — 2026-11-21</title>
 <style>
 :root {
@@ -86,21 +86,29 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </head>
 <body id="top">
 <header class="masthead">
-  <h1>The AI Morning Newspaper</h1>
-  <div class="tagline">Your daily briefing on artificial intelligence, from the world's leading tech sources</div>
-  <div class="dateline">2026-11-21</div>
-  <div class="stats">22 sources · 100 articles · 1,763,289 characters</div>
+<h1>The AI Morning Newspaper</h1>
+<div class="tagline">Your daily briefing on artificial intelligence, from the world's leading tech sources</div>
+<div class="dateline">2026-11-21</div>
+<div class="stats">22 sources · 100 articles · 83,155 characters</div>
 </header>
-
+<div class="overview">
+<h2>In the Last 24 Hours</h2>
+<p>AWS SageMaker AI inference router is now generally available, letting applications fail over across AWS Regions or accounts when endpoints hit platform faults, 5xx errors, throttles or timeouts, and Salesforce Agentforce already uses it across more than thirty Regions. Security researchers propose wrapping every tool result in a typed quarantine envelope to blunt indirect prompt injection, while Anthropic faces a $48.6M lawsuit from Elvis rights holders over alleged lyric scraping and removed credits. Inkling 2 Mini and LookAtMyQuant push local mixture-of-experts and quantized models, and Simple Bench shows humans still beat frontier models on everyday spatio-temporal and social reasoning. Andrew Sutherland and Levent Alpöge's Lean formalization of the Riemann Hypothesis compiles cleanly and passes independent kernel checks. Practical AI guidance says choose subscriptions by task, budget and region, and use natural-language product answers converted into rating probabilities instead of asking models for 1-to-5 scores. Cloudflare AI Crawl Control WAF conflicts must be traced through the full request path, while Workbrew 2.0 gives IT teams inventory of Homebrew, npm, VS Code extensions and macOS apps installed outside normal device management.</p>
+<p>AWS Emulator is generally available, letting developers test S3 reads, DynamoDB conditional writes and SQS duplicate delivery locally or in CI without an AWS account. Free-tier hosting still exists for side projects, but every free backend sleeps, caps hours or expires, so static front ends can use Cloudflare Pages, Netlify or Vercel while small APIs need careful limits on Render, Koyeb, Railway, Oracle or Cloud Run. Edge protection for WordPress xmlrpc.php and wp-login.php, and signed URLs for SaaS report exports, both keep abusive traffic and heavy bytes away from app servers. End-to-end encrypted live chat can be built with a backend master key, an auth endpoint that grants per-channel keys, and a realtime server that only relays sealed messages. gopgext lets developers write PostgreSQL extensions in Go through TinyGo and a generated C runtime layer, while a monitor USB-C Ethernet bottleneck showed how Realtek burst sizes can cut 2.5Gbps download to 600Mbps. A critical GPGME double-free CVE affects Gpg4win, GnuPG Desktop, mail and XMPP clients, Samba and Flatpak, and a Workday crawl finds most US hiring is nurses, retail associates, technicians, drivers and teachers.</p>
+<p>Black Friday deals dominate consumer tech, with Proton Pass up to 60% off, Proton Unlimited 50% off, Apple hardware discounts from MacBook Neo at $649 to AirPods, iPad mini, iPhone Air, Mac mini and Studio Display, and ESR accessories for iPhone, iPad, AirPods and Apple Watch. Google Workspace bundles Gemini across Gmail, Docs, Sheets, Slides, Meet, Drive and Vids to help small businesses draft content, create videos, analyse data, run meetings and search files, with a first-six-months discount. A senior software engineer unemployed for two years highlights the brutal job market for experienced developers, even as Workday data shows hiring concentrated in on-site non-software roles. The day's mix points to a market where AI features, local verification, edge security, formal proof, free hosting limits and consumer discounts are all competing for attention.</p>
+<p>AWS SageMaker AI inference router 正式推出，可以喺錯誤、限流或 timeout 時跨 Region 轉送 model request，Salesforce Agentforce 已經用緊超過三十個 Region。有文章提出將 tool result 放入 typed quarantine envelope，防止 indirect prompt injection 令 agent 執行惡意指令；Anthropic 又因為 Elvis 歌詞疑似被爬去訓練 Claude 而被索償逾 $48.6M。Inkling 2 Mini 同 LookAtMyQuant 將大模型壓縮到本地可跑，Simple Bench 則顯示人類喺日常推理仲係贏過 Claude Fable、Astra 6.2 同 Sol 6.2。Andrew Sutherland 同 Levent Alpöge 嘅 Lean 黎曼猜想 proof 通過多個獨立 kernel check，顯示 formal verification 又行前一步。揀 AI subscription 應該按 task、budget 同 region 嚟揀，唔好淨係睇品牌；產品評分亦唔好叫 AI 直接畀 1 至 5 分，用自然語言再轉概率會似真人調查。Cloudflare AI Crawl Control WAF 規則要睇成條 request path 先至揾到衝突，Workbrew 2.0 就幫 IT 睇住員工自己裝嘅 Homebrew、npm、VS Code extension 同 macOS app。</p>
+<p>AWS Emulator 正式推出，開發者可以喺本地或者 CI 測試 S3 read、DynamoDB conditional write 同 SQS duplicate delivery，唔使真 AWS account。2026 免費 hosting 仲有，但後端會 sleep、cap hours 或者過期，static front end 可以用 Cloudflare Pages、Netlify、Vercel，細 API 或者 bot 就要小心 Render、Koyeb、Railway、Oracle 同 Cloud Run 嘅限制。WordPress 嘅 xmlrpc.php 同 wp-login.php 最好喺 edge 擋住，SaaS report export 亦應該放去 private object storage 再畀 short-lived signed URL，唔好經 app server 行 bytes。end-to-end encrypted live chat 可以用 master key、auth endpoint 派 per-channel key，realtime server 只 relay sealed message。gopgext 用 TinyGo 同 C runtime layer 寫 PostgreSQL extension；另一單 USB-C Ethernet adapter 經 Apple Studio Display XDR 會將 2.5Gbps download 拖到 600Mbps，換 RTL8157 先至解決。GPGME 2.3.1 修補 CVE-2026-129975 double-free，可能 remote code execution，影響 Gpg4win、GnuPG Desktop、mail/XMPP client、Samba 同 Flatpak；Workday 爬蟲數據顯示美國招聘多數係護士、零售、技術員、司機同教師。</p>
+<p>Black Friday 優惠好多：Proton Pass 最多六折，Pass Plus 由 $1.99/月開始，Proton Unlimited 半價；Apple 產品都有大減價，MacBook Neo $649、M5 MacBook Air/M6 MacBook Pro 減最多 $250，AirPods、iPad mini、iPhone Air、Mac mini 同 Studio Display 都有份。ESR 都推 iPhone Duo、iPhone 18 Pro、iPad、AirPods 同 Apple Watch 嘅配件 gift guide，Google Workspace 則將 Gemini 放進 Gmail、Docs、Sheets、Slides、Meet、Drive 同 Vids，幫細公司寫內容、開會、分析數據同搵檔案。一位有 15 年經驗嘅美國 senior software engineer 失業兩年，反映資深開發者求職都難，而 Workday 數據又話招聘集中喺大型僱主嘅 on-site 職位。呢啲故事合埋睇，就係 AI 功能、本地驗證、edge security、formal proof、免費 hosting 限制同 consumer discount 全部喺同一個 24 小時內搶人注意力。</p>
+</div>
 <nav class="toc">
-  <h2>Table of Contents</h2>
-  <div class="toc-source"><span class="toc-src-name">DEV Community</span> <span class="toc-count">12 articles</span><ol class="toc-list">
+<h2>Table of Contents</h2>
+<div class="toc-source"><span class="toc-src-name">DEV Community</span> <span class="toc-count">12 articles</span><ol class="toc-list">
 <li><a href="#a-devto-0">The SageMaker AI Inference Router Moves Requests Across Regions After Errors or Timeouts</a></li>
 <li><a href="#a-devto-1">Quarantine the tool result: a code-level defence for injected agent output</a></li>
 <li><a href="#a-devto-2">Elvis et Anthropic : accusations, demandes et preuve</a></li>
 <li><a href="#a-devto-3">Cloudflare AI Crawl Control WAF Rules: Fix Rule Conflicts</a></li>
 <li><a href="#a-devto-4">Nurses, store staff and technicians: what 563,000 open Workday jobs say about who is hirin</a></li>
-<li><a href="#a-devto-5">Why asking AI to rate your product doesn&#x27;t work (and what does)</a></li>
+<li><a href="#a-devto-5">Why asking AI to rate your product doesn't work (and what does)</a></li>
 <li><a href="#a-devto-6">What AWS Emulator lets you test before you deploy</a></li>
 <li><a href="#a-devto-7">How to Choose an AI Subscription by Task, Budget, and Region</a></li>
 <li><a href="#a-devto-8">Free tier hosting for side projects in 2026: real limits</a></li>
@@ -110,7 +118,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </ol></div>
 <div class="toc-source"><span class="toc-src-name">Hacker News</span> <span class="toc-count">11 articles</span><ol class="toc-list">
 <li><a href="#a-hackernews-0">Inkling-2-Mini in 5.4 GB Memory</a></li>
-<li><a href="#a-hackernews-1">Jensen Huang&#x27;s fall is bad news for Silicon Valley&#x27;s accelerationists</a></li>
+<li><a href="#a-hackernews-1">Jensen Huang's fall is bad news for Silicon Valley's accelerationists</a></li>
 <li><a href="#a-hackernews-2">PostgreSQL Extensions in Go</a></li>
 <li><a href="#a-hackernews-3">Verification files for the Lean proof of the Riemann Hypothesis</a></li>
 <li><a href="#a-hackernews-4">Lean verification of the Riemann Hypothesis</a></li>
@@ -143,7 +151,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 <div class="toc-source"><span class="toc-src-name">HackerNoon</span> <span class="toc-count">20 articles</span><ol class="toc-list">
 <li><a href="#a-hackernoon-0">The HackerNoon Newsletter: Fridges, Hackers, AI and La Flemme (11/21/2026)</a></li>
 <li><a href="#a-hackernoon-1">500 Blog Posts To Learn About Bitcoin</a></li>
-<li><a href="#a-hackernoon-2">The TechBeat: The Ghost of Columbia Still Haunts Starship&#x27;s Heat Shield (11/21/2026)</a></li>
+<li><a href="#a-hackernoon-2">The TechBeat: The Ghost of Columbia Still Haunts Starship's Heat Shield (11/21/2026)</a></li>
 <li><a href="#a-hackernoon-3">Setting Up AWS Control Tower? These SCP and Networking Mistakes Can Cost You Hours</a></li>
 <li><a href="#a-hackernoon-4">AI Made Us Faster. So Why Do Designers Have Less Time?</a></li>
 <li><a href="#a-hackernoon-5">Six Password Reset Vulnerabilities and How to Prevent Them</a></li>
@@ -159,7 +167,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 <li><a href="#a-hackernoon-15">Europe’s Democracy Is at Risk If It Cannot Control the AI It Depends On</a></li>
 <li><a href="#a-hackernoon-16">What Should Undo Do After a List Has Moved?</a></li>
 <li><a href="#a-hackernoon-17">We Tested Every REST Endpoint and Missed the Queue That Dropped $62K</a></li>
-<li><a href="#a-hackernoon-18">The Anchor Effect: Why Destination Footfall Doesn&#x27;t Equal Retail Demand</a></li>
+<li><a href="#a-hackernoon-18">The Anchor Effect: Why Destination Footfall Doesn't Equal Retail Demand</a></li>
 <li><a href="#a-hackernoon-19">We Killed Our Staging Environment and Moved QA to Production Canaries</a></li>
 </ol></div>
 <div class="toc-source"><span class="toc-src-name">The Verge AI</span> <span class="toc-count">1 articles</span><ol class="toc-list">
@@ -223,7 +231,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </ol></div>
 <div class="toc-source"><span class="toc-src-name">AI by Aakash</span> <span class="toc-count">3 articles</span><ol class="toc-list">
 <li><a href="#a-aakashai-0">Claude Sheets.</a></li>
-<li><a href="#a-aakashai-1">Spotify&#x27;s 90% Trick.</a></li>
+<li><a href="#a-aakashai-1">Spotify's 90% Trick.</a></li>
 <li><a href="#a-aakashai-2">Claude Duet.</a></li>
 </ol></div>
 <div class="toc-source"><span class="toc-src-name">Sebastian Raschka Magazine</span> <span class="toc-count">3 articles</span><ol class="toc-list">
@@ -266,7 +274,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 <article class="article" id="a-devto-2">
 <h3 class="article-title"><a href="#a-devto-2">Elvis et Anthropic : accusations, demandes et preuve</a></h3>
 <div class="article-meta"><span class="meta-url"><a href="https://dev.to/yoane_ngassam/elvis-et-anthropic-accusations-demandes-et-preuve-3e7i" rel="noopener" target="_blank">https://dev.to/yoane_ngassam/elvis-et-anthropic-accusations-demandes-et-preuve-3e7i</a></span><span class="meta-date">📅 2026-11-22 03:00 UTC+8</span></div>
-<div class="article-body"><p>Rights holders behind Elvis Presley&#x27;s hits have sued Anthropic for more than $48.6 million, alleging the company scraped lyrics from 274 songs and removed songwriter credits to train Claude. The article stresses that the accusations, the claimed damages and any court ruling are separate, and that the cited $41.1 million is a theoretical calculation of 274 times $150,000 rather than necessarily the total claim. The distinction matters because it shows how AI copyright cases can mix legal allegations, damages formulas and unverified filings.</p>
+<div class="article-body"><p>Rights holders behind Elvis Presley's hits have sued Anthropic for more than $48.6 million, alleging the company scraped lyrics from 274 songs and removed songwriter credits to train Claude. The article stresses that the accusations, the claimed damages and any court ruling are separate, and that the cited $41.1 million is a theoretical calculation of 274 times $150,000 rather than necessarily the total claim. The distinction matters because it shows how AI copyright cases can mix legal allegations, damages formulas and unverified filings.</p>
 <p>貓王歌曲版權持有人入稟控告 Anthropic，索償超過 4,860 萬美元，指控公司為訓練 Claude 而抓取 274 首歌的歌詞並移除作詞人署名。文章提醒，指控、索償金額同法院裁決係三回事，文中提到嘅 4,110 萬美元只係 274 首乘以 15 萬美元嘅理論計算，未必係全部索償總額。呢個分別好重要，因為佢反映 AI 版權訴訟要分清指控、賠償公式同未經核實嘅文件。</p>
 <p><a class="read-more" href="https://dev.to/yoane_ngassam/elvis-et-anthropic-accusations-demandes-et-preuve-3e7i" rel="noopener" target="_blank">Read full article →</a></p></div>
 <div class="article-words">103 words</div>
@@ -288,7 +296,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 <div class="article-words">77 words</div>
 </article>
 <article class="article" id="a-devto-5">
-<h3 class="article-title"><a href="#a-devto-5">Why asking AI to rate your product doesn&#x27;t work (and what does)</a></h3>
+<h3 class="article-title"><a href="#a-devto-5">Why asking AI to rate your product doesn't work (and what does)</a></h3>
 <div class="article-meta"><span class="meta-url"><a href="https://dev.to/aryamansi17/why-asking-ai-to-rate-your-product-doesnt-work-and-what-does-2n8n" rel="noopener" target="_blank">https://dev.to/aryamansi17/why-asking-ai-to-rate-your-product-doesnt-work-and-what-does-2n8n</a></span><span class="meta-date">📅 2026-11-22 02:59 UTC+8</span></div>
 <div class="article-body"><p>A new study shows that asking AI models to rate a product on a 1-to-5 scale produces overly safe, clustered answers, but letting them answer in natural language and converting those answers into rating probabilities closely matches real consumer surveys. The method, tested on 57 personal-care product surveys with 9,300 respondents, improves rating distribution similarity from 0.26 to 0.88 and can rank products almost as reliably as repeat human tests, making it useful as a cheap early filter while still needing real validation.</p>
 <p>直接叫 AI 畀產品評分會唔準，因為模型成日求穩，淨係畀 3 分或 4 分；如果叫佢用口語講感受，再將答案轉做評分概率，結果就貼近真人問卷好多。研究用 57 份個人護理產品問卷同 9,300 人驗證，方法將評分分佈相似度由 0.26 升到 0.88，可以當做便宜快速嘅初步篩選，但重大決定仲係要問真人。</p>
@@ -353,21 +361,21 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </div>
 <article class="article" id="a-hackernews-0">
 <h3 class="article-title"><a href="#a-hackernews-0">Inkling-2-Mini in 5.4 GB Memory</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://github.com/ShinMegamiBoson/lookatmyquant" rel="noopener" target="_blank">https://github.com/ShinMegamiBoson/lookatmyquant</a></span><span class="meta-date">📅 2026-11-22 02:02 UTC+8</span><span class="meta-pts">▲ 56 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50591853">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://github.com/ShinMegamiBoson/lookatmyquant" rel="noopener" target="_blank">https://github.com/ShinMegamiBoson/lookatmyquant</a></span><span class="meta-date">📅 2026-11-22 02:02 UTC+8</span></div>
 <div class="article-body"><p>LookAtMyQuant is an MIT-licensed quantization compiler that compresses large language models to fit tight memory budgets while preserving accuracy, with results including Qwen3.5-4B at 1.23 GB and Qwen3.8-27B at 7.2 GB. It also reduces Inkling-2-Mini to 5.38 GB or 8.87 GB, beating larger Unsloth GGUFs on GSM8K and HumanEval and running fast on Apple Silicon with custom Metal kernels and optional drafters. The article also shows how to install the runtime, generate or chat with packed models, and reproduce the compiler workflow on SmolLM2-360M.</p>
 <p>LookAtMyQuant 係一個 MIT 授權嘅量化編譯器，可以將大型語言模型壓縮到好細嘅記憶體預算，同時保留準確度，例如 Qwen3.5-4B 壓到 1.23 GB，Qwen3.8-27B 壓到 7.2 GB。佢仲將 Inkling-2-Mini 壓到 5.38 GB 或 8.87 GB，喺 GSM8K 同 HumanEval 上贏過更大嘅 Unsloth GGUF，並用 Apple Silicon 自訂 Metal kernel 同 drafter 跑得好快。文章亦講點樣裝 runtime、用 lamq 生成或傾偈，以及喺 SmolLM2-360M 重現編譯流程。</p>
 <p><a class="read-more" href="https://github.com/ShinMegamiBoson/lookatmyquant" rel="noopener" target="_blank">Read full article →</a></p></div>
 <div class="article-words">125 words</div>
 </article>
 <article class="article" id="a-hackernews-1">
-<h3 class="article-title"><a href="#a-hackernews-1">Jensen Huang&#x27;s fall is bad news for Silicon Valley&#x27;s accelerationists</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists" rel="noopener" target="_blank">https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists</a></span><span class="meta-date">📅 2026-11-22 01:59 UTC+8</span><span class="meta-pts">▲ 85 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50591835">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<h3 class="article-title"><a href="#a-hackernews-1">Jensen Huang's fall is bad news for Silicon Valley's accelerationists</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists" rel="noopener" target="_blank">https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists</a></span><span class="meta-date">📅 2026-11-22 01:59 UTC+8</span></div>
 <div class="article-body"></div>
 <div class="article-words">0 words</div>
 </article>
 <article class="article" id="a-hackernews-2">
 <h3 class="article-title"><a href="#a-hackernews-2">PostgreSQL Extensions in Go</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://jespino.github.io/gopgext/" rel="noopener" target="_blank">https://jespino.github.io/gopgext/</a></span><span class="meta-date">📅 2026-11-22 01:08 UTC+8</span><span class="meta-pts">▲ 54 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50591260">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://jespino.github.io/gopgext/" rel="noopener" target="_blank">https://jespino.github.io/gopgext/</a></span><span class="meta-date">📅 2026-11-22 01:08 UTC+8</span></div>
 <div class="article-body"><p>gopgext lets developers write PostgreSQL extensions in Go by compiling Go functions into loadable extensions with TinyGo and a generated C runtime layer. The example defines Hello and Shout functions, then uses gopgext init and install to build hello.so, hello.control, and hello--1.0.sql before creating the extension in psql. The approach mirrors gokm for Linux kernel modules, showing how Go can be used for low-level host integrations.</p>
 <p>gopgext 容許開發者用 Go 寫 PostgreSQL 擴充功能，透過 TinyGo 同自動生成嘅 C runtime 層，將 Go 函數編譯成可以載入嘅 extension。示範入面有 Hello 同 Shout 兩個函數，再用 gopgext init 同 install 產生 hello.so、hello.control 同 hello--1.0.sql，之後喺 psql 建立 extension。呢個做法同 gokm 寫 Linux kernel module 一樣，顯示 Go 都可以處理低層 host 整合。</p>
 <p><a class="read-more" href="https://jespino.github.io/gopgext/" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -375,15 +383,15 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </article>
 <article class="article" id="a-hackernews-3">
 <h3 class="article-title"><a href="#a-hackernews-3">Verification files for the Lean proof of the Riemann Hypothesis</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://math.mit.edu/~drew/grh/" rel="noopener" target="_blank">https://math.mit.edu/~drew/grh/</a></span><span class="meta-date">📅 2026-11-21 23:54 UTC+8</span><span class="meta-pts">▲ 31 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50590441">HN discussion</a></span></div>
-<div class="article-body"><p>Andrew Sutherland&#x27;s verification page reports that a Lean formalization of the Riemann Hypothesis compiles cleanly and passes several independent kernel checks, including nanoda, con-leche, and lean4lean, while five headline theorems rely only on Lean&#x27;s standard axioms. The checked statements cover the Riemann Hypothesis itself and Dirichlet L-function versions of the Generalized Riemann Hypothesis, plus Robin and Lagarias divisor-sum inequalities obtained by combining the proof with an independent Robin1984 formalization. The results matter because they give unusually strong machine-checked evidence for a major mathematical claim, although some kernel and comparator checks are still running and the scope does not include all L-functions.</p>
+<div class="article-meta"><span class="meta-url"><a href="https://math.mit.edu/~drew/grh/" rel="noopener" target="_blank">https://math.mit.edu/~drew/grh/</a></span><span class="meta-date">📅 2026-11-21 23:54 UTC+8</span></div>
+<div class="article-body"><p>Andrew Sutherland's verification page reports that a Lean formalization of the Riemann Hypothesis compiles cleanly and passes several independent kernel checks, including nanoda, con-leche, and lean4lean, while five headline theorems rely only on Lean's standard axioms. The checked statements cover the Riemann Hypothesis itself and Dirichlet L-function versions of the Generalized Riemann Hypothesis, plus Robin and Lagarias divisor-sum inequalities obtained by combining the proof with an independent Robin1984 formalization. The results matter because they give unusually strong machine-checked evidence for a major mathematical claim, although some kernel and comparator checks are still running and the scope does not include all L-functions.</p>
 <p>Andrew Sutherland 呢個驗證頁話，Riemann Hypothesis 嘅 Lean proof 已經可以順暢 compile，五個主要 theorem 淨係靠 Lean 標準 axioms，仲通過 nanoda、con-leche、lean4lean 等獨立 kernel 檢查。佢哋核實嘅內容包括 Riemann Hypothesis 本身、Dirichlet L-functions 嘅 Generalized Riemann Hypothesis，同埋夾埋 Robin1984 之後得出嘅 Robin 同 Lagarias 不等式。呢啲結果好重要，因為畀咗好強嘅機械驗證證據，不過仲有 kernel 同 comparator 檢查未完，範圍亦唔包晒所有 L-functions。</p>
 <p><a class="read-more" href="https://math.mit.edu/~drew/grh/" rel="noopener" target="_blank">Read full article →</a></p></div>
 <div class="article-words">142 words</div>
 </article>
 <article class="article" id="a-hackernews-4">
 <h3 class="article-title"><a href="#a-hackernews-4">Lean verification of the Riemann Hypothesis</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" rel="noopener" target="_blank">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></span><span class="meta-date">📅 2026-11-21 22:36 UTC+8</span><span class="meta-pts">▲ 499 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50589618">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" rel="noopener" target="_blank">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></span><span class="meta-date">📅 2026-11-21 22:36 UTC+8</span></div>
 <div class="article-body"><p>On November 20, 2026, Levent Alpöge released a Lean proof of the Riemann Hypothesis as a 17-million-line codebase, and the Lean and Mathlib communities have certified both the statement and the proof as correct. The verification relied on successful compilation, comparison against Mathlib’s vetted statement of the Riemann Hypothesis, and multiple independent proof checkers, including Lean’s official kernel and formally verified checkers. This matters because it gives the mathematical community a highly reliable machine-checked confirmation of one of the most important open problems in mathematics.</p>
 <p>2026年11月20日，Levent Alpöge 公布咗一份1700萬行代碼嘅 Lean 黎曼猜想證明；Lean 同 Mathlib 社群已經確認佢正確，因為成個 codebase 可以編譯，證明嘅定理同 Mathlib 入面嘅黎曼猜想陳述完全一致，而且多個獨立證明檢查器都通過。呢件事好重要，因為佢用機械驗證為呢個數學難題提供咗極高信心嘅確認，亦會推動數學界研究新證明方法。</p>
 <p><a class="read-more" href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -391,13 +399,13 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </article>
 <article class="article" id="a-hackernews-5">
 <h3 class="article-title"><a href="#a-hackernews-5">Detonating a pile of lead azide</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really" rel="noopener" target="_blank">https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really</a></span><span class="meta-date">📅 2026-11-21 21:23 UTC+8</span><span class="meta-pts">▲ 372 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50588982">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really" rel="noopener" target="_blank">https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really</a></span><span class="meta-date">📅 2026-11-21 21:23 UTC+8</span></div>
 <div class="article-body"></div>
 <div class="article-words">0 words</div>
 </article>
 <article class="article" id="a-hackernews-6">
 <h3 class="article-title"><a href="#a-hackernews-6">Astra 6.2 and Sol 6.2 flop at Simple Bench</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://simple-bench.com/" rel="noopener" target="_blank">https://simple-bench.com/</a></span><span class="meta-date">📅 2026-11-21 21:16 UTC+8</span><span class="meta-pts">▲ 134 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50588916">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://simple-bench.com/" rel="noopener" target="_blank">https://simple-bench.com/</a></span><span class="meta-date">📅 2026-11-21 21:16 UTC+8</span></div>
 <div class="article-body"><p>SimpleBench, a 200-plus question multiple-choice benchmark, finds that non-specialized humans score 83.7%, beating frontier models such as Claude Fable at 81.9%, while Astra 6.2 and Sol 6.2 also struggle. The test targets spatio-temporal reasoning, social intelligence and trick questions, showing that everyday human reasoning still exposes gaps in large language models.</p>
 <p>SimpleBench 係一個超過 200 條選擇題嘅測試，發現普通高中生平均有 83.7%，高過 Claude Fable 嘅 81.9%，連 Astra 6.2 同 Sol 6.2 都表現麻麻。測試集中喺時空推理、社交智能同陷阱題，反映大型語言模型就算識好多嘢，面對日常人類推理仍然未夠穩陣。</p>
 <p><a class="read-more" href="https://simple-bench.com/" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -405,7 +413,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </article>
 <article class="article" id="a-hackernews-7">
 <h3 class="article-title"><a href="#a-hackernews-7">My monitor was cutting my download speed by 75%</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://blog.tymscar.com/posts/studiodisplayethernet/" rel="noopener" target="_blank">https://blog.tymscar.com/posts/studiodisplayethernet/</a></span><span class="meta-date">📅 2026-11-21 18:36 UTC+8</span><span class="meta-pts">▲ 316 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50587875">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.tymscar.com/posts/studiodisplayethernet/" rel="noopener" target="_blank">https://blog.tymscar.com/posts/studiodisplayethernet/</a></span><span class="meta-date">📅 2026-11-21 18:36 UTC+8</span></div>
 <div class="article-body"><p>A 2.5Gbps internet connection was mysteriously reduced to 600Mbps download when routed through a USB-C Ethernet adapter plugged into an Apple Studio Display XDR, while upload remained near full speed. Debugging showed the Realtek RTL8156B adapter’s small USB burst size and the monitor hub’s latency caused dropped frames above about 2Gbps, and a newer RTL8157 adapter with larger bursts restored full speeds. The case shows how one-cable monitor hubs can silently throttle high-speed Ethernet despite the router, cable, and port being fine.</p>
 <p>佢條 2.5Gbps 寬頻經 Studio Display XDR 接 USB-C 網卡後，下載竟然得返 600Mbps，但上傳仲係接近全速。佢追下追下發現問題出喺 Realtek RTL8156B 網卡嘅 USB burst 太小，加上顯示器 hub 嘅延遲，令超過大約 2Gbps 嘅數據包被丟失；換咗用 RTL8157、burst 更大嘅網卡就恢復正常。呢單嘢提醒人，一線通顯示器接高速網卡時，可能因為 USB hub 同驅動嘅細節而偷偷削速。</p>
 <p><a class="read-more" href="https://blog.tymscar.com/posts/studiodisplayethernet/" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -413,7 +421,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </article>
 <article class="article" id="a-hackernews-8">
 <h3 class="article-title"><a href="#a-hackernews-8">RCE in Gnupg</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" rel="noopener" target="_blank">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a></span><span class="meta-date">📅 2026-11-21 16:32 UTC+8</span><span class="meta-pts">▲ 180 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50587208">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" rel="noopener" target="_blank">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a></span><span class="meta-date">📅 2026-11-21 16:32 UTC+8</span></div>
 <div class="article-body"><p>GPGME 2.3.1 has been released to fix a critical double-free vulnerability, CVE-2026-129975, that can be triggered by a crafted OpenPGP key with an extremely long user ID and may allow data exfiltration or even remote code execution. The bug affects all software using GPGME before 2.3.0, including Gpg4win, GnuPG Desktop, mail and XMPP clients, Samba, and Flatpak, so users and developers should update immediately or apply the provided patch.</p>
 <p>GPGME 推出咗 2.3.1 版本，修復一個嚴重嘅 double-free 漏洞，CVE-2026-129975，可以透過特製嘅 OpenPGP 金鑰同超長 user ID 觸發，可能導致資料外洩甚至遠端執行程式碼。凡係用咗 2.3.0 之前 GPGME 嘅軟件都有風險，包括 Gpg4win、GnuPG Desktop、好多電郵同 XMPP 客戶端、Samba 同 Flatpak，所以用家同開發者要即刻更新或者打 patch。</p>
 <p><a class="read-more" href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -421,7 +429,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </article>
 <article class="article" id="a-hackernews-9">
 <h3 class="article-title"><a href="#a-hackernews-9">Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://news.ycombinator.com/item?id=50583761" rel="noopener" target="_blank">https://news.ycombinator.com/item?id=50583761</a></span><span class="meta-date">📅 2026-11-21 07:18 UTC+8</span><span class="meta-pts">▲ 488 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50583761">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://news.ycombinator.com/item?id=50583761" rel="noopener" target="_blank">https://news.ycombinator.com/item?id=50583761</a></span><span class="meta-date">📅 2026-11-21 07:18 UTC+8</span></div>
 <div class="article-body"><p>A senior software engineer in the US with 15 years of experience says he has been unemployed for two years, has burned through most savings, and is struggling to explain the resume gap despite still knowing C#, .NET, AWS and AI. The Hacker News discussion turns on whether he should embellish his recent work as an AI-powered startup, build a real project, rely on honesty and networking, or accept that the job market may force him into lower-paid or non-engineering work. The thread matters because it shows how hiring filters, AI hype and long employment gaps are reshaping career advice for experienced technologists.</p>
 <p>一名美國資深軟件工程師話自己做咗15年，失業兩年，儲蓄差唔多用晒，仲要教數學同準備去披薩店做經理，但一直搵唔到軟件工程職位。討論入面有人話佢不如講個AI startup故事，有人話唔好扮，不如真係做個產品、靠誠實同Networking，又或者接受市場已經變咗。呢個討論反映而家招聘篩選、AI熱潮同履歷空窗期，已經令資深技術人嘅搵工策略變得好唔同。</p>
 <p><a class="read-more" href="https://news.ycombinator.com/item?id=50583761" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -429,7 +437,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 </article>
 <article class="article" id="a-hackernews-10">
 <h3 class="article-title"><a href="#a-hackernews-10">Inkling 2 Mini</a></h3>
-<div class="article-meta"><span class="meta-url"><a href="https://thinkingmachines.ai/news/inkling-2-mini/" rel="noopener" target="_blank">https://thinkingmachines.ai/news/inkling-2-mini/</a></span><span class="meta-date">📅 2026-11-21 04:12 UTC+8</span><span class="meta-pts">▲ 1266 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50581260">HN discussion</a></span></div>
+<div class="article-meta"><span class="meta-url"><a href="https://thinkingmachines.ai/news/inkling-2-mini/" rel="noopener" target="_blank">https://thinkingmachines.ai/news/inkling-2-mini/</a></span><span class="meta-date">📅 2026-11-21 04:12 UTC+8</span></div>
 <div class="article-body"><p>Inkling 2 Mini is a 26.4B-parameter Mixture-of-Experts model with 3.4B active parameters that uses a looped transformer architecture to improve reasoning and agentic coding performance while running locally in about 20GB of memory. It leads open-weight models under 100B parameters on benchmarks such as DeepSWE v1.1 and Vals Index v2.2, and experiments show looping can extend reasoning time without making its chain of thought harder to monitor. The release matters because it brings strong laptop-scale coding and tool-use capability to researchers and developers through open weights on Tinker.</p>
 <p>Inkling 2 Mini 係一個 26.4B 參數、3.4B 激活參數嘅 Mixture-of-Experts 模型，用 looped transformer 提升推理同 agentic coding 表現，同時大約 20GB 記憶體就可以喺手提電腦跑。佢喺 DeepSWE v1.1 同 Vals Index v2.2 等 benchmark 領先 100B 以下嘅開放權重模型，而實驗亦顯示 loop 可以延長推理時間，同時保持 chain of thought 可監控。呢個發布重要，因為佢將強勁嘅本地 coding 同工具使用能力，透過 Tinker 嘅開放權重帶畀研究員同開發者。</p>
 <p><a class="read-more" href="https://thinkingmachines.ai/news/inkling-2-mini/" rel="noopener" target="_blank">Read full article →</a></p></div>
@@ -596,7 +604,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 <div class="article-words">86 words</div>
 </article>
 <article class="article" id="a-hackernoon-2">
-<h3 class="article-title"><a href="#a-hackernoon-2">The TechBeat: The Ghost of Columbia Still Haunts Starship&#x27;s Heat Shield (11/21/2026)</a></h3>
+<h3 class="article-title"><a href="#a-hackernoon-2">The TechBeat: The Ghost of Columbia Still Haunts Starship's Heat Shield (11/21/2026)</a></h3>
 <div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/11-21-2026-techbeat" rel="noopener" target="_blank">https://hackernoon.com/11-21-2026-techbeat</a></span><span class="meta-date">📅 2026-11-21 23:00 UTC+8</span></div>
 <div class="article-body"><p>The TechBeat newsletter rounds up HackerNoon’s trending tech and AI stories, from Starship’s Columbia-inspired heat shield to AI executive assistants, local decision models, and security breaches via Optimizely. It highlights how practical engineering, governance, and safety concerns are shaping AI, spaceflight, and cybersecurity in 2026. The roundup matters because it connects headline risks and tools with the operational choices developers and organizations are making now.</p>
 <p>呢份 TechBeat 通訊集合咗 HackerNoon 最新熱話，包括星艦受哥倫比亞號啟發嘅隔熱盾、AI 行政助理、本地決策模型同 Optimizely 惡意軟件事件。佢講出 2026 年 AI、太空同保安嘅關鍵，唔係只睇模型幾勁，仲要睇工程、管治同風險點樣落地。對開發者同企業嚟講，呢啲案例直接反映點樣揀工具、守系統同避開事故。</p>
@@ -724,7 +732,7 @@ footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-t
 <div class="article-words">123 words</div>
 </article>
 <article class="article" id="a-hackernoon-18">
-<h3 class="article-title"><a href="#a-hackernoon-18">The Anchor Effect: Why Destination Footfall Doesn&#x27;t Equal Retail Demand</a></h3>
+<h3 class="article-title"><a href="#a-hackernoon-18">The Anchor Effect: Why Destination Footfall Doesn't Equal Retail Demand</a></h3>
 <div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/the-anchor-effect-why-destination-footfall-doesnt-equal-retail-demand" rel="noopener" target="_blank">https://hackernoon.com/the-anchor-effect-why-destination-footfall-doesnt-equal-retail-demand</a></span><span class="meta-date">📅 2026-11-21 06:26 UTC+8</span></div>
 <div class="article-body"><p>Battersea Power Station’s 50-million-visitor milestone shows destination appeal, but Wandsworth Council’s vacancy data and the article’s spatial analysis show that visitor totals do not prove retail demand at individual units. It separates proximity, accessibility and exposure, then links frontage flow to sales conversion and occupancy cost ratios to explain why a busy district can still contain empty shops. The key point for site selection is that developers and retailers need unit-level movement and economics, not headline footfall or accessibility maps alone.</p>
 <p>巴特西發電站宣布有5000萬人次訪客，只反映地方有吸引力，唔代表每間舖都有生意；旺茲沃思區議會數據顯示不同區域空置率差距好大，由6%到38%都有。文章強調要分清距離、可達性同門面曝光，再將人流、入店率、成交同租金成本連埋睇，先至知道一個旺區點解仲有舖位空置。揀舖唔可以淨係睇總客流或者地圖範圍，而要睇實際邊條路經人、邊間舖有幾多人經過，同埋收入有冇足夠支撐營運成本。</p>
@@ -1131,7 +1139,7 @@ Sep 16, 2026</p>
 <div class="article-words">85 words</div>
 </article>
 <article class="article" id="a-aakashai-1">
-<h3 class="article-title"><a href="#a-aakashai-1">Spotify&#x27;s 90% Trick.</a></h3>
+<h3 class="article-title"><a href="#a-aakashai-1">Spotify's 90% Trick.</a></h3>
 <div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/spotifys-90-trick" rel="noopener" target="_blank">https://www.aibyaakash.com/p/spotifys-90-trick</a></span><span class="meta-date">📅 2026-11-10 08:33 UTC+8</span></div>
 <div class="article-body"><p>The article focuses on how Spotify uses Claude Code and its internal agent Honk to automate engineering work, with senior engineers reportedly not writing code since December and the company merging about 1,000 changes every 10 days. Because large codebase reads drive most AI costs, a Spotify PM built an open-source plugin that sends files over 350 lines to a cheaper model, cutting token use by up to 90%, while the author’s own tests show savings can be large but depend on the codebase and workflow. The piece also surveys recent AI news, including model rankings, image generation, professional-task benchmarks, security findings, and fundraising, to show how fast AI tools and costs are changing.</p>
 <p>呢篇文主要講 Spotify 點樣用 Claude Code 同內部 agent Honk 做工程， senior engineer 話由 12 月起冇寫過一行 code，公司每 10 日可以 merge 大約 1,000 個改動。因為 AI 收費主要貴喺讀大檔，Spotify 一個 PM 整咗個開源 plugin，將超過 350 行嘅檔交畀平價模型睇，最多慳到 90% token，作者自己測試都見到可觀節省，但實際效果要睇 codebase 同 workflow。呢篇文仲順帶睇近期 AI 新聞，包括模型排名、圖像生成、專業任務表現、保安漏洞同融資，反映 AI 工具同成本變化好快。</p>
@@ -1160,7 +1168,7 @@ Sep 16, 2026</p>
 <article class="article" id="a-raschka-1">
 <h3 class="article-title"><a href="#a-raschka-1">Building Reasoning Models from the Ground Up: A Full Video Course</a></h3>
 <div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/building-reasoning-models</a></span><span class="meta-date">📅 2026-10-24 19:14 UTC+8</span></div>
-<div class="article-body"><p>A new 11-hour video course expands the author&#x27;s Build a Reasoning Model from Scratch book by showing how to implement reasoning-model techniques in Python and PyTorch, starting from a pretrained Qwen3 model and covering evaluation, inference scaling, reinforcement learning, and distillation. It also explains reasoning models as upgraded LLMs that act as engines inside agent harnesses, making them central to modern AI agents. The course matters because it gives readers a practical, code-first way to understand and build the core methods behind today&#x27;s reasoning-focused language models.</p>
+<div class="article-body"><p>A new 11-hour video course expands the author's Build a Reasoning Model from Scratch book by showing how to implement reasoning-model techniques in Python and PyTorch, starting from a pretrained Qwen3 model and covering evaluation, inference scaling, reinforcement learning, and distillation. It also explains reasoning models as upgraded LLMs that act as engines inside agent harnesses, making them central to modern AI agents. The course matters because it gives readers a practical, code-first way to understand and build the core methods behind today's reasoning-focused language models.</p>
 <p>呢套新推出嘅 11 個鐘影片課程，係配合 Build a Reasoning Model from Scratch 本書，教你由預訓練 Qwen3 模型開始，用 Python 同 PyTorch 實作評估、推理時擴展、強化學習同蒸餾等推理模型技術。佢亦講清楚推理模型其實係升級版 LLM，可以當做 agent harness 入面嘅引擎，所以同而家嘅 AI agent 好重要。呢套課程嘅價值，係畀讀者用寫程式嘅方式真正明白而家推理型語言模型點樣運作。</p>
 <p><a class="read-more" href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener" target="_blank">Read full article →</a></p></div>
 <div class="article-words">113 words</div>
@@ -1203,8 +1211,8 @@ Sep 16, 2026</p>
 </section>
 </main>
 <footer class="colophon">
-  <p>Generated automatically · 2026-11-21 · Sources fetched live from each publisher's feed or site.</p>
-  <p>Summaries only — click "Read full article" for the original. All content © their respective publishers.</p>
+<p>Generated automatically · 2026-11-21 · Sources fetched live from each publisher's feed or site.</p>
+<p>Summaries only — click "Read full article" for the original. All content © their respective publishers.</p>
 </footer>
 </body>
 </html>
