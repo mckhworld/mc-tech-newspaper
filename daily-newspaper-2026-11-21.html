@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Morning Newspaper — 2026-11-21</title>
+<style>
+:root {
+  --ink: #1a1a1a; --paper: #fdfdfb; --accent: #1a3a5c; --accent2: #b03a2e;
+  --muted: #6b7280; --line: #e5e7eb; --code-bg: #f3f4f6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--paper); color: var(--ink);
+  max-width: 900px; margin: 0 auto; padding: 24px 20px 80px;
+  line-height: 1.7; font-size: 17px;
+}
+header.masthead {
+  text-align: center; border-bottom: 3px double var(--ink);
+  padding: 28px 0 20px; margin-bottom: 28px;
+}
+header.masthead h1 {
+  font-size: 2.6rem; margin: 0 0 6px; letter-spacing: -0.5px; font-weight: 800;
+}
+header.masthead .tagline { color: var(--muted); font-style: italic; font-size: 1.05rem; }
+header.masthead .dateline { margin-top: 10px; font-size: 0.95rem; color: var(--accent); font-weight: 600; letter-spacing: 0.5px; }
+header.masthead .stats { margin-top: 8px; font-size: 0.85rem; color: var(--muted); }
+.overview {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 30px;
+}
+.overview h2 { font-size: 1.3rem; margin: 0 0 12px; border-bottom: 2px solid var(--accent2); padding-bottom: 8px; color: var(--accent2); }
+.overview p { margin: 0 0 10px; font-size: 0.98rem; line-height: 1.65; }
+.toc {
+  background: #f8fafc; border: 1px solid var(--line); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 40px;
+}
+.toc h2 { font-size: 1.3rem; margin: 0 0 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; color: var(--accent); }
+.toc-source { margin-bottom: 16px; }
+.toc-src-name { font-weight: 700; font-size: 1.02rem; color: var(--accent); }
+.toc-count { color: var(--muted); font-size: 0.85rem; margin-left: 8px; }
+.toc-list { margin: 8px 0 0 0; padding-left: 22px; }
+.toc-list li { margin: 3px 0; font-size: 0.92rem; }
+.toc-list a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
+.toc-list a:hover { color: var(--accent2); border-bottom-color: var(--accent2); }
+section.source { margin-bottom: 56px; }
+.source-title {
+  font-size: 1.6rem; margin: 0 0 4px; padding: 14px 18px;
+  background: var(--accent); color: #fff; border-radius: 8px; letter-spacing: -0.3px;
+}
+.source-count { font-size: 0.9rem; opacity: 0.85; font-weight: 400; margin-left: 10px; }
+.source-summary {
+  background: linear-gradient(135deg, #f0f4f8, #e8edf5); border: 1px solid var(--line);
+  border-radius: 8px; padding: 14px 18px; margin: 12px 0 20px;
+}
+.source-summary-title {
+  font-size: 0.9rem; font-weight: 700; color: var(--accent2);
+  margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.source-summary p { margin: 0 0 8px; font-size: 0.95rem; line-height: 1.6; }
+article.article {
+  border-left: 3px solid var(--line); padding: 6px 0 6px 20px; margin: 28px 0;
+  scroll-margin-top: 20px;
+}
+article.article:hover { border-left-color: var(--accent); }
+.article-title { font-size: 1.3rem; margin: 0 0 8px; line-height: 1.35; }
+.article-title a { color: var(--ink); text-decoration: none; }
+.article-title a:hover { color: var(--accent); }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; font-size: 0.82rem; color: var(--muted); }
+.article-meta .meta-url a { color: var(--accent); word-break: break-all; }
+.article-meta .meta-warn { color: var(--accent2); font-weight: 600; }
+.article-body { font-size: 1rem; }
+.article-body p { margin: 0 0 14px; }
+.article-body a.read-more { color: var(--accent2); font-weight: 600; }
+.article-body a { color: var(--accent); }
+.article-words { font-size: 0.75rem; color: var(--muted); margin-top: 8px; text-align: right; }
+footer.colophon { border-top: 3px double var(--ink); margin-top: 60px; padding-top: 20px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+  body { font-size: 16px; padding: 16px 14px 60px; }
+  header.masthead h1 { font-size: 2rem; }
+  .toc { padding: 14px 16px; }
+}
+</style>
+</head>
+<body id="top">
+<header class="masthead">
+  <h1>The AI Morning Newspaper</h1>
+  <div class="tagline">Your daily briefing on artificial intelligence, from the world's leading tech sources</div>
+  <div class="dateline">2026-11-21</div>
+  <div class="stats">22 sources · 100 articles · 1,763,289 characters</div>
+</header>
+
+<nav class="toc">
+  <h2>Table of Contents</h2>
+  <div class="toc-source"><span class="toc-src-name">DEV Community</span> <span class="toc-count">12 articles</span><ol class="toc-list">
+<li><a href="#a-devto-0">The SageMaker AI Inference Router Moves Requests Across Regions After Errors or Timeouts</a></li>
+<li><a href="#a-devto-1">Quarantine the tool result: a code-level defence for injected agent output</a></li>
+<li><a href="#a-devto-2">Elvis et Anthropic : accusations, demandes et preuve</a></li>
+<li><a href="#a-devto-3">Cloudflare AI Crawl Control WAF Rules: Fix Rule Conflicts</a></li>
+<li><a href="#a-devto-4">Nurses, store staff and technicians: what 563,000 open Workday jobs say about who is hirin</a></li>
+<li><a href="#a-devto-5">Why asking AI to rate your product doesn&#x27;t work (and what does)</a></li>
+<li><a href="#a-devto-6">What AWS Emulator lets you test before you deploy</a></li>
+<li><a href="#a-devto-7">How to Choose an AI Subscription by Task, Budget, and Region</a></li>
+<li><a href="#a-devto-8">Free tier hosting for side projects in 2026: real limits</a></li>
+<li><a href="#a-devto-9">How to protect WordPress xmlrpc.php and wp-login at the edge</a></li>
+<li><a href="#a-devto-10">How to build an end-to-end encrypted live chat for your app</a></li>
+<li><a href="#a-devto-11">File Export Delivery Explained: Signed URLs vs Storing SaaS Reports on App Servers</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hacker News</span> <span class="toc-count">11 articles</span><ol class="toc-list">
+<li><a href="#a-hackernews-0">Inkling-2-Mini in 5.4 GB Memory</a></li>
+<li><a href="#a-hackernews-1">Jensen Huang&#x27;s fall is bad news for Silicon Valley&#x27;s accelerationists</a></li>
+<li><a href="#a-hackernews-2">PostgreSQL Extensions in Go</a></li>
+<li><a href="#a-hackernews-3">Verification files for the Lean proof of the Riemann Hypothesis</a></li>
+<li><a href="#a-hackernews-4">Lean verification of the Riemann Hypothesis</a></li>
+<li><a href="#a-hackernews-5">Detonating a pile of lead azide</a></li>
+<li><a href="#a-hackernews-6">Astra 6.2 and Sol 6.2 flop at Simple Bench</a></li>
+<li><a href="#a-hackernews-7">My monitor was cutting my download speed by 75%</a></li>
+<li><a href="#a-hackernews-8">RCE in Gnupg</a></li>
+<li><a href="#a-hackernews-9">Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?</a></li>
+<li><a href="#a-hackernews-10">Inkling 2 Mini</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">9to5Mac</span> <span class="toc-count">11 articles</span><ol class="toc-list">
+<li><a href="#a-9to5mac-0">Proton Pass is up to 60% off for Black Friday, and it does way more than just store your p</a></li>
+<li><a href="#a-9to5mac-1">How Google Workspace with Gemini powers small businesses – get 20% off your first 6 months</a></li>
+<li><a href="#a-9to5mac-2">Apple @ Work: Workbrew 2.0 is an inventory for the development software your employees ins</a></li>
+<li><a href="#a-9to5mac-3">Weekend Black Friday Apple deals: MacBooks from $649, Series 12, AirPods $130 off, new iPa</a></li>
+<li><a href="#a-9to5mac-4">ESR Black Friday gift guide: Premium accessories for iPhone Duo, iPhone 18 Pro, iPad, AirP</a></li>
+<li><a href="#a-9to5mac-5">9to5Mac Daily: November 20, 2026 – Siri AI limits, HomeView update</a></li>
+<li><a href="#a-9to5mac-6">iOS 27 lets you use two iPhones with the same phone number</a></li>
+<li><a href="#a-9to5mac-7">9to5Mac Overtime 091: Kicking the tires and seeing what works</a></li>
+<li><a href="#a-9to5mac-8">Apple Watch Series 12: Four standout features make me glad I upgraded</a></li>
+<li><a href="#a-9to5mac-9">Apple TV keeps adding fan-favorite movies, here’s what’s new and coming next</a></li>
+<li><a href="#a-9to5mac-10">AirPods 5 vs AirPods Pro 3: Which should you buy this holiday season?</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">TechCrunch AI</span> <span class="toc-count">4 articles</span><ol class="toc-list">
+<li><a href="#a-techcrunchai-0">Here are the top AI agents that can live in your text messages</a></li>
+<li><a href="#a-techcrunchai-1">Is selling an AI version of your face to this microdrama startup the future of Hollywood?</a></li>
+<li><a href="#a-techcrunchai-2">Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</a></li>
+<li><a href="#a-techcrunchai-3">AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">HackerNoon</span> <span class="toc-count">20 articles</span><ol class="toc-list">
+<li><a href="#a-hackernoon-0">The HackerNoon Newsletter: Fridges, Hackers, AI and La Flemme (11/21/2026)</a></li>
+<li><a href="#a-hackernoon-1">500 Blog Posts To Learn About Bitcoin</a></li>
+<li><a href="#a-hackernoon-2">The TechBeat: The Ghost of Columbia Still Haunts Starship&#x27;s Heat Shield (11/21/2026)</a></li>
+<li><a href="#a-hackernoon-3">Setting Up AWS Control Tower? These SCP and Networking Mistakes Can Cost You Hours</a></li>
+<li><a href="#a-hackernoon-4">AI Made Us Faster. So Why Do Designers Have Less Time?</a></li>
+<li><a href="#a-hackernoon-5">Six Password Reset Vulnerabilities and How to Prevent Them</a></li>
+<li><a href="#a-hackernoon-6">Benchmarking AWS Amplify, Lambda, Web Functions, and ECS for Next.js</a></li>
+<li><a href="#a-hackernoon-7">Your Win Rate Is Wrong Because of the Denominator</a></li>
+<li><a href="#a-hackernoon-8">Fledge Launches World Connection Day on November 21 to Fight Loneliness</a></li>
+<li><a href="#a-hackernoon-9">No Journalist? No Problem. Meet Journalistic Tech 🎤</a></li>
+<li><a href="#a-hackernoon-10">Your CRM Stage Probabilities Were Made Up - Calibrate Them in an Afternoon</a></li>
+<li><a href="#a-hackernoon-11">367 Blog Posts To Learn About Bitcoin Spotlight</a></li>
+<li><a href="#a-hackernoon-12">The Shortest Games in a Game Backlog Are the Ones People Finish Least</a></li>
+<li><a href="#a-hackernoon-13">Voice Biometrics: The Night Identity Finally Learned to Speak</a></li>
+<li><a href="#a-hackernoon-14">Fridges, Hackers, AI and La Flemme</a></li>
+<li><a href="#a-hackernoon-15">Europe’s Democracy Is at Risk If It Cannot Control the AI It Depends On</a></li>
+<li><a href="#a-hackernoon-16">What Should Undo Do After a List Has Moved?</a></li>
+<li><a href="#a-hackernoon-17">We Tested Every REST Endpoint and Missed the Queue That Dropped $62K</a></li>
+<li><a href="#a-hackernoon-18">The Anchor Effect: Why Destination Footfall Doesn&#x27;t Equal Retail Demand</a></li>
+<li><a href="#a-hackernoon-19">We Killed Our Staging Environment and Moved QA to Production Canaries</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">The Verge AI</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-verge-0">Can Anthropic afford to put safety first?</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Latent Space</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-latentspace-0">[AINews] Riemann Hypothesis proved...twice independently</a></li>
+<li><a href="#a-latentspace-1">The War Against Slop and an Emerging Weapon to Fight it: Formal Verification</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Cloudflare Blog</span> <span class="toc-count">2 articles</span><ol class="toc-list">
+<li><a href="#a-cloudflare-0">How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)</a></li>
+<li><a href="#a-cloudflare-1">How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Simon Willison</span> <span class="toc-count">1 articles</span><ol class="toc-list">
+<li><a href="#a-simonwillison-0">Quoting Ravi Vakil</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AWS Architecture Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aws-0">How Bee implemented Zero Operator Access for personal AI on AWS</a></li>
+<li><a href="#a-aws-1">AI coding agents on Amazon EC2 Mac: How Cognition scales Devin for macOS</a></li>
+<li><a href="#a-aws-2">How Country Road Group built a pattern-driven integration solution on AWS</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-googleblog-0">Get your year-end tasks done with new Connected Apps.</a></li>
+<li><a href="#a-googleblog-1">How Watch Duty is using Gemini to get wildfire alerts out faster</a></li>
+<li><a href="#a-googleblog-2">ICYMI: Transfer your history from other AI apps into Gemini.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Deep Learning AI — The Batch</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-thebatch-0">Issue 380</a></li>
+<li><a href="#a-thebatch-1">Issue 379</a></li>
+<li><a href="#a-thebatch-2">Issue 378</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">OpenAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-openai-0">Combatting adversarial distillation</a></li>
+<li><a href="#a-openai-1">Hebbia sees improvements in financial research with GPT-6 Astra</a></li>
+<li><a href="#a-openai-2">Can AI help scientists identify promising drug candidates?</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Hugging Face Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-huggingface-0">Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup</a></li>
+<li><a href="#a-huggingface-1">Introducing harness adapters: adapt your favorite model to your harness to improve perform</a></li>
+<li><a href="#a-huggingface-2">DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Stripe Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-stripe-0">Stripe evals: Measuring real-world coding agent performance</a></li>
+<li><a href="#a-stripe-1">Learning from explanations</a></li>
+<li><a href="#a-stripe-2">Billing customizations: change how discounts are applied</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Google DeepMind</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-deepmind-0">Introducing Gemini 4 Neon</a></li>
+<li><a href="#a-deepmind-1">Genie 4 is now available</a></li>
+<li><a href="#a-deepmind-2">Introducing Gemini 4 Hydrogen</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">GitHub Engineering</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-github-0">Building the Agent Host Protocol for sessions that continue across devices</a></li>
+<li><a href="#a-github-1">Inside GitHub’s new Git storage architecture</a></li>
+<li><a href="#a-github-2">The bridge to agent-scale Git infrastructure</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Netflix Tech Blog</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-netflix-0">Engineering AI Discover</a></li>
+<li><a href="#a-netflix-1">Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System</a></li>
+<li><a href="#a-netflix-2">Making Failure Diagnosis Reliable with Pensive AI</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">AI by Aakash</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-aakashai-0">Claude Sheets.</a></li>
+<li><a href="#a-aakashai-1">Spotify&#x27;s 90% Trick.</a></li>
+<li><a href="#a-aakashai-2">Claude Duet.</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Sebastian Raschka Magazine</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-raschka-0">Understanding Positional Embeddings in Modern LLMs</a></li>
+<li><a href="#a-raschka-1">Building Reasoning Models from the Ground Up: A Full Video Course</a></li>
+<li><a href="#a-raschka-2">Language Models for Text Classification: From Bag-of-Words to Jev</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">xAI News</span> <span class="toc-count">3 articles</span><ol class="toc-list">
+<li><a href="#a-xai-0">Using Grok Bot to detect and respond to incidents</a></li>
+<li><a href="#a-xai-1">Introducing Grok Voice 3.0</a></li>
+<li><a href="#a-xai-2">Introducing The X Subscription</a></li>
+</ol></div>
+<div class="toc-source"><span class="toc-src-name">Anthropic News</span> <span class="toc-count">0 articles</span><ol class="toc-list">
+</ol></div>
+</nav>
+<main>
+<section class="source" id="src-devto">
+<h2 class="source-title">DEV Community <span class="source-count">12 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>DevTo’s last day focused on practical AI and cloud engineering, with AWS SageMaker’s cross-region inference router and AWS Emulator reaching general availability, plus guidance on quarantining tool results against prompt injection and diagnosing Cloudflare AI crawler rules. Coverage also spanned the Elvis lyrics lawsuit against Anthropic, a Workday hiring crawl showing most openings are non-tech roles, and hands-on posts on AI subscription choices, free hosting limits, WordPress edge security, encrypted chat, and safe SaaS file exports.</p>
+<p>過去一日 DevTo 主要講 AI 同雲端工程，AWS SageMaker 跨區 inference router 同 AWS Emulator 都 GA，仲有防 prompt injection 嘅 tool result 隔離做法同 Cloudflare AI crawler 規則排錯。另外都有 Elvis 歌詞告 Anthropic、Workday 職位爬蟲顯示大部分係非技術工，同埋 AI 訂閱選擇、免費託管限制、WordPress 邊緣安全、端到端加密 chat 同 SaaS 檔案匯出 signed URL 嘅實戰文章。</p>
+</div>
+<article class="article" id="a-devto-0">
+<h3 class="article-title"><a href="#a-devto-0">The SageMaker AI Inference Router Moves Requests Across Regions After Errors or Timeouts</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/echakiri/the-sagemaker-ai-inference-router-moves-requests-across-regions-after-errors-or-timeouts-33kf" rel="noopener" target="_blank">https://dev.to/echakiri/the-sagemaker-ai-inference-router-moves-requests-across-regions-after-errors-or-timeouts-33kf</a></span><span class="meta-date">📅 2026-11-22 03:00 UTC+8</span></div>
+<div class="article-body"><p>AWS has made SageMaker AI’s inference router generally available, letting applications send model requests to a regional router that can forward them to endpoints in other AWS Regions or accounts when recent calls hit platform faults, 5xx errors, throttles or timeouts. Salesforce’s Agentforce Foundation team uses the router across more than thirty Regions and hundreds of accounts, and its failover test showed traffic moving to us-east-2 about two minutes after errors began, with roughly 78 percent of probe traffic served there within another minute. The feature matters because it replaces custom cross-Region gateway logic with managed failover and observability, while still requiring teams to provision capacity, artifacts and autoscaling in each Region.</p>
+<p>AWS 將 SageMaker AI 嘅 inference router 全面推出，等應用可以經本地 router 將模型請求轉去其他 Region 或者其他 AWS account 嘅 endpoint，只要近期請求出現平台故障、5xx、throttle 或者 timeout，router 就會自動移走流量。Salesforce 嘅 Agentforce Foundation team 喺三十幾個 Region 同幾百個 account 用呢個 router，佢哋做 failover 測試時見到，本地 endpoint 爆塞並開始報錯之後大約兩分鐘，us-east-2 已經開始收到請求，再一分鐘內大約 78% 嘅 probe traffic 已經轉去嗰邊。呢件事重要，因為佢唔使團隊自己砌跨 Region gateway，仲有 CloudWatch 同 routing reason 可以解釋流量點樣轉，不過每個 Region 仍然要預留模型 artefacts、容量同 autoscaling。</p>
+<p><a class="read-more" href="https://dev.to/echakiri/the-sagemaker-ai-inference-router-moves-requests-across-regions-after-errors-or-timeouts-33kf" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">166 words</div>
+</article>
+<article class="article" id="a-devto-1">
+<h3 class="article-title"><a href="#a-devto-1">Quarantine the tool result: a code-level defence for injected agent output</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/loopandretry/quarantine-the-tool-result-a-code-level-defence-for-injected-agent-output-4o22" rel="noopener" target="_blank">https://dev.to/loopandretry/quarantine-the-tool-result-a-code-level-defence-for-injected-agent-output-4o22</a></span><span class="meta-date">📅 2026-11-22 03:00 UTC+8</span></div>
+<div class="article-body"><p>Indirect prompt injection can make an AI agent follow malicious instructions hidden in tool output, so the proposed defence assumes the model may be fooled and focuses on limiting the damage. The code should wrap every tool result in a typed quarantine envelope, mark it as untrusted, and use that provenance to revoke dangerous capabilities once the context is tainted. This matters because it turns a vague security warning into enforceable controls that reduce the impact of exfiltration, emails, payments, or destructive actions.</p>
+<p>間接 prompt injection 可以令 AI agent 跟住工具輸出入面嘅惡意指令做嘢，所以防守重點唔係指望模型唔會中伏，而係就算佢中伏都唔可以搞出大事。程式要將每次工具結果包喺一個有類型嘅 quarantine envelope 入面，標明佢係 untrusted，再根據呢個污點去收回 send email、付款、刪檔呢類危險權限。呢樣嘢重要，因為佢將抽象嘅安全提醒變成真正可以執行嘅控制，減少資料外洩同破壞性操作嘅風險。</p>
+<p><a class="read-more" href="https://dev.to/loopandretry/quarantine-the-tool-result-a-code-level-defence-for-injected-agent-output-4o22" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">100 words</div>
+</article>
+<article class="article" id="a-devto-2">
+<h3 class="article-title"><a href="#a-devto-2">Elvis et Anthropic : accusations, demandes et preuve</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/yoane_ngassam/elvis-et-anthropic-accusations-demandes-et-preuve-3e7i" rel="noopener" target="_blank">https://dev.to/yoane_ngassam/elvis-et-anthropic-accusations-demandes-et-preuve-3e7i</a></span><span class="meta-date">📅 2026-11-22 03:00 UTC+8</span></div>
+<div class="article-body"><p>Rights holders behind Elvis Presley&#x27;s hits have sued Anthropic for more than $48.6 million, alleging the company scraped lyrics from 274 songs and removed songwriter credits to train Claude. The article stresses that the accusations, the claimed damages and any court ruling are separate, and that the cited $41.1 million is a theoretical calculation of 274 times $150,000 rather than necessarily the total claim. The distinction matters because it shows how AI copyright cases can mix legal allegations, damages formulas and unverified filings.</p>
+<p>貓王歌曲版權持有人入稟控告 Anthropic，索償超過 4,860 萬美元，指控公司為訓練 Claude 而抓取 274 首歌的歌詞並移除作詞人署名。文章提醒，指控、索償金額同法院裁決係三回事，文中提到嘅 4,110 萬美元只係 274 首乘以 15 萬美元嘅理論計算，未必係全部索償總額。呢個分別好重要，因為佢反映 AI 版權訴訟要分清指控、賠償公式同未經核實嘅文件。</p>
+<p><a class="read-more" href="https://dev.to/yoane_ngassam/elvis-et-anthropic-accusations-demandes-et-preuve-3e7i" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-devto-3">
+<h3 class="article-title"><a href="#a-devto-3">Cloudflare AI Crawl Control WAF Rules: Fix Rule Conflicts</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/mecanik-dev/cloudflare-ai-crawl-control-waf-rules-fix-rule-conflicts-1d7c" rel="noopener" target="_blank">https://dev.to/mecanik-dev/cloudflare-ai-crawl-control-waf-rules-fix-rule-conflicts-1d7c</a></span><span class="meta-date">📅 2026-11-22 03:00 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare AI Crawl Control WAF rules must be diagnosed as part of the full request path, because earlier WAF, bot, or origin controls can block a crawler even when the Crawl Control setting appears permissive. The article advises defining the intended crawler and path policy, tracing the effective rule in documented order, testing permitted and blocked cases, and making only narrow corrections instead of weakening broad protections. This matters because it helps publishers keep search access available while enforcing AI crawler restrictions without creating unintended security or privacy exceptions.</p>
+<p>呢篇文章講 Cloudflare AI Crawl Control 嘅 WAF 規則唔可以當獨立開關睇，因為前面嘅 WAF、bot 或者 origin 規則可能已經封鎖咗爬蟲，令設定睇落好但實際唔通。作者建議先寫清楚想點樣處理邊啲爬蟲同路徑，再跟文件順序追實際生效嘅規則，測試放行同封鎖情況，最後只改最窄嘅衝突條件。咁樣做可以幫出版商保留搜尋引擎抓取，同時限制 AI 爬蟲，唔會因為想解決一個問題而拆散其他保安保護。</p>
+<p><a class="read-more" href="https://dev.to/mecanik-dev/cloudflare-ai-crawl-control-waf-rules-fix-rule-conflicts-1d7c" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">107 words</div>
+</article>
+<article class="article" id="a-devto-4">
+<h3 class="article-title"><a href="#a-devto-4">Nurses, store staff and technicians: what 563,000 open Workday jobs say about who is hiring</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/makerio/nurses-store-staff-and-technicians-what-563000-open-workday-jobs-say-about-who-is-hiring-2fff" rel="noopener" target="_blank">https://dev.to/makerio/nurses-store-staff-and-technicians-what-563000-open-workday-jobs-say-about-who-is-hiring-2fff</a></span><span class="meta-date">📅 2026-11-22 03:00 UTC+8</span></div>
+<div class="article-body"><p>A nightly crawl of about 3,300 Workday career sites found 563,302 open jobs, showing that most hiring is for nurses, retail associates, technicians, drivers and teachers rather than software engineers. The listings are overwhelmingly on-site and concentrated in large US employers such as hospitals, banks and retailers, with Texas, California and New York leading, while the data is accessible through Workday’s public JSON endpoints and commercial APIs.</p>
+<p>Workday 嘅招聘數據顯示，56萬幾個空缺入面最多唔係科技工，而係護士、零售同事、技工、司機同教師。呢啲職位絕大部分要返現場，而且集中喺美國大機構，例如醫院、銀行同零售商，所以睇到真正嘅招聘市況唔止係 startup 或者 remote 科技職位。</p>
+<p><a class="read-more" href="https://dev.to/makerio/nurses-store-staff-and-technicians-what-563000-open-workday-jobs-say-about-who-is-hiring-2fff" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">77 words</div>
+</article>
+<article class="article" id="a-devto-5">
+<h3 class="article-title"><a href="#a-devto-5">Why asking AI to rate your product doesn&#x27;t work (and what does)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/aryamansi17/why-asking-ai-to-rate-your-product-doesnt-work-and-what-does-2n8n" rel="noopener" target="_blank">https://dev.to/aryamansi17/why-asking-ai-to-rate-your-product-doesnt-work-and-what-does-2n8n</a></span><span class="meta-date">📅 2026-11-22 02:59 UTC+8</span></div>
+<div class="article-body"><p>A new study shows that asking AI models to rate a product on a 1-to-5 scale produces overly safe, clustered answers, but letting them answer in natural language and converting those answers into rating probabilities closely matches real consumer surveys. The method, tested on 57 personal-care product surveys with 9,300 respondents, improves rating distribution similarity from 0.26 to 0.88 and can rank products almost as reliably as repeat human tests, making it useful as a cheap early filter while still needing real validation.</p>
+<p>直接叫 AI 畀產品評分會唔準，因為模型成日求穩，淨係畀 3 分或 4 分；如果叫佢用口語講感受，再將答案轉做評分概率，結果就貼近真人問卷好多。研究用 57 份個人護理產品問卷同 9,300 人驗證，方法將評分分佈相似度由 0.26 升到 0.88，可以當做便宜快速嘅初步篩選，但重大決定仲係要問真人。</p>
+<p><a class="read-more" href="https://dev.to/aryamansi17/why-asking-ai-to-rate-your-product-doesnt-work-and-what-does-2n8n" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-devto-6">
+<h3 class="article-title"><a href="#a-devto-6">What AWS Emulator lets you test before you deploy</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/amitrix/what-aws-emulator-lets-you-test-before-you-deploy-3def" rel="noopener" target="_blank">https://dev.to/amitrix/what-aws-emulator-lets-you-test-before-you-deploy-3def</a></span><span class="meta-date">📅 2026-11-22 02:57 UTC+8</span></div>
+<div class="article-body"><p>AWS Emulator became generally available on November 11, 2026, letting developers run supported AWS API calls locally or in CI without an AWS account. It keeps resources in memory, so teams can test behaviors such as S3 reads, DynamoDB conditional writes, and SQS duplicate delivery before deployment, while coding agents can use the same loop. The tool speeds up safe local verification, but its fidelity varies, so permissions, runtime dependencies, networking, and production-scale behavior still need real AWS checks.</p>
+<p>AWS Emulator 喺 2026 年 11 月 11 日正式推出，等開發者喺本機或者 CI 入面模擬 AWS API 呼叫，唔使有 AWS 帳戶。佢會將資源狀態放喺記憶體，可以測試 S3 讀檔、DynamoDB 條件寫入同 SQS 重複派發等行為，亦方便 coding agent 自動驗證改動。不過佢嘅 fidelity 唔完整，權限、runtime、網絡同生產負載仍然要喺真正 AWS 環境再確認。</p>
+<p><a class="read-more" href="https://dev.to/amitrix/what-aws-emulator-lets-you-test-before-you-deploy-3def" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-devto-7">
+<h3 class="article-title"><a href="#a-devto-7">How to Choose an AI Subscription by Task, Budget, and Region</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/maihaoai/how-to-choose-an-ai-subscription-by-task-budget-and-region-1c93" rel="noopener" target="_blank">https://dev.to/maihaoai/how-to-choose-an-ai-subscription-by-task-budget-and-region-1c93</a></span><span class="meta-date">📅 2026-11-22 02:57 UTC+8</span></div>
+<div class="article-body"><p>Choosing an AI subscription should start from the tasks you do, how often you do them, and a fixed monthly budget, rather than from a brand name. The article compares consumer list prices checked on 22 November 2026, including free tiers and paid plans such as ChatGPT Go at $8, Plus at $20, Pro from $100, Claude Pro at $20, Max at $100, Ultra at $200, Google AI Pro at $19.99, and Grok Plus at $8, while warning that personal plans do not include API credit. It matters because matching features, usage limits, billing cycle, and regional availability can prevent people from paying for capabilities they do not need.</p>
+<p>揀 AI 訂閱唔好淨係睇品牌，要由自己做乜嘢、幾常用同每月預算開始，先至去對官方計劃。文章列咗 2026 年 11 月 22 日嘅定價，例如 ChatGPT Go 每月 8 美元、Plus 20 美元、Pro 由 100 美元起，Claude Pro 20 美元、Max 100 美元、Ultra 200 美元，又提醒個人訂閱唔等於有 API 額度。最緊要係睇清楚功能、用量上限、收費周期同地區限制，先至唔會使多錢買唔啱用。</p>
+<p><a class="read-more" href="https://dev.to/maihaoai/how-to-choose-an-ai-subscription-by-task-budget-and-region-1c93" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">141 words</div>
+</article>
+<article class="article" id="a-devto-8">
+<h3 class="article-title"><a href="#a-devto-8">Free tier hosting for side projects in 2026: real limits</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/octave_nkurunziza_afb0512/free-tier-hosting-for-side-projects-in-2026-real-limits-6ab" rel="noopener" target="_blank">https://dev.to/octave_nkurunziza_afb0512/free-tier-hosting-for-side-projects-in-2026-real-limits-6ab</a></span><span class="meta-date">📅 2026-11-22 02:57 UTC+8</span></div>
+<div class="article-body"><p>Free tier hosting for side projects in 2026 still exists, but every free backend sleeps, caps hours, or expires, so the main risk is a demo going down when someone finally visits. Static front ends can run on Cloudflare Pages, Netlify, or Vercel, while small APIs or bots may use Render, Koyeb, Railway, Hubfly space, Oracle, or Cloud Run with strict limits, and durable free databases are better served by Neon or Supabase rather than Render’s expiring Postgres. The practical takeaway is that free tiers are fine for experiments, but anything that must answer instantly 24/7 needs a small paid container at about $2–$5 a month.</p>
+<p>2026年仲有免費託管畀side project用，但免費後端一定會有休眠、用時上限或者過期問題，最驚就係啱啱有人睇就掛咗。靜態前端可以用Cloudflare Pages、Netlify或者Vercel，細API或者bot可以揀Render、Koyeb、Railway、Hubfly space、Oracle或者Cloud Run，但都要睇清楚限制；資料庫方面Neon同Supabase比較穩陣，Render免費Postgres會30日後過期。如果真係要24/7即刻回應，免費container做唔到，最好預$2至$5一個月養住個細container。</p>
+<p><a class="read-more" href="https://dev.to/octave_nkurunziza_afb0512/free-tier-hosting-for-side-projects-in-2026-real-limits-6ab" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+<article class="article" id="a-devto-9">
+<h3 class="article-title"><a href="#a-devto-9">How to protect WordPress xmlrpc.php and wp-login at the edge</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/octave_nkurunziza_afb0512/how-to-protect-wordpress-xmlrpcphp-and-wp-login-at-the-edge-178m" rel="noopener" target="_blank">https://dev.to/octave_nkurunziza_afb0512/how-to-protect-wordpress-xmlrpcphp-and-wp-login-at-the-edge-178m</a></span><span class="meta-date">📅 2026-11-22 02:56 UTC+8</span></div>
+<div class="article-body"><p>The article explains how to secure WordPress sites by blocking abusive requests to xmlrpc.php and wp-login.php at the edge before they reach PHP or the database. It walks through deploying a WordPress stack on Hubfly space, checking the monthly cost, locking the public installer with login-required access, and adding WAF request filters for sensitive paths such as xmlrpc.php, .env, .git, wp-config.php, and readme.html. This matters because bots can wake PHP, hit the database, and exploit weak or exposed WordPress files, so edge rules reduce load and attack surface cheaply.</p>
+<p>篇文章講點樣喺邊緣層保護 WordPress，直接擋住 xmlrpc.php 同 wp-login.php 嘅惡意請求，唔使等佢哋入到 PHP 同數據庫先處理。佢示範點樣喺 Hubfly space 部署 WordPress、睇清楚每月費用、用登入保護鎖住公開安裝頁，再設定 WAF 規則封鎖 xmlrpc.php、.env、.git、wp-config.php 同 readme.html 等敏感路徑。咁做可以減少伺服器負荷，亦都降低被暴力破解同掃描漏洞嘅風險。</p>
+<p><a class="read-more" href="https://dev.to/octave_nkurunziza_afb0512/how-to-protect-wordpress-xmlrpcphp-and-wp-login-at-the-edge-178m" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-devto-10">
+<h3 class="article-title"><a href="#a-devto-10">How to build an end-to-end encrypted live chat for your app</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/octave_nkurunziza_afb0512/how-to-build-an-end-to-end-encrypted-live-chat-for-your-app-21ee" rel="noopener" target="_blank">https://dev.to/octave_nkurunziza_afb0512/how-to-build-an-end-to-end-encrypted-live-chat-for-your-app-21ee</a></span><span class="meta-date">📅 2026-11-22 02:56 UTC+8</span></div>
+<div class="article-body"><p>The article explains how to add end-to-end encrypted live chat to an app by using a backend master key, an auth endpoint that grants per-channel keys, and a realtime server that only relays sealed messages. It shows the setup with Hubfly space, including environment variables, key generation, and a Next.js-style auth route that checks whether a user can access a ticket. This matters because it keeps sensitive customer details away from the realtime provider and reduces the damage if the relay service is compromised.</p>
+<p>篇文章講點樣為 app 加入端到端加密 live chat，用後端 master key 同 auth endpoint 派發 channel key，再靠 SDK 將訊息封好，realtime server 淨係傳密文。佢示範用 Hubfly space 設定環境變數、產生加密 key，仲有驗證用戶有冇權睇自己 ticket 嘅 route。呢樣嘢重要，因為可以防止 realtime provider 睇到訂單、地址、健康資料等敏感內容，萬一中間服務出事都比較安全。</p>
+<p><a class="read-more" href="https://dev.to/octave_nkurunziza_afb0512/how-to-build-an-end-to-end-encrypted-live-chat-for-your-app-21ee" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+<article class="article" id="a-devto-11">
+<h3 class="article-title"><a href="#a-devto-11">File Export Delivery Explained: Signed URLs vs Storing SaaS Reports on App Servers</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://dev.to/robertmiller4179/file-export-delivery-explained-signed-urls-vs-storing-saas-reports-on-app-servers-2oej" rel="noopener" target="_blank">https://dev.to/robertmiller4179/file-export-delivery-explained-signed-urls-vs-storing-saas-reports-on-app-servers-2oej</a></span><span class="meta-date">📅 2026-11-22 02:55 UTC+8</span></div>
+<div class="article-body"><p>A failed SaaS export incident shows why file downloads should not pass through app servers: workers should render reports, store them in private object storage under tenant-scoped keys, and return short-lived signed URLs. The article stresses that authorization, object keys, revisions, idempotency, and retention alerts must stay in the service layer, while browsers fetch bytes directly from storage. This matters because it prevents disk exhaustion, reduces request-worker load, and turns misrouted tenant prefixes into earlier security signals.</p>
+<p>SaaS 報表匯出下載唔應該經 app server 過手，而應該由 worker 生成檔案、放入私有 object storage，再用短時效 signed URL 俾瀏覽器直接攞。授權、object key、revision、idempotency 同 retention 告警都要由服務層控制，唔可以靠瀏覽器決定路徑。咁做可以減少磁碟爆同 worker 負荷，亦可以更早發現租戶前綴錯配呢類安全問題。</p>
+<p><a class="read-more" href="https://dev.to/robertmiller4179/file-export-delivery-explained-signed-urls-vs-storing-saas-reports-on-app-servers-2oej" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernews">
+<h2 class="source-title">Hacker News <span class="source-count">11 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNews focused on formal verification with a Lean proof of the Riemann Hypothesis and independent checks, alongside local AI model advances including quantization and the Inkling 2 Mini MoE. Coverage also spanned practical engineering topics such as writing PostgreSQL extensions in Go, diagnosing a monitor-related network slowdown, a critical GPGME vulnerability, a long-term unemployment thread, and benchmarks showing humans still outperform some frontier models on simple reasoning.</p>
+<p>過去一日 HackerNews 主要講緊 Lean 驗證黎曼猜想嘅形式化證明，同埋本地大模型量化、Inkling 2 Mini 呢啲 AI 模型進展。其他熱帖仲包括用 Go 寫 PostgreSQL extension、顯示器拖慢網速嘅 debug、GPGME 嚴重漏洞、長期失業嘅職業討論，以及人喺 Simple Bench 上仲贏過部分前沿模型。</p>
+</div>
+<article class="article" id="a-hackernews-0">
+<h3 class="article-title"><a href="#a-hackernews-0">Inkling-2-Mini in 5.4 GB Memory</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.com/ShinMegamiBoson/lookatmyquant" rel="noopener" target="_blank">https://github.com/ShinMegamiBoson/lookatmyquant</a></span><span class="meta-date">📅 2026-11-22 02:02 UTC+8</span><span class="meta-pts">▲ 56 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50591853">HN discussion</a></span></div>
+<div class="article-body"><p>LookAtMyQuant is an MIT-licensed quantization compiler that compresses large language models to fit tight memory budgets while preserving accuracy, with results including Qwen3.5-4B at 1.23 GB and Qwen3.8-27B at 7.2 GB. It also reduces Inkling-2-Mini to 5.38 GB or 8.87 GB, beating larger Unsloth GGUFs on GSM8K and HumanEval and running fast on Apple Silicon with custom Metal kernels and optional drafters. The article also shows how to install the runtime, generate or chat with packed models, and reproduce the compiler workflow on SmolLM2-360M.</p>
+<p>LookAtMyQuant 係一個 MIT 授權嘅量化編譯器，可以將大型語言模型壓縮到好細嘅記憶體預算，同時保留準確度，例如 Qwen3.5-4B 壓到 1.23 GB，Qwen3.8-27B 壓到 7.2 GB。佢仲將 Inkling-2-Mini 壓到 5.38 GB 或 8.87 GB，喺 GSM8K 同 HumanEval 上贏過更大嘅 Unsloth GGUF，並用 Apple Silicon 自訂 Metal kernel 同 drafter 跑得好快。文章亦講點樣裝 runtime、用 lamq 生成或傾偈，以及喺 SmolLM2-360M 重現編譯流程。</p>
+<p><a class="read-more" href="https://github.com/ShinMegamiBoson/lookatmyquant" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">125 words</div>
+</article>
+<article class="article" id="a-hackernews-1">
+<h3 class="article-title"><a href="#a-hackernews-1">Jensen Huang&#x27;s fall is bad news for Silicon Valley&#x27;s accelerationists</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists" rel="noopener" target="_blank">https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists</a></span><span class="meta-date">📅 2026-11-22 01:59 UTC+8</span><span class="meta-pts">▲ 85 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50591835">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-hackernews-2">
+<h3 class="article-title"><a href="#a-hackernews-2">PostgreSQL Extensions in Go</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://jespino.github.io/gopgext/" rel="noopener" target="_blank">https://jespino.github.io/gopgext/</a></span><span class="meta-date">📅 2026-11-22 01:08 UTC+8</span><span class="meta-pts">▲ 54 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50591260">HN discussion</a></span></div>
+<div class="article-body"><p>gopgext lets developers write PostgreSQL extensions in Go by compiling Go functions into loadable extensions with TinyGo and a generated C runtime layer. The example defines Hello and Shout functions, then uses gopgext init and install to build hello.so, hello.control, and hello--1.0.sql before creating the extension in psql. The approach mirrors gokm for Linux kernel modules, showing how Go can be used for low-level host integrations.</p>
+<p>gopgext 容許開發者用 Go 寫 PostgreSQL 擴充功能，透過 TinyGo 同自動生成嘅 C runtime 層，將 Go 函數編譯成可以載入嘅 extension。示範入面有 Hello 同 Shout 兩個函數，再用 gopgext init 同 install 產生 hello.so、hello.control 同 hello--1.0.sql，之後喺 psql 建立 extension。呢個做法同 gokm 寫 Linux kernel module 一樣，顯示 Go 都可以處理低層 host 整合。</p>
+<p><a class="read-more" href="https://jespino.github.io/gopgext/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+<article class="article" id="a-hackernews-3">
+<h3 class="article-title"><a href="#a-hackernews-3">Verification files for the Lean proof of the Riemann Hypothesis</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://math.mit.edu/~drew/grh/" rel="noopener" target="_blank">https://math.mit.edu/~drew/grh/</a></span><span class="meta-date">📅 2026-11-21 23:54 UTC+8</span><span class="meta-pts">▲ 31 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50590441">HN discussion</a></span></div>
+<div class="article-body"><p>Andrew Sutherland&#x27;s verification page reports that a Lean formalization of the Riemann Hypothesis compiles cleanly and passes several independent kernel checks, including nanoda, con-leche, and lean4lean, while five headline theorems rely only on Lean&#x27;s standard axioms. The checked statements cover the Riemann Hypothesis itself and Dirichlet L-function versions of the Generalized Riemann Hypothesis, plus Robin and Lagarias divisor-sum inequalities obtained by combining the proof with an independent Robin1984 formalization. The results matter because they give unusually strong machine-checked evidence for a major mathematical claim, although some kernel and comparator checks are still running and the scope does not include all L-functions.</p>
+<p>Andrew Sutherland 呢個驗證頁話，Riemann Hypothesis 嘅 Lean proof 已經可以順暢 compile，五個主要 theorem 淨係靠 Lean 標準 axioms，仲通過 nanoda、con-leche、lean4lean 等獨立 kernel 檢查。佢哋核實嘅內容包括 Riemann Hypothesis 本身、Dirichlet L-functions 嘅 Generalized Riemann Hypothesis，同埋夾埋 Robin1984 之後得出嘅 Robin 同 Lagarias 不等式。呢啲結果好重要，因為畀咗好強嘅機械驗證證據，不過仲有 kernel 同 comparator 檢查未完，範圍亦唔包晒所有 L-functions。</p>
+<p><a class="read-more" href="https://math.mit.edu/~drew/grh/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">142 words</div>
+</article>
+<article class="article" id="a-hackernews-4">
+<h3 class="article-title"><a href="#a-hackernews-4">Lean verification of the Riemann Hypothesis</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" rel="noopener" target="_blank">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></span><span class="meta-date">📅 2026-11-21 22:36 UTC+8</span><span class="meta-pts">▲ 499 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50589618">HN discussion</a></span></div>
+<div class="article-body"><p>On November 20, 2026, Levent Alpöge released a Lean proof of the Riemann Hypothesis as a 17-million-line codebase, and the Lean and Mathlib communities have certified both the statement and the proof as correct. The verification relied on successful compilation, comparison against Mathlib’s vetted statement of the Riemann Hypothesis, and multiple independent proof checkers, including Lean’s official kernel and formally verified checkers. This matters because it gives the mathematical community a highly reliable machine-checked confirmation of one of the most important open problems in mathematics.</p>
+<p>2026年11月20日，Levent Alpöge 公布咗一份1700萬行代碼嘅 Lean 黎曼猜想證明；Lean 同 Mathlib 社群已經確認佢正確，因為成個 codebase 可以編譯，證明嘅定理同 Mathlib 入面嘅黎曼猜想陳述完全一致，而且多個獨立證明檢查器都通過。呢件事好重要，因為佢用機械驗證為呢個數學難題提供咗極高信心嘅確認，亦會推動數學界研究新證明方法。</p>
+<p><a class="read-more" href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-hackernews-5">
+<h3 class="article-title"><a href="#a-hackernews-5">Detonating a pile of lead azide</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really" rel="noopener" target="_blank">https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really</a></span><span class="meta-date">📅 2026-11-21 21:23 UTC+8</span><span class="meta-pts">▲ 372 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50588982">HN discussion</a></span><span class="meta-warn">⚠ summary unavailable</span></div>
+<div class="article-body"></div>
+<div class="article-words">0 words</div>
+</article>
+<article class="article" id="a-hackernews-6">
+<h3 class="article-title"><a href="#a-hackernews-6">Astra 6.2 and Sol 6.2 flop at Simple Bench</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simple-bench.com/" rel="noopener" target="_blank">https://simple-bench.com/</a></span><span class="meta-date">📅 2026-11-21 21:16 UTC+8</span><span class="meta-pts">▲ 134 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50588916">HN discussion</a></span></div>
+<div class="article-body"><p>SimpleBench, a 200-plus question multiple-choice benchmark, finds that non-specialized humans score 83.7%, beating frontier models such as Claude Fable at 81.9%, while Astra 6.2 and Sol 6.2 also struggle. The test targets spatio-temporal reasoning, social intelligence and trick questions, showing that everyday human reasoning still exposes gaps in large language models.</p>
+<p>SimpleBench 係一個超過 200 條選擇題嘅測試，發現普通高中生平均有 83.7%，高過 Claude Fable 嘅 81.9%，連 Astra 6.2 同 Sol 6.2 都表現麻麻。測試集中喺時空推理、社交智能同陷阱題，反映大型語言模型就算識好多嘢，面對日常人類推理仍然未夠穩陣。</p>
+<p><a class="read-more" href="https://simple-bench.com/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">70 words</div>
+</article>
+<article class="article" id="a-hackernews-7">
+<h3 class="article-title"><a href="#a-hackernews-7">My monitor was cutting my download speed by 75%</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.tymscar.com/posts/studiodisplayethernet/" rel="noopener" target="_blank">https://blog.tymscar.com/posts/studiodisplayethernet/</a></span><span class="meta-date">📅 2026-11-21 18:36 UTC+8</span><span class="meta-pts">▲ 316 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50587875">HN discussion</a></span></div>
+<div class="article-body"><p>A 2.5Gbps internet connection was mysteriously reduced to 600Mbps download when routed through a USB-C Ethernet adapter plugged into an Apple Studio Display XDR, while upload remained near full speed. Debugging showed the Realtek RTL8156B adapter’s small USB burst size and the monitor hub’s latency caused dropped frames above about 2Gbps, and a newer RTL8157 adapter with larger bursts restored full speeds. The case shows how one-cable monitor hubs can silently throttle high-speed Ethernet despite the router, cable, and port being fine.</p>
+<p>佢條 2.5Gbps 寬頻經 Studio Display XDR 接 USB-C 網卡後，下載竟然得返 600Mbps，但上傳仲係接近全速。佢追下追下發現問題出喺 Realtek RTL8156B 網卡嘅 USB burst 太小，加上顯示器 hub 嘅延遲，令超過大約 2Gbps 嘅數據包被丟失；換咗用 RTL8157、burst 更大嘅網卡就恢復正常。呢單嘢提醒人，一線通顯示器接高速網卡時，可能因為 USB hub 同驅動嘅細節而偷偷削速。</p>
+<p><a class="read-more" href="https://blog.tymscar.com/posts/studiodisplayethernet/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-hackernews-8">
+<h3 class="article-title"><a href="#a-hackernews-8">RCE in Gnupg</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" rel="noopener" target="_blank">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a></span><span class="meta-date">📅 2026-11-21 16:32 UTC+8</span><span class="meta-pts">▲ 180 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50587208">HN discussion</a></span></div>
+<div class="article-body"><p>GPGME 2.3.1 has been released to fix a critical double-free vulnerability, CVE-2026-129975, that can be triggered by a crafted OpenPGP key with an extremely long user ID and may allow data exfiltration or even remote code execution. The bug affects all software using GPGME before 2.3.0, including Gpg4win, GnuPG Desktop, mail and XMPP clients, Samba, and Flatpak, so users and developers should update immediately or apply the provided patch.</p>
+<p>GPGME 推出咗 2.3.1 版本，修復一個嚴重嘅 double-free 漏洞，CVE-2026-129975，可以透過特製嘅 OpenPGP 金鑰同超長 user ID 觸發，可能導致資料外洩甚至遠端執行程式碼。凡係用咗 2.3.0 之前 GPGME 嘅軟件都有風險，包括 Gpg4win、GnuPG Desktop、好多電郵同 XMPP 客戶端、Samba 同 Flatpak，所以用家同開發者要即刻更新或者打 patch。</p>
+<p><a class="read-more" href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">95 words</div>
+</article>
+<article class="article" id="a-hackernews-9">
+<h3 class="article-title"><a href="#a-hackernews-9">Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://news.ycombinator.com/item?id=50583761" rel="noopener" target="_blank">https://news.ycombinator.com/item?id=50583761</a></span><span class="meta-date">📅 2026-11-21 07:18 UTC+8</span><span class="meta-pts">▲ 488 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50583761">HN discussion</a></span></div>
+<div class="article-body"><p>A senior software engineer in the US with 15 years of experience says he has been unemployed for two years, has burned through most savings, and is struggling to explain the resume gap despite still knowing C#, .NET, AWS and AI. The Hacker News discussion turns on whether he should embellish his recent work as an AI-powered startup, build a real project, rely on honesty and networking, or accept that the job market may force him into lower-paid or non-engineering work. The thread matters because it shows how hiring filters, AI hype and long employment gaps are reshaping career advice for experienced technologists.</p>
+<p>一名美國資深軟件工程師話自己做咗15年，失業兩年，儲蓄差唔多用晒，仲要教數學同準備去披薩店做經理，但一直搵唔到軟件工程職位。討論入面有人話佢不如講個AI startup故事，有人話唔好扮，不如真係做個產品、靠誠實同Networking，又或者接受市場已經變咗。呢個討論反映而家招聘篩選、AI熱潮同履歷空窗期，已經令資深技術人嘅搵工策略變得好唔同。</p>
+<p><a class="read-more" href="https://news.ycombinator.com/item?id=50583761" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+<article class="article" id="a-hackernews-10">
+<h3 class="article-title"><a href="#a-hackernews-10">Inkling 2 Mini</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://thinkingmachines.ai/news/inkling-2-mini/" rel="noopener" target="_blank">https://thinkingmachines.ai/news/inkling-2-mini/</a></span><span class="meta-date">📅 2026-11-21 04:12 UTC+8</span><span class="meta-pts">▲ 1266 pts</span><span class="meta-hn"><a href="https://news.ycombinator.com/item?id=50581260">HN discussion</a></span></div>
+<div class="article-body"><p>Inkling 2 Mini is a 26.4B-parameter Mixture-of-Experts model with 3.4B active parameters that uses a looped transformer architecture to improve reasoning and agentic coding performance while running locally in about 20GB of memory. It leads open-weight models under 100B parameters on benchmarks such as DeepSWE v1.1 and Vals Index v2.2, and experiments show looping can extend reasoning time without making its chain of thought harder to monitor. The release matters because it brings strong laptop-scale coding and tool-use capability to researchers and developers through open weights on Tinker.</p>
+<p>Inkling 2 Mini 係一個 26.4B 參數、3.4B 激活參數嘅 Mixture-of-Experts 模型，用 looped transformer 提升推理同 agentic coding 表現，同時大約 20GB 記憶體就可以喺手提電腦跑。佢喺 DeepSWE v1.1 同 Vals Index v2.2 等 benchmark 領先 100B 以下嘅開放權重模型，而實驗亦顯示 loop 可以延長推理時間，同時保持 chain of thought 可監控。呢個發布重要，因為佢將強勁嘅本地 coding 同工具使用能力，透過 Tinker 嘅開放權重帶畀研究員同開發者。</p>
+<p><a class="read-more" href="https://thinkingmachines.ai/news/inkling-2-mini/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">130 words</div>
+</article>
+</section>
+<section class="source" id="src-9to5mac">
+<h2 class="source-title">9to5Mac <span class="source-count">11 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>9to5Mac’s latest coverage centered on Black Friday savings across Apple hardware and software services, including discounted Proton Pass, Google Workspace with Gemini, ESR accessories, and major deals on MacBooks, Apple Watch Series 12, AirPods, and the new iPad mini. It also highlighted Apple software and service news, from iOS 27’s iPhone Handoff and Siri AI limits to Workbrew 2.0’s developer-software inventory and Apple TV’s growing catalog of licensed films.</p>
+<p>過去一日，9to5Mac 主要報導黑五優惠，包括 Proton Pass、Google Workspace、ESR 配件，以及 MacBook、Apple Watch Series 12、AirPods 和新 iPad mini 等 Apple 產品減價。報導亦涵蓋 Apple 軟件與服務動態，例如 iOS 27 的 iPhone Handoff、Siri AI 使用限制、Workbrew 2.0 開發者軟件清單，以及 Apple TV 加入更多授權電影。</p>
+</div>
+<article class="article" id="a-9to5mac-0">
+<h3 class="article-title"><a href="#a-9to5mac-0">Proton Pass is up to 60% off for Black Friday, and it does way more than just store your passwords</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/21/proton-pass-is-up-to-60-off-for-black-friday-and-it-does-way-more-than-just-store-your-passwords-sponsored/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/21/proton-pass-is-up-to-60-off-for-black-friday-and-it-does-way-more-than-just-store-your-passwords-sponsored/</a></span><span class="meta-date">📅 2026-11-22 02:00 UTC+8</span></div>
+<div class="article-body"><p>Proton Pass is offering Black Friday discounts of up to 60% on Pass Plus and Pass Family, and 50% on Proton Unlimited, with Pass Plus starting at $1.99 per month billed annually. The service generates and autofills unique passwords, stores sensitive details in encrypted vaults, and provides unlimited hide-my-email aliases to reduce spam and protect the user’s real email address. It matters because it can make everyday logins, online shopping, and account security easier while limiting the damage from data breaches.</p>
+<p>Proton Pass 呢次黑五最多減價六成，Pass Plus 同 Pass Family 都減價六成，Proton Unlimited 就減價五成，Pass Plus 年繳每月 $1.99 起。佢唔止幫你生成同自動填入強密碼，仲可以加密儲存信用卡、筆記等資料，又提供無限 hide-my-email 別名，等你可以唔使交真實電郵出去。呢啲功能可以減少密碼混亂同垃圾郵件，亦可以喺資料外洩時降低其他帳戶受影響嘅風險。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/21/proton-pass-is-up-to-60-off-for-black-friday-and-it-does-way-more-than-just-store-your-passwords-sponsored/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-9to5mac-1">
+<h3 class="article-title"><a href="#a-9to5mac-1">How Google Workspace with Gemini powers small businesses – get 20% off your first 6 months</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/21/how-google-workspace-with-gemini-powers-small-businesses-get-20-off-your-first-6-months/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/21/how-google-workspace-with-gemini-powers-small-businesses-get-20-off-your-first-6-months/</a></span><span class="meta-date">📅 2026-11-22 01:00 UTC+8</span></div>
+<div class="article-body"><p>Google Workspace now bundles Gemini AI across Gmail, Docs, Sheets, Slides, Meet, Drive and Vids to help small businesses draft content, create videos, analyse data, run meetings and search files more efficiently. It offers Business Starter, Standard and Plus plans with custom email domains, scalable storage and enterprise privacy protections, while 9to5Mac readers can get 20% off eligible plans for the first six months. The pitch is that a single subscription can replace many separate productivity and AI tools, saving time and cost for solopreneurs and growing companies.</p>
+<p>Google Workspace 而家將 Gemini AI 加入 Gmail、Docs、Sheets、Slides、Meet、Drive 同 Vids，幫細公司更快寫文案、做影片、分析數據、開會同搵檔案。佢有 Business Starter、Standard 同 Plus 幾個計劃，提供專屬電郵域名、可擴展儲存同企業級私隱保障，9to5Mac 讀者首六個月仲可享 20% 折扣。簡單講，就係用一個訂閱包埋生產力工具同 AI 功能，幫一人公司同成長中企業慳時間同成本。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/21/how-google-workspace-with-gemini-powers-small-businesses-get-20-off-your-first-6-months/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-9to5mac-2">
+<h3 class="article-title"><a href="#a-9to5mac-2">Apple @ Work: Workbrew 2.0 is an inventory for the development software your employees installed without asking</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/21/apple-work/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/21/apple-work/</a></span><span class="meta-date">📅 2026-11-21 22:00 UTC+8</span></div>
+<div class="article-body"><p>Workbrew 2.0 gives IT teams a single inventory for developer software that employees install outside normal device management, including Homebrew packages, npm dependencies, VS Code extensions, and macOS apps. It matters because AI tools are pushing more non-developers to install software too, so the new native Mac app lets staff get approved tools without Terminal while IT can review requests and patch vulnerabilities.</p>
+<p>Workbrew 2.0 幫 IT 睇清楚公司 Mac 上面有幾多開發軟件，包括 Homebrew、npm、VS Code 擴充同 macOS app，呢啲嘢普通 device management 未必見到。佢仲有原生 Mac app，員工可以搵同裝經批准嘅軟件，唔使開 Terminal，IT 都可以批或者拒，仲可以知道點解。因為 AI 令好多唔係開發者嘅同事都開始裝嘢，所以呢個工具可以幫公司睇清風險同補漏洞。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/21/apple-work/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+<article class="article" id="a-9to5mac-3">
+<h3 class="article-title"><a href="#a-9to5mac-3">Weekend Black Friday Apple deals: MacBooks from $649, Series 12, AirPods $130 off, new iPad mini, more</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/21/official-black-friday-apple-deals-now-live/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/21/official-black-friday-apple-deals-now-live/</a></span><span class="meta-date">📅 2026-11-21 20:59 UTC+8</span></div>
+<div class="article-body"><p>Amazon’s Black Friday sale is offering deep discounts across Apple products, including record-low prices on Apple Watch Series 12, up to $250 off M5 MacBook Air and M6 MacBook Pro models, and the MacBook Neo at just $649. The deals also cover the new OLED iPad mini, Beats 360 headphones, AirPods Max 2, iPhone Air, Mac mini, Studio Display, and many chargers and accessories, making it a strong opportunity to save on Apple gear.</p>
+<p>Amazon 嘅黑五優惠正正係買 Apple 產品嘅好時機，Apple Watch Series 12 有歷來低價，M5 MacBook Air 同 M6 MacBook Pro 最多減 $250，MacBook Neo 更降至 $649。新 OLED iPad mini、Beats 360、AirPods Max 2、iPhone Air、Mac mini、Studio Display 同大量充電器配件都有折扣，想換 Apple 產品可以趁呢個時段慳錢。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/21/official-black-friday-apple-deals-now-live/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+<article class="article" id="a-9to5mac-4">
+<h3 class="article-title"><a href="#a-9to5mac-4">ESR Black Friday gift guide: Premium accessories for iPhone Duo, iPhone 18 Pro, iPad, AirPods, and Apple Watch</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/esr-black-friday-apple-accessories-gift-guide/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/esr-black-friday-apple-accessories-gift-guide/</a></span><span class="meta-date">📅 2026-11-21 08:00 UTC+8</span></div>
+<div class="article-body"><p>ESR’s Black Friday guide highlights discounted premium accessories for new Apple devices, including protective cases for the iPhone Duo and iPhone 18 Pro, a Corning glass screen protector, a retractable 45W charger, and an iPad keyboard case. The cases add hinge protection, MagSafe strength, and built-in stands, while the charger and screen protector focus on travel convenience and everyday durability. These deals matter for shoppers who want reliable Apple accessories without paying full price during the holiday season.</p>
+<p>ESR 呢份黑五指南推介咗多款 Apple 裝置嘅高級配件，包括 iPhone Duo 同 iPhone 18 Pro 保護殼、Corning 玻璃螢幕保護貼、可收線 45W 充電器，同 iPad 鍵盤殼。呢啲產品主打鉸鏈保護、MagSafe 磁力、內置支架、旅行充電方便同日常耐用，黑五折扣令送禮或者自用都更抵買。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/esr-black-friday-apple-accessories-gift-guide/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">99 words</div>
+</article>
+<article class="article" id="a-9to5mac-5">
+<h3 class="article-title"><a href="#a-9to5mac-5">9to5Mac Daily: November 20, 2026 – Siri AI limits, HomeView update</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/daily-november-20-2026/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/daily-november-20-2026/</a></span><span class="meta-date">📅 2026-11-21 07:43 UTC+8</span></div>
+<div class="article-body"><p>The 9to5Mac Daily episode for November 20, 2026 covers Apple’s iOS 27.3 adding usage limits for Siri AI, along with the HomeView 27.2.1 update and Black Friday deals across iPhone, iPad, Mac and other products. It also notes the retirement of Apple’s head of camera and Photos software, making the episode a quick roundup of software changes, promotions and leadership news for Apple users.</p>
+<p>呢集 9to5Mac Daily 講咗 Apple 喺 iOS 27.3 加入 Siri AI 用量限制、HomeView 27.2.1 更新，仲有 iPhone、iPad、Mac 等产品嘅黑五優惠。另外，Apple 相機同 Photos 軟件負責人據報已經退休，等讀者一次過睇清近期 Apple 軟件、優惠同人事變動。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/daily-november-20-2026/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+<article class="article" id="a-9to5mac-6">
+<h3 class="article-title"><a href="#a-9to5mac-6">iOS 27 lets you use two iPhones with the same phone number</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/ios-27-lets-you-use-two-iphones-with-the-same-phone-number/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/ios-27-lets-you-use-two-iphones-with-the-same-phone-number/</a></span><span class="meta-date">📅 2026-11-21 07:06 UTC+8</span></div>
+<div class="article-body"><p>iOS 27 introduces iPhone Handoff, allowing two iPhones to share the same phone number by designating one as the main device and the other as secondary. The number becomes active on whichever iPhone is unlocked, with a confirmation message, though only one device can use it at a time. The feature is mainly useful for dual-iPhone users, but carrier support remains limited for now.</p>
+<p>iOS 27 推出 iPhone Handoff，可以令兩部 iPhone 共用同一個電話號碼，一部做主機，另一部做副機。你解鎖邊部機，個號碼就會自動轉去嗰部機用，不過同一時間只可以有一部機用呢個號碼。呢個功能主要幫到要用兩部 iPhone 嘅人，但暫時支援嘅電訊商仲有限。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/ios-27-lets-you-use-two-iphones-with-the-same-phone-number/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">77 words</div>
+</article>
+<article class="article" id="a-9to5mac-7">
+<h3 class="article-title"><a href="#a-9to5mac-7">9to5Mac Overtime 091: Kicking the tires and seeing what works</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/9to5mac-overtime-091-kicking-the-tires-and-seeing-what-works/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/9to5mac-overtime-091-kicking-the-tires-and-seeing-what-works/</a></span><span class="meta-date">📅 2026-11-21 05:58 UTC+8</span></div>
+<div class="article-body"><p>The 9to5Mac Overtime episode covers a month of iPhone Duo use, including new face unlock and close-to-lock toggle features in iOS 27.3 beta 2. The hosts also discuss Siri AI’s Health app access quirks, HomePod mini stereo pairing on Mac, the M6 Mac mini, the new iPad mini, and Apple’s upsell-heavy configurations. The episode matters because it highlights how upcoming Apple software and hardware changes affect everyday usability, privacy, and value.</p>
+<p>呢集 9to5Mac Overtime 講咗用 iPhone Duo 一個月嘅感受，包括 iOS 27.3 beta 2 嘅新面部解鎖同 close-to-lock 開關。佢哋仲討論咗 Siri AI 存取 Health app 嘅怪異位、Mac 上 HomePod mini 立體聲配對、M6 Mac mini、新 iPad mini，同 Apple 靠升級配置加價嘅做法。呢啲內容重要，因為反映 Apple 軟件同硬件更新點樣影響日常使用、私隱同性價比。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/9to5mac-overtime-091-kicking-the-tires-and-seeing-what-works/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">107 words</div>
+</article>
+<article class="article" id="a-9to5mac-8">
+<h3 class="article-title"><a href="#a-9to5mac-8">Apple Watch Series 12: Four standout features make me glad I upgraded</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/apple-watch-series-12-four-standout-features-glad-i-upgraded/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/apple-watch-series-12-four-standout-features-glad-i-upgraded/</a></span><span class="meta-date">📅 2026-11-21 04:25 UTC+8</span></div>
+<div class="article-body"><p>The article says upgrading to the Apple Watch Series 12 is worthwhile because the new S11 chip makes everyday tasks and Siri feel much faster, while new health sensors add live heart-rate, step, and readiness complications. It also highlights Siri Recap for automatic conversation summaries and faster charging that gives up to 12 hours of battery from 15 minutes, with the watch now priced at $329 on Amazon. These improvements matter because they make the watch more responsive, more useful for health tracking, and easier to fit into daily routines.</p>
+<p>呢篇文話 Apple Watch Series 12 值得升級，因為新 S11 晶片令日常操作同 Siri 快咗好多，新健康感應器又加咗心率、步數同 readiness 即時 complications。佢又提到 Siri Recap 可以自動記錄對話摘要，加上快充 15 分鐘就夠用 12 個鐘，而 Amazon 而家只係 $329。呢啲改進令手錶更順、更實用，亦更容易融入日常健康同記憶管理。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/apple-watch-series-12-four-standout-features-glad-i-upgraded/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">117 words</div>
+</article>
+<article class="article" id="a-9to5mac-9">
+<h3 class="article-title"><a href="#a-9to5mac-9">Apple TV keeps adding fan-favorite movies, here’s what’s new and coming next</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/apple-tv-keeps-adding-fan-favorite-movies-heres-whats-new-and-coming-next/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/apple-tv-keeps-adding-fan-favorite-movies-heres-whats-new-and-coming-next/</a></span><span class="meta-date">📅 2026-11-21 03:52 UTC+8</span></div>
+<div class="article-body"><p>Apple TV has begun adding licensed fan-favorite classic films to its mostly original catalog, including 20 titles added in November such as Interstellar, Pulp Fiction, and Forrest Gump. Apple has confirmed five more films for December 1, including Shutter Island and The Karate Kid, while also starting to license some TV series like Small Prophets. The shift matters because it broadens Apple TV’s appeal beyond originals, especially while the service is offered at a limited-time $6.99 monthly price.</p>
+<p>Apple TV 一向主打自家原創節目，最近開始加入粉絲鍾意嘅經典電影，11月已經上線20套，包括 Interstellar、Pulp Fiction 同 Forrest Gump。Apple 又確認12月1日會加多五套，例如 Shutter Island 同 The Karate Kid，仲開始少量買入劇集如 Small Prophets。呢個轉變令 Apple TV 唔再淨係靠原創內容，加上限時每月 $6.99 優惠，對訂閱者嚟講更有吸引力。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/apple-tv-keeps-adding-fan-favorite-movies-heres-whats-new-and-coming-next/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">104 words</div>
+</article>
+<article class="article" id="a-9to5mac-10">
+<h3 class="article-title"><a href="#a-9to5mac-10">AirPods 5 vs AirPods Pro 3: Which should you buy this holiday season?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://9to5mac.com/2026/11/20/airpods-5-vs-airpods-pro-3-which-should-you-buy-this-holiday-season/" rel="noopener" target="_blank">https://9to5mac.com/2026/11/20/airpods-5-vs-airpods-pro-3-which-should-you-buy-this-holiday-season/</a></span><span class="meta-date">📅 2026-11-21 03:12 UTC+8</span></div>
+<div class="article-body"><p>Apple’s AirPods lineup for holiday shopping includes AirPods 5, AirPods Pro 3, and AirPods Max 2, with the Pro 3 standing out as the best overall choice for most buyers because its in-ear fit, stronger noise cancellation, and extra health features are worth the small price gap when discounted. The AirPods 5 are a good pick for people who dislike in-ear buds, especially the $149 version with wireless charging, Find My, and stem volume controls, while the AirPods Max 2 suit those wanting premium over-ear headphones. The article’s main advice is to match the model to the listener’s comfort and budget, with the discounted Pro 3 offering the strongest value.</p>
+<p>呢篇文話假期買 AirPods，AirPods Pro 3 通常係最穩陣選擇，因為入耳式隔音更強，仲有健康同聽力功能，而家打折後同 AirPods 5 差價好細。如果唔鍾意入耳式，AirPods 5 都唔錯，尤其 $149 版有無線充電、Find My 同音量控制；想豪買頭戴式就可以考慮 AirPods Max 2。總之買邊款要睇收禮人鍾意唔鍾意入耳式同預算，Pro 3 打折時性價比最高。</p>
+<p><a class="read-more" href="https://9to5mac.com/2026/11/20/airpods-5-vs-airpods-pro-3-which-should-you-buy-this-holiday-season/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">133 words</div>
+</article>
+</section>
+<section class="source" id="src-techcrunchai">
+<h2 class="source-title">TechCrunch AI <span class="source-count">4 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>TechCrunchAI focused on AI moving into everyday workflows and creative industries, from text-message agents that schedule, research and manage tasks to a microdrama startup licensing actors’ faces for AI-generated vertical series. It also covered frontier bets, including Spotify founder Daniel Ek backing a simulation-driven fusion startup and a formal proof of the Riemann hypothesis developed with AI support.</p>
+<p>TechCrunchAI 過去一日集中講 AI 點樣滲入日常生活同創意產業，包括可以透過短訊幫你安排行程、搵資料同處理任務嘅 AI 助手，仲有短劇公司用 AI 生成劇集、甚至邀請創作者出售自己樣貌授權。佢哋亦提到 Spotify 創辦人 Daniel Ek 投資一間靠模擬同數據推進核融合嘅英國初創，以及數學家借助 AI 完成黎曼猜想形式化證明嘅消息。</p>
+</div>
+<article class="article" id="a-techcrunchai-0">
+<h3 class="article-title"><a href="#a-techcrunchai-0">Here are the top AI agents that can live in your text messages</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/" rel="noopener" target="_blank">https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/</a></span><span class="meta-date">📅 2026-11-22 01:00 UTC+8</span></div>
+<div class="article-body"><p>A growing group of AI agents, including Instinct, Ask Proxy, Caddy, Fambot, Folk, Haven, Iris, Martin and Maverick, can be reached through text messages instead of separate apps, using existing services to schedule, research, email, shop, remind and manage tasks. The article highlights how these assistants vary by audience and function, from family planning and work workflows to proactive “digital twin” experiences, with some free or beta and others priced by subscription. It matters because messaging-based agents could become a low-friction way to automate daily life, while also raising privacy and security questions as they gain access to calendars, email and accounts.</p>
+<p>而家越嚟越多 AI 助理唔使另外裝 app，直接喺短訊入面搵佢哋就得，例如 Instinct、Ask Proxy、Caddy、Fambot、Folk、Haven、Iris、Martin 同 Maverick，可以幫你排程、查資料、覆 email、訂嘢同提醒。佢哋有啲專做家庭、工作或者個人助理，有啲仲會主動提醒同執行多步任務，收費由免費 beta 到每月訂閱都有。呢個趨勢重要，因為短訊助理可以減少切換 app，但同時亦令人擔心私隱同保安，因為佢哋會接觸日曆、email 同帳戶資料。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">119 words</div>
+</article>
+<article class="article" id="a-techcrunchai-1">
+<h3 class="article-title"><a href="#a-techcrunchai-1">Is selling an AI version of your face to this microdrama startup the future of Hollywood?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/" rel="noopener" target="_blank">https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/</a></span><span class="meta-date">📅 2026-11-22 00:00 UTC+8</span></div>
+<div class="article-body"><p>Microdrama startup Shortical is pushing into AI-generated vertical dramas by licensing actor Aki Avni’s face for its first wholly AI series, “Inevitable,” and is now inviting other creators to sell their likenesses. The move reflects the industry’s shift toward cheaper, higher-margin AI content, especially for subscription-driven apps whose audience is largely female and based mainly in the U.S. But the trend is unsettling actors and fans because it threatens entry-level work, raises consent and compensation questions, and may be driven more by investor hype than proven audience demand.</p>
+<p>Shortical 呢間微短劇初創公司開始大力推 AI 內容，仲請咗以色列演員 Aki Avni 授權張面做全 AI 劇《Inevitable》，又開放俾其他人賣自己嘅樣。呢個做法反映微短劇行業想靠 AI 慳成本、賺多啲，尤其係靠訂閱賺錢嘅平台，主要觀眾好多係美國女性。不過呢個趨勢令演員同觀眾好不安，因為佢可能搶走入行機會，仲有授權、補償同觀眾究竟想唔想睇嘅問題。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-techcrunchai-2">
+<h3 class="article-title"><a href="#a-techcrunchai-2">Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/" rel="noopener" target="_blank">https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/</a></span><span class="meta-date">📅 2026-11-21 03:53 UTC+8</span></div>
+<div class="article-body"><p>Spotify founder Daniel Ek is backing Europa Fusion, a UK startup founded by former AI researcher Nantas Nardelli that is pursuing a simulation- and data-heavy pulsed-power approach to fusion energy. Nardelli, who previously worked at Google DeepMind, Facebook AI Research, Microsoft Research Cambridge and Pacific Fusion, believes software and modelling can improve fusion development more than hardware-led testing. The effort matters because commercially viable fusion could provide large amounts of carbon-free electricity and help address growing energy demand from AI.</p>
+<p>Spotify 創辦人 Daniel Ek 投資咗英國初創 Europa Fusion，由前 AI 研究員 Nantas Nardelli 創辦，主打用模擬同數據去開發脈衝功率核聚變。Nardelli 之前做過 Google DeepMind、Facebook AI Research、Microsoft Research Cambridge 同 Pacific Fusion，佢認為比起猛做硬件，更應該靠軟件同模型去推進核聚變。呢件事重要，因為核聚變如果真係做到商業化，可以供應大量無碳電力，亦可以幫 AI 解決用電需求。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-techcrunchai-3">
+<h3 class="article-title"><a href="#a-techcrunchai-3">AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/" rel="noopener" target="_blank">https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/</a></span><span class="meta-date">📅 2026-11-21 03:32 UTC+8</span></div>
+<div class="article-body"><p>Mathematician Levent Alpöge, working at Anthropic, announced a Lean-compilable proof of the Riemann hypothesis, a 167-year-old Millennium Prize problem, and independent experts have confirmed the formal code compiles. The result has electrified the mathematics community, but its deeper meaning still awaits human explanation, while Stanford postdoc Alessandro Masullo also released a separate, entirely human proof of the General Riemann hypothesis after 12 years of work.</p>
+<p>數學家 Levent Alpöge 喺 Anthropic 工作期間，宣布搵到一個可以用 Lean 驗證嘅黎曼猜想證明，呢個問題已經困擾數學界 167 年，而家都有獨立專家確認佢嘅 Lean 程式碼可以編譯成功。呢件事令數學界好興奮，但真正明白同解釋證明仲要時間；同一時間，Stanford 博士後 Alessandro Masullo 亦公布咗一份完全由人類完成嘅廣義黎曼猜想證明，顯示人類數學家仍然有實力。</p>
+<p><a class="read-more" href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">85 words</div>
+</article>
+</section>
+<section class="source" id="src-hackernoon">
+<h2 class="source-title">HackerNoon <span class="source-count">20 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>HackerNoon’s last 24 hours focused on hands-on engineering and AI risk, from benchmarking Next.js on AWS and fixing Control Tower SCP and networking mistakes to exposing password-reset flaws and replacing staging with production canaries. Coverage also stretched into policy and product, including AI-enabled attacks on industrial controllers, Europe’s dependence on foreign AI models, curated Bitcoin learning lists, CRM probability calibration, voice biometrics, and retail footfall analysis.</p>
+<p>過去一日 HackerNoon 主要講工程同 AI 政策，包括 AWS 部署 benchmark、Control Tower 設定陷阱、密碼重設漏洞，同埋由 staging 轉去 production canary 嘅實戰經驗。佢亦都關注 AI 帶嚟嘅風險，例如工業控制器被攻擊、歐洲依賴海外模型嘅民主隱憂，仲有 Bitcoin 學習資源、CRM 預測、語音身份認證同零售人流分析等產品技術話題。</p>
+</div>
+<article class="article" id="a-hackernoon-0">
+<h3 class="article-title"><a href="#a-hackernoon-0">The HackerNoon Newsletter: Fridges, Hackers, AI and La Flemme (11/21/2026)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/11-21-2026-newsletter" rel="noopener" target="_blank">https://hackernoon.com/11-21-2026-newsletter</a></span><span class="meta-date">📅 2026-11-22 00:02 UTC+8</span></div>
+<div class="article-body"><p>The HackerNoon newsletter for November 21, 2026, highlights technical and policy stories, including a hands-on benchmark of AWS Amplify, Lambda, Web Functions, and ECS for Next.js, plus pieces on AI-assisted attacks on industrial controllers and Europe’s democratic risk from depending on uncontrolled AI models. It also promotes Journalistic.tech as a way for technologists to turn interviews into articles. The issue matters because it connects practical cloud performance choices with broader security, sovereignty, and community-building concerns.</p>
+<p>呢封 HackerNoon 通訊講住 2026 年 11 月 21 日嘅科技重點，包括 AWS Amplify、Lambda、Web Functions 同 ECS 跑 Next.js 嘅實測，仲有 AI 降低攻擊工業控制器門檻、歐洲依賴唔受控 AI 模型會威脅民主呢啲議題。佢亦都推介 Journalistic.tech，等技術人可以透過訪問將專業知識寫成文章。呢啲內容重要，因為佢將雲端效能選擇同安全、主權同社群貢獻連埋一齊。</p>
+<p><a class="read-more" href="https://hackernoon.com/11-21-2026-newsletter" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+<article class="article" id="a-hackernoon-1">
+<h3 class="article-title"><a href="#a-hackernoon-1">500 Blog Posts To Learn About Bitcoin</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/500-blog-posts-to-learn-about-bitcoin" rel="noopener" target="_blank">https://hackernoon.com/500-blog-posts-to-learn-about-bitcoin</a></span><span class="meta-date">📅 2026-11-21 23:01 UTC+8</span></div>
+<div class="article-body"><p>The article presents a curated list of 500 free blog posts for learning about Bitcoin, ranked by HackerNoon reader engagement and covering topics such as trading, mining, blockchain technology, DeFi, and market predictions. It also promotes related resources and sponsored content, including a Rootstock-sponsored story contest and tools for crypto trading. The collection matters because it offers a broad, reader-driven entry point into Bitcoin and cryptocurrency education, though some items are promotional or speculative.</p>
+<p>呢篇文介紹咗 500 篇免費網誌文章，用 HackerNoon 讀者互動數據排序，內容涵蓋比特幣交易、挖礦、區塊鏈技術、DeFi 同市場預測。佢仲帶埋相關資源同贊助內容，例如 Rootstock 贊助嘅寫作比賽同加密貨幣交易工具。呢個合集之所以重要，係因為佢提供咗一個以讀者為中心嘅比特幣同加密貨幣入門入口，不過部分文章有推廣或者推測成分。</p>
+<p><a class="read-more" href="https://hackernoon.com/500-blog-posts-to-learn-about-bitcoin" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">86 words</div>
+</article>
+<article class="article" id="a-hackernoon-2">
+<h3 class="article-title"><a href="#a-hackernoon-2">The TechBeat: The Ghost of Columbia Still Haunts Starship&#x27;s Heat Shield (11/21/2026)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/11-21-2026-techbeat" rel="noopener" target="_blank">https://hackernoon.com/11-21-2026-techbeat</a></span><span class="meta-date">📅 2026-11-21 23:00 UTC+8</span></div>
+<div class="article-body"><p>The TechBeat newsletter rounds up HackerNoon’s trending tech and AI stories, from Starship’s Columbia-inspired heat shield to AI executive assistants, local decision models, and security breaches via Optimizely. It highlights how practical engineering, governance, and safety concerns are shaping AI, spaceflight, and cybersecurity in 2026. The roundup matters because it connects headline risks and tools with the operational choices developers and organizations are making now.</p>
+<p>呢份 TechBeat 通訊集合咗 HackerNoon 最新熱話，包括星艦受哥倫比亞號啟發嘅隔熱盾、AI 行政助理、本地決策模型同 Optimizely 惡意軟件事件。佢講出 2026 年 AI、太空同保安嘅關鍵，唔係只睇模型幾勁，仲要睇工程、管治同風險點樣落地。對開發者同企業嚟講，呢啲案例直接反映點樣揀工具、守系統同避開事故。</p>
+<p><a class="read-more" href="https://hackernoon.com/11-21-2026-techbeat" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">80 words</div>
+</article>
+<article class="article" id="a-hackernoon-3">
+<h3 class="article-title"><a href="#a-hackernoon-3">Setting Up AWS Control Tower? These SCP and Networking Mistakes Can Cost You Hours</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/setting-up-aws-control-tower-these-scp-and-networking-mistakes-can-cost-you-hours" rel="noopener" target="_blank">https://hackernoon.com/setting-up-aws-control-tower-these-scp-and-networking-mistakes-can-cost-you-hours</a></span><span class="meta-date">📅 2026-11-21 22:30 UTC+8</span></div>
+<div class="article-body"><p>The article walks through building a governed multi-account AWS landing zone with Control Tower, assigning each account a single responsibility and enforcing those boundaries with deny-based SCPs and shared networking from a dedicated Network account. It covers account and OU structure, IAM Identity Center access, VPC sharing, and practical troubleshooting for common SCP and networking failures. The setup matters because it reduces blast radius, keeps permissions and billing separated, and makes it easier to prove that guardrails are actually working.</p>
+<p>呢篇文教你用 AWS Control Tower 起一個多帳號嘅 landing zone，每個帳號只做一件事，再用 deny-based SCP 同 Network 帳號分享 VPC 嚟 enforce 規則。佢仲講埋帳號同 OU 結構、IAM Identity Center 登入、VPC 共享，同埋常見 SCP 同網絡錯點樣 troubleshoot。咁做可以減少誤操作嘅 blast radius，將權限同費用分開，仲可以實際驗證規則有冇生效。</p>
+<p><a class="read-more" href="https://hackernoon.com/setting-up-aws-control-tower-these-scp-and-networking-mistakes-can-cost-you-hours" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">111 words</div>
+</article>
+<article class="article" id="a-hackernoon-4">
+<h3 class="article-title"><a href="#a-hackernoon-4">AI Made Us Faster. So Why Do Designers Have Less Time?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/ai-made-us-faster-so-why-do-designers-have-less-time" rel="noopener" target="_blank">https://hackernoon.com/ai-made-us-faster-so-why-do-designers-have-less-time</a></span><span class="meta-date">📅 2026-11-21 22:00 UTC+8</span></div>
+<div class="article-body"><p>Although AI tools can generate design work in minutes, many designers have less free time because cheaper output creates more options, tighter deadlines, and longer revision cycles. Studies and surveys suggest the productivity gains often fail to appear when teams keep old workflows, so the real savings come from deciding in advance, limiting choices, and restructuring the process. This matters because the AI boom may be inflating expectations while the profession changes permanently, rewarding designers who control the workflow rather than just use new tools.</p>
+<p>雖然 AI 可以幾分鐘生成設計，但好多設計師反而冇更多時間，因為生成變便宜後，選項更多、deadline 更短、改稿更長。研究同調查顯示，如果工作流程冇重組，生產力未必提升；真正省時間靠事先決定方向、限制選擇同快速篩選。呢件事重要，因為 AI 泡沫可能係期望過高，但行業已經永久改變，識得管理流程嘅設計師先至會真正受益。</p>
+<p><a class="read-more" href="https://hackernoon.com/ai-made-us-faster-so-why-do-designers-have-less-time" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">95 words</div>
+</article>
+<article class="article" id="a-hackernoon-5">
+<h3 class="article-title"><a href="#a-hackernoon-5">Six Password Reset Vulnerabilities and How to Prevent Them</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/six-password-reset-vulnerabilities-and-how-to-prevent-them" rel="noopener" target="_blank">https://hackernoon.com/six-password-reset-vulnerabilities-and-how-to-prevent-them</a></span><span class="meta-date">📅 2026-11-21 21:36 UTC+8</span></div>
+<div class="article-body"><p>The article explains how password reset flows can be abused to take over accounts even when the original password is strong, and outlines six common weaknesses from account enumeration and reset poisoning to weak tokens, token leakage, stale sessions, and missing owner notifications. It recommends uniform responses and timing, configured base URLs, cryptographically random single-use hashed short-lived tokens, no third-party scripts on reset pages, session invalidation after changes, and clear change notifications. These controls matter because reset links are designed to bypass the current password, so small implementation mistakes can let attackers capture valid tokens or lock out legitimate users.</p>
+<p>呢篇文講密碼重設流程本身可以成為入帳門路，就算舊密碼夠強都可能被搶走帳號，重點包括唔好洩露帳號存在、唔好用 Host header 起 link、token 要隨機短效單次用、重設後踢走舊 session 同通知用戶。佢建議用統一回應、固定 base URL、加密隨機 token、重設頁唔好放第三方 script，仲要喺 POST 先消耗 token。呢啲做法重要，因為 reset link 本來就係繞過舊密碼嘅入口，一錯就可能俾人搶走帳號或者搞到用戶入唔到。</p>
+<p><a class="read-more" href="https://hackernoon.com/six-password-reset-vulnerabilities-and-how-to-prevent-them" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">122 words</div>
+</article>
+<article class="article" id="a-hackernoon-6">
+<h3 class="article-title"><a href="#a-hackernoon-6">Benchmarking AWS Amplify, Lambda, Web Functions, and ECS for Next.js</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/benchmarking-aws-amplify-lambda-web-functions-and-ecs-for-nextjs" rel="noopener" target="_blank">https://hackernoon.com/benchmarking-aws-amplify-lambda-web-functions-and-ecs-for-nextjs</a></span><span class="meta-date">📅 2026-11-21 19:00 UTC+8</span></div>
+<div class="article-body"><p>A benchmark deployed one Next.js app to AWS Amplify, Lambda, Lambda Web Functions, and ECS Fargate to compare latency, cold starts, CPU, limits, and cost under load. ECS was fastest for light requests but failed at 200 requests per second, while Lambda, Web Functions, and Amplify stayed stable, though Web Functions were about four times more expensive and Amplify and classic Lambda imposed 28-second and 6 MB limits. The results show that real traffic behavior, quotas, and billing matter more than feature lists when choosing an AWS runtime.</p>
+<p>同一個 Next.js 應用被部署去 AWS Amplify、Lambda、Lambda Web Functions 同 ECS Fargate，實測延遲、冷啟動、CPU、限制同成本。ECS 輕量請求最快，但 200 RPS 下大量失敗；Lambda、Web Functions 同 Amplify 穩定，不過 Web Functions 貴約四倍，Amplify 同傳統 Lambda 有 28 秒同 6 MB 上限。揀 AWS runtime 應該睇實際負載、配額同帳單，唔好淨係睇功能清單。</p>
+<p><a class="read-more" href="https://hackernoon.com/benchmarking-aws-amplify-lambda-web-functions-and-ecs-for-nextjs" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">124 words</div>
+</article>
+<article class="article" id="a-hackernoon-7">
+<h3 class="article-title"><a href="#a-hackernoon-7">Your Win Rate Is Wrong Because of the Denominator</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/your-win-rate-is-wrong-because-of-the-denominator" rel="noopener" target="_blank">https://hackernoon.com/your-win-rate-is-wrong-because-of-the-denominator</a></span><span class="meta-date">📅 2026-11-21 18:30 UTC+8</span></div>
+<div class="article-body"><p>The article argues that win rate disputes usually come from the denominator, not the definition of a won deal, because including disqualified, quiet, or recently cleaned-up deals can distort results. It compares three formulas and recommends a cohort-based win rate for qualified deals created in a period, measured only after most deals are closed, while showing still-open deals and keeping period win rates for operations. This matters because it prevents false performance collapses, aligns teams on one definition, and exposes hidden choices in revenue ratios.</p>
+<p>呢篇文章指出，成交率唔準通常唔係因為「成交」定義唔同，而係分母揀錯 deal，例如未 qualified、靜咗嘅 deal，或者一次過清理 CRM 時入面嘅舊 deal。佢建議用 cohort 成交率，即係按某段時間開嘅 qualified deal 去計，等 deal 大致收晒先睇，同時要顯示仲未完嘅 deal，避免將未做完嘅季度當差。咁樣先至唔會因為 CRM 清理或者計法唔同，誤判銷售團隊表現，亦可以令各部門用同一個定義。</p>
+<p><a class="read-more" href="https://hackernoon.com/your-win-rate-is-wrong-because-of-the-denominator" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">106 words</div>
+</article>
+<article class="article" id="a-hackernoon-8">
+<h3 class="article-title"><a href="#a-hackernoon-8">Fledge Launches World Connection Day on November 21 to Fight Loneliness</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/fledge-launches-world-connection-day-on-november-21-to-fight-loneliness" rel="noopener" target="_blank">https://hackernoon.com/fledge-launches-world-connection-day-on-november-21-to-fight-loneliness</a></span><span class="meta-date">📅 2026-11-21 17:34 UTC+8</span></div>
+<div class="article-body"><p>Fledge, a compatibility-focused dating app, is launching World Connection Day on November 21, 2026, inviting people in the US, Canada and Europe to wear colored ribbons in public spaces and start conversations with strangers. The event uses a short hello-style test to assign ribbon colors, with official spots in South Bend and Limassol, and aims to reduce loneliness through simple, consensual face-to-face interactions. It matters because loneliness affects about one in six people worldwide and is linked to serious health risks, while the initiative offers a low-pressure way to meet people.</p>
+<p>Fledge 係一款主打心理契合嘅約會 App，佢喺 2026 年 11 月 21 日推出世界連結日，邀請美國、加拿大同歐洲嘅人喺廣場、公園同海濱戴彩色絲帶同陌生人傾偈。活動用一個短測試決定絲帶顏色，喺 South Bend 同 Limassol 設有官方地點，希望透過簡單、自願嘅面對面互動減少孤獨感。呢件事重要，因為全球約六分之一人經歷孤獨，而且同嚴重健康風險有關，呢個活動提供咗一個冇壓力嘅識人方法。</p>
+<p><a class="read-more" href="https://hackernoon.com/fledge-launches-world-connection-day-on-november-21-to-fight-loneliness" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+<article class="article" id="a-hackernoon-9">
+<h3 class="article-title"><a href="#a-hackernoon-9">No Journalist? No Problem. Meet Journalistic Tech 🎤</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/no-journalist-no-problem-meet-journalistic-tech" rel="noopener" target="_blank">https://hackernoon.com/no-journalist-no-problem-meet-journalistic-tech</a></span><span class="meta-date">📅 2026-11-21 17:00 UTC+8</span></div>
+<div class="article-body"><p>Journalistic.tech is a HackerNoon platform that lets tech professionals publish stories by answering structured interview templates instead of pitching journalists. It offers 273 templates for topics such as product launches, funding, career changes, and developer work, turning around 13 answers into an editable draft that can be published after editorial review. The service matters because it lowers barriers to sharing expertise, building visibility, and reaching a global tech audience without a PR team or media contacts.</p>
+<p>Journalistic.tech 係 HackerNoon 推出嘅新平台，等科技人唔使搵記者或者 pitch 稿，只要答 interview template 就可以將自己嘅經驗同故事發表。佢有 273 個 template，涵蓋產品推出、融資、轉工同開發者日常等主題，答完大約 13 條問題之後可以編輯成稿，通過審閱就刊登。呢個做法重要，因為佢降低分享專業知識同建立個人品牌嘅門檻，等更多人可以接觸全球科技讀者。</p>
+<p><a class="read-more" href="https://hackernoon.com/no-journalist-no-problem-meet-journalistic-tech" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-hackernoon-10">
+<h3 class="article-title"><a href="#a-hackernoon-10">Your CRM Stage Probabilities Were Made Up - Calibrate Them in an Afternoon</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/your-crm-stage-probabilities-were-made-up-calibrate-them-in-an-afternoon" rel="noopener" target="_blank">https://hackernoon.com/your-crm-stage-probabilities-were-made-up-calibrate-them-in-an-afternoon</a></span><span class="meta-date">📅 2026-11-21 11:02 UTC+8</span></div>
+<div class="article-body"><p>The article argues that CRM stage probabilities are often arbitrary template values that badly distort weighted pipeline forecasts. By using first-day pipeline snapshots and a simple SQL query, teams can measure actual eventual and same-quarter win rates, revealing that CRM probabilities can overstate closings by more than twice. It recommends updating CRM probabilities to eventual win rates, using measured same-quarter rates for forecasts, and recalibrating quarterly.</p>
+<p>CRM 入面每個階段的成交機率多數係憑空設定，其實只要用每季首日嘅 pipeline snapshot 同 SQL 查返過去幾季嘅實際成交率，就可以一下午校正。文章指出 CRM 常用嘅 10/20/40/60/80/90 會大幅高估加權 pipeline，尤其季度預測要睇「呢季會唔會成交」，唔係「最終會唔會成交」。所以應該將 CRM 機率改成實際最終成交率，預測時另用同季成交率，並每季重算。</p>
+<p><a class="read-more" href="https://hackernoon.com/your-crm-stage-probabilities-were-made-up-calibrate-them-in-an-afternoon" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+<article class="article" id="a-hackernoon-11">
+<h3 class="article-title"><a href="#a-hackernoon-11">367 Blog Posts To Learn About Bitcoin Spotlight</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/367-blog-posts-to-learn-about-bitcoin-spotlight" rel="noopener" target="_blank">https://hackernoon.com/367-blog-posts-to-learn-about-bitcoin-spotlight</a></span><span class="meta-date">📅 2026-11-21 11:01 UTC+8</span></div>
+<div class="article-body"><p>The article presents 367 free HackerNoon blog posts about Bitcoin, ranked by reader engagement, covering price cycles, investing, mining, blockchain mechanics, regulation, and adoption. It also promotes a Bitcoin writing contest and resources for learning about crypto through curated posts. The collection matters because it offers a broad, accessible guide to understanding Bitcoin’s technology, market behaviour, and wider financial impact.</p>
+<p>呢篇文章整理咗 367 篇免費 HackerNoon 關於 Bitcoin 嘅網誌文章，按讀者互動排序，涵蓋幣價週期、投資、挖礦、區塊鏈技術、監管同採用等主題。佢仲介紹咗一個 Bitcoin 寫作比賽同學習資源，方便讀者透過精選文章了解加密貨幣。呢啲內容重要，因為可以幫讀者更全面理解 Bitcoin 嘅技術、市場表現同對金融世界嘅影響。</p>
+<p><a class="read-more" href="https://hackernoon.com/367-blog-posts-to-learn-about-bitcoin-spotlight" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">75 words</div>
+</article>
+<article class="article" id="a-hackernoon-12">
+<h3 class="article-title"><a href="#a-hackernoon-12">The Shortest Games in a Game Backlog Are the Ones People Finish Least</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/the-shortest-games-in-a-game-backlog-are-the-ones-people-finish-least" rel="noopener" target="_blank">https://hackernoon.com/the-shortest-games-in-a-game-backlog-are-the-ones-people-finish-least</a></span><span class="meta-date">📅 2026-11-21 10:17 UTC+8</span></div>
+<div class="article-body"><p>Analysis of 129 game backlogs covering 25,276 games found that games under five hours are marked done only 6.1% of the time, far below the roughly 19% to 20% finish rate for 5-to-30-hour games. The author suggests short games may come from bundles, lack a clear completion moment, or feel less worth starting, while games with definite endings such as platformers, shooters and horror are finished more often than open-ended genres. The findings challenge the common advice to clear a backlog by playing the shortest games first and point to better tracker features such as combining length with genre and past completions, plus easier ways to mark short or open-ended games as done.</p>
+<p>一份涵蓋129個遊戲庫、25,276款遊戲嘅數據發現，五粒鐘以下嘅短遊戲只有6.1%被標做完成，遠低於5至30粒鐘遊戲大約19%至20%嘅完成率。作者認為短遊戲可能因為捆綁贈送、玩完冇儀式感更新狀態，或者唔捨得唔玩就唔會開始，而平台、射擊、恐怖呢類有明確結局嘅遊戲，比策略、模擬呢類開放式遊戲更容易完成。呢個結果打破「先玩短遊戲清遊戲清單」嘅常識，亦反映追蹤器應該用長度、類型同過去完成記錄一齊推薦，並俾短遊戲同開放式遊戲更簡單嘅完成標記方式。</p>
+<p><a class="read-more" href="https://hackernoon.com/the-shortest-games-in-a-game-backlog-are-the-ones-people-finish-least" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">118 words</div>
+</article>
+<article class="article" id="a-hackernoon-13">
+<h3 class="article-title"><a href="#a-hackernoon-13">Voice Biometrics: The Night Identity Finally Learned to Speak</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/voice-biometrics-the-night-identity-finally-learned-to-speak" rel="noopener" target="_blank">https://hackernoon.com/voice-biometrics-the-night-identity-finally-learned-to-speak</a></span><span class="meta-date">📅 2026-11-21 08:36 UTC+8</span></div>
+<div class="article-body"><p>Voice biometrics promises password-free identity, but the article argues the real challenge is migrating away from legacy authentication stacks that still control customer journeys. It stresses mapping hidden rules, running old and new systems in parallel, treating voice match as one input among fraud and context signals, and only retiring the old platform after measurable checks and a kill date. The migration is complete only when the old system no longer forces fallbacks such as PINs.</p>
+<p>呢篇文講語音生物識別雖然可以令身份驗證變得更方便，但真正難嘅係拆走舊身份系統，因為好多舊規則、例外同後備流程仲喺度影響客戶。團隊要先搞清楚舊系統實際點運作，再等新老系統並行比較，將語音匹配只當其中一個訊號，配合欺詐偵測同交易情境做決定。最後要等到所有關鍵路徑都確認冇依賴舊系統，先可以真正退役舊平台，令身份驗證真正靠語音完成。</p>
+<p><a class="read-more" href="https://hackernoon.com/voice-biometrics-the-night-identity-finally-learned-to-speak" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">81 words</div>
+</article>
+<article class="article" id="a-hackernoon-14">
+<h3 class="article-title"><a href="#a-hackernoon-14">Fridges, Hackers, AI and La Flemme</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/fridges-hackers-ai-and-la-flemme" rel="noopener" target="_blank">https://hackernoon.com/fridges-hackers-ai-and-la-flemme</a></span><span class="meta-date">📅 2026-11-21 08:19 UTC+8</span></div>
+<div class="article-body"><p>Recent attacks on supermarket refrigeration systems and blood banks in Europe exploited internet-exposed, often outdated Danfoss controllers by setting fridges to defrost or high temperatures, causing tens of millions of euros in losses. The article argues that publicly available vulnerability reports, firmware downloads and AI tools can help attackers reproduce exploits, while also noting that Danfoss may have carried a previously reported authentication weakness into newer products. It matters because industrial control systems are increasingly reachable online and AI can lower the skill and time needed to weaponise known flaws.</p>
+<p>歐洲多國超市雪櫃同血庫被黑客攻擊，主要係因為好多 Danfoss 控制器直接連上互聯網，而且用咗過期或者冇更新嘅固件，令溫度被改到極高，造成數以千萬歐元損失。文章指出，公開漏洞報告、可下載固件同 AI 工具可以令攻擊者更容易重現漏洞，亦反映 Danfoss 可能將舊款已公開嘅認證弱點帶入新款產品。呢件事重要，因為工業控制系統愈多暴露喺網上，AI 又會降低攻擊門檻，令已知漏洞更快變成武器。</p>
+<p><a class="read-more" href="https://hackernoon.com/fridges-hackers-ai-and-la-flemme" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">102 words</div>
+</article>
+<article class="article" id="a-hackernoon-15">
+<h3 class="article-title"><a href="#a-hackernoon-15">Europe’s Democracy Is at Risk If It Cannot Control the AI It Depends On</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/europes-democracy-is-at-risk-if-it-cannot-control-the-ai-it-depends-on" rel="noopener" target="_blank">https://hackernoon.com/europes-democracy-is-at-risk-if-it-cannot-control-the-ai-it-depends-on</a></span><span class="meta-date">📅 2026-11-21 07:31 UTC+8</span></div>
+<div class="article-body"><p>Europe is loosening rules on using personal data to train AI through the Digital Omnibus, but its dependence on foreign models, cloud services and computing power is growing. The article argues that this dependence threatens economic security and democratic institutions, because decisions made outside Europe can disrupt services, limit access to advanced systems and enable political manipulation. Although the EU is funding open-source models and AI gigafactories, it still trails the US and China, leaving democracies exposed if critical AI infrastructure fails or is controlled elsewhere.</p>
+<p>歐洲打算放寬個人資料用嚟訓練 AI，但佢哋越嚟越依賴外國嘅模型、雲端服務同算力。文章話呢種依賴會威脅經濟安全同民主制度，因為一旦外國服務停頓、限制使用或者被人用嚟影響政治，歐洲就好難自保。雖然歐盟開始資助開源模型同大型 AI 計算中心，但同美國同中國比仍然落後，民主社會面對嘅風險仍然好大。</p>
+<p><a class="read-more" href="https://hackernoon.com/europes-democracy-is-at-risk-if-it-cannot-control-the-ai-it-depends-on" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">94 words</div>
+</article>
+<article class="article" id="a-hackernoon-16">
+<h3 class="article-title"><a href="#a-hackernoon-16">What Should Undo Do After a List Has Moved?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/what-should-undo-do-after-a-list-has-moved" rel="noopener" target="_blank">https://hackernoon.com/what-should-undo-do-after-a-list-has-moved</a></span><span class="meta-date">📅 2026-11-21 07:21 UTC+8</span></div>
+<div class="article-body"><p>The article examines how an Undo action should restore a deleted card after the list has been reordered, contrasting index-based insertion with neighbour-based placement. It recommends recording stable IDs and former neighbours, handling missing neighbours and duplicate titles, and using small tests to make the intended ordering clear. The decision matters because a simple array operation can silently create surprising user experiences and future maintenance bugs.</p>
+<p>文章講 Undo 應該點樣還原一張已經被刪除嘅卡片，尤其係喺清單順序已經變動之後，用索引插入定係跟返原本相鄰嘅卡片。佢建議記錄穩定 ID 同原本前後鄰居，處理鄰居消失、同名卡片等情況，再用小測試確認還原順序。呢個決定好重要，因為一個簡單陣列操作都可能令用戶覺得奇怪，亦會為日後維護埋下問題。</p>
+<p><a class="read-more" href="https://hackernoon.com/what-should-undo-do-after-a-list-has-moved" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">75 words</div>
+</article>
+<article class="article" id="a-hackernoon-17">
+<h3 class="article-title"><a href="#a-hackernoon-17">We Tested Every REST Endpoint and Missed the Queue That Dropped $62K</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/we-tested-every-rest-endpoint-and-missed-the-queue-that-dropped-$62k" rel="noopener" target="_blank">https://hackernoon.com/we-tested-every-rest-endpoint-and-missed-the-queue-that-dropped-$62k</a></span><span class="meta-date">📅 2026-11-21 07:04 UTC+8</span></div>
+<div class="article-body"><p>An engineering team lost $62,400 in merchant payouts because a Go producer changed payoutCents from an integer to a string, while TypeScript consumer tests still passed against stale fixtures and REST contract tests never covered the SQS queue. The failure exposed how asynchronous message boundaries can carry money-moving side effects without runtime validation or cross-repo checks. The fix was a shared JSON Schema contract, immediate consumer-side validation, LocalStack integration tests that exercise the real producer-to-consumer path, and alerts on dead-letter queues.</p>
+<p>一個工程團隊因為 Go 服務將 payoutCents 由整數改成字串，而 TypeScript 消費者仲用舊 fixture 測試，REST contract test 又冇覆蓋 SQS queue，結果漏咗 $62,400 嘅商戶 payout。佢哋之後用共享 JSON Schema 做單一合約，喺消費者入口即時驗證訊息，再加入 LocalStack 真真正正由 producer 送到 consumer 嘅 contract test，同埋為 dead-letter queue 設警報。呢件事提醒團隊，異步 queue 唔可以當冇人管嘅 JSON dropbox，因為錢通常就係行喺呢條 invisible gap 入面。</p>
+<p><a class="read-more" href="https://hackernoon.com/we-tested-every-rest-endpoint-and-missed-the-queue-that-dropped-$62k" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">123 words</div>
+</article>
+<article class="article" id="a-hackernoon-18">
+<h3 class="article-title"><a href="#a-hackernoon-18">The Anchor Effect: Why Destination Footfall Doesn&#x27;t Equal Retail Demand</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/the-anchor-effect-why-destination-footfall-doesnt-equal-retail-demand" rel="noopener" target="_blank">https://hackernoon.com/the-anchor-effect-why-destination-footfall-doesnt-equal-retail-demand</a></span><span class="meta-date">📅 2026-11-21 06:26 UTC+8</span></div>
+<div class="article-body"><p>Battersea Power Station’s 50-million-visitor milestone shows destination appeal, but Wandsworth Council’s vacancy data and the article’s spatial analysis show that visitor totals do not prove retail demand at individual units. It separates proximity, accessibility and exposure, then links frontage flow to sales conversion and occupancy cost ratios to explain why a busy district can still contain empty shops. The key point for site selection is that developers and retailers need unit-level movement and economics, not headline footfall or accessibility maps alone.</p>
+<p>巴特西發電站宣布有5000萬人次訪客，只反映地方有吸引力，唔代表每間舖都有生意；旺茲沃思區議會數據顯示不同區域空置率差距好大，由6%到38%都有。文章強調要分清距離、可達性同門面曝光，再將人流、入店率、成交同租金成本連埋睇，先至知道一個旺區點解仲有舖位空置。揀舖唔可以淨係睇總客流或者地圖範圍，而要睇實際邊條路經人、邊間舖有幾多人經過，同埋收入有冇足夠支撐營運成本。</p>
+<p><a class="read-more" href="https://hackernoon.com/the-anchor-effect-why-destination-footfall-doesnt-equal-retail-demand" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">86 words</div>
+</article>
+<article class="article" id="a-hackernoon-19">
+<h3 class="article-title"><a href="#a-hackernoon-19">We Killed Our Staging Environment and Moved QA to Production Canaries</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://hackernoon.com/we-killed-our-staging-environment-and-moved-qa-to-production-canaries" rel="noopener" target="_blank">https://hackernoon.com/we-killed-our-staging-environment-and-moved-qa-to-production-canaries</a></span><span class="meta-date">📅 2026-11-21 06:05 UTC+8</span></div>
+<div class="article-body"><p>A software team shut down its shared staging environment after it repeatedly blocked urgent fixes and failed to catch production outages caused by real data scale, traffic spikes, and dirty state. They replaced the staging gate with production canaries using Argo Rollouts and Prometheus auto-rollback, shadow traffic for risky read paths, and isolated synthetic probes for new workflows. The shift matters because it lets teams ship faster while testing against real production conditions with controlled blast radius and lower infrastructure cost.</p>
+<p>呢間公司因為共用 staging 環境成日阻塞緊急修復，又捉唔到真正 production 嘅數據規模同流量問題，所以索性拆走 staging。佢哋改用 production canary，配合 Argo Rollouts 自動回滾、shadow traffic 同隔離嘅 synthetic probe，喺真實環境入面做 QA。呢個做法可以更快上線，同時控制風險同慳錢。</p>
+<p><a class="read-more" href="https://hackernoon.com/we-killed-our-staging-environment-and-moved-qa-to-production-canaries" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">101 words</div>
+</article>
+</section>
+<section class="source" id="src-verge">
+<h2 class="source-title">The Verge AI <span class="source-count">1 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Verge focused on Anthropic’s IPO as the first pure AI lab to go public, examining whether its safety-first identity can survive shareholder pressure, soaring compute costs, and the need to prove profitability. The coverage also highlighted how its unusual governance and founder control may give it some insulation from short-term market demands.</p>
+<p>Verge 集中講 Anthropic 上市，因為佢係第一間純粹 AI lab 公開上市，所以佢一向主打安全嘅形象，要面對股東壓力、龐大算力成本同證明盈利能力嘅挑戰。報導亦提到佢嘅特殊管治同創辦人控制權，可能幫佢暫時頂住短期市場要求，但長遠仍然要證明自己可以賺錢。</p>
+</div>
+<article class="article" id="a-verge-0">
+<h3 class="article-title"><a href="#a-verge-0">Can Anthropic afford to put safety first?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure" rel="noopener" target="_blank">https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure</a></span><span class="meta-date">📅 2026-11-21 21:29 UTC+8</span></div>
+<div class="article-body"><p>Anthropic’s IPO marks the first time a pure AI lab has gone public, turning its safety-focused brand into a major test under shareholder pressure and enormous future compute costs. The article argues that the company’s unusual governance and founder control may help it resist short-term market demands, but it still faces intense pressure to grow revenue and prove profitability. Its listing also gives OpenAI a useful benchmark for its own eventual public debut.</p>
+<p>Anthropic 上市係第一間純 AI lab 上公開市，將佢一直主打嘅安全形象放到股東壓力同天文數字算力成本面前受考驗。文章認為佢嘅特殊管治架構同創辦人控制權，可能幫佢頂住短期市場壓力，但佢仍然要大幅增加收入同證明盈利能力。呢次上市亦等如幫 OpenAI 做咗一次試水溫，方便佢日後講自己嘅上市故事。</p>
+<p><a class="read-more" href="https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">84 words</div>
+</article>
+</section>
+<section class="source" id="src-latentspace">
+<h2 class="source-title">Latent Space <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>LatentSpace focused on the emerging role of formal verification in mathematics and software, highlighting two independent claims of the Riemann Hypothesis: Levent Alpöge’s massive Lean formalization produced with Claude and Alessandro Masullo’s 940-page human draft. It also covered how companies such as &amp;Truth, Harmonic, Theorem and Axiom Math are building proof-based systems to combat AI-generated “slop” by checking whether code meets precise requirements.</p>
+<p>LatentSpace 最近集中講緊形式驗證點樣改變數學同軟件工程，特別係兩個數學家各自宣稱證明咗黎曼猜想，一個係 Levent Alpöge 用 Claude 做出嚟嘅 Lean 形式化證明，另一個係 Alessandro Masullo 嘅 940 頁人手草稿。佢哋亦提到 &amp;Truth、Harmonic、Theorem 同 Axiom Math 呢啲公司正積極打造，用數學證明同 Lean 呢類工具去對付 AI 生成嘅「水貨」程式碼，確保程式真係符合嚴格要求。</p>
+</div>
+<article class="article" id="a-latentspace-0">
+<h3 class="article-title"><a href="#a-latentspace-0">[AINews] Riemann Hypothesis proved...twice independently</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/" rel="noopener" target="_blank">https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/</a></span><span class="meta-date">📅 2026-11-21 13:02 UTC+8</span></div>
+<div class="article-body"><p>Two mathematicians independently claimed proofs of the Riemann Hypothesis: Levent Alpöge released a massive Lean formalization produced with Claude, which may be correct but is effectively unreadable, while Alessandro Masullo released a 940-page human draft that is understandable but not yet verified. The episode highlights a new tension in frontier AI mathematics between machine-verifiable but opaque results and human-understandable but less certain work, and it will take years to confirm. The wider AI roundup also notes open-model releases and debates over verification, alignment, and the limits of current systems.</p>
+<p>兩個數學家幾乎同時宣稱獨立證明黎曼猜想：Levent Alpöge 用 Claude 生成嘅 Lean 形式化證明可能正確但人類根本睇唔晒，Alessandro Masullo 就公布一份 940 頁純人手證明，可讀但技術上仲未確認。呢單嘢反映 AI 數學嘅新矛盾：機器可驗證但唔易明白，同埋人可理解但未經嚴格驗證，最終都要等好多年先確認。文章亦提到其他 AI 動態，包括開源模型發布，以及關於驗證、對齊同能力邊界嘅討論。</p>
+<p><a class="read-more" href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">108 words</div>
+</article>
+<article class="article" id="a-latentspace-1">
+<h3 class="article-title"><a href="#a-latentspace-1">The War Against Slop and an Emerging Weapon to Fight it: Formal Verification</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://latent.space/p/formal-verification/" rel="noopener" target="_blank">https://latent.space/p/formal-verification/</a></span><span class="meta-date">📅 2026-11-21 05:18 UTC+8</span></div>
+<div class="article-body"><p>As AI-generated code floods software engineering, “slop” has become a major concern, prompting companies such as &amp;Truth, Harmonic, Theorem and Axiom Math to build formal verification systems that use mathematical proofs and tools like Lean to check correctness. These systems aim to move beyond tests and AI self-review by proving whether code meets precise requirements, with applications in cybersecurity, memory safety and developer workflows that shift effort toward specifications. If they become practical at scale, they could give humans a stronger way to trust AI-built software without reading every line.</p>
+<p>而家AI寫code多到爆，「slop」呢啲低質素輸出搞到工程師日日頭痕，所以&amp;Truth、Harmonic、Theorem同Axiom Math呢啲公司就推formal verification，用數學證明同Lean呢啲工具去核對code有冇錯。呢套嘢唔止係做測試或者等AI自己睇自己，而係要證明個code真係符合清楚寫明嘅要求，仲可以用喺保安、memory safety同開發流程，等工程師花更多時間寫spec同覆核。如果佢哋真係做到大規模，人類就唔使逐行睇AI寫嘅code，都可以更放心用AI交貨。</p>
+<p><a class="read-more" href="https://latent.space/p/formal-verification/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">98 words</div>
+</article>
+</section>
+<section class="source" id="src-cloudflare">
+<h2 class="source-title">Cloudflare Blog <span class="source-count">2 articles</span></h2>
+<div class="source-summary">
+<h3 class="source-summary-title">Last 24 Hours</h3>
+<p>Cloudflare focused on new WAF protections against critical application vulnerabilities, including ruby2shell (CVE-2026-132825), a Ruby heap buffer overflow that can enable remote code execution. It also covered phpAfterShell (CVE-2026-126714) and other November 2026 PHP flaws, explaining that managed WAF rules are enabled by default and available even on the Free plan, while patching remains essential.</p>
+<p>Cloudflare 最近集中講新 WAF 點樣擋 ruby2shell 同 phpAfterShell 呢啲高危漏洞，前者係 Ruby 嘅 heap buffer overflow，可以導致遠程執行代碼。佢哋又話 phpAfterShell 同埋其他 PHP 漏洞嘅保護規則已經預設開啟，免費計劃都有，但最終都要升級 PHP 先至穩陣。</p>
+</div>
+<article class="article" id="a-cloudflare-0">
+<h3 class="article-title"><a href="#a-cloudflare-0">How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/ruby2shell-waf-protection/" rel="noopener" target="_blank">https://blog.cloudflare.com/ruby2shell-waf-protection/</a></span><span class="meta-date">📅 2026-11-21 04:24 UTC+8</span></div>
+<div class="article-body"><p>Ruby has disclosed ruby2shell (CVE-2026-132825), a critical heap buffer overflow in string case conversion that can lead to remote code execution and affects Ruby 3.3.13 and earlier, 3.4.0 through 3.4.12, and 4.0.0 through 4.0.9, including default Rails and classic Sinatra apps and several bundled products. Cloudflare has added blocking managed WAF rules for ruby2shell and a related integer overflow for all customers, including Free plans, to reduce exposure while upgrades are deployed. The company stresses that the WAF is only a compensating control, so administrators must patch Ruby and restrict origin traffic because exploits can bypass Cloudflare or reach the vulnerable code through non-HTTP paths.</p>
+<p>Ruby 爆出 ruby2shell（CVE-2026-132825）呢個嚴重堆疊緩衝區溢出漏洞，可以令攻擊者喺部分情況下執行遠端程式碼，Rails 同 Sinatra 預設配置都有機會中招。Cloudflare 已經喺免費同付費 WAF 規則加入封鎖 ruby2shell 同相關整數溢出嘅規則，幫客戶喺未升級前減少風險。不過 WAF 唔可以完全代替打 Patch，管理員仲係要盡快升級 Ruby，並確保來源伺服器只接受經 Cloudflare 嘅流量。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/ruby2shell-waf-protection/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">126 words</div>
+</article>
+<article class="article" id="a-cloudflare-1">
+<h3 class="article-title"><a href="#a-cloudflare-1">How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.cloudflare.com/phpaftershell-waf-protection/" rel="noopener" target="_blank">https://blog.cloudflare.com/phpaftershell-waf-protection/</a></span><span class="meta-date">📅 2026-11-21 04:00 UTC+8</span></div>
+<div class="article-body"><p>Cloudflare says its WAF now blocks known attack patterns for phpAfterShell (CVE-2026-126714), a critical PHP session-handling flaw that can lead to remote code execution, along with protections for several other PHP vulnerabilities fixed in November 2026. The WAF rules are enabled by default, with phpAfterShell protection available even on the Free plan, but upgrading PHP remains the only complete fix because some flaws depend on server configuration or paths a WAF may not see. The update matters because PHP is widely used and patching many servers can take time, giving attackers a window to exploit newly disclosed flaws.</p>
+<p>Cloudflare 話佢哋嘅 WAF 已經可以擋住 phpAfterShell（CVE-2026-126714）呢個 PHP 嚴重漏洞嘅攻擊模式，仲有另外幾個 PHP 漏洞嘅保護，呢啲漏洞可以導致遠端執行代碼。免費計劃都有預設開啓嘅 phpAfterShell 保護，但係真正徹底解決仲係要升級 PHP 同重啟 worker，因為有些漏洞要睇伺服器設定或者 WAF 睇唔到嘅路徑。呢個更新好重要，因為 PHP 用得好廣，好多伺服器未必即刻 patch 到，所以 WAF 可以喺 patch 期間減少風險。</p>
+<p><a class="read-more" href="https://blog.cloudflare.com/phpaftershell-waf-protection/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">126 words</div>
+</article>
+</section>
+<section class="source" id="src-simonwillison">
+<h2 class="source-title">Simon Willison <span class="source-count">1 articles</span></h2>
+<article class="article" id="a-simonwillison-0">
+<h3 class="article-title"><a href="#a-simonwillison-0">Quoting Ravi Vakil</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://simonwillison.net/2026/Nov/20/ravi-vakil/" rel="noopener" target="_blank">https://simonwillison.net/2026/Nov/20/ravi-vakil/</a></span><span class="meta-date">📅 2026-11-21 03:21 UTC+8</span></div>
+<div class="article-body"><p>Alessandro Masullo has proposed a proof of the Generalized Riemann Hypothesis, and Brian Conrad has spent months reviewing it and giving detailed feedback that has been incorporated. The work is described as entirely human-written, with no AI involved, and the original plan was to bring Masullo to Stanford to polish the writing before a formal announcement. The draft is now being released sooner because that appears to be the best course, making it a notable development in one of mathematics’ major open problems.</p>
+<p>Alessandro Masullo 提出咗一個廣義黎曼猜想嘅證明，Brian Conrad 已經密切審視咗幾個月，佢嘅大量意見亦已經被吸收，暫時睇落情況唔錯。呢份工作完全係人手寫成，冇用 AI，原本打算請 Masullo 去 Stanford 打磨一年再正式公布。而家既然覺得最好先放出現有草稿，呢件事就成為數學界一個值得留意嘅重要進展。</p>
+<p><a class="read-more" href="https://simonwillison.net/2026/Nov/20/ravi-vakil/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+</section>
+<section class="source" id="src-aws">
+<h2 class="source-title">AWS Architecture Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aws-0">
+<h3 class="article-title"><a href="#a-aws-0">How Bee implemented Zero Operator Access for personal AI on AWS</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/how-bee-implemented-zero-operator-access-for-personal-ai-on-aws/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/how-bee-implemented-zero-operator-access-for-personal-ai-on-aws/</a></span><span class="meta-date">📅 2026-11-21 02:49 UTC+8</span></div>
+<div class="article-body"><p>Bee, an Amazon company, has built a personal AI wearable on AWS with a Zero Operator Access architecture that prevents Bee engineers, Amazon employees, and AWS infrastructure operators from accessing users’ sensitive conversation data. The system uses EC2 instance attestation, NitroTPM, public transparency logs, hardened AMIs, and short-lived keys so user devices only release decryption keys to verified software, while stored data remains encrypted. This matters because it lets Bee process highly personal information about health, finances, and family while giving users stronger technical assurance that no operator can read their data.</p>
+<p>Bee 係 Amazon 旗下嘅個人 AI 裝置，佢喺 AWS 上面用咗 Zero Operator Access 架構，令 Bee 工程師、Amazon 員工同 AWS 基礎設施操作員都冇辦法接觸用戶嘅敏感對話資料。系統靠 EC2 實例認證、NitroTPM、公開透明度日誌、加固 AMI 同短期金鑰，確保用戶裝置只會將解密金鑰交畀經核實嘅軟件，而儲存嘅資料都會加密。呢樣嘢重要，因為 Bee 要處理健康、財務同家庭等極私人資訊，呢套設計可以畀用戶更有信心操作員讀唔到佢哋嘅資料。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/how-bee-implemented-zero-operator-access-for-personal-ai-on-aws/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">119 words</div>
+</article>
+<article class="article" id="a-aws-1">
+<h3 class="article-title"><a href="#a-aws-1">AI coding agents on Amazon EC2 Mac: How Cognition scales Devin for macOS</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/ai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/ai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos/</a></span><span class="meta-date">📅 2026-11-20 09:10 UTC+8</span></div>
+<div class="article-body"><p>Cognition has enabled its AI software engineer Devin to build, test, and sign Apple apps by running macOS workspaces on Amazon EC2 Mac instances, using Apple silicon hosts, virtualization, snapshots, and networking controls to provide ready-to-use development environments. The setup can start a fresh macOS virtual machine in under a minute across six AWS Regions, making it far faster than customers provisioning Macs themselves and allowing Devin to verify app behavior in the iOS Simulator before returning merge-ready changes. This matters because Apple app development still requires Apple hardware and macOS, so cloud-based Macs let AI coding agents and automated testing scale without managing physical Mac fleets.</p>
+<p>Cognition 為咗等佢哋嘅 AI 軟件工程師 Devin 可以開發、測試同簽署 Apple app，而家會喺 Amazon EC2 Mac 上面跑 macOS 開發環境，用 Apple 晶片主機、虛擬化、快照同網絡控制，等 Devin 可以即刻開工。呢個做法喺六個 AWS Region 可以一分鐘內開好一個新 macOS 虛擬機，仲可以喺 iOS Simulator 入面實際試 app 行為，再交返可以合併嘅改動。因為 Apple app 開發始終要 Apple 硬件同 macOS，所以用雲端 Mac 可以等 AI coding agent 同自動化測試更容易擴展，唔使自己買機同養機。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/ai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">151 words</div>
+</article>
+<article class="article" id="a-aws-2">
+<h3 class="article-title"><a href="#a-aws-2">How Country Road Group built a pattern-driven integration solution on AWS</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://aws.amazon.com/blogs/architecture/how-country-road-group-built-a-pattern-driven-integration-solution-on-aws/" rel="noopener" target="_blank">https://aws.amazon.com/blogs/architecture/how-country-road-group-built-a-pattern-driven-integration-solution-on-aws/</a></span><span class="meta-date">📅 2026-11-20 07:07 UTC+8</span></div>
+<div class="article-body"><p>Australian fashion retailer Country Road Group replaced its ageing BizTalk middleware with a pattern-driven integration platform on AWS, using declarative patterns, Terraform and AWS serverless services to move data between retail systems. The Strategic Integration Platform consolidates legacy tools, standardises security and error handling, and uses four processing lanes to route batch, API, database and event traffic. The approach matters because it cuts costly middleware lock-in, reduces operational risk and offers reusable open-source patterns for other enterprises.</p>
+<p>澳洲時裝零售商 Country Road Group 將舊有 BizTalk middleware 換咗做 AWS 上嘅 pattern-driven integration platform，用 declarative patterns、Terraform 同 AWS serverless 服務處理零售系統之間嘅數據。呢個 Strategic Integration Platform 整合舊工具、統一保安同錯誤處理，仲用四條 processing lanes 分流 batch、API、database 同 event 流量。呢個做法可以減少昂貴 middleware 鎖定、降低營運風險，亦提供可重用嘅 open-source patterns 俾其他企業參考。</p>
+<p><a class="read-more" href="https://aws.amazon.com/blogs/architecture/how-country-road-group-built-a-pattern-driven-integration-solution-on-aws/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">116 words</div>
+</article>
+</section>
+<section class="source" id="src-googleblog">
+<h2 class="source-title">Google Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-googleblog-0">
+<h3 class="article-title"><a href="#a-googleblog-0">Get your year-end tasks done with new Connected Apps.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/" rel="noopener" target="_blank">https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/</a></span><span class="meta-date">📅 2026-11-21 02:00 UTC+8</span></div>
+<div class="article-body"><p>New Connected Apps are being rolled out in the U.S. through Search and the Gemini app to help users complete year-end tasks, from grocery ordering with Albertsons, Safeway, Shaw’s, and Target to checking credit scores with Experian and estimating taxes with H&amp;R Block. Powered by the Universal Commerce Protocol, the tools aim to simplify holiday shopping, finances, and home projects, with Angi and Thumbtack integrations coming soon. The update matters because it brings more practical services directly into everyday search and AI experiences during a busy season.</p>
+<p>美國推出咗新嘅 Connected Apps，可以喺搜尋同 Gemini app 入面幫手處理年尾事務，包括用 Albertsons、Safeway、Shaw’s 同 Target 買嘢、用 Experian 查信貸評分同搵個人貸款，仲可以用 H&amp;R Block 估算報稅退稅。呢啲功能由 Universal Commerce Protocol 驅動，之後仲會接入 Angi 同 Thumbtack，方便搵師傅修屋企或者布置節日裝飾。對用戶嚟講，呢個更新等假期同年尾最忙嗰陣，可以喺搜尋同 AI 工具入面一次過搞掂好多嘢。</p>
+<p><a class="read-more" href="https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">115 words</div>
+</article>
+<article class="article" id="a-googleblog-1">
+<h3 class="article-title"><a href="#a-googleblog-1">How Watch Duty is using Gemini to get wildfire alerts out faster</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/company-news/outreach-and-initiatives/google-org/watch-duty-gemini-tool/" rel="noopener" target="_blank">https://blog.google/company-news/outreach-and-initiatives/google-org/watch-duty-gemini-tool/</a></span><span class="meta-date">📅 2026-11-21 01:00 UTC+8</span></div>
+<div class="article-body"><p>A new Gemini-powered tool built with Google.org pro bono support helps Watch Duty convert noisy wildfire radio dispatches into clean text in under 30 seconds, allowing volunteers to verify incidents and issue alerts faster. The system, trained on more than 20,000 hours of recordings, cut word errors on degraded VHF audio from 38% to 22.34%, transcribes over 200 hours daily from about 400 feeds, and was tested during Washington’s Railroad Fire, enabling Watch Duty’s first overnight Critical Alert. The collaboration matters because earlier warnings can give residents time to evacuate when minutes decide safety.</p>
+<p>Google.org 義工團隊同 Watch Duty 合作，用 Gemini 將雜亂嘅山火無線電通報即時轉做文字，令義工喺 30 秒內發現新火警，再更快核實同發出警報。呢個系統用咗超過 20,000 小時錄音訓練，將劣質 VHF 音訊嘅字誤差率由 38% 減到 22.34%，每日可處理約 400 個頻道超過 200 小時語音，仲喺華盛頓州 Railroad Fire 實際幫到 Watch Duty 首次深夜發出 Critical Alert。因為山火來得快，早幾分鐘通知居民疏散，可能已經決定到成個社區有冇時間走。</p>
+<p><a class="read-more" href="https://blog.google/company-news/outreach-and-initiatives/google-org/watch-duty-gemini-tool/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">126 words</div>
+</article>
+<article class="article" id="a-googleblog-2">
+<h3 class="article-title"><a href="#a-googleblog-2">ICYMI: Transfer your history from other AI apps into Gemini.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/" rel="noopener" target="_blank">https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/</a></span><span class="meta-date">📅 2026-11-20 04:30 UTC+8</span></div>
+<div class="article-body"><p>Google Gemini now lets users move their context, preferences, and chat history from other AI assistants without starting over. The process involves copying an import prompt into the old AI tool, pasting the generated summary into Gemini, and uploading a ZIP export of previous conversations. This matters because it reduces switching friction and preserves useful personalization for users changing platforms.</p>
+<p>Gemini 而家容許用戶將其他 AI 助手嘅背景、偏好同對話紀錄搬過去，唔使由零開始。做法係將 Gemini 嘅匯入提示貼去舊 AI 工具生成摘要，再貼返 Gemini，同時上傳舊平台嘅 ZIP 對話紀錄。呢個功能好重要，因為可以減少轉換平台嘅麻煩，保留個人化設定同歷史脈絡。</p>
+<p><a class="read-more" href="https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">75 words</div>
+</article>
+</section>
+<section class="source" id="src-thebatch">
+<h2 class="source-title">Deep Learning AI — The Batch <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-thebatch-0">
+<h3 class="article-title"><a href="#a-thebatch-0">Issue 380</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-380" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-380</a></span><span class="meta-date">📅 2026-11-20 23:00 UTC+8</span></div>
+<div class="article-body"><p>Nvidia founder Jensen Huang resigned as CEO after reports linked his relationship with Huang Le, a former Megaspeed executive, to Chinese intelligence concerns, prompting an independent board investigation and the appointment of CFO Colette Kress as interim CEO. The episode exposed Nvidia’s central role in the global AI supply chain, the fragility of U.S. export controls on advanced chips, and the geopolitical stakes around China’s access to Nvidia hardware. Andrew Ng’s tribute frames Huang as an indispensable figure whose leadership helped build the modern AI ecosystem, even as his departure raises questions about whether such leaders are truly replaceable.</p>
+<p>Nvidia 創辦人黃仁勳因為被揭發與前 Megaspeed 高管黃樂有親密關係，而美方懷疑黃樂向中國情報部門提供資料，最終辭去行政總裁職位，董事會由財務總監 Colette Kress 暫代。事件反映 Nvidia 喺全球 AI 晶片供應鏈嘅核心地位，同時暴露美國對華晶片出口管制有漏洞，同埋中國爭相取得先進 AI 晶片嘅地緣政治風險。Andrew Ng 嘅文章將黃仁勳形容為 AI 界英雄，認為佢對生態圈嘅貢獻難以取代，亦令人反思一個關鍵人物離開後會唔會造成無法彌補嘅損失。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-380" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">120 words</div>
+</article>
+<article class="article" id="a-thebatch-1">
+<h3 class="article-title"><a href="#a-thebatch-1">Issue 379</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-379" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-379</a></span><span class="meta-date">📅 2026-11-13 23:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew Ng highlights the growing importance of agent harnesses and introduces OpenWorker’s open-source Harness SDK, showing how coding agents can be steered to build applications with tools, memory, approvals, guardrails, and sandboxing. The article also reports that OpenAI’s restricted GPT-6 Cyber model found, exploited, and patched nearly 950 root-level Linux kernel vulnerabilities in one run at a lower cost per flaw than earlier models. Together, these developments show how practical AI agent engineering and automated security research are becoming, while raising important questions about cost, safety, and controlled deployment.</p>
+<p>Andrew Ng 介紹 OpenWorker 開源 Agent Harness SDK，教讀者點樣用 coding agent 快速建立有工具、記憶、審批同安全防護嘅 AI agent，因為呢個技能越來越實用同受僱主重視。文章亦報道 OpenAI 嘅 GPT-6 Cyber 喺 Linux kernel 一次掃描發現、利用並修補近 950 個 root 級漏洞，成本較舊模型低，但只開放俾經審批客戶。呢啲發展顯示 AI agent 同自動化安全研究正快速進入實際應用，同時帶嚟成本、安全同治理問題。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-379" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">121 words</div>
+</article>
+<article class="article" id="a-thebatch-2">
+<h3 class="article-title"><a href="#a-thebatch-2">Issue 378</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.deeplearning.ai/the-batch/issue-378" rel="noopener" target="_blank">https://www.deeplearning.ai/the-batch/issue-378</a></span><span class="meta-date">📅 2026-11-06 23:00 UTC+8</span></div>
+<div class="article-body"><p>Andrew’s issue argues that AI is creating jobs rather than simply destroying them, citing LinkedIn data showing two million AI-created roles and strong demand for AI engineers embedded across marketing, finance and other teams. It also reports Google’s Gemini 4 Carbon topping Artificial Analysis’ Intelligence Index and leading several cybersecurity benchmarks, while being cheaper per task than Claude Opus 5.5 and initially limited to selected companies. The piece matters because it links a practical case for AI engineering skills with a new frontier model that could intensify competition in enterprise AI.</p>
+<p>Andrew 呢期文章話 AI 唔單止冇令大量人失業，仲創造咗二百萬個職位，尤其係可以嵌入市場、財務等部門嘅 AI 工程師好搶手。佢同時講到 Google 嘅 Gemini 4 Carbon 喺 Artificial Analysis 智能指數排第一，仲喺幾個网络安全測試領先，每項任務成本仲平過 Claude Opus 5.5，暫時只開放俾部分公司用。呢啲消息重要，因為佢同時反映 AI 工程技能嘅需求會持續升，而新模型又會令企業 AI 競爭更加激烈。</p>
+<p><a class="read-more" href="https://www.deeplearning.ai/the-batch/issue-378" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">117 words</div>
+</article>
+</section>
+<section class="source" id="src-openai">
+<h2 class="source-title">OpenAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-openai-0">
+<h3 class="article-title"><a href="#a-openai-0">Combatting adversarial distillation</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/combatting-adversarial-distillation" rel="noopener" target="_blank">https://openai.com/index/combatting-adversarial-distillation</a></span><span class="meta-date">📅 2026-11-20 18:00 UTC+8</span></div>
+<div class="article-body"><p>OpenAI says it is combating adversarial distillation, where unauthorized actors copy frontier model capabilities, especially protected chain-of-thought reasoning, into weaker models that could enable cyber or biological misuse. The company detailed layered defenses including classifiers, API controls, and campaign investigations, saying updated safeguards in GPT-6.2 Astra and Sol cut protected-reasoning extraction success from 54% to 0.2% in internal red-teaming. The issue matters because reasoning traces can transfer dangerous capabilities even from allowed tasks, so protecting them helps keep safeguards effective across the industry.</p>
+<p>OpenAI 話佢哋正對付 adversarial distillation，因為有人會偷模型嘅 chain-of-thought 推理，再整出冇咁強防護嘅模型，可能令網絡安全或者生物學嘅能力被濫用。佢哋用 classifier、API 限制同調查機制去防守，內部紅隊測試顯示 GPT-6.2 Astra 同 Sol 嘅攻擊成功率由 54% 跌到 0.2%。呢件事好重要，因為就算原本係合法任務，推理過程都可能教識新模型做危險嘢，所以要保護呢啲痕跡先可以守住安全底線。</p>
+<p><a class="read-more" href="https://openai.com/index/combatting-adversarial-distillation" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+<article class="article" id="a-openai-1">
+<h3 class="article-title"><a href="#a-openai-1">Hebbia sees improvements in financial research with GPT-6 Astra</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/business/customer-stories/hebbia" rel="noopener" target="_blank">https://openai.com/business/customer-stories/hebbia</a></span><span class="meta-date">📅 2026-11-20 08:00 UTC+8</span></div>
+<div class="article-body"><p>November 20, 2026
+Hebbia sees improvements in financial research with GPT‑6 Astra
+Hebbia sees gains in financial research in tests of GPT‑6 Astra.
+Join the community
+Company size:
+Startup
+Region:
+North America
+Industry:
+Technology
+Products:
+API
+Required source types cited
+13.6
+Percentage-point lead over the best alternative tested in Hebbia’s tests.
+Citation relevance
+99.5
+Percent of cited excerpts relevant to the question in Hebbia’s tests.
+Presentation requirements met
+97.9
+Percent of applicable presentation requirements met in Hebbia’s tests.
+Presentation requirement lead
+14.4
+Percentage-point lead over the best alternative tested on presentation requirements.
+Share
+Before a banker can recommend an acquisition to their client, they need to make sense of financial statements, customer contracts and management presentations. Hebbia’s Matrix helps bring that research together, linking answers to the documents behind them.
+Hebbia tested OpenAI’s GPT‑6 Astra to improve two parts of that work: finding the sources a question requires and building a presentation that follows the banker’s brief.
+“We’ve been strong partners with OpenAI over the course of Hebbia’s lifetime, and the leaps GPT-6 Astra has made in terms of quality outputs and accuracy have truly been surprising. GPT-6 Astra shines compared to any other model we’ve tested before on these two fronts.”
+—Kavita Anand, Member of Technical Staff, Product, Hebbia
+From source documents to presentations
+It could work like this: a banker is helping their client assess a strategic acquisition of an industrial-software company, with roughly 2,000 files to review. What makes its revenue durable? How does it compare with peers? In Hebbia’s hypothetical example, the banker could load the data room into Matrix and examine customer concentration, contract terms and churn in cited cells. Matrix could bring in peer filings and industry news to help develop the deal thesis, then turn that research into a diligence summary and valuation deck in the firm’s template.
+In that workflow, GPT‑6 Astra selects documents or Matrix cells to support an answer, then turns the analysis into native PowerPoint slides that follow the user’s structure and guidelines.
+“Traceability is really important to our users because they’re basing millions of dollars of decisions on what the AI actually comes back with,” Kavita says. “Citations help with traceability as well as giving users confidence that the AI found the right answer.”
+In Hebbia’s tests, GPT‑6 Astra combined broader source coverage with highly relevant citations. It scored 13.6 percentage points above the best alternative tested on citing the required types of sources, while 99.5% of the excerpts it cited were relevant to the question.
+Hebbia tested a prerelease build in August-September 2026, using the same financial research cases and grading criteria for each model. Domain experts wrote or audited the criteria against source documents.
+“When you’re looking at a data room with thousands of documents, that’s extremely important. Even a single percentage-point gain can yield a lot of marginal benefit,” Kavita says.
+A presentation also has to look like work the banker would send to a client.
+“I don’t want to create a deck and send that to my partner that looks like AI made it,” Kavita says. “I want it to be made in my firm’s branding, and I want it to look like a human-made slide.”
+GPT‑6 Astra led on both following the brief and presentation quality. In Hebbia’s tests, it met 97.9% of the applicable presentation requirements, putting it 14.4 percentage points ahead of the best alternative tested on that measure. Other models traded off polish and adherence to the brief; GPT‑6 Astra ranked first on both.
+“In the past, we’ve seen models that really shine on one or the other of these dimensions where they’re really good at craft, but the instruction following and adhering to guidelines is not strong, or vice versa. GPT‑6 Astra is the first model we’ve seen where it’s number one on both of those fronts,” Kavita says.
+In Hebbia, users can open a citation to see the underlying document and highlighted passage; slide footnotes lead back to the source material, too. A review could be as specific as checking a customer-concentration figure against the source table and correcting the reporting period before the deck goes to the investment committee.
+Hebbia wants bankers to spend less time reformatting decks and checking sources, and more time assessing a deal. Kavita describes what a better first draft could make possible:
+“What’s amazing about GPT-6 Astra is its ability to create really precise outputs and artifacts that adhere to user guidelines. You can imagine the hours this will save professionals when you get a deck that is closer to your final output. The overnighters that you have to pull get reduced to a few minutes of reviewing GPT-6 Astra’s output.”
+—Kavita Anand, Member of Technical Staff, Product, Hebbia
+A future role for agents
+Kavita sees a future role for agents that monitor information in the background and surface signals for finance professionals to assess.
+“Imagine getting an important signal a few hours before your competitors,” she says. “You can get started thinking about it and see and process more opportunities that a human is not manually hunting. It can unlock a lot of value for our users.”
+Hebbia wants to build on these results to help finance professionals assess deals with research they can trace back to its sources.
+OpenAI &lt;3 startups
+Join the community
+Start building
+(opens in a new window)
+Get OpenAI for Business updates
+Product updates, practical guides, upcoming events, and more.
+Keep reading
+Model ML completes finance work more efficiently with GPT-5.6 Sol
+Startup
+Aug 10, 2026
+Parallel cut research time and cost in half with GPT‑6 Astra
+Startup
+Sep 22, 2026
+Hex turns complex analysis into visual reports with GPT‑6 Astra
+Startup
+Sep 16, 2026</p>
+<p><a class="read-more" href="https://openai.com/business/customer-stories/hebbia" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">953 words</div>
+</article>
+<article class="article" id="a-openai-2">
+<h3 class="article-title"><a href="#a-openai-2">Can AI help scientists identify promising drug candidates?</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://openai.com/index/introducing-medchembench" rel="noopener" target="_blank">https://openai.com/index/introducing-medchembench</a></span><span class="meta-date">📅 2026-11-20 08:00 UTC+8</span></div>
+<div class="article-body"><p>OpenAI introduced MedChemBench, a benchmark that tests whether AI models can reason through medicinal chemistry tasks such as reconstructing molecular structures, explaining experimental evidence, ranking compounds, and predicting properties. Built from 99 problems drawn from published research, it showed GPT-6.2 Astra scoring 84.5% at the xhigh reasoning setting, with especially strong structure reconstruction but weaker compound selection and numerical prediction. The results suggest AI can help scientists navigate tradeoffs in drug discovery, though the benchmark does not prove models can discover new drugs.</p>
+<p>OpenAI推出MedChemBench，測試AI模型喺藥物化學研究入面讀分子結構、解釋實驗證據、揀化合物同預測性質嘅能力。測試顯示GPT-6.2 Astra喺xhigh推理設定攞到84.5%，尤其重建分子結構表現強，但揀化合物同預測數值仍然有明顯進步空間。呢個評測唔代表AI已經可以發現新藥，但有助睇清AI點樣支援科學家做藥物研發。</p>
+<p><a class="read-more" href="https://openai.com/index/introducing-medchembench" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">89 words</div>
+</article>
+</section>
+<section class="source" id="src-huggingface">
+<h2 class="source-title">Hugging Face Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-huggingface-0">
+<h3 class="article-title"><a href="#a-huggingface-0">Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/inkling2mini" rel="noopener" target="_blank">https://huggingface.co/blog/inkling2mini</a></span><span class="meta-date">📅 2026-11-20 08:00 UTC+8</span></div>
+<div class="article-body"><p>Thinking Machines Lab has released Inkling 2 Mini, a multimodal mixture-of-experts model for local setups with about 26B physical parameters, 3B active per token, a 1M-token context window, and image-plus-text input. It uses a looped transformer design that reuses middle layers three times to act like a larger model, ships in mixed precision with a DSpark drafter, and is supported by Transformers, llama.cpp, MLX, and SGLang, making it a strong local option for coding, reasoning, and agentic work.</p>
+<p>Thinking Machines Lab 推出 Inkling 2 Mini，係一款用嚟做本地 AI 嘅多模態 MoE 模型，大約 26B 實體參數、每 token 激活 3B，支援 1M token context 同圖片文字輸入。佢用循環 transformer 設計，將中間層行三次嚟模擬更大模型，仲有混合精度同 DSpark drafter，喺 Transformers、llama.cpp、MLX 同 SGLang 都支援，對本地 coding、推理同 agent 工作都好實用。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/inkling2mini" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">113 words</div>
+</article>
+<article class="article" id="a-huggingface-1">
+<h3 class="article-title"><a href="#a-huggingface-1">Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/harness-adapters-at-scale" rel="noopener" target="_blank">https://huggingface.co/blog/harness-adapters-at-scale</a></span><span class="meta-date">📅 2026-11-20 08:00 UTC+8</span></div>
+<div class="article-body"><p>Harness adapters are RL-trained LoRA adapters that tune a model inside a specific agent harness and task distribution to improve accuracy and efficiency. For Qwen3.8-27B, a pi-harness adapter raised Terminal-Bench 2.1 pass@1 from 39% to 55% while cutting average tokens from 2.9K to 1.5K, and the adapters can be merged into one reusable super adapter. This matters because teams can get better performance and lower cost for their actual coding-agent workflows without changing the base model weights.</p>
+<p>Harness adapters 係用 RL 喺特定 agent harness 同任務分佈入面訓練嘅 LoRA adapter，等模型喺自己實際用嘅環境入面更準、更慳 token。佢哋用 Qwen3.8-27B 喺 pi harness 做 Terminal-Bench 2.1，pass@1 由 39% 升到 55%，平均 token 由 2.9K 減到 1.5K，仲可以將三個 harness 嘅 adapter 合併做一個通用 super adapter。呢樣嘢重要，因為開發者唔使改 base model 權重，都可以為自己嘅 coding agent 工作流攞到更好表現同更低成本。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/harness-adapters-at-scale" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">120 words</div>
+</article>
+<article class="article" id="a-huggingface-2">
+<h3 class="article-title"><a href="#a-huggingface-2">DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin" rel="noopener" target="_blank">https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin</a></span><span class="meta-date">📅 2026-11-19 03:54 UTC+8</span></div>
+<div class="article-body"><p>RadixArk released DaisyRose-27B, a Qwen3.8-27B-based model trained with reinforcement learning on 1,200 curated long-horizon agent tasks using 144 H200 GPUs in 18 days. It raises Terminal-Bench 4.1 pass@1 from 5.6% to 12.0% and improves several reasoning, instruction-following, and coding benchmarks, while keeping the base model’s architecture and 256K context. The release highlights efficient post-training through carefully selected tasks, an asynchronous Miles training backend, and a robust sandbox service.</p>
+<p>RadixArk 推出 DaisyRose-27B，用 Miles 同 1,200 條精心挑選嘅長程 agent 任務，喺 144 張 H200 上 18 日內完成訓練。佢將 Terminal-Bench 4.1 pass@1 由 5.6% 升到 12.0%，其他推理、跟指令同 coding benchmark 都有進步，同時保留 Qwen3.8-27B 嘅架構同 256K context。呢個成果靠高質素任務、高效非同步訓練後端同穩定 sandbox 服務撐起。</p>
+<p><a class="read-more" href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">103 words</div>
+</article>
+</section>
+<section class="source" id="src-stripe">
+<h2 class="source-title">Stripe Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-stripe-0">
+<h3 class="article-title"><a href="#a-stripe-0">Stripe evals: Measuring real-world coding agent performance</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/stripe-integration-evals-methodology" rel="noopener" target="_blank">https://stripe.com/blog/stripe-integration-evals-methodology</a></span><span class="meta-date">📅 2026-11-19 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe has introduced Stripe evals to measure how coding agents perform in real-world integration tasks and reveal where they currently fall short. The tool is intended to help developers start with the best Stripe setup and guide agents toward more reliable, higher-quality integrations.</p>
+<p>Stripe 推出 Stripe evals，用嚟量度 coding agent 喺真實整合任務嘅表現，同埋睇佢哋而家邊度仲未夠好。呢個工具可以幫開發者由最佳嘅 Stripe 設定開始，同時引導 agent 做出更可靠、質素更好嘅整合。</p>
+<p><a class="read-more" href="https://stripe.com/blog/stripe-integration-evals-methodology" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">58 words</div>
+</article>
+<article class="article" id="a-stripe-1">
+<h3 class="article-title"><a href="#a-stripe-1">Learning from explanations</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/learning-from-explanations" rel="noopener" target="_blank">https://stripe.com/blog/learning-from-explanations</a></span><span class="meta-date">📅 2026-11-19 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe has found that training models to produce explanations improves the accuracy of its risk assessments. The company uses a two-stage supervised fine-tuning method, followed by on-policy distillation, to preserve the model’s ability to explain its decisions. This matters because clearer reasoning can make automated risk judgments more reliable and easier to review.</p>
+<p>Stripe 發現訓練模型提供解釋，有助提升風險評估嘅準確度。佢哋採用兩階段監督微調，再透過 on-policy distillation 恢復模型解釋決策嘅能力。呢個做法重要，因為清晰嘅推理可以令自動化風險判斷更可靠，亦更容易覆核。</p>
+<p><a class="read-more" href="https://stripe.com/blog/learning-from-explanations" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">62 words</div>
+</article>
+<article class="article" id="a-stripe-2">
+<h3 class="article-title"><a href="#a-stripe-2">Billing customizations: change how discounts are applied</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://stripe.com/blog/billing-customizations-change-how-discounts-are-applied" rel="noopener" target="_blank">https://stripe.com/blog/billing-customizations-change-how-discounts-are-applied</a></span><span class="meta-date">📅 2026-11-17 08:00 UTC+8</span></div>
+<div class="article-body"><p>Stripe Billing lets businesses move beyond standard fixed-amount or percentage coupons by customizing discount calculations for more specific offers such as price-targeted deals, BOGO, interval-aware discounts, and price-linked caps. Users can begin with dashboard-created coupons or write a TypeScript script that runs at the discount calculation extension point.</p>
+<p>Stripe Billing 容許商家超越標準嘅固定金額或者百分比優惠券，透過自訂折扣計算方式，處理更精準嘅優惠，例如指定價格優惠、買一送一、按時段計算嘅折扣，同埋跟住價格變動嘅上限。商家可以由 Dashboard 建立優惠券開始，或者寫 TypeScript script，喺折扣計算擴展點執行。</p>
+<p><a class="read-more" href="https://stripe.com/blog/billing-customizations-change-how-discounts-are-applied" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">59 words</div>
+</article>
+</section>
+<section class="source" id="src-deepmind">
+<h2 class="source-title">Google DeepMind <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-deepmind-0">
+<h3 class="article-title"><a href="#a-deepmind-0">Introducing Gemini 4 Neon</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/introducing-gemini-4-neon/" rel="noopener" target="_blank">https://deepmind.google/blog/introducing-gemini-4-neon/</a></span><span class="meta-date">📅 2026-11-19 05:35 UTC+8</span></div>
+<div class="article-body"><p>Google has introduced Gemini 4 Neon, a frontier AI model aimed at fast end-to-end completion of complex software engineering, knowledge work, and science tasks, with strong benchmark results including #3 on the Artificial Analysis Intelligence Index and #2 on the Vals Index. It offers a 1 million-token context window, four thinking levels, lower cost per task than some rivals, and is rolling out across Google AI Studio, business tools, Antigravity, and the Gemini app, with notable strengths in enterprise analysis, production coding, cyber defense, and safer agentic execution.</p>
+<p>Google 推出 Gemini 4 Neon，主打快而準地完成複雜軟件工程、知識工作同科學任務，喺 Artificial Analysis Intelligence Index 排第三、Vals Index 排第二，仲有 100 萬 token 上下文同四個思考級別。呢個模型喺企業分析、生產級編碼、網絡防禦同安全執行方面都表現強，成本比部分對手低，已經陸續推出到 Google AI Studio、企業工具、Antigravity 同 Gemini app。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/introducing-gemini-4-neon/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">114 words</div>
+</article>
+<article class="article" id="a-deepmind-1">
+<h3 class="article-title"><a href="#a-deepmind-1">Genie 4 is now available</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/genie-4-is-now-available/" rel="noopener" target="_blank">https://deepmind.google/blog/genie-4-is-now-available/</a></span><span class="meta-date">📅 2026-11-19 02:13 UTC+8</span></div>
+<div class="article-body"><p>Google is rolling out Genie 4 to eligible Google AI Ultra subscribers through a new Project Genie experience, adding real-time text editing, native audio, longer Genie 3 sessions, a conversational creation agent, and a community gallery for sharing and remixing interactive worlds. The update matters because it makes AI-generated environments more responsive, social, and accessible, while Google says it is applying SynthID watermarking and safety screening as the technology remains in frontier research.</p>
+<p>Google 而家向合資格嘅 Google AI Ultra 訂閱用戶推出 Genie 4 同新版 Project Genie，可以即時用文字改環境、加原生音效，仲可以用對話式 agent 砌世界、放去社群畫廊俾人 remix。呢個更新重要喺佢令 AI 生成嘅互動世界更加真實、好玩同易分享，同時 Google 話會用 SynthID 浮水印同安全篩查，因為呢啲世界模型仲係前沿研究。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/genie-4-is-now-available/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">97 words</div>
+</article>
+<article class="article" id="a-deepmind-2">
+<h3 class="article-title"><a href="#a-deepmind-2">Introducing Gemini 4 Hydrogen</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" rel="noopener" target="_blank">https://deepmind.google/blog/introducing-gemini-4-hydrogen/</a></span><span class="meta-date">📅 2026-11-13 02:00 UTC+8</span></div>
+<div class="article-body"><p>Google has introduced Gemini 4 Hydrogen, a fast, efficient AI model built for everyday coding, agentic workflows, and consumer tasks, and made available across Google AI Studio, the Gemini API, Gemini apps, Search, and paid AI Pro and Ultra plans. It is priced at $1.50 per million input tokens and $7.50 per million output tokens across a 1 million-token context window, and can work alone or with Gemini 4 Carbon and Argon through a new Orchestrator that switches models to cut quota use and speed up complex work. The release matters because it aims to bring high-quality, low-latency AI to developers and ordinary users without the cost of frontier reasoning models.</p>
+<p>Google 推出 Gemini 4 Hydrogen，主打快、平、夠用，適合日常寫 code、做 agent 流程同普通用戶幫手，已經喺 Google AI Studio、Gemini API、Gemini app、搜尋同付費 AI Pro/Ultra 用到。佢每百萬 input token 收 $1.50、output token 收 $7.50，仲可以同 Carbon 同 Argon 夾住用，靠新 Orchestrator 自動轉模型，慳 quota 同加快完成複雜工作。呢個更新重要，因為佢想將高質素 AI 放到更多人手頭上，唔使每次都靠最貴嘅 frontier 模型。</p>
+<p><a class="read-more" href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">150 words</div>
+</article>
+</section>
+<section class="source" id="src-github">
+<h2 class="source-title">GitHub Engineering <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-github-0">
+<h3 class="article-title"><a href="#a-github-0">Building the Agent Host Protocol for sessions that continue across devices</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/" rel="noopener" target="_blank">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</a></span><span class="meta-date">📅 2026-11-18 02:20 UTC+8</span></div>
+<div class="article-body"><p>GitHub has introduced the Agent Host Protocol (AHP), an open standard that lets AI agent sessions keep running and be resumed across VS Code, the Copilot app, mobile devices, and custom clients. It uses URI-based channels and reducer state so clients can reconnect, replay actions, and share the same agent history without one-off integrations. This matters because it makes long-running agent work portable, resilient to network changes, and easier for developers to embed in their own tools.</p>
+<p>GitHub 推出咗 Agent Host Protocol（AHP），一個開放標準，等 AI agent 嘅工作可以由 VS Code、Copilot app、手機或者自己開發嘅工具繼續接住做，唔使因為熄咗個 window 或者轉裝置就斷晒。佢用 URI channel 同 reducer state 去處理連線、重播同共享 agent 歷史，所以唔使每個 client 都另外做一套整合。呢個好重要，因為長線 agent 工作會變得更穩、更跨平台，開發者亦更容易將 agent 放入自己嘅 workflow。</p>
+<p><a class="read-more" href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">109 words</div>
+</article>
+<article class="article" id="a-github-1">
+<h3 class="article-title"><a href="#a-github-1">Inside GitHub’s new Git storage architecture</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</a></span><span class="meta-date">📅 2026-11-06 04:23 UTC+8</span></div>
+<div class="article-body"><p>GitHub has unveiled a new Git storage architecture, Project Rubicon, designed to support agent-driven development by handling thousands of writes per second and scaling reads on demand. It separates storage from compute, using Azure Blob Storage for Git objects, a replicated Ref-CAS log for references, disposable virtual replicas for serving traffic, and background compaction nodes to keep repositories efficient. The change matters because it lets GitHub scale individual repositories to far higher concurrency while keeping Git workflows unchanged and maintaining reliability, durability, and low latency.</p>
+<p>GitHub 推出咗新嘅 Git 儲存架構 Project Rubicon，專為 agent 開發而設，可以每秒處理數千次寫入，同時按需要擴展讀取流量。佢將儲存同運算分開，Git 物件放喺 Azure Blob Storage，引用狀態放喺 Ref-CAS，再用可隨時重建嘅 virtual replica 處理請求，背景節點負責整理倉庫。呢個改變好重要，因為佢令單一倉庫可以承受更高併發，同時保持 Git 原有用法、可靠性、持久性同低延遲。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">107 words</div>
+</article>
+<article class="article" id="a-github-2">
+<h3 class="article-title"><a href="#a-github-2">The bridge to agent-scale Git infrastructure</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</a></span><span class="meta-date">📅 2026-10-22 00:00 UTC+8</span></div>
+<div class="article-body"><p>GitHub is moving Git repositories and traffic to Azure while changing its storage architecture to support agent-scale workloads. By shifting quorum writes from repository-wide locks to per-reference serialization, the busiest repositories can tolerate cross-region latency and gain higher write throughput, with 3-4x gains in testing. The change also introduces virtual replicas and object storage to decouple reads from writes, enabling independent scaling and preparing for future architecture.</p>
+<p>GitHub 為咗應付 AI agent 帶嚟嘅海量 Git 流量，正逐步將倉庫同服務遷去 Azure，同時改造儲存架構。佢哋將寫入鎖由成個倉庫縮細到個別 reference，等唔同分支嘅 push 唔使互相排隊，測試中寫入吞吐量可以提升 3 至 4 倍。呢個改變仲引入虛擬副本同物件儲存，將讀取同寫入分開擴展，為日後更大規模嘅 Git 基礎設施鋪路。</p>
+<p><a class="read-more" href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">88 words</div>
+</article>
+</section>
+<section class="source" id="src-netflix">
+<h2 class="source-title">Netflix Tech Blog <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-netflix-0">
+<h3 class="article-title"><a href="#a-netflix-0">Engineering AI Discover</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/engineering-ai-discover-e244944cdc38" rel="noopener" target="_blank">https://netflixtechblog.com/engineering-ai-discover-e244944cdc38</a></span><span class="meta-date">📅 2026-11-18 01:01 UTC+8</span></div>
+<div class="article-body"><p>Netflix’s AI Discover uses a new intelligence layer to turn generative AI into steerable TV recommendations, letting members choose themes and receive grounded title rows with explanations. The article explains how its controller and executor combine LLMs with existing recommendation systems while enforcing plans, typed contracts, fallbacks, and safety checks to keep responses fast, reliable, and suitable for TV. This matters because it shows how large-scale consumer products can adopt generative AI without sacrificing governed results, catalog accuracy, or member trust.</p>
+<p>Netflix 嘅 AI Discover 用咗一個新智能層，將生成式 AI 變成電視上可以由用戶揀主題、睇推薦劇集同解釋嘅體驗。文章講佢哋點樣透過 controller 同 executor，將 LLM 同現有推薦系統組合埋一齊，同時用驗證計劃、輸入輸出合約、後備機制同安全檢查，確保喺電視上夠快、穩陣、可靠。呢件事重要，因為佢示範咗大型產品點樣引入生成式 AI，又唔會犧牲內容準確、系統穩定同用戶信任。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/engineering-ai-discover-e244944cdc38" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">98 words</div>
+</article>
+<article class="article" id="a-netflix-1">
+<h3 class="article-title"><a href="#a-netflix-1">Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808" rel="noopener" target="_blank">https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808</a></span><span class="meta-date">📅 2026-11-10 01:01 UTC+8</span></div>
+<div class="article-body"><p>Netflix’s new synopsis factuality system aims to check whether show and episode descriptions are accurate without relying on expensive, long-context reasoning calls. By using confidence gating and better-aligned rationales, it cuts cost per synopsis by 52.4%, raises recall for truly non-factual synopses from 0.77 to 0.86, and improves explanation overlap with human annotators to about 82%. This matters because it lets the platform catch both obvious and subtle misleading descriptions more reliably at scale.</p>
+<p>Netflix 新嘅劇情簡介事實核查系統，目標係自動判斷劇集同單集簡介有冇講錯，唔使再靠又貴又慢嘅長上下文推理。佢用信心閘門同更貼近人工審核嘅解釋，將每條簡介成本減 52.4%，真正不實簡介嘅召回率由 0.77 升到 0.86，解釋同審核員重疊亦去到約 82%。呢樣嘢重要，因為平台可以喺海量內容入面，更可靠咁捉住明顯同隱蔽嘅誤導性簡介。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">85 words</div>
+</article>
+<article class="article" id="a-netflix-2">
+<h3 class="article-title"><a href="#a-netflix-2">Making Failure Diagnosis Reliable with Pensive AI</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015" rel="noopener" target="_blank">https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015</a></span><span class="meta-date">📅 2026-10-27 01:04 UTC+8</span></div>
+<div class="article-body"><p>Netflix has upgraded its Pensive failure-diagnosis system with AI to help data and machine learning practitioners triage the roughly 100,000 daily workload failures that can disrupt critical pipelines. The new Pensive AI adds always-on error extraction and on-demand debugging, using line-range selection, strict latency controls, and a dual data model to expand coverage beyond legacy rules while keeping costs and hallucinations manageable.</p>
+<p>Netflix 將 Pensive 升級做 Pensive AI，幫數據同機器學習同事更快診斷每日大約十萬個 workload 失敗，減少人手睇 log、浪費運算資源同中斷 pipeline。佢哋用 AI 自動抽取錯誤，再提供按需深度 debug，同時控制延遲、成本同幻覺，令舊規則搞唔掂嘅未知錯誤都有更大覆蓋。</p>
+<p><a class="read-more" href="https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">79 words</div>
+</article>
+</section>
+<section class="source" id="src-aakashai">
+<h2 class="source-title">AI by Aakash <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-aakashai-0">
+<h3 class="article-title"><a href="#a-aakashai-0">Claude Sheets.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/claude-sheets" rel="noopener" target="_blank">https://www.aibyaakash.com/p/claude-sheets</a></span><span class="meta-date">📅 2026-11-17 10:04 UTC+8</span></div>
+<div class="article-body"><p>The article covers a turbulent AI news week, led by reports that Nvidia’s board forced out CEO Jensen Huang and Anthropic’s launch of Claude Sheets ahead of its IPO. It argues Claude Sheets matters because it pushes Anthropic deeper into the office-workspace market long dominated by Microsoft’s Excel, while tests of spreadsheet AIs show meaningful differences in judgment and reliability.</p>
+<p>呢篇文講呢個星期 AI 圈好多大事，包括傳聞話 Nvidia 董事會逼走 CEO 黃仁勳，同埋 Anthropic 喺 IPO 前推出 Claude Sheets。佢認為 Claude Sheets 之所以重要，係因為佢直擊微軟 Excel 長期壟斷嘅辦公軟件市場，而測試亦顯示唔同 spreadsheet AI 嘅判斷同可靠程度有明顯分別。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/claude-sheets" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">85 words</div>
+</article>
+<article class="article" id="a-aakashai-1">
+<h3 class="article-title"><a href="#a-aakashai-1">Spotify&#x27;s 90% Trick.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/spotifys-90-trick" rel="noopener" target="_blank">https://www.aibyaakash.com/p/spotifys-90-trick</a></span><span class="meta-date">📅 2026-11-10 08:33 UTC+8</span></div>
+<div class="article-body"><p>The article focuses on how Spotify uses Claude Code and its internal agent Honk to automate engineering work, with senior engineers reportedly not writing code since December and the company merging about 1,000 changes every 10 days. Because large codebase reads drive most AI costs, a Spotify PM built an open-source plugin that sends files over 350 lines to a cheaper model, cutting token use by up to 90%, while the author’s own tests show savings can be large but depend on the codebase and workflow. The piece also surveys recent AI news, including model rankings, image generation, professional-task benchmarks, security findings, and fundraising, to show how fast AI tools and costs are changing.</p>
+<p>呢篇文主要講 Spotify 點樣用 Claude Code 同內部 agent Honk 做工程， senior engineer 話由 12 月起冇寫過一行 code，公司每 10 日可以 merge 大約 1,000 個改動。因為 AI 收費主要貴喺讀大檔，Spotify 一個 PM 整咗個開源 plugin，將超過 350 行嘅檔交畀平價模型睇，最多慳到 90% token，作者自己測試都見到可觀節省，但實際效果要睇 codebase 同 workflow。呢篇文仲順帶睇近期 AI 新聞，包括模型排名、圖像生成、專業任務表現、保安漏洞同融資，反映 AI 工具同成本變化好快。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/spotifys-90-trick" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">156 words</div>
+</article>
+<article class="article" id="a-aakashai-2">
+<h3 class="article-title"><a href="#a-aakashai-2">Claude Duet.</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://www.aibyaakash.com/p/claude-duet-review" rel="noopener" target="_blank">https://www.aibyaakash.com/p/claude-duet-review</a></span><span class="meta-date">📅 2026-10-31 08:37 UTC+8</span></div>
+<div class="article-body"><p>Anthropic launched Claude Duet as its answer to a new wave of proactive AI agents, while the newsletter also reviews Anthropic’s S-1, Google’s Gemini 4 Carbon, and other AI releases and controversies. The piece argues that Duet is an interesting unified agent surface but probably will not replace Claude Code, and it frames Anthropic’s IPO around strong enterprise growth, a large non-cash loss, and a possible $1.5–$2 trillion valuation. The broader news matters because it shows intensifying competition, safety risks, and rapid model and tool advances across the AI sector.</p>
+<p>Anthropic 推出 Claude Duet，想喺新一波主動式 AI agent 競爭入面搶位，同時呢篇 newsletter 亦睇咗 Anthropic 嘅 S-1、Google Gemini 4 Carbon 同其他 AI 產品同爭議。文章認為 Duet 係一個幾有趣嘅統一 agent 介面，但未必可以取代 Claude Code，而 Anthropic 上市故事則集中喺企業客戶增長、非現金虧損同可能 1.5 至 2 萬億美元估值。呢啲新聞之所以重要，係因為佢反映 AI 競爭加劇、安全風險浮現，同埋模型同工具更新速度好快。</p>
+<p><a class="read-more" href="https://www.aibyaakash.com/p/claude-duet-review" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">126 words</div>
+</article>
+</section>
+<section class="source" id="src-raschka">
+<h2 class="source-title">Sebastian Raschka Magazine <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-raschka-0">
+<h3 class="article-title"><a href="#a-raschka-0">Understanding Positional Embeddings in Modern LLMs</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/understanding-positional-embeddings</a></span><span class="meta-date">📅 2026-11-15 20:10 UTC+8</span></div>
+<div class="article-body"><p>The article explains how large language models encode token position information, comparing learned absolute embeddings in GPT-2 with RoPE applied inside attention in newer models such as MiniMax-M3. It shows why position signals matter for distinguishing word order, how causal masks provide only limited implicit order, and how modern open-weight LLMs adapt or omit explicit positional encodings. This matters because positional design affects model architecture, context handling, and the ability to reason about sequence relationships.</p>
+<p>呢篇文章講清楚大語言模型點樣處理 token 嘅位置資訊，由 GPT-2 喺 token embedding 後面加位置向量，講到新一代模型用 RoPE 喺 attention 入面注入位置訊號。佢解釋點解詞序好重要，因為因果 mask 只能提供有限嘅隱性順序，而明確位置編碼先可以分辨近遠距離同語句關係。呢啲設計直接影響模型架構、長上下文處理，以及模型理解句子順序嘅能力。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">93 words</div>
+</article>
+<article class="article" id="a-raschka-1">
+<h3 class="article-title"><a href="#a-raschka-1">Building Reasoning Models from the Ground Up: A Full Video Course</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/building-reasoning-models</a></span><span class="meta-date">📅 2026-10-24 19:14 UTC+8</span></div>
+<div class="article-body"><p>A new 11-hour video course expands the author&#x27;s Build a Reasoning Model from Scratch book by showing how to implement reasoning-model techniques in Python and PyTorch, starting from a pretrained Qwen3 model and covering evaluation, inference scaling, reinforcement learning, and distillation. It also explains reasoning models as upgraded LLMs that act as engines inside agent harnesses, making them central to modern AI agents. The course matters because it gives readers a practical, code-first way to understand and build the core methods behind today&#x27;s reasoning-focused language models.</p>
+<p>呢套新推出嘅 11 個鐘影片課程，係配合 Build a Reasoning Model from Scratch 本書，教你由預訓練 Qwen3 模型開始，用 Python 同 PyTorch 實作評估、推理時擴展、強化學習同蒸餾等推理模型技術。佢亦講清楚推理模型其實係升級版 LLM，可以當做 agent harness 入面嘅引擎，所以同而家嘅 AI agent 好重要。呢套課程嘅價值，係畀讀者用寫程式嘅方式真正明白而家推理型語言模型點樣運作。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">113 words</div>
+</article>
+<article class="article" id="a-raschka-2">
+<h3 class="article-title"><a href="#a-raschka-2">Language Models for Text Classification: From Bag-of-Words to Jev</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev" rel="noopener" target="_blank">https://magazine.sebastianraschka.com/p/classifier-history-and-jev</a></span><span class="meta-date">📅 2026-09-29 18:50 UTC+8</span></div>
+<div class="article-body"><p>The article examines the newly popular Jev AI model as a text classifier, placing it within the longer history of language models for decision-making from bag-of-words methods to neural networks. It argues that Jev is not merely a classifier: it is faster and cheaper than large general-purpose LLMs for classification tasks, while being more general than narrow task-specific models. This matters because it helps readers understand the hype around Jev and choose the right text-classification approach for different problems.</p>
+<p>呢篇文章講最近好紅嘅 Jev AI 模型，其實主要係做文字分類，作者由 bag-of-words、logistic regression 到神經網絡，帶讀者睇返文字分類嘅發展。佢話 Jev 唔止係一個普通分類器：做分類任務時，佢比大型通用 LLM 快同平，同時又比窄範圍專用模型更通用。呢點好重要，因為可以幫大家睇清 Jev 嘅熱潮，同埋揀啱用嘅文字分類方法。</p>
+<p><a class="read-more" href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">96 words</div>
+</article>
+</section>
+<section class="source" id="src-xai">
+<h2 class="source-title">xAI News <span class="source-count">3 articles</span></h2>
+<article class="article" id="a-xai-0">
+<h3 class="article-title"><a href="#a-xai-0">Using Grok Bot to detect and respond to incidents</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/incident-sweep" rel="noopener" target="_blank">https://x.ai/news/incident-sweep</a></span><span class="meta-date">📅 2026-10-20 08:00 UTC+8</span></div>
+<div class="article-body"><p>SpaceXSI uses Grok Bot’s AI teammates, IncidentWatch and IncidentSweep, to detect product incidents from support-ticket spikes and clear related tickets after resolution. IncidentWatch scans recent tickets every five minutes, alerts on-call engineers, and holds matching reports, while IncidentSweep prepares an approved batch of final responses with engineer review. The approach speeds up incident response and gives support teams more control than manual replies or blunt bulk actions.</p>
+<p>SpaceXSI 用 Grok Bot 嘅 AI 隊友 IncidentWatch 同 IncidentSweep，靠支援工單突增提早發現產品事故，再喺事故解決後清理相關工單。IncidentWatch 每五分鐘檢查最近工單，發現異常就通知當值工程師，並暫存疑似相關個案；IncidentSweep 會篩選工單、預覽批次訊息，經工程師批准後先發送。呢個做法比逐封回覆或者粗糙批量操作更快，亦更有控制。</p>
+<p><a class="read-more" href="https://x.ai/news/incident-sweep" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">83 words</div>
+</article>
+<article class="article" id="a-xai-1">
+<h3 class="article-title"><a href="#a-xai-1">Introducing Grok Voice 3.0</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/grok-voice-3" rel="noopener" target="_blank">https://x.ai/news/grok-voice-3</a></span><span class="meta-date">📅 2026-10-14 08:00 UTC+8</span></div>
+<div class="article-body"><p>xAI has introduced Grok Voice 3.0, a speech-to-speech model that ranks first on Artificial Analysis’s Speech-to-Speech Index, scores 97% on Full Duplex Bench, and resolves support calls with sub-one-second latency at lower cost than comparable frontier models. It already powers millions of daily conversations in Tesla vehicles and Starlink call centers, where about 70% of calls are resolved without human agents and one in four sales calls converts before hang-up. The model is available today in the Speech to Speech API at $0.08 per minute, unchanged from Grok Voice 2.0.</p>
+<p>xAI 推出 Grok Voice 3.0，呢個語音模型喺 Artificial Analysis 測試攞 Speech-to-Speech Index 第一位，Full Duplex Bench 得分 97%，仲可以低過一秒延遲、較平成本處理客服對話。佢已經喺 Tesla 車同 Starlink 客服中心每日處理數百萬個對話，大約七成電話唔使人手跟進，四分一銷售電話喺掛線前成交。新模型即日喺 Speech to Speech API 開放，每分鐘 $0.08，同 Grok Voice 2.0 一樣價。</p>
+<p><a class="read-more" href="https://x.ai/news/grok-voice-3" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">123 words</div>
+</article>
+<article class="article" id="a-xai-2">
+<h3 class="article-title"><a href="#a-xai-2">Introducing The X Subscription</a></h3>
+<div class="article-meta"><span class="meta-url"><a href="https://x.ai/news/x-subscription" rel="noopener" target="_blank">https://x.ai/news/x-subscription</a></span><span class="meta-date">📅 2026-10-12 08:00 UTC+8</span></div>
+<div class="article-body"><p>X has launched The X Subscription, bundling Grok, Grok Bot, Cursor, and X Premium into one global plan with tiers from free to $200 a month. The plan gives subscribers a shared pool of Grok model usage across chat, coding, and X features, offers more usage per dollar than the separate products it replaces, and lets existing SuperGrok, Cursor, or X Premium users keep or switch with prorated refunds. It matters because it simplifies billing and lowers the cost of combining AI chat, coding agents, and social platform tools for individuals, teams, and enterprises.</p>
+<p>X 推出 The X Subscription，將 Grok、Grok Bot、Cursor 同 X Premium 整合做一個全球計劃，由免費到每月 $200 都有。新計劃共用 Grok 模型用量，喺傾偈、寫程式同 X 功能之間通用，每粒錢買到的用量比分開買更多，現有 SuperGrok、Cursor 或者 X Premium 用戶都可以繼續用舊計劃，或者轉新計劃攞按比例退款。佢重要係因為個人、團隊同企業可以一單搞掂 AI 工具同社交平台，慳錢又方便。</p>
+<p><a class="read-more" href="https://x.ai/news/x-subscription" rel="noopener" target="_blank">Read full article →</a></p></div>
+<div class="article-words">122 words</div>
+</article>
+</section>
+</main>
+<footer class="colophon">
+  <p>Generated automatically · 2026-11-21 · Sources fetched live from each publisher's feed or site.</p>
+  <p>Summaries only — click "Read full article" for the original. All content © their respective publishers.</p>
+</footer>
+</body>
+</html>
